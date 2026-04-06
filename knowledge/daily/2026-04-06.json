@@ -1,197 +1,141 @@
 {
   "date": "2026-04-06",
-  "collected_at": "2026-04-06T18:21:11.642497+00:00",
-  "total": 34,
+  "collected_at": "2026-04-06T21:30:27.520390+00:00",
+  "total": 27,
   "raw_items": [
     {
-      "title": "Launch HN: Freestyle: Sandboxes for AI Coding Agents",
-      "url": "https://www.freestyle.sh",
-      "score": 67,
-      "comments": 35,
+      "title": "Launch HN: Freestyle – Sandboxes for Coding Agents",
+      "url": "https://www.freestyle.sh/",
+      "score": 144,
+      "comments": 79,
       "source": "hackernews",
       "text": ""
     },
     {
-      "title": "Claude Code is unusable for complex engineering tasks with the Feb updates",
+      "title": "Issue: Claude Code is unusable for complex engineering tasks with Feb updates",
       "url": "https://github.com/anthropics/claude-code/issues/42796",
-      "score": 344,
-      "comments": 241,
+      "score": 590,
+      "comments": 381,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Agent Reading Test",
+      "url": "https://agentreadingtest.com",
+      "score": 29,
+      "comments": 8,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "Show HN: I built a tiny LLM to demystify how language models work",
       "url": "https://github.com/arman-bd/guppylm",
-      "score": 779,
-      "comments": 119,
+      "score": 825,
+      "comments": 125,
       "source": "hackernews",
       "text": ""
     },
     {
-      "title": "France pulls last gold held in US for $15B gain",
-      "url": "https://www.mining.com/france-pulls-last-gold-held-in-us-for-15b-gain/",
-      "score": 487,
-      "comments": 265,
+      "title": "AI singer now occupies eleven spots on iTunes singles chart",
+      "url": "https://www.showbiz411.com/2026/04/05/itunes-takeover-by-fake-ai-singer-eddie-dalton-now-occupies-eleven-spots-on-chart-despite-not-being-human-or-real-exclusive",
+      "score": 45,
+      "comments": 66,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "The team behind a pro-Iran, Lego-themed viral-video campaign",
+      "url": "https://www.newyorker.com/culture/infinite-scroll/the-team-behind-a-pro-iran-lego-themed-viral-video-campaign",
+      "score": 79,
+      "comments": 96,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Wikipedia's AI agent row likely just the beginning of the bot-ocalypse",
+      "url": "https://www.malwarebytes.com/blog/ai/2026/04/wikipedias-ai-agent-row-likely-just-the-beginning-of-the-bot-ocalypse",
+      "score": 23,
+      "comments": 16,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "Show HN: Real-time AI (audio/video in, voice out) on an M3 Pro with Gemma E2B",
       "url": "https://github.com/fikrikarim/parlor",
-      "score": 224,
-      "comments": 26,
+      "score": 254,
+      "comments": 28,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "Drop, formerly Massdrop, ends most collaborations and rebrands under Corsair",
       "url": "https://drop.com/",
-      "score": 110,
-      "comments": 56,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "Running Gemma 4 locally with LM Studio's new headless CLI and Claude Code",
-      "url": "https://ai.georgeliu.com/p/running-google-gemma-4-locally-with",
-      "score": 375,
-      "comments": 92,
+      "score": 117,
+      "comments": 63,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "Show HN: Gemma Gem – AI model embedded in a browser – no API keys, no cloud",
       "url": "https://github.com/kessler/gemma-gem",
-      "score": 136,
-      "comments": 18,
+      "score": 140,
+      "comments": 19,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Anthropic is burning more and more dev goodwill",
+      "url": "https://twitter.com/GergelyOrosz/status/2041133254586122605",
+      "score": 43,
+      "comments": 22,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "Eight years of wanting, three months of building with AI",
       "url": "https://lalitm.com/post/building-syntaqlite-ai/",
-      "score": 883,
-      "comments": 278,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "A tail-call interpreter in (nightly) Rust",
-      "url": "https://www.mattkeeter.com/blog/2026-04-05-tailcall/",
-      "score": 184,
-      "comments": 49,
+      "score": 904,
+      "comments": 284,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "Nanocode: The best Claude Code that $200 can buy in pure JAX on TPUs",
       "url": "https://github.com/salmanmohammadi/nanocode/discussions/1",
-      "score": 200,
-      "comments": 27,
+      "score": 204,
+      "comments": 26,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Running Gemma 4 locally with LM Studio's new headless CLI and Claude Code",
+      "url": "https://ai.georgeliu.com/p/running-google-gemma-4-locally-with",
+      "score": 386,
+      "comments": 96,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "Show HN: I just built a MCP Server that connects Claude to all your wearables",
       "url": "https://pacetraining.co/",
-      "score": 10,
+      "score": 13,
       "comments": 11,
       "source": "hackernews",
       "text": ""
     },
     {
-      "title": "The Team Behind a Pro-Iran, Lego-Themed Viral-Video Campaign",
-      "url": "https://www.newyorker.com/culture/infinite-scroll/the-team-behind-a-pro-iran-lego-themed-viral-video-campaign",
-      "score": 72,
-      "comments": 85,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "When Virality Is the Message: The New Age of AI Propaganda",
-      "url": "https://time.com/article/2026/04/02/when-virality-is-the-message-the-new-age-of-ai-propaganda/",
-      "score": 54,
-      "comments": 51,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "From birds to brains: My path to the fusiform face area (2024)",
-      "url": "https://www.kavliprize.org/nancy-kanwisher-autobiography",
-      "score": 39,
-      "comments": 0,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "OpenAI's fall from grace as investors race to Anthropic",
-      "url": "https://www.latimes.com/business/story/2026-04-01/openais-shocking-fall-from-grace-as-investors-race-to-anthropic",
-      "score": 196,
-      "comments": 134,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "Iran's IRGC Publishes Satellite Imagery of OpenAI's $30B Stargate Datacenter",
-      "url": "https://newclawtimes.com/articles/iran-irgc-satellite-imagery-openai-stargate-abu-dhabi-datacenter-threat/",
-      "score": 63,
-      "comments": 33,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "Tell HN: Anthropic no longer allowing Claude Code subscriptions to use OpenClaw",
-      "url": "https://news.ycombinator.com/item?id=47633396",
-      "score": 1084,
-      "comments": 825,
+      "title": "Twitter devolved into a pipeline of ragebait slop",
+      "url": "https://mattruby.substack.com/p/we-give-elon-crap-but-not-enough",
+      "score": 10,
+      "comments": 1,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "Does coding with LLMs mean more microservices?",
       "url": "https://ben.page/microservices",
-      "score": 56,
-      "comments": 60,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "Electrical transformer manufacturing is throttling the electrified future",
-      "url": "https://www.bloomberg.com/features/2025-bottlenecks-transformers/",
-      "score": 116,
-      "comments": 124,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "NIMBY Rails",
-      "url": "https://store.steampowered.com/app/1134710/NIMBY_Rails/",
-      "score": 36,
-      "comments": 4,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "The frontline is like Terminator: fighting robots give Ukraine hope in war",
-      "url": "https://www.theguardian.com/world/2026/apr/04/fighting-robots-give-ukraine-hope-in-war-with-russia",
-      "score": 8,
-      "comments": 0,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "Make Humans Analog Again",
-      "url": "https://bhave.sh/make-humans-analog-again/",
-      "score": 9,
-      "comments": 0,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "AI Singer Now Occupies Eleven Spots on iTunes Singles Chart",
-      "url": "https://www.showbiz411.com/2026/04/05/itunes-takeover-by-fake-ai-singer-eddie-dalton-now-occupies-eleven-spots-on-chart-despite-not-being-human-or-real-exclusive",
-      "score": 43,
-      "comments": 56,
+      "score": 58,
+      "comments": 59,
       "source": "hackernews",
       "text": ""
     },
@@ -279,33 +223,33 @@
   "summary": null,
   "summarized_items": [
     {
-      "title": "OpenAI's fall from grace as investors race to Anthropic",
-      "url": "https://www.latimes.com/business/story/2026-04-01/openais-shocking-fall-from-grace-as-investors-race-to-anthropic",
-      "score": 196,
-      "comments": 134,
+      "title": "Show HN: Gemma Gem – AI model embedded in a browser – no API keys, no cloud",
+      "url": "https://github.com/kessler/gemma-gem",
+      "score": 140,
+      "comments": 19,
       "source": "hackernews",
       "text": "",
-      "title_ja": "投資家がAnthropicに殺到する中でのOpenAIの失墜",
-      "summary_ja": "OpenAIが投資家の信頼を失い、代わりにAnthropicが注目を集めている市場動向。AI業界の勢力図が変化していることを示している。",
+      "title_ja": "Gemma Gem：ブラウザ内蔵AIモデル - APIキーやクラウド不要",
+      "summary_ja": "ウェブブラウザに直接組み込まれたAIモデルで、外部APIやクラウドサービスを必要としない。プライバシーを重視したオフライン環境でのAI体験を提供する。",
       "importance": 9,
       "tags": [
         "LLM",
-        "ビジネス"
+        "オープンソース"
       ],
-      "category": "ビジネス"
+      "category": "技術"
     },
     {
-      "title": "Claude Code is unusable for complex engineering tasks with the Feb updates",
+      "title": "Issue: Claude Code is unusable for complex engineering tasks with Feb updates",
       "url": "https://github.com/anthropics/claude-code/issues/42796",
-      "score": 344,
-      "comments": 241,
+      "score": 590,
+      "comments": 381,
       "source": "hackernews",
       "text": "",
-      "title_ja": "2月のアップデート以降、Claude Codeが複雑なエンジニアリングタスクで使用困難",
-      "summary_ja": "Claude Codeの2月のアップデート後、複雑なエンジニアリング作業での性能が低下している問題。開発者からの不満の声が上がっており、実用性に影響を与えている。",
+      "title_ja": "Claude Codeが2月のアップデートで複雑なエンジニアリングタスクに使えない問題",
+      "summary_ja": "Claude Codeの最新アップデートにより、複雑な開発タスクでの使い勝手が大幅に低下した問題が報告されている。開発者コミュニティで議論となっている品質劣化の事例。",
       "importance": 8,
       "tags": [
-        "LLM",
+        "Agent",
         "コード"
       ],
       "category": "技術"
@@ -313,136 +257,134 @@
     {
       "title": "Show HN: Real-time AI (audio/video in, voice out) on an M3 Pro with Gemma E2B",
       "url": "https://github.com/fikrikarim/parlor",
-      "score": 224,
-      "comments": 26,
+      "score": 254,
+      "comments": 28,
       "source": "hackernews",
       "text": "",
-      "title_ja": "M3 ProでGemma E2Bを使用したリアルタイムAI（音声・映像入力、音声出力）",
-      "summary_ja": "M3 Proチップ搭載デバイスでGemma E2Bモデルを使用し、音声と映像を入力として音声を出力するリアルタイムAIシステムのデモ。マルチモーダルAIの実用例を示している。",
+      "title_ja": "M3 ProでGemma E2Bを使ったリアルタイムAI（音声・映像入力、音声出力）",
+      "summary_ja": "Apple M3 Proチップ上でリアルタイム音声・映像処理が可能なAIシステムの実装。音声と映像を入力として受け取り、音声で応答するマルチモーダルなAI体験を提供。",
       "importance": 8,
       "tags": [
-        "LLM",
         "音声",
         "オープンソース"
       ],
       "category": "技術"
     },
     {
-      "title": "Tell HN: Anthropic no longer allowing Claude Code subscriptions to use OpenClaw",
-      "url": "https://news.ycombinator.com/item?id=47633396",
-      "score": 1084,
-      "comments": 825,
+      "title": "Launch HN: Freestyle – Sandboxes for Coding Agents",
+      "url": "https://www.freestyle.sh/",
+      "score": 144,
+      "comments": 79,
       "source": "hackernews",
       "text": "",
-      "title_ja": "AnthropicがClaude CodeでのOpenClaw使用を禁止",
-      "summary_ja": "AnthropicがClaude Codeの有料購読者によるOpenClawの使用を制限する方針を発表。サービス利用規約の変更により、特定のツールとの連携が制限される。開発者コミュニティに影響を与える可能性がある。",
-      "importance": 7,
+      "title_ja": "Freestyle：コーディングエージェント用サンドボックス環境",
+      "summary_ja": "AIコーディングエージェントが安全に動作できるサンドボックス環境を提供するプラットフォーム。エージェントによる自動コード生成・実行を隔離された環境で実現する。",
+      "importance": 8,
       "tags": [
-        "LLM",
-        "ビジネス"
+        "Agent",
+        "コード"
       ],
-      "category": "ビジネス"
+      "category": "ツール"
     },
     {
       "title": "Show HN: I built a tiny LLM to demystify how language models work",
       "url": "https://github.com/arman-bd/guppylm",
-      "score": 779,
-      "comments": 119,
+      "score": 825,
+      "comments": 125,
       "source": "hackernews",
       "text": "",
-      "title_ja": "言語モデルの仕組みを理解するための小型LLMを構築",
-      "summary_ja": "言語モデルの動作原理を学習・理解するために設計された小規模なLLMの実装プロジェクト。教育目的で作られており、LLMの内部構造を分かりやすく説明している。",
+      "title_ja": "言語モデルの仕組みを解明する小型LLMを構築",
+      "summary_ja": "言語モデルの動作原理を理解しやすくするために開発された小型のLLM。複雑なAI技術を学習者にとって分かりやすい形で提示することを目的としている。",
       "importance": 7,
       "tags": [
         "LLM",
-        "オープンソース"
-      ],
-      "category": "技術"
-    },
-    {
-      "title": "Nanocode: The best Claude Code that $200 can buy in pure JAX on TPUs",
-      "url": "https://github.com/salmanmohammadi/nanocode/discussions/1",
-      "score": 200,
-      "comments": 27,
-      "source": "hackernews",
-      "text": "",
-      "title_ja": "Nanocode: TPU上のJAXで200ドルで実現する最高のClaude Code",
-      "summary_ja": "200ドルの予算でTPU上でJAXを使用してClaude Codeライクな性能を実現するNanocodeプロジェクト。コストパフォーマンスに優れたAI開発環境の提案。",
-      "importance": 7,
-      "tags": [
-        "LLM",
-        "コード",
-        "オープンソース"
-      ],
-      "category": "技術"
-    },
-    {
-      "title": "Eight years of wanting, three months of building with AI",
-      "url": "https://lalitm.com/post/building-syntaqlite-ai/",
-      "score": 883,
-      "comments": 278,
-      "source": "hackernews",
-      "text": "",
-      "title_ja": "8年間の願望、AIで3ヶ月での実現",
-      "summary_ja": "長年実現したかったプロジェクトをAI技術の活用により3ヶ月という短期間で完成させた体験談。AI技術が個人開発者の生産性を劇的に向上させる実例を示している。",
-      "importance": 6,
-      "tags": [
-        "LLM",
-        "コード"
-      ],
-      "category": "技術"
-    },
-    {
-      "title": "Running Gemma 4 locally with LM Studio's new headless CLI and Claude Code",
-      "url": "https://ai.georgeliu.com/p/running-google-gemma-4-locally-with",
-      "score": 375,
-      "comments": 92,
-      "source": "hackernews",
-      "text": "",
-      "title_ja": "LM StudioのヘッドレスCLIとClaude CodeでGemma 4をローカル実行",
-      "summary_ja": "LM Studioの新しいコマンドラインインターフェースとClaude Codeを使用してGemma 4モデルをローカル環境で動作させる方法。開発者向けの実用的なツール組み合わせを紹介している。",
-      "importance": 6,
-      "tags": [
-        "LLM",
-        "コード",
         "オープンソース"
       ],
       "category": "ツール"
     },
     {
-      "title": "A tail-call interpreter in (nightly) Rust",
-      "url": "https://www.mattkeeter.com/blog/2026-04-05-tailcall/",
-      "score": 184,
-      "comments": 49,
+      "title": "Running Gemma 4 locally with LM Studio's new headless CLI and Claude Code",
+      "url": "https://ai.georgeliu.com/p/running-google-gemma-4-locally-with",
+      "score": 386,
+      "comments": 96,
       "source": "hackernews",
       "text": "",
-      "title_ja": "Rust（nightly版）でのテイルコール・インタープリター",
-      "summary_ja": "Rust言語のnightly版を使用してテイルコール最適化を実装したインタープリターの開発プロジェクト。プログラミング言語処理系の実装技術に関する内容。",
-      "importance": 4,
+      "title_ja": "LM Studioの新しいヘッドレスCLIとClaude CodeでGemma 4をローカル実行",
+      "summary_ja": "LM Studioの最新CLI機能を使用してGemma 4をローカル環境で動作させる方法。Claude Codeとの連携により、効率的なローカルAI開発環境を構築できる。",
+      "importance": 7,
       "tags": [
-        "コード"
+        "LLM",
+        "オープンソース"
       ],
-      "category": "技術"
+      "category": "ツール"
     },
     {
-      "title": "France pulls last gold held in US for $15B gain",
-      "url": "https://www.mining.com/france-pulls-last-gold-held-in-us-for-15b-gain/",
-      "score": 487,
-      "comments": 265,
+      "title": "Nanocode: The best Claude Code that $200 can buy in pure JAX on TPUs",
+      "url": "https://github.com/salmanmohammadi/nanocode/discussions/1",
+      "score": 204,
+      "comments": 26,
       "source": "hackernews",
       "text": "",
-      "title_ja": "フランスが米国保有の金を引き揚げ、150億ドルの利益",
-      "summary_ja": "フランスが米国に保管していた金準備を本国に移送し、150億ドルの利益を得た。金融政策および地政学的な観点から注目される動き。AI関連情報ではない。",
+      "title_ja": "Nanocode：TPU上でJAXを使った200ドルで買える最高のClaude Code",
+      "summary_ja": "TPU環境でJAXフレームワークを活用したコスト効率の高いClaude Code代替ソリューション。200ドルという低コストで高性能なコーディング支援AIを実現。",
+      "importance": 7,
+      "tags": [
+        "Agent",
+        "コード"
+      ],
+      "category": "ツール"
+    },
+    {
+      "title": "Eight years of wanting, three months of building with AI",
+      "url": "https://lalitm.com/post/building-syntaqlite-ai/",
+      "score": 904,
+      "comments": 284,
+      "source": "hackernews",
+      "text": "",
+      "title_ja": "8年間の願望、AIを使った3か月の開発",
+      "summary_ja": "長年温めていたアイデアをAI技術を活用して短期間で実現した開発体験談。AIツールの活用により、従来では時間のかかっていた開発プロセスが大幅に短縮された事例。",
+      "importance": 6,
+      "tags": [
+        "ビジネス",
+        "コード"
+      ],
+      "category": "ビジネス"
+    },
+    {
+      "title": "Drop, formerly Massdrop, ends most collaborations and rebrands under Corsair",
+      "url": "https://drop.com/",
+      "score": 117,
+      "comments": 63,
+      "source": "hackernews",
+      "text": "",
+      "title_ja": "旧Massdrop社がコラボレーションを終了しCorsairブランドに統合",
+      "summary_ja": "Drop（旧Massdrop）がほとんどのコラボレーション事業を終了し、Corsairブランドへの統合を発表。ビジネスモデルの大幅な変更を伴う企業再編。",
+      "importance": 3,
+      "tags": [
+        "ビジネス"
+      ],
+      "category": "その他"
+    },
+    {
+      "title": "The team behind a pro-Iran, Lego-themed viral-video campaign",
+      "url": "https://www.newyorker.com/culture/infinite-scroll/the-team-behind-a-pro-iran-lego-themed-viral-video-campaign",
+      "score": 79,
+      "comments": 96,
+      "source": "hackernews",
+      "text": "",
+      "title_ja": "親イラン・レゴテーマのバイラル動画キャンペーンの制作チーム",
+      "summary_ja": "レゴをテーマにした親イラン的なバイラル動画キャンペーンの背後にいる制作チームに関する調査報告。政治的メッセージを込めたバイラルコンテンツの制作過程が明らかになった。",
       "importance": 2,
       "tags": [],
       "category": "その他"
     }
   ],
-  "digest": "## 今日の最重要トレンド\nAI業界の勢力図が大きく変化しており、投資家がOpenAIから離れてAnthropicに注目を集めている。一方でAnthropicのClaude Codeは2月のアップデート以降、複雑なエンジニアリングタスクでの性能低下や使用制限の問題を抱えている。AI市場のリーダー交代期における品質と信頼性の課題が浮き彫りになっている。\n\n## ビジネスへの示唆\nAI企業選択において投資家の信頼が急速に移り変わる時代であり、技術力だけでなく継続的な品質維持が重要。特定のAIサービスへの依存度を下げ、複数のプロバイダーを活用するリスク分散戦略が必要。\n\n## 注目すべき技術動向\nM3 ProでのGemma E2Bを使ったリアルタイムマルチモーダルAIが実用レベルに到達し、エッジデバイスでの高性能AI処理が現実化。小型LLMの教育プロジェクトにより、AI技術の民主化と理解促進が進んでいる。",
+  "digest": "## 今日の最重要トレンド\nブラウザ内蔵AIモデル「Gemma Gem」の登場により、プライバシー重視のオフラインAI利用が現実的になった。一方でClaude Codeの品質劣化問題が開発者コミュニティで議論となっている。AIの実用性と信頼性のバランスが重要な課題として浮上している。\n\n## ビジネスへの示唆\nオフライン動作するAIモデルにより、機密データを外部に送らない安全なAI活用が可能になる。既存のAIサービス依存からの脱却と、自社内でのAI運用体制構築の検討が急務となる。\n\n## 注目すべき技術動向\nM3 ProでのリアルタイムマルチモーダルAIやサンドボックス環境の整備により、AIエージェントの実用化が加速している。小型LLMによる技術解明への取り組みが、AI技術の民主化と教育分野での普及を促進する。",
   "top_tags": {
-    "LLM": 8,
-    "コード": 5,
     "オープンソース": 4,
+    "コード": 4,
+    "LLM": 3,
+    "Agent": 3,
     "ビジネス": 2,
     "音声": 1
   }
