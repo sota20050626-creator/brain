@@ -70,11 +70,15 @@ tagsは["LLM", "Agent", "ビジネス", "画像生成", "音声", "コード", "
     
     # JSON抽出
     import re
-    match = re.search(r'\[.*\]', response, re.DOTALL)
-    if not match:
+   try:
+        match = re.search(r'\[.*\]', response, re.DOTALL)
+        if not match:
+            return []
+        summaries = json.loads(match.group())
+    except json.JSONDecodeError:
+        # JSONが壊れている場合は空を返す
+        print(f"JSON parse error, skipping batch")
         return []
-    
-    summaries = json.loads(match.group())
     
     # 元データとマージ
     results = []
