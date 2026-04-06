@@ -1,10 +1,7 @@
-"""
-summarizer.py - Claude APIで収集データを日本語要約・分類
-"""
-
 import json
 import os
 import urllib.request
+import re
 from datetime import datetime
 from pathlib import Path
 
@@ -15,13 +12,11 @@ def call_claude(prompt, max_tokens=2000):
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
         raise ValueError("ANTHROPIC_API_KEY not set")
-    
     payload = json.dumps({
         "model": "claude-sonnet-4-20250514",
         "max_tokens": max_tokens,
         "messages": [{"role": "user", "content": prompt}]
     }).encode()
-    
     req = urllib.request.Request(
         "https://api.anthropic.com/v1/messages",
         data=payload,
@@ -35,15 +30,11 @@ def call_claude(prompt, max_tokens=2000):
         return json.loads(r.read())["content"][0]["text"]
 
 def summarize_items(items):
-    """バッチで要約・スコアリング"""
-    # コスト節約: 上位30件のみ処理
     top_items = sorted(items, key=lambda x: x.get("score", 0), reverse=True)[:30]
-    
     items_text = "\n\n".join([
         f"[{i+1}] SOURCE: {item['source']}\nTITLE: {item['title']}\nTEXT: {item.get('text','')[:200]}"
         for i, item in enumerate(top_items)
     ])
-    
     prompt = f"""あなたはAI技術のエキスパートアナリストです。
 以下の{len(top_items)}件のAI関連情報を分析してください。
 
@@ -59,28 +50,24 @@ def summarize_items(items):
     "summary_ja": "2〜3文の日本語要約",
     "importance": 8,
     "tags": ["LLM", "ビジネス"],
-    "category": "技術|ビジネス|ツール|論文|その他"
+    "category": "技術"
   }}
 ]
 
-importanceは1〜10で、AIの発展に対する重要度を評価してください。
-tagsは["LLM", "Agent", "ビジネス", "画像生成", "音声", "コード", "論文", "中国AI", "オープンソース"]から選択。"""
+importanceは1〜10で評価。
+tagsは["LLM", "Agent", "ビジネス", "画像生成", "音声", "コード", "論文", "中国AI", "オープンソース"]から選択。
+categoryは技術/ビジネス/ツール/論文/その他から選択。"""
 
     response = call_claude(prompt, max_tokens=3000)
-    
-    # JSON抽出
-    import re
-   try:
+    try:
         match = re.search(r'\[.*\]', response, re.DOTALL)
         if not match:
             return []
         summaries = json.loads(match.group())
     except json.JSONDecodeError:
-        # JSONが壊れている場合は空を返す
-        print(f"JSON parse error, skipping batch")
+        print("JSON parse error, skipping batch")
         return []
-    
-    # 元データとマージ
+
     results = []
     for s in summaries:
         idx = s["id"] - 1
@@ -94,17 +81,14 @@ tagsは["LLM", "Agent", "ビジネス", "画像生成", "音声", "コード", "
                 "category": s.get("category", "その他"),
             })
             results.append(item)
-    
     return sorted(results, key=lambda x: x.get("importance", 0), reverse=True)
 
 def generate_daily_digest(items):
-    """その日のハイライト生成"""
     top5 = items[:5]
     top5_text = "\n".join([
         f"- {item['title_ja']}: {item['summary_ja']}"
         for item in top5
     ])
-    
     prompt = f"""今日のAIトレンドトップ5:
 {top5_text}
 
@@ -114,48 +98,11 @@ def generate_daily_digest(items):
 3. 注目すべき技術動向（2行以内）
 
 簡潔にまとめてください。"""
-    
     return call_claude(prompt, max_tokens=500)
-
-def main():
-    print(f"🧠 Brain Summarizer starting... [{TODAY}]")
-    
-    if not DATA_FILE.exists():
-        print(f"❌ No data file found: {DATA_FILE}")
-        return
-    
-    with open(DATA_FILE, encoding="utf-8") as f:
-        data = json.load(f)
-    
-    items = data.get("raw_items", [])
-    if not items:
-        print("❌ No items to summarize")
-        return
-    
-    print(f"  📝 Summarizing {len(items)} items...")
-    summarized = summarize_items(items)
-    print(f"  ✓ Summarized {len(summarized)} items")
-    
-    print("  📊 Generating daily digest...")
-    digest = generate_daily_digest(summarized)
-    
-    # データ更新
-    data["summarized_items"] = summarized
-    data["digest"] = digest
-    data["top_tags"] = _count_tags(summarized)
-    
-    with open(DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-    
-    print(f"✅ Summarization complete → {DATA_FILE}")
-    print(f"\n📰 Today's Digest:\n{digest}")
 
 def _count_tags(items):
     from collections import Counter
     tags = []
     for item in items:
         tags.extend(item.get("tags", []))
-    return dict(Counter(tags).most_common(10))
-
-if __name__ == "__main__":
-    main()
+    return dict(Counter(tags).most_com
