@@ -1,0 +1,283 @@
+{
+  "date": "2026-04-06",
+  "collected_at": "2026-04-06T18:02:46.164472+00:00",
+  "total": 34,
+  "raw_items": [
+    {
+      "title": "Launch HN: Freestyle: Sandboxes for AI Coding Agents",
+      "url": "https://www.freestyle.sh",
+      "score": 54,
+      "comments": 22,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Claude Code is unusable for complex engineering tasks with the Feb updates",
+      "url": "https://github.com/anthropics/claude-code/issues/42796",
+      "score": 313,
+      "comments": 201,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Show HN: I built a tiny LLM to demystify how language models work",
+      "url": "https://github.com/arman-bd/guppylm",
+      "score": 776,
+      "comments": 119,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "France pulls last gold held in US for $15B gain",
+      "url": "https://www.mining.com/france-pulls-last-gold-held-in-us-for-15b-gain/",
+      "score": 486,
+      "comments": 263,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Show HN: Real-time AI (audio/video in, voice out) on an M3 Pro with Gemma E2B",
+      "url": "https://github.com/fikrikarim/parlor",
+      "score": 224,
+      "comments": 26,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Drop, formerly Massdrop, ends most collaborations and rebrands under Corsair",
+      "url": "https://drop.com/",
+      "score": 110,
+      "comments": 54,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Running Gemma 4 locally with LM Studio's new headless CLI and Claude Code",
+      "url": "https://ai.georgeliu.com/p/running-google-gemma-4-locally-with",
+      "score": 371,
+      "comments": 92,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Show HN: Gemma Gem – AI model embedded in a browser – no API keys, no cloud",
+      "url": "https://github.com/kessler/gemma-gem",
+      "score": 136,
+      "comments": 18,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Eight years of wanting, three months of building with AI",
+      "url": "https://lalitm.com/post/building-syntaqlite-ai/",
+      "score": 883,
+      "comments": 278,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "A tail-call interpreter in (nightly) Rust",
+      "url": "https://www.mattkeeter.com/blog/2026-04-05-tailcall/",
+      "score": 184,
+      "comments": 49,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Nanocode: The best Claude Code that $200 can buy in pure JAX on TPUs",
+      "url": "https://github.com/salmanmohammadi/nanocode/discussions/1",
+      "score": 200,
+      "comments": 27,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Show HN: I just built a MCP Server that connects Claude to all your wearables",
+      "url": "https://pacetraining.co/",
+      "score": 9,
+      "comments": 10,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "The Team Behind a Pro-Iran, Lego-Themed Viral-Video Campaign",
+      "url": "https://www.newyorker.com/culture/infinite-scroll/the-team-behind-a-pro-iran-lego-themed-viral-video-campaign",
+      "score": 72,
+      "comments": 85,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "When Virality Is the Message: The New Age of AI Propaganda",
+      "url": "https://time.com/article/2026/04/02/when-virality-is-the-message-the-new-age-of-ai-propaganda/",
+      "score": 54,
+      "comments": 49,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "From birds to brains: My path to the fusiform face area (2024)",
+      "url": "https://www.kavliprize.org/nancy-kanwisher-autobiography",
+      "score": 39,
+      "comments": 0,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Iran's IRGC Publishes Satellite Imagery of OpenAI's $30B Stargate Datacenter",
+      "url": "https://newclawtimes.com/articles/iran-irgc-satellite-imagery-openai-stargate-abu-dhabi-datacenter-threat/",
+      "score": 63,
+      "comments": 33,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "OpenAI's fall from grace as investors race to Anthropic",
+      "url": "https://www.latimes.com/business/story/2026-04-01/openais-shocking-fall-from-grace-as-investors-race-to-anthropic",
+      "score": 196,
+      "comments": 134,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Does coding with LLMs mean more microservices?",
+      "url": "https://ben.page/microservices",
+      "score": 56,
+      "comments": 60,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Tell HN: Anthropic no longer allowing Claude Code subscriptions to use OpenClaw",
+      "url": "https://news.ycombinator.com/item?id=47633396",
+      "score": 1084,
+      "comments": 825,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "NIMBY Rails",
+      "url": "https://store.steampowered.com/app/1134710/NIMBY_Rails/",
+      "score": 36,
+      "comments": 4,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Electrical transformer manufacturing is throttling the electrified future",
+      "url": "https://www.bloomberg.com/features/2025-bottlenecks-transformers/",
+      "score": 116,
+      "comments": 123,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "AI Singer Now Occupies Eleven Spots on iTunes Singles Chart",
+      "url": "https://www.showbiz411.com/2026/04/05/itunes-takeover-by-fake-ai-singer-eddie-dalton-now-occupies-eleven-spots-on-chart-despite-not-being-human-or-real-exclusive",
+      "score": 41,
+      "comments": 54,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Make Humans Analog Again",
+      "url": "https://bhave.sh/make-humans-analog-again/",
+      "score": 9,
+      "comments": 0,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "The secretive plan for a Maine data center collapsed in 6 days",
+      "url": "https://www.bangordailynews.com/2026/04/06/mainefocus/mainefocus-environment/secretive-plan-maine-data-center-joam40zk0w/",
+      "score": 6,
+      "comments": 0,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Enhancing Robustness of Federated Learning via Server Learning",
+      "url": "http://arxiv.org/abs/2604.03226v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "This paper explores the use of server learning for enhancing the robustness of federated learning against malicious attacks even when clients' training data are not independent and identically distributed. We propose a heuristic algorithm that uses server learning and client update filtering in combination with geometric median aggregation. We demonstrate via experiments that this approach can achieve significant improvement in model accuracy even when the fraction of malicious clients is high, "
+    },
+    {
+      "title": "BAS: A Decision-Theoretic Approach to Evaluating Large Language Model Confidence",
+      "url": "http://arxiv.org/abs/2604.03216v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Large language models (LLMs) often produce confident but incorrect answers in settings where abstention would be safer. Standard evaluation protocols, however, require a response and do not account for how confidence should guide decisions under different risk preferences. To address this gap, we introduce the Behavioral Alignment Score (BAS), a decision-theoretic metric for evaluating how well LLM confidence supports abstention-aware decision making. BAS is derived from an explicit answer-or-ab"
+    },
+    {
+      "title": "Hierarchical Planning with Latent World Models",
+      "url": "http://arxiv.org/abs/2604.03208v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Model predictive control (MPC) with learned world models has emerged as a promising paradigm for embodied control, particularly for its ability to generalize zero-shot when deployed in new environments. However, learned world models often struggle with long-horizon control due to the accumulation of prediction errors and the exponentially growing search space. In this work, we address these challenges by learning latent world models at multiple temporal scales and performing hierarchical plannin"
+    },
+    {
+      "title": "A Tsetlin Machine-driven Intrusion Detection System for Next-Generation IoMT Security",
+      "url": "http://arxiv.org/abs/2604.03205v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "The rapid adoption of the Internet of Medical Things (IoMT) is transforming healthcare by enabling seamless connectivity among medical devices, systems, and services. However, it also introduces serious cybersecurity and patient safety concerns as attackers increasingly exploit new methods and emerging vulnerabilities to infiltrate IoMT networks. This paper proposes a novel Tsetlin Machine (TM)-based Intrusion Detection System (IDS) for detecting a wide range of cyberattacks targeting IoMT netwo"
+    },
+    {
+      "title": "PR3DICTR: A modular AI framework for medical 3D image-based detection and outcome prediction",
+      "url": "http://arxiv.org/abs/2604.03203v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Three-dimensional medical image data and computer-aided decision making, particularly using deep learning, are becoming increasingly important in the medical field. To aid in these developments we introduce PR3DICTR: Platform for Research in 3D Image Classification and sTandardised tRaining. Built using community-standard distributions (PyTorch and MONAI), PR3DICTR provides an open-access, flexible and convenient framework for prediction model development, with an explicit focus on classificatio"
+    },
+    {
+      "title": "Coupled Control, Structured Memory, and Verifiable Action in Agentic AI (SCRAT -- Stochastic Control with Retrieval and Auditable Trajectories): A Comparative Perspective from Squirrel Locomotion and Scatter-Hoarding",
+      "url": "http://arxiv.org/abs/2604.03201v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Agentic AI is increasingly judged not by fluent output alone but by whether it can act, remember, and verify under partial observability, delay, and strategic observation. Existing research often studies these demands separately: robotics emphasizes control, retrieval systems emphasize memory, and alignment or assurance work emphasizes checking and oversight. This article argues that squirrel ecology offers a sharp comparative case because arboreal locomotion, scatter-hoarding, and audience-sens"
+    },
+    {
+      "title": "Learning the Signature of Memorization in Autoregressive Language Models",
+      "url": "http://arxiv.org/abs/2604.03199v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "All prior membership inference attacks for fine-tuned language models use hand-crafted heuristics (e.g., loss thresholding, Min-K\\%, reference calibration), each bounded by the designer's intuition. We introduce the first transferable learned attack, enabled by the observation that fine-tuning any model on any corpus yields unlimited labeled data, since membership is known by construction. This removes the shadow model bottleneck and brings membership inference into the deep learning era: learni"
+    },
+    {
+      "title": "Real-Time Surrogate Modeling for Personalized Blood Flow Prediction and Hemodynamic Analysis",
+      "url": "http://arxiv.org/abs/2604.03197v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Cardiovascular modeling has rapidly advanced over the past few decades due to the rising needs for health tracking and early detection of cardiovascular diseases. While 1-D arterial models offer an attractive compromise between computational efficiency and solution fidelity, their application on large populations or for generating large \\emph{in silico} cohorts remains challenging. Certain hemodynamic parameters like the terminal resistance/compliance, are difficult to clinically estimate and of"
+    },
+    {
+      "title": "Reliability Gated Multi-Teacher Distillation for Low Resource Abstractive Summarization",
+      "url": "http://arxiv.org/abs/2604.03192v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "We study multiteacher knowledge distillation for low resource abstractive summarization from a reliability aware perspective. We introduce EWAD (Entropy Weighted Agreement Aware Distillation), a token level mechanism that routes supervision between teacher distillation and gold supervision based on inter teacher agreement, and CPDP (Capacity Proportional Divergence Preservation), a geometric constraint on the student position relative to heterogeneous teachers. Across two Bangla datasets, 13 Ban"
+    },
+    {
+      "title": "The Compression Gap: Why Discrete Tokenization Limits Vision-Language-Action Model Scaling",
+      "url": "http://arxiv.org/abs/2604.03191v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Scaling Vision-Language-Action (VLA) models by upgrading the vision encoder is expected to improve downstream manipulation performance--as it does in vision-language modeling. We show that this expectation fails when actions are represented as discrete tokens, and explain why through an information-theoretic principle we call the Compression Gap: in any visuomotor pipeline, scaling behavior is governed by the location of the tightest information bottleneck. When actions are continuous (e.g., Dif"
+    }
+  ],
+  "summary": null,
+  "summarized_items": [],
+  "digest": "本日はデータなし",
+  "top_tags": {}
+}
