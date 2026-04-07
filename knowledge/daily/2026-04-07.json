@@ -1,68 +1,68 @@
 {
   "date": "2026-04-07",
-  "collected_at": "2026-04-07T04:29:06.428454+00:00",
-  "total": 30,
+  "collected_at": "2026-04-07T04:55:59.521009+00:00",
+  "total": 29,
   "raw_items": [
     {
       "title": "Launch HN: Freestyle – Sandboxes for Coding Agents",
       "url": "https://www.freestyle.sh/",
-      "score": 230,
-      "comments": 121,
+      "score": 234,
+      "comments": 126,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "Issue: Claude Code is unusable for complex engineering tasks with Feb updates",
       "url": "https://github.com/anthropics/claude-code/issues/42796",
-      "score": 843,
-      "comments": 506,
+      "score": 869,
+      "comments": 510,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "Anthropic expands partnership with Google and Broadcom for next-gen compute",
       "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
-      "score": 190,
-      "comments": 87,
+      "score": 191,
+      "comments": 90,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "Show HN: Hippo, biologically inspired memory for AI agents",
       "url": "https://github.com/kitfunso/hippo-memory",
-      "score": 66,
-      "comments": 15,
+      "score": 67,
+      "comments": 16,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "AI singer now occupies eleven spots on iTunes singles chart",
       "url": "https://www.showbiz411.com/2026/04/05/itunes-takeover-by-fake-ai-singer-eddie-dalton-now-occupies-eleven-spots-on-chart-despite-not-being-human-or-real-exclusive",
-      "score": 121,
-      "comments": 175,
+      "score": 125,
+      "comments": 191,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "Agent Reading Test",
       "url": "https://agentreadingtest.com",
-      "score": 56,
-      "comments": 16,
+      "score": 58,
+      "comments": 18,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "The team behind a pro-Iran, Lego-themed viral-video campaign",
       "url": "https://www.newyorker.com/culture/infinite-scroll/the-team-behind-a-pro-iran-lego-themed-viral-video-campaign",
-      "score": 111,
-      "comments": 157,
+      "score": 114,
+      "comments": 164,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "Show HN: I built a tiny LLM to demystify how language models work",
       "url": "https://github.com/arman-bd/guppylm",
-      "score": 851,
+      "score": 852,
       "comments": 126,
       "source": "hackernews",
       "text": ""
@@ -86,7 +86,7 @@
     {
       "title": "The back story behind the first \"$1.8B\" dollar \"AI Company\"",
       "url": "https://garymarcus.substack.com/p/the-back-story-behind-the-first-18",
-      "score": 47,
+      "score": 48,
       "comments": 8,
       "source": "hackernews",
       "text": ""
@@ -110,7 +110,7 @@
     {
       "title": "Bernie Sanders: \"AI Is a Threat to Everything the American People Hold Dear\"",
       "url": "https://www.wsj.com/opinion/ai-is-a-threat-to-everything-the-american-people-hold-dear-a3286459",
-      "score": 34,
+      "score": 35,
       "comments": 34,
       "source": "hackernews",
       "text": ""
@@ -118,7 +118,7 @@
     {
       "title": "Nanocode: The best Claude Code that $200 can buy in pure JAX on TPUs",
       "url": "https://github.com/salmanmohammadi/nanocode/discussions/1",
-      "score": 206,
+      "score": 207,
       "comments": 26,
       "source": "hackernews",
       "text": ""
@@ -126,7 +126,7 @@
     {
       "title": "Anthropic is burning more and more dev goodwill",
       "url": "https://twitter.com/GergelyOrosz/status/2041133254586122605",
-      "score": 58,
+      "score": 59,
       "comments": 26,
       "source": "hackernews",
       "text": ""
@@ -152,14 +152,6 @@
       "url": "https://pacetraining.co/",
       "score": 17,
       "comments": 12,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "Tell HN: Anthropic no longer allowing Claude Code subscriptions to use OpenClaw",
-      "url": "https://news.ycombinator.com/item?id=47633396",
-      "score": 1091,
-      "comments": 827,
       "source": "hackernews",
       "text": ""
     },
@@ -247,131 +239,64 @@
   "summary": null,
   "summarized_items": [
     {
+      "title": "Anthropic expands partnership with Google and Broadcom for next-gen compute",
+      "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
+      "score": 191,
+      "comments": 90,
+      "source": "hackernews",
+      "text": "",
+      "title_ja": "Anthropic、次世代コンピューティングでGoogleとBroadcomとのパートナーシップを拡大",
+      "summary_ja": "AnthropicがGoogleとBroadcomとの戦略的パートナーシップを拡大し、次世代AI向けコンピューティングインフラを強化。大規模AIモデルの開発・運用体制を向上させる。",
+      "importance": 9,
+      "tags": [
+        "LLM",
+        "ビジネス"
+      ],
+      "category": "ビジネス"
+    },
+    {
       "title": "Show HN: Real-time AI (audio/video in, voice out) on an M3 Pro with Gemma E2B",
       "url": "https://github.com/fikrikarim/parlor",
       "score": 267,
       "comments": 31,
       "source": "hackernews",
       "text": "",
-      "title_ja": "M3 ProでリアルタイムAI：音声・映像入力から音声出力まで",
-      "summary_ja": "M3 ProチップとGemma E2Bを使用してリアルタイムで音声・映像処理を行い、音声で応答するAIシステムを実装。マルチモーダルAIの実用的な実装例を示している。",
+      "title_ja": "Show HN：M3 ProでGemma E2Bを使用したリアルタイムAI（音声/映像入力、音声出力）",
+      "summary_ja": "Apple M3 Proチップ上でリアルタイム音声・映像処理を行うAIシステムを構築。Gemma E2Bモデルを活用し、マルチモーダルな対話体験を実現している。",
       "importance": 8,
       "tags": [
         "LLM",
         "音声",
-        "Agent"
+        "オープンソース"
       ],
       "category": "技術"
     },
     {
-      "title": "Anthropic expands partnership with Google and Broadcom for next-gen compute",
-      "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
-      "score": 190,
-      "comments": 87,
+      "title": "AI singer now occupies eleven spots on iTunes singles chart",
+      "url": "https://www.showbiz411.com/2026/04/05/itunes-takeover-by-fake-ai-singer-eddie-dalton-now-occupies-eleven-spots-on-chart-despite-not-being-human-or-real-exclusive",
+      "score": 125,
+      "comments": 191,
       "source": "hackernews",
       "text": "",
-      "title_ja": "Anthropic、次世代コンピューティングでGoogleとBroadcomとの提携を拡大",
-      "summary_ja": "AnthropicがGoogleおよびBroadcomとの戦略的パートナーシップを拡大し、次世代コンピューティング技術の開発を加速。AIインフラストラクチャの強化を図っている。",
+      "title_ja": "AIシンガーがiTunesシングルチャート11位を占拠",
+      "summary_ja": "AI生成の歌声によるアーティストがiTunesシングルチャートで11の楽曲をランクイン。AI技術の音楽業界への影響が具体的な成果として現れている。",
       "importance": 8,
       "tags": [
-        "LLM",
+        "音声",
         "ビジネス"
-      ],
-      "category": "ビジネス"
-    },
-    {
-      "title": "Show HN: Gemma Gem – AI model embedded in a browser – no API keys, no cloud",
-      "url": "https://github.com/kessler/gemma-gem",
-      "score": 147,
-      "comments": 20,
-      "source": "hackernews",
-      "text": "",
-      "title_ja": "Gemma Gem：ブラウザ組み込みAIモデル、APIキーやクラウド不要",
-      "summary_ja": "Webブラウザに直接組み込まれたAIモデル「Gemma Gem」をリリース。APIキーやクラウド接続が不要で、完全にローカルで動作するブラウザベースのAIソリューションを実現。",
-      "importance": 8,
-      "tags": [
-        "LLM",
-        "オープンソース"
-      ],
-      "category": "ツール"
-    },
-    {
-      "title": "Show HN: I built a tiny LLM to demystify how language models work",
-      "url": "https://github.com/arman-bd/guppylm",
-      "score": 851,
-      "comments": 126,
-      "source": "hackernews",
-      "text": "",
-      "title_ja": "言語モデルの仕組みを解明する小型LLMを構築",
-      "summary_ja": "言語モデルの動作原理を理解しやすくするために、シンプルで小規模なLLMを実装したプロジェクト。教育目的で言語モデルの内部構造を分かりやすく説明している。",
-      "importance": 7,
-      "tags": [
-        "LLM",
-        "オープンソース"
-      ],
-      "category": "技術"
-    },
-    {
-      "title": "Launch HN: Freestyle – Sandboxes for Coding Agents",
-      "url": "https://www.freestyle.sh/",
-      "score": 230,
-      "comments": 121,
-      "source": "hackernews",
-      "text": "",
-      "title_ja": "Freestyle：コーディングエージェント向けサンドボックス環境をローンチ",
-      "summary_ja": "AIコーディングエージェントが安全に動作できるサンドボックス環境「Freestyle」をリリース。開発者がAIエージェントを安全にテストできるプラットフォームを提供している。",
-      "importance": 7,
-      "tags": [
-        "Agent",
-        "コード",
-        "ビジネス"
-      ],
-      "category": "ツール"
-    },
-    {
-      "title": "Nanocode: The best Claude Code that $200 can buy in pure JAX on TPUs",
-      "url": "https://github.com/salmanmohammadi/nanocode/discussions/1",
-      "score": 206,
-      "comments": 26,
-      "source": "hackernews",
-      "text": "",
-      "title_ja": "Nanocode：200ドルで手に入るTPU上のJAX実装Claude Code",
-      "summary_ja": "わずか200ドルの予算でTPU上にJAXを使って実装されたClaude Code相当の高性能AIシステム「Nanocode」を紹介。コスト効率的なAI実装の新しい可能性を示している。",
-      "importance": 7,
-      "tags": [
-        "LLM",
-        "コード",
-        "オープンソース"
-      ],
-      "category": "技術"
-    },
-    {
-      "title": "Tell HN: Anthropic no longer allowing Claude Code subscriptions to use OpenClaw",
-      "url": "https://news.ycombinator.com/item?id=47633396",
-      "score": 1091,
-      "comments": 827,
-      "source": "hackernews",
-      "text": "",
-      "title_ja": "AnthropicがClaude CodeでのOpenClawサブスクリプション利用を停止",
-      "summary_ja": "AnthropicがClaude Codeサブスクリプションユーザーに対してOpenClawの利用を制限する措置を発表。これまでOpenClawを活用していた開発者に影響を与える可能性がある。",
-      "importance": 6,
-      "tags": [
-        "LLM",
-        "ビジネス",
-        "コード"
       ],
       "category": "ビジネス"
     },
     {
       "title": "Issue: Claude Code is unusable for complex engineering tasks with Feb updates",
       "url": "https://github.com/anthropics/claude-code/issues/42796",
-      "score": 843,
-      "comments": 506,
+      "score": 869,
+      "comments": 510,
       "source": "hackernews",
       "text": "",
-      "title_ja": "Claude Codeの2月アップデートで複雑なエンジニアリングタスクが困難に",
-      "summary_ja": "Claude Codeの最新アップデートにより、複雑な開発作業での使い勝手が大幅に低下したという報告。エンジニアリング用途でのAIツールの実用性に関する課題が浮き彫りになっている。",
-      "importance": 6,
+      "title_ja": "問題：2月アップデートでClaude Codeが複雑なエンジニアリングタスクで使用不可",
+      "summary_ja": "Claude Codeの最新アップデートにより、複雑なエンジニアリング作業での実用性が低下している問題が報告されている。開発者コミュニティで議論が活発化している。",
+      "importance": 7,
       "tags": [
         "LLM",
         "コード"
@@ -385,9 +310,43 @@
       "comments": 99,
       "source": "hackernews",
       "text": "",
-      "title_ja": "LM StudioのCLIとClaude Codeを使ったGemma 4のローカル実行",
-      "summary_ja": "LM Studioの新しいヘッドレスCLIとClaude Codeを組み合わせて、Gemma 4をローカル環境で実行する手法を紹介。ローカルAI実行の新しいアプローチを提示している。",
-      "importance": 6,
+      "title_ja": "LM StudioのヘッドレスCLIとClaude CodeでGemma 4をローカル実行",
+      "summary_ja": "LM Studioの新しいコマンドラインツールを使用してGemma 4モデルをローカル環境で動作させる方法。Claude Codeとの連携により開発効率が向上している。",
+      "importance": 7,
+      "tags": [
+        "LLM",
+        "オープンソース",
+        "コード"
+      ],
+      "category": "技術"
+    },
+    {
+      "title": "Launch HN: Freestyle – Sandboxes for Coding Agents",
+      "url": "https://www.freestyle.sh/",
+      "score": 234,
+      "comments": 126,
+      "source": "hackernews",
+      "text": "",
+      "title_ja": "Launch HN：Freestyle – コーディングエージェント用サンドボックス",
+      "summary_ja": "AIコーディングエージェントが安全にコードを実行・テストできるサンドボックス環境を提供するプラットフォーム。開発プロセスの自動化と安全性向上を目指している。",
+      "importance": 7,
+      "tags": [
+        "Agent",
+        "コード",
+        "ビジネス"
+      ],
+      "category": "ツール"
+    },
+    {
+      "title": "Show HN: Gemma Gem – AI model embedded in a browser – no API keys, no cloud",
+      "url": "https://github.com/kessler/gemma-gem",
+      "score": 147,
+      "comments": 20,
+      "source": "hackernews",
+      "text": "",
+      "title_ja": "Show HN：Gemma Gem – ブラウザ内蔵AIモデル（APIキー不要、クラウド不要）",
+      "summary_ja": "ブラウザ内で直接動作するAIモデルを開発。APIキーやクラウド接続が不要でプライバシーを重視した設計となっている。",
+      "importance": 7,
       "tags": [
         "LLM",
         "オープンソース"
@@ -401,23 +360,56 @@
       "comments": 287,
       "source": "hackernews",
       "text": "",
-      "title_ja": "8年間の構想、AIで3ヶ月の開発実現",
-      "summary_ja": "開発者が8年間温めていたアイデアをAI技術を活用してわずか3ヶ月で実装することに成功した事例。AI支援開発の効率性を示す実践例として注目される。",
-      "importance": 5,
+      "title_ja": "8年間の願望、AIとの3ヶ月の構築",
+      "summary_ja": "長年構想していたプロジェクトをAI技術を活用して短期間で実現した事例。AIツールの活用により開発効率が大幅に向上したことを示している。",
+      "importance": 6,
       "tags": [
         "LLM",
-        "コード"
+        "ビジネス"
+      ],
+      "category": "ビジネス"
+    },
+    {
+      "title": "Show HN: I built a tiny LLM to demystify how language models work",
+      "url": "https://github.com/arman-bd/guppylm",
+      "score": 852,
+      "comments": 126,
+      "source": "hackernews",
+      "text": "",
+      "title_ja": "Show HN：言語モデルの仕組みを解明する小型LLMを構築",
+      "summary_ja": "言語モデルの動作原理を理解するための教育用小型LLMを開発。LLMの内部構造や学習過程を可視化し、技術者の理解促進を目的としている。",
+      "importance": 6,
+      "tags": [
+        "LLM",
+        "オープンソース"
+      ],
+      "category": "ツール"
+    },
+    {
+      "title": "Nanocode: The best Claude Code that $200 can buy in pure JAX on TPUs",
+      "url": "https://github.com/salmanmohammadi/nanocode/discussions/1",
+      "score": 207,
+      "comments": 26,
+      "source": "hackernews",
+      "text": "",
+      "title_ja": "Nanocode：TPU上のJAXで200ドルで購入できる最高のClaude Code",
+      "summary_ja": "JAXフレームワークとTPUを活用した低コストで高性能なコード生成AI。200ドルという手頃な価格でClaude Codeレベルの性能を実現している。",
+      "importance": 6,
+      "tags": [
+        "LLM",
+        "コード",
+        "オープンソース"
       ],
       "category": "技術"
     }
   ],
-  "digest": "## 1. 今日の最重要トレンド\n\n**ローカル実行型AIの実用化加速**が最重要トレンドです。M3 ProでのリアルタイムマルチモーダルAI実装やブラウザ組み込み型Gemma Gemなど、クラウド依存を脱却した軽量・高速なAIソリューションが続々登場しています。プライバシー保護とコスト削減を両立した次世代AI基盤が整いつつあります。\n\n## 2. ビジネスへの示唆\n\n企業はAPIコストやクラウド依存リスクを大幅に削減できる一方、社内データを外部に送信せずにAI活用が可能になります。特に機密性が重要な業界では、ローカル実行型AIの導入が競争優位性を生む可能性があります。\n\n## 3. 注目すべき技術動向\n\nマルチモーダルAI（音声・映像・テキスト統合処理）の実用レベル到達と、AIエージェント開発基盤の整備が急速に進展しています。また、教育・研究目的での透明性の高いAI開発手法も注目を集めており、AI技術の民主化が加速しています。",
+  "digest": "## 1. 今日の最重要トレンド\nAnthropicのGoogleとBroadcomとの戦略的パートナーシップ拡大が注目される。AI企業間の連携強化により、次世代コンピューティングインフラの構築が加速している。一方で、AIが音楽業界で実用的な成果を上げている一方、開発ツールの品質低下問題も顕在化している。\n\n## 2. ビジネスへの示唆\nAI技術の実用化が音楽業界で具体的な商業的成功を生み出しており、他業界への応用可能性が高まっている。ただし、開発ツールの品質管理とローカル実行環境の整備が競争優位性の鍵となる。\n\n## 3. 注目すべき技術動向\nM3 ProでのリアルタイムマルチモーダルAI処理とローカルでのLLM実行環境の整備が進展している。開発者向けツールの使いやすさと性能のバランスが重要な課題として浮上している。",
   "top_tags": {
-    "LLM": 9,
-    "コード": 5,
-    "オープンソース": 4,
-    "ビジネス": 3,
-    "Agent": 2,
-    "音声": 1
+    "LLM": 8,
+    "オープンソース": 5,
+    "ビジネス": 4,
+    "コード": 4,
+    "音声": 2,
+    "Agent": 1
   }
 }
