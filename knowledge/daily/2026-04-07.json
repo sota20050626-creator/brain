@@ -1,61 +1,77 @@
 {
   "date": "2026-04-07",
-  "collected_at": "2026-04-07T14:58:40.184564+00:00",
-  "total": 38,
+  "collected_at": "2026-04-07T16:08:48.878503+00:00",
+  "total": 39,
   "raw_items": [
+    {
+      "title": "Claude Code is locking people out for hours",
+      "url": "https://github.com/anthropics/claude-code/issues/44257",
+      "score": 130,
+      "comments": 126,
+      "source": "hackernews",
+      "text": ""
+    },
     {
       "title": "Blackholing My Email",
       "url": "https://www.johnsto.co.uk/blog/blackholing-my-email/",
-      "score": 109,
-      "comments": 7,
+      "score": 121,
+      "comments": 13,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "AI may be making us think and write more alike",
       "url": "https://dornsife.usc.edu/news/stories/ai-may-be-making-us-think-and-write-more-alike/",
-      "score": 139,
-      "comments": 133,
+      "score": 168,
+      "comments": 160,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "Issue: Claude Code is unusable for complex engineering tasks with Feb updates",
       "url": "https://github.com/anthropics/claude-code/issues/42796",
-      "score": 1233,
-      "comments": 673,
+      "score": 1252,
+      "comments": 690,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "Launch HN: Freestyle – Sandboxes for Coding Agents",
       "url": "https://www.freestyle.sh/",
-      "score": 299,
+      "score": 301,
       "comments": 151,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "Show HN: AdaShape-3D modeler for intuitive 3D printing parts / Windows 11",
-      "url": "https://adashape.com",
-      "score": 26,
-      "comments": 18,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "AI singer now occupies eleven spots on iTunes singles chart",
       "url": "https://www.showbiz411.com/2026/04/05/itunes-takeover-by-fake-ai-singer-eddie-dalton-now-occupies-eleven-spots-on-chart-despite-not-being-human-or-real-exclusive",
-      "score": 226,
-      "comments": 349,
+      "score": 230,
+      "comments": 354,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Claude is having another moment, again",
+      "url": "https://downdetector.co.uk/status/claude-ai/",
+      "score": 12,
+      "comments": 0,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Show HN: AdaShape-3D modeler for intuitive 3D printing parts / Windows 11",
+      "url": "https://adashape.com",
+      "score": 27,
+      "comments": 22,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "Anthropic expands partnership with Google and Broadcom for next-gen compute",
       "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
-      "score": 265,
-      "comments": 118,
+      "score": 266,
+      "comments": 119,
       "source": "hackernews",
       "text": ""
     },
@@ -70,8 +86,8 @@
     {
       "title": "The team behind a pro-Iran, Lego-themed viral-video campaign",
       "url": "https://www.newyorker.com/culture/infinite-scroll/the-team-behind-a-pro-iran-lego-themed-viral-video-campaign",
-      "score": 144,
-      "comments": 233,
+      "score": 149,
+      "comments": 235,
       "source": "hackernews",
       "text": ""
     },
@@ -86,23 +102,23 @@
     {
       "title": "Wikipedia's AI agent row likely just the beginning of the bot-ocalypse",
       "url": "https://www.malwarebytes.com/blog/ai/2026/04/wikipedias-ai-agent-row-likely-just-the-beginning-of-the-bot-ocalypse",
-      "score": 56,
-      "comments": 60,
+      "score": 59,
+      "comments": 69,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "Show HN: I built a tiny LLM to demystify how language models work",
       "url": "https://github.com/arman-bd/guppylm",
-      "score": 884,
-      "comments": 131,
+      "score": 885,
+      "comments": 132,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "Show HN: Real-time AI (audio/video in, voice out) on an M3 Pro with Gemma E2B",
       "url": "https://github.com/fikrikarim/parlor",
-      "score": 277,
+      "score": 279,
       "comments": 35,
       "source": "hackernews",
       "text": ""
@@ -110,16 +126,8 @@
     {
       "title": "Drop, formerly Massdrop, ends most collaborations and rebrands under Corsair",
       "url": "https://drop.com/",
-      "score": 130,
-      "comments": 70,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "No \"New Deal\" for OpenAI",
-      "url": "https://minutes.substack.com/p/no-new-deal-for-openai",
-      "score": 9,
-      "comments": 1,
+      "score": 131,
+      "comments": 71,
       "source": "hackernews",
       "text": ""
     },
@@ -140,10 +148,10 @@
       "text": ""
     },
     {
-      "title": "Nanocode: The best Claude Code that $200 can buy in pure JAX on TPUs",
-      "url": "https://github.com/salmanmohammadi/nanocode/discussions/1",
-      "score": 214,
-      "comments": 26,
+      "title": "No \"New Deal\" for OpenAI",
+      "url": "https://minutes.substack.com/p/no-new-deal-for-openai",
+      "score": 10,
+      "comments": 1,
       "source": "hackernews",
       "text": ""
     },
@@ -230,7 +238,7 @@
     {
       "title": "Significant-Gravitas/AutoGPT - AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "score": 183213,
+      "score": 183214,
       "comments": 0,
       "source": "github_trending",
       "text": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
@@ -238,7 +246,7 @@
     {
       "title": "ollama/ollama - Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
       "url": "https://github.com/ollama/ollama",
-      "score": 167991,
+      "score": 168001,
       "comments": 0,
       "source": "github_trending",
       "text": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
@@ -246,7 +254,7 @@
     {
       "title": "huggingface/transformers - 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
       "url": "https://github.com/huggingface/transformers",
-      "score": 158965,
+      "score": 158970,
       "comments": 0,
       "source": "github_trending",
       "text": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. "
@@ -254,7 +262,7 @@
     {
       "title": "f/prompts.chat - f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
       "url": "https://github.com/f/prompts.chat",
-      "score": 157807,
+      "score": 157811,
       "comments": 0,
       "source": "github_trending",
       "text": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
@@ -262,7 +270,7 @@
     {
       "title": "langgenius/dify - Production-ready platform for agentic workflow development.",
       "url": "https://github.com/langgenius/dify",
-      "score": 136571,
+      "score": 136584,
       "comments": 0,
       "source": "github_trending",
       "text": "Production-ready platform for agentic workflow development."
@@ -270,7 +278,7 @@
     {
       "title": "openclaw/openclaw - Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
       "url": "https://github.com/openclaw/openclaw",
-      "score": 350922,
+      "score": 350988,
       "comments": 0,
       "source": "github_trending",
       "text": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 "
@@ -278,7 +286,7 @@
     {
       "title": "n8n-io/n8n - Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "url": "https://github.com/n8n-io/n8n",
-      "score": 182802,
+      "score": 182813,
       "comments": 0,
       "source": "github_trending",
       "text": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
@@ -286,7 +294,7 @@
     {
       "title": "tensorflow/tensorflow - An Open Source Machine Learning Framework for Everyone",
       "url": "https://github.com/tensorflow/tensorflow",
-      "score": 194563,
+      "score": 194564,
       "comments": 0,
       "source": "github_trending",
       "text": "An Open Source Machine Learning Framework for Everyone"
@@ -294,7 +302,7 @@
     {
       "title": "pytorch/pytorch - Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "url": "https://github.com/pytorch/pytorch",
-      "score": 98890,
+      "score": 98893,
       "comments": 0,
       "source": "github_trending",
       "text": "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
@@ -302,7 +310,7 @@
     {
       "title": "netdata/netdata - The fastest path to AI-powered full stack observability, even for lean teams.",
       "url": "https://github.com/netdata/netdata",
-      "score": 78348,
+      "score": 78349,
       "comments": 0,
       "source": "github_trending",
       "text": "The fastest path to AI-powered full stack observability, even for lean teams."
@@ -311,15 +319,30 @@
   "summary": null,
   "summarized_items": [
     {
+      "title": "tensorflow/tensorflow - An Open Source Machine Learning Framework for Everyone",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "score": 194564,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "An Open Source Machine Learning Framework for Everyone",
+      "title_ja": "TensorFlow - 機械学習フレームワーク",
+      "summary_ja": "Googleが開発したオープンソースの機械学習フレームワーク。誰でも利用できる包括的なML開発環境を提供している。",
+      "importance": 9,
+      "tags": [
+        "オープンソース"
+      ],
+      "category": "技術"
+    },
+    {
       "title": "huggingface/transformers - 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
       "url": "https://github.com/huggingface/transformers",
-      "score": 158965,
+      "score": 158970,
       "comments": 0,
       "source": "github_trending",
       "text": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
-      "title_ja": "Hugging Face Transformers - 最先端マルチモーダル機械学習モデルフレームワーク",
-      "summary_ja": "テキスト、画像、音声、マルチモーダルモデルに対応する最先端の機械学習フレームワーク。推論と学習の両方をサポートし、機械学習コミュニティで広く利用されている。事実上の業界標準。",
-      "importance": 10,
+      "title_ja": "Hugging Face Transformers - 最先端MLモデルフレームワーク",
+      "summary_ja": "テキスト、視覚、音声、マルチモーダルモデルのための最先端機械学習モデルフレームワーク。推論と学習の両方に対応している。",
+      "importance": 9,
       "tags": [
         "LLM",
         "画像生成",
@@ -329,29 +352,14 @@
       "category": "技術"
     },
     {
-      "title": "tensorflow/tensorflow - An Open Source Machine Learning Framework for Everyone",
-      "url": "https://github.com/tensorflow/tensorflow",
-      "score": 194563,
-      "comments": 0,
-      "source": "github_trending",
-      "text": "An Open Source Machine Learning Framework for Everyone",
-      "title_ja": "TensorFlow - 万人向けオープンソース機械学習フレームワーク",
-      "summary_ja": "Googleが開発した業界標準の機械学習フレームワーク。研究から本番環境まで幅広く利用されている。機械学習・ディープラーニング開発の基盤技術として重要な位置を占める。",
-      "importance": 9,
-      "tags": [
-        "オープンソース"
-      ],
-      "category": "技術"
-    },
-    {
       "title": "pytorch/pytorch - Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "url": "https://github.com/pytorch/pytorch",
-      "score": 98890,
+      "score": 98893,
       "comments": 0,
       "source": "github_trending",
       "text": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
-      "title_ja": "PyTorch - GPU加速対応の動的ニューラルネットワークフレームワーク",
-      "summary_ja": "強力なGPU加速を持つPython向けテンソル計算・動的ニューラルネットワークフレームワーク。研究分野で特に人気が高く、TensorFlowと並ぶ機械学習の基盤技術。",
+      "title_ja": "PyTorch - 動的ニューラルネットワークライブラリ",
+      "summary_ja": "強力なGPU加速を備えたPython向けのテンソルと動的ニューラルネットワークライブラリ。研究から本番環境まで幅広く利用されている。",
       "importance": 9,
       "tags": [
         "オープンソース"
@@ -361,64 +369,65 @@
     {
       "title": "Significant-Gravitas/AutoGPT - AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "score": 183213,
+      "score": 183214,
       "comments": 0,
       "source": "github_trending",
       "text": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
-      "title_ja": "AutoGPT - 万人がアクセス可能なAI構築プラットフォーム",
-      "summary_ja": "誰でもAIを利用・構築できることを目指すオープンソースプロジェクト。重要なことに集中できるよう、必要なツールを提供することをミッションとしている。自律型AIエージェントの先駆け的存在。",
+      "title_ja": "AutoGPT - 誰でも使えるAIツール",
+      "summary_ja": "アクセスしやすいAIの実現を目指すプロジェクト。重要なことに集中できるよう、必要なツールを提供することをミッションとしている。",
       "importance": 8,
       "tags": [
         "Agent",
         "オープンソース"
       ],
-      "category": "技術"
+      "category": "ツール"
     },
     {
       "title": "ollama/ollama - Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
       "url": "https://github.com/ollama/ollama",
-      "score": 167991,
+      "score": 168001,
       "comments": 0,
       "source": "github_trending",
       "text": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
-      "title_ja": "Ollama - 多様なAIモデルの簡単実行環境",
-      "summary_ja": "Kimi-K2.5、GLM-5、MiniMax、DeepSeekなど多数のAIモデルを簡単に実行できるプラットフォーム。ローカル環境でのLLM実行を簡単にするツールとして注目されている。",
+      "title_ja": "Ollama - ローカルLLMランナー",
+      "summary_ja": "Kimi-K2.5、GLM-5、MiniMax、DeepSeek、Qwenなど様々な大規模言語モデルを簡単に実行できるツール。中国製モデルも多数サポート。",
       "importance": 8,
       "tags": [
         "LLM",
-        "オープンソース",
-        "中国AI"
+        "中国AI",
+        "オープンソース"
       ],
       "category": "ツール"
     },
     {
       "title": "langgenius/dify - Production-ready platform for agentic workflow development.",
       "url": "https://github.com/langgenius/dify",
-      "score": 136571,
+      "score": 136584,
       "comments": 0,
       "source": "github_trending",
       "text": "Production-ready platform for agentic workflow development.",
-      "title_ja": "Dify - 本格運用対応のエージェンティックワークフロー開発プラットフォーム",
-      "summary_ja": "エージェンティックワークフロー開発に特化した本格運用レベルのプラットフォーム。AIエージェントのワークフローを効率的に開発・運用できる環境を提供している。",
+      "title_ja": "Dify - エージェントワークフロー開発プラットフォーム",
+      "summary_ja": "本格的なエージェントワークフローの開発に特化した本番環境対応プラットフォーム。企業レベルでのAIエージェント構築を支援する。",
       "importance": 8,
       "tags": [
         "Agent",
         "ビジネス",
         "オープンソース"
       ],
-      "category": "技術"
+      "category": "ツール"
     },
     {
       "title": "n8n-io/n8n - Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "url": "https://github.com/n8n-io/n8n",
-      "score": 182802,
+      "score": 182813,
       "comments": 0,
       "source": "github_trending",
       "text": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-      "title_ja": "n8n - AI機能搭載のワークフロー自動化プラットフォーム",
-      "summary_ja": "ネイティブAI機能を持つフェアコードライセンスの自動化プラットフォーム。ビジュアル構築とカスタムコードを組み合わせ可能で、400以上の統合機能を提供。セルフホストとクラウド両方に対応。",
+      "title_ja": "n8n - AIワークフロー自動化プラットフォーム",
+      "summary_ja": "ネイティブなAI機能を搭載したワークフロー自動化プラットフォーム。ビジュアルビルディングとカスタムコードの組み合わせ、400以上の統合機能を提供。",
       "importance": 7,
       "tags": [
+        "Agent",
         "ビジネス",
         "オープンソース"
       ],
@@ -427,12 +436,12 @@
     {
       "title": "openclaw/openclaw - Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
       "url": "https://github.com/openclaw/openclaw",
-      "score": 350922,
+      "score": 350988,
       "comments": 0,
       "source": "github_trending",
       "text": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
-      "title_ja": "openclaw/openclaw - クロスプラットフォーム対応の個人向けAIアシスタント",
-      "summary_ja": "あらゆるOS・プラットフォームで動作する個人向けAIアシスタントプロジェクト。ユニークな「ロブスターウェイ」というコンセプトを掲げている。クロスプラットフォーム対応が特徴的。",
+      "title_ja": "openclaw - パーソナルAIアシスタント",
+      "summary_ja": "どのOSやプラットフォームでも動作する個人向けAIアシスタント。ロブスターをテーマにしたユニークなアプローチを採用している。",
       "importance": 6,
       "tags": [
         "Agent",
@@ -443,12 +452,12 @@
     {
       "title": "f/prompts.chat - f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
       "url": "https://github.com/f/prompts.chat",
-      "score": 157807,
+      "score": 157811,
       "comments": 0,
       "source": "github_trending",
       "text": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
-      "title_ja": "Prompts.chat - ChatGPTプロンプト共有コミュニティプラットフォーム",
-      "summary_ja": "コミュニティでプロンプトを共有・発見・収集できるオープンソースプラットフォーム。組織向けには完全なプライバシーを保証するセルフホスティングオプションも提供。元Awesome ChatGPT Prompts。",
+      "title_ja": "prompts.chat - ChatGPTプロンプト共有プラットフォーム",
+      "summary_ja": "コミュニティからプロンプトを共有、発見、収集できるプラットフォーム。完全なプライバシーを保つセルフホスト機能付きの無料オープンソースツール。",
       "importance": 6,
       "tags": [
         "LLM",
@@ -459,12 +468,12 @@
     {
       "title": "netdata/netdata - The fastest path to AI-powered full stack observability, even for lean teams.",
       "url": "https://github.com/netdata/netdata",
-      "score": 78348,
+      "score": 78349,
       "comments": 0,
       "source": "github_trending",
       "text": "The fastest path to AI-powered full stack observability, even for lean teams.",
-      "title_ja": "Netdata - 少人数チーム向けAI活用フルスタック監視ソリューション",
-      "summary_ja": "少人数チームでもAIを活用したフルスタック監視を実現する最速のソリューション。システム監視にAI技術を統合し、効率的な運用監視を可能にしている。",
+      "title_ja": "Netdata - AI搭載システム監視ツール",
+      "summary_ja": "少人数チームでもAIによるフルスタック監視を実現する最速パス。システムの可観測性をAIで強化したモニタリングソリューション。",
       "importance": 6,
       "tags": [
         "ビジネス",
@@ -473,11 +482,11 @@
       "category": "ツール"
     }
   ],
-  "digest": "## 今日の最重要トレンド\n機械学習フレームワークの成熟化と民主化が加速している。Hugging Face、TensorFlow、PyTorchが基盤技術として確立される一方、AutoGPTやOllamaのような「誰でも使える」ツールが普及し、AI開発の敷居を大幅に下げている。研究から実用化、そして一般利用者まで、AI技術のアクセシビリティが飛躍的に向上している。\n\n## ビジネスへの示唆\n専門知識がなくてもAI活用が可能になり、中小企業でもAI導入の機会が拡大している。ローカル環境での実行により、データプライバシーを保護しながらコスト効率的にAIを活用できる新たなビジネスモデルが生まれている。\n\n## 注目すべき技術動向\nマルチモーダル対応とローカル実行環境の整備が進み、クラウド依存からの脱却が可能になっている。自律型AIエージェントの実用化により、従来の単発タスクから継続的な業務自動化への移行が始まっている。",
+  "digest": "## 今日のAIトレンドまとめ\n\n### 1. 最重要トレンド\nAIの民主化が加速しており、TensorFlowやHugging Face Transformersなどのオープンソースフレームワークが普及の中心となっている。特にOllamaによるローカル環境でのLLM実行や、AutoGPTの誰でも使えるAIツール提供により、技術的ハードルが大幅に下がっている。研究レベルの技術が実用化段階に入り、企業や個人が手軽にAI活用できる環境が整いつつある。\n\n### 2. ビジネスへの示唆\n高額なクラウドサービスに依存せず、ローカル環境でAI活用が可能になることで、中小企業でもコスト効率よくAI導入ができる。オープンソースツールの活用により、カスタマイズ性の高いAIソリューション構築が現実的な選択肢となっている。\n\n### 3. 注目すべき技術動向\n中国製LLMモデルの台頭により、AI技術の多極化が進んでいる。研究用PyTorchから本番環境のTensorFlowまで、用途別フレームワークの使い分けが一般化し、技術選択の幅が拡大している。",
   "top_tags": {
     "オープンソース": 10,
+    "Agent": 4,
     "LLM": 3,
-    "Agent": 3,
     "ビジネス": 3,
     "画像生成": 1,
     "音声": 1,
