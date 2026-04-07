@@ -1,12 +1,16 @@
 import json
+import re
 from datetime import datetime, timedelta
 from pathlib import Path
 
 DAILY_DIR = Path("knowledge/daily")
 PROPOSALS_DIR = Path("knowledge/proposals")
+DRAFTS_DIR = Path("knowledge/drafts")
 KNOWLEDGE_FILE = Path("knowledge/knowledge_base.json")
 OUTPUT = Path("dashboard/index.html")
 OUTPUT.parent.mkdir(exist_ok=True)
+
+GITHUB_REPO = "sota20050626-creator/brain"
 
 
 def load_recent(days=7):
@@ -33,6 +37,38 @@ def load_pending_proposals():
         for fp in sorted(PROPOSALS_DIR.glob("proposal_*.md"), reverse=True)[:3]:
             proposals.append(fp.name)
     return proposals
+
+
+def load_x_drafts():
+    """今日のX下書きを読み込む"""
+    today = datetime.now().strftime("%Y-%m-%d")
+    fp = DRAFTS_DIR / f"x_{today}.md"
+    if not fp.exists():
+        # 昨日のを探す
+        yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+        fp = DRAFTS_DIR / f"x_{yesterday}.md"
+    if not fp.exists():
+        return [], ""
+    with open(fp, encoding="utf-8") as f:
+        content = f.read()
+    date_str = fp.stem.replace("x_", "")
+    posts = re.findall(r"投稿\d+:\n(.*?)(?=\n投稿\d+:|\Z)", content, re.DOTALL)
+    posts = [p.strip() for p in posts if p.strip()]
+    return posts, date_str
+
+
+def load_note_draft():
+    """最新のnote下書きを読み込む"""
+    if not DRAFTS_DIR.exists():
+        return "", ""
+    files = sorted(DRAFTS_DIR.glob("note_*.md"), reverse=True)
+    if not files:
+        return "", ""
+    fp = files[0]
+    date_str = fp.stem.replace("note_", "")
+    with open(fp, encoding="utf-8") as f:
+        content = f.read()
+    return content[:2000], date_str
 
 
 def build_html(days_data, proposals, knowledge):
@@ -81,6 +117,33 @@ def build_html(days_data, proposals, knowledge):
     if not proposals_html:
         proposals_html = '<div class="proposal-item muted">承認待ちの提案はありません</div>'
 
+    # X下書き
+    x_posts, x_date = load_x_drafts()
+    x_drafts_html = ""
+    if x_posts:
+        for i, post in enumerate(x_posts, 1):
+            escaped = post.replace("`", "&#96;").replace("\\", "\\\\").replace("\n", "\\n")
+            x_drafts_html += (
+                '<div class="draft-card">'
+                + '<div class="draft-num">投稿 ' + str(i) + '</div>'
+                + '<div class="draft-text">' + post.replace("\n", "<br>") + '</div>'
+                + '<button class="copy-btn" onclick="copyText(`' + escaped + '`)">コピー</button>'
+                + '</div>'
+            )
+    else:
+        x_drafts_html = '<div class="muted-msg">今日のX下書きはまだ生成されていません</div>'
+
+    # note下書き
+    note_content, note_date = load_note_draft()
+    if note_content:
+        note_html = (
+            '<div class="note-date">📅 ' + note_date + ' 生成</div>'
+            + '<div class="note-preview">' + note_content.replace("\n", "<br>") + '...</div>'
+            + '<a class="note-link" href="https://github.com/' + GITHUB_REPO + '/blob/main/knowledge/drafts/note_' + note_date + '.md" target="_blank">GitHubで全文を見る →</a>'
+        )
+    else:
+        note_html = '<div class="muted-msg">note下書きはまだ生成されていません（毎週月曜に自動生成）</div>'
+
     kb_days = knowledge.get("days_covered", 0)
     kb_articles = knowledge.get("total_articles", 0)
     total_items = len(items)
@@ -102,6 +165,9 @@ def build_html(days_data, proposals, knowledge):
         .replace("{{HISTORY_HTML}}", history_html)
         .replace("{{PROPOSALS_HTML}}", proposals_html)
         .replace("{{KB_ENTRIES_JSON}}", kb_entries_json)
+        .replace("{{X_DRAFTS_HTML}}", x_drafts_html)
+        .replace("{{NOTE_HTML}}", note_html)
+        .replace("{{GITHUB_REPO}}", GITHUB_REPO)
     )
 
     return html
