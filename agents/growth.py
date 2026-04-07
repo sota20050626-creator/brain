@@ -19,11 +19,44 @@ WEEKDAY = datetime.now().weekday()
 KNOWLEDGE_DIR = Path("knowledge")
 PROPOSALS_DIR = KNOWLEDGE_DIR / "proposals"
 DRAFTS_DIR = KNOWLEDGE_DIR / "drafts"
+COST_FILE = KNOWLEDGE_DIR / "cost_log.json"
 PROPOSALS_DIR.mkdir(parents=True, exist_ok=True)
 DRAFTS_DIR.mkdir(parents=True, exist_ok=True)
 
+SONNET_INPUT_PRICE = 3.0 / 1_000_000
+SONNET_OUTPUT_PRICE = 15.0 / 1_000_000
 
-def call_claude(prompt, max_tokens=2000):
+
+def load_cost_log():
+    if not COST_FILE.exists():
+        return {"monthly": {}, "total_usd": 0}
+    with open(COST_FILE, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def save_cost(input_tokens, output_tokens, label):
+    cost = input_tokens * SONNET_INPUT_PRICE + output_tokens * SONNET_OUTPUT_PRICE
+    log = load_cost_log()
+    month = TODAY[:7]
+    if month not in log["monthly"]:
+        log["monthly"][month] = {"usd": 0, "calls": [], "input_tokens": 0, "output_tokens": 0}
+    log["monthly"][month]["usd"] = round(log["monthly"][month]["usd"] + cost, 6)
+    log["monthly"][month]["input_tokens"] += input_tokens
+    log["monthly"][month]["output_tokens"] += output_tokens
+    log["monthly"][month]["calls"].append({
+        "date": TODAY,
+        "label": label,
+        "input_tokens": input_tokens,
+        "output_tokens": output_tokens,
+        "usd": round(cost, 6)
+    })
+    log["total_usd"] = round(sum(v["usd"] for v in log["monthly"].values()), 6)
+    with open(COST_FILE, "w", encoding="utf-8") as f:
+        json.dump(log, f, ensure_ascii=False, indent=2)
+    return cost
+
+
+def call_claude(prompt, max_tokens=2000, label="api_call"):
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     payload = json.dumps({
         "model": "claude-sonnet-4-20250514",
@@ -40,7 +73,10 @@ def call_claude(prompt, max_tokens=2000):
         }
     )
     with urllib.request.urlopen(req) as r:
-        return json.loads(r.read())["content"][0]["text"]
+        result = json.loads(r.read())
+    usage = result.get("usage", {})
+    save_cost(usage.get("input_tokens", 0), usage.get("output_tokens", 0), label)
+    return result["content"][0]["text"]
 
 
 def load_recent_data(days=30):
@@ -108,7 +144,7 @@ def generate_x_drafts(items):
 
 投稿3:
 （本文）"""
-    return call_claude(prompt, max_tokens=800)
+    return call_claude(prompt, max_tokens=800, label="x_drafts")
 
 
 def save_x_drafts(drafts_text):
@@ -147,7 +183,7 @@ def analyze_trends(items, tags):
 3. 見落とされているが重要なシグナル
 
 日本語で、具体的かつ鋭い分析をしてください。"""
-    return call_claude(prompt, max_tokens=1000)
+    return call_claude(prompt, max_tokens=1000, label="analyze_trends")
 
 
 def generate_business_ideas(trend_analysis):
@@ -166,7 +202,7 @@ def generate_business_ideas(trend_analysis):
 
 実現可能性が高く、$30/月以下のコストで始められるものを優先してください。
 日本語で具体的に書いてください。"""
-    return call_claude(prompt, max_tokens=1500)
+    return call_claude(prompt, max_tokens=1500, label="business_ideas")
 
 
 def generate_note_draft(trend_analysis, items):
@@ -213,7 +249,7 @@ def generate_note_draft(trend_analysis, items):
 - 専門用語は必ず一言で説明を添える
 - 数字・固有名詞を積極的に使う
 - 日本語で書く"""
-    return call_claude(prompt, max_tokens=3000)
+    return call_claude(prompt, max_tokens=3000, label="note_draft")
 
 
 def save_note_draft(note_text):
@@ -249,15 +285,10 @@ def generate_agent_improvements():
 
 各提案について「実装コスト」「期待効果」「リスク」を明記してください。
 これらは提案です。実装はオーナーの承認後に行います。"""
-    return call_claude(prompt, max_tokens=1000)
+    return call_claude(prompt, max_tokens=1000, label="agent_improvements")
 
-
-# ────────────────────────────────────────────
-# 新技術発見・自己搭載機能
-# ────────────────────────────────────────────
 
 def fetch_latest_ai_papers():
-    """ArXivから今週の最新AI論文を取得"""
     query = urllib.parse.quote("cat:cs.AI OR cat:cs.LG OR cat:cs.CL")
     url = (
         "https://export.arxiv.org/api/query?search_query=" + query
@@ -285,7 +316,6 @@ def fetch_latest_ai_papers():
 
 
 def discover_applicable_technologies(papers, current_code_summary):
-    """論文からBrainに搭載可能な技術を発見"""
     papers_text = "\n".join([
         "- " + p["title"] + ": " + p["summary"][:150]
         for p in papers[:10]
@@ -319,7 +349,7 @@ def discover_applicable_technologies(papers, current_code_summary):
 ]
 
 JSONのみを返してください。"""
-    response = call_claude(prompt, max_tokens=2000)
+    response = call_claude(prompt, max_tokens=2000, label="discover_tech")
     try:
         match = re.search(r"\[.*\]", response, re.DOTALL)
         if not match:
@@ -331,7 +361,6 @@ JSONのみを返してください。"""
 
 
 def generate_tech_integration_code(tech, current_code, filename):
-    """発見した技術をコードに統合"""
     prompt = """あなたは優秀なPythonエンジニアです。
 以下の技術を既存のコードに統合してください。
 
@@ -349,97 +378,8 @@ def generate_tech_integration_code(tech, current_code, filename):
 - 失敗しても既存機能が動くようにtry/exceptを使う
 - 必ず ```python から始まり ``` で終わる形式で返す
 - 必ず動作するコードを返す"""
-    return call_claude(prompt, max_tokens=4000)
+    return call_claude(prompt, max_tokens=4000, label="tech_integration_" + filename)
 
-
-def auto_integrate_new_tech(trend_analysis):
-    """新技術を発見してPRを作成"""
-    token = os.environ.get("GITHUB_TOKEN")
-    repo = os.environ.get("GITHUB_REPOSITORY")
-    if not token or not repo:
-        print("  GITHUB_TOKEN または GITHUB_REPOSITORY が未設定のためスキップ")
-        return
-
-    print("  最新AI論文を取得中...")
-    papers = fetch_latest_ai_papers()
-    if not papers:
-        print("  論文取得失敗、スキップ")
-        return
-
-    # 現在のシステム概要を作成
-    current_code_summary = """
-- collector.py: HackerNews/ArXiv/GitHubからAI情報を収集
-- summarizer.py: Claude APIで日本語要約・重要度スコアリング
-- growth.py: X投稿文・note下書き・自動PR生成
-"""
-
-    print("  搭載可能な新技術を分析中...")
-    technologies = discover_applicable_technologies(papers, current_code_summary)
-    if not technologies:
-        print("  搭載可能な技術が見つかりませんでした")
-        return
-
-    print("  " + str(len(technologies)) + " 件の搭載可能技術を発見")
-
-    branch_name = "brain-new-tech-" + datetime.now().strftime("%Y-%m-%d-%H%M")
-    if not create_branch(repo, branch_name, token):
-        return
-
-    integrated = []
-    for tech in technologies[:2]:
-        filename = tech.get("target_file", "")
-        if filename not in ["collector.py", "summarizer.py", "growth.py"]:
-            continue
-
-        filepath = "agents/" + filename
-        print("  " + filename + " に " + tech["title"] + " を統合中...")
-
-        current_code, sha = get_file_content(repo, filepath, token)
-        if not current_code:
-            continue
-
-        improved_response = generate_tech_integration_code(tech, current_code, filename)
-        match = re.search(r"```python\n(.*?)```", improved_response, re.DOTALL)
-        if not match:
-            print("  コードブロックが見つかりませんでした、スキップ")
-            continue
-        improved_code = match.group(1)
-
-        commit_msg = "Brain 新技術搭載: " + tech["title"] + " -> " + filename + " [" + TODAY + "]"
-        if commit_file(repo, filepath, improved_code, sha, branch_name, commit_msg, token):
-            integrated.append(tech)
-
-    if not integrated:
-        print("  統合できた技術がないためPRをスキップ")
-        return
-
-    pr_body = "## Brain 新技術自動搭載PR - " + TODAY + "\n\n"
-    pr_body += "### 搭載された技術\n"
-    for tech in integrated:
-        pr_body += "#### " + tech["title"] + "\n"
-        pr_body += "- 論文: " + tech.get("paper_url", "不明") + "\n"
-        pr_body += "- 効果: " + tech.get("benefit", "") + "\n"
-        pr_body += "- リスク: " + tech.get("risk", "") + "\n"
-        pr_body += "- 対象: " + tech.get("target_file", "") + "\n\n"
-    pr_body += "### 確認方法\n"
-    pr_body += "1. Files changed タブで差分を確認\n"
-    pr_body += "2. 問題なければ Merge pull request を押すだけ\n"
-    pr_body += "3. 問題があれば Close pull request で却下\n\n"
-    pr_body += "> このPRはBrain Growth Agentが最新論文を解析して自動生成しました\n"
-
-    titles = [t["title"] for t in integrated]
-    create_pull_request(
-        repo,
-        branch_name,
-        "Brain 新技術搭載: " + ", ".join(titles) + " [" + TODAY + "]",
-        pr_body,
-        token
-    )
-
-
-# ────────────────────────────────────────────
-# 自動PR作成（既存コード改善）
-# ────────────────────────────────────────────
 
 def get_file_content(repo, filepath, token):
     req = urllib.request.Request(
@@ -482,7 +422,7 @@ def generate_improved_code(current_code, filename, trend_analysis):
 - 変更は最小限にとどめる
 - 必ず ```python から始まり ``` で終わる形式で返す
 - 必ず動作するコードを返す"""
-    return call_claude(prompt, max_tokens=4000)
+    return call_claude(prompt, max_tokens=4000, label="improve_" + filename)
 
 
 def create_branch(repo, branch_name, token):
@@ -599,14 +539,12 @@ def auto_improve_and_pr(trend_analysis):
         current_code, sha = get_file_content(repo, filepath, token)
         if not current_code:
             continue
-
         improved_response = generate_improved_code(current_code, filename, trend_analysis)
         match = re.search(r"```python\n(.*?)```", improved_response, re.DOTALL)
         if not match:
             print("  " + filename + " のコードブロックが見つかりませんでした、スキップ")
             continue
         improved_code = match.group(1)
-
         commit_msg = "Brain 自動改善: " + filename + " [" + TODAY + "]"
         if commit_file(repo, filepath, improved_code, sha, branch_name, commit_msg, token):
             improved_files.append(filename)
@@ -628,17 +566,88 @@ def auto_improve_and_pr(trend_analysis):
     pr_body += "> このPRはBrain Growth Agentが自動生成しました\n"
 
     create_pull_request(
-        repo,
-        branch_name,
+        repo, branch_name,
         "Brain 自動改善: " + ", ".join(improved_files) + " [" + TODAY + "]",
-        pr_body,
-        token
+        pr_body, token
     )
 
 
-# ────────────────────────────────────────────
-# 承認ゲート: GitHub Issue起票
-# ────────────────────────────────────────────
+def auto_integrate_new_tech(trend_analysis):
+    token = os.environ.get("GITHUB_TOKEN")
+    repo = os.environ.get("GITHUB_REPOSITORY")
+    if not token or not repo:
+        print("  GITHUB_TOKEN または GITHUB_REPOSITORY が未設定のためスキップ")
+        return
+
+    print("  最新AI論文を取得中...")
+    papers = fetch_latest_ai_papers()
+    if not papers:
+        print("  論文取得失敗、スキップ")
+        return
+
+    current_code_summary = """
+- collector.py: HackerNews/ArXiv/GitHubからAI情報を収集
+- summarizer.py: Claude APIで日本語要約・重要度スコアリング
+- growth.py: X投稿文・note下書き・自動PR生成
+"""
+
+    print("  搭載可能な新技術を分析中...")
+    technologies = discover_applicable_technologies(papers, current_code_summary)
+    if not technologies:
+        print("  搭載可能な技術が見つかりませんでした")
+        return
+
+    print("  " + str(len(technologies)) + " 件の搭載可能技術を発見")
+
+    branch_name = "brain-new-tech-" + datetime.now().strftime("%Y-%m-%d-%H%M")
+    if not create_branch(repo, branch_name, token):
+        return
+
+    integrated = []
+    for tech in technologies[:2]:
+        filename = tech.get("target_file", "")
+        if filename not in ["collector.py", "summarizer.py", "growth.py"]:
+            continue
+        filepath = "agents/" + filename
+        print("  " + filename + " に " + tech["title"] + " を統合中...")
+        current_code, sha = get_file_content(repo, filepath, token)
+        if not current_code:
+            continue
+        improved_response = generate_tech_integration_code(tech, current_code, filename)
+        match = re.search(r"```python\n(.*?)```", improved_response, re.DOTALL)
+        if not match:
+            print("  コードブロックが見つかりませんでした、スキップ")
+            continue
+        improved_code = match.group(1)
+        commit_msg = "Brain 新技術搭載: " + tech["title"] + " -> " + filename + " [" + TODAY + "]"
+        if commit_file(repo, filepath, improved_code, sha, branch_name, commit_msg, token):
+            integrated.append(tech)
+
+    if not integrated:
+        print("  統合できた技術がないためPRをスキップ")
+        return
+
+    pr_body = "## Brain 新技術自動搭載PR - " + TODAY + "\n\n"
+    pr_body += "### 搭載された技術\n"
+    for tech in integrated:
+        pr_body += "#### " + tech["title"] + "\n"
+        pr_body += "- 論文: " + tech.get("paper_url", "不明") + "\n"
+        pr_body += "- 効果: " + tech.get("benefit", "") + "\n"
+        pr_body += "- リスク: " + tech.get("risk", "") + "\n"
+        pr_body += "- 対象: " + tech.get("target_file", "") + "\n\n"
+    pr_body += "### 確認方法\n"
+    pr_body += "1. Files changed タブで差分を確認\n"
+    pr_body += "2. 問題なければ Merge pull request を押すだけ\n"
+    pr_body += "3. 問題があれば Close pull request で却下\n\n"
+    pr_body += "> このPRはBrain Growth Agentが最新論文を解析して自動生成しました\n"
+
+    titles = [t["title"] for t in integrated]
+    create_pull_request(
+        repo, branch_name,
+        "Brain 新技術搭載: " + ", ".join(titles) + " [" + TODAY + "]",
+        pr_body, token
+    )
+
 
 def create_github_issue(title, body):
     token = os.environ.get("GITHUB_TOKEN")
@@ -707,10 +716,6 @@ def create_approval_request(trend_analysis, business_ideas, agent_improvements, 
     create_github_issue("Brain 週次レポート " + TODAY, issue_body)
     return filepath, md_path
 
-
-# ────────────────────────────────────────────
-# メイン
-# ────────────────────────────────────────────
 
 def main():
     print("Brain Growth Agent 起動... [" + TODAY + "] (weekday=" + str(WEEKDAY) + ")")
