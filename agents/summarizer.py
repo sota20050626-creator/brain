@@ -6,10 +6,44 @@ from datetime import datetime
 from pathlib import Path
 
 TODAY = datetime.now().strftime("%Y-%m-%d")
-DATA_FILE = Path(f"knowledge/daily/{TODAY}.json")
+DATA_FILE = Path("knowledge/daily/" + TODAY + ".json")
+COST_FILE = Path("knowledge/cost_log.json")
+
+SONNET_INPUT_PRICE = 3.0 / 1_000_000
+SONNET_OUTPUT_PRICE = 15.0 / 1_000_000
 
 
-def call_claude(prompt, max_tokens=2000):
+def load_cost_log():
+    if not COST_FILE.exists():
+        return {"monthly": {}, "total_usd": 0}
+    with open(COST_FILE, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def save_cost(input_tokens, output_tokens, label):
+    cost = input_tokens * SONNET_INPUT_PRICE + output_tokens * SONNET_OUTPUT_PRICE
+    log = load_cost_log()
+    month = TODAY[:7]
+    if month not in log["monthly"]:
+        log["monthly"][month] = {"usd": 0, "calls": [], "input_tokens": 0, "output_tokens": 0}
+    log["monthly"][month]["usd"] = round(log["monthly"][month]["usd"] + cost, 6)
+    log["monthly"][month]["input_tokens"] += input_tokens
+    log["monthly"][month]["output_tokens"] += output_tokens
+    log["monthly"][month]["calls"].append({
+        "date": TODAY,
+        "label": label,
+        "input_tokens": input_tokens,
+        "output_tokens": output_tokens,
+        "usd": round(cost, 6)
+    })
+    log["total_usd"] = round(sum(v["usd"] for v in log["monthly"].values()), 6)
+    with open(COST_FILE, "w", encoding="utf-8") as f:
+        json.dump(log, f, ensure_ascii=False, indent=2)
+    print("  コスト記録: " + label + " $" + str(round(cost, 4)) + " (in:" + str(input_tokens) + " out:" + str(output_tokens) + ")")
+    return cost
+
+
+def call_claude(prompt, max_tokens=2000, label="api_call"):
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
         raise ValueError("ANTHROPIC_API_KEY not set")
@@ -28,41 +62,44 @@ def call_claude(prompt, max_tokens=2000):
         }
     )
     with urllib.request.urlopen(req) as r:
-        return json.loads(r.read())["content"][0]["text"]
+        result = json.loads(r.read())
+    usage = result.get("usage", {})
+    save_cost(usage.get("input_tokens", 0), usage.get("output_tokens", 0), label)
+    return result["content"][0]["text"]
 
 
 def summarize_items(items):
     top_items = sorted(items, key=lambda x: x.get("score", 0), reverse=True)[:10]
     items_text = "\n\n".join([
-        f"[{i+1}] SOURCE: {item['source']}\nTITLE: {item['title']}\nTEXT: {item.get('text','')[:200]}"
+        "[" + str(i+1) + "] SOURCE: " + item["source"] + "\nTITLE: " + item["title"] + "\nTEXT: " + item.get("text","")[:200]
         for i, item in enumerate(top_items)
     ])
-    prompt = f"""あなたはAI技術のエキスパートアナリストです。
-以下の{len(top_items)}件のAI関連情報を分析してください。
+    prompt = """あなたはAI技術のエキスパートアナリストです。
+以下の""" + str(len(top_items)) + """件のAI関連情報を分析してください。
 
-{items_text}
+""" + items_text + """
 
 各アイテムについて以下のJSONフォーマットで回答してください。
 必ずJSON配列のみを返し、余分なテキストは含めないこと。
 
 [
-  {{
+  {
     "id": 1,
     "title_ja": "日本語タイトル",
     "summary_ja": "2から3文の日本語要約",
     "importance": 8,
     "tags": ["LLM", "ビジネス"],
     "category": "技術"
-  }}
+  }
 ]
 
 importanceは1から10で評価。
 tagsはLLM/Agent/ビジネス/画像生成/音声/コード/論文/中国AI/オープンソースから選択。
 categoryは技術/ビジネス/ツール/論文/その他から選択。"""
 
-    response = call_claude(prompt, max_tokens=3000)
+    response = call_claude(prompt, max_tokens=3000, label="summarize_items")
     try:
-        match = re.search(r'\[.*\]', response, re.DOTALL)
+        match = re.search(r"\[.*\]", response, re.DOTALL)
         if not match:
             return []
         summaries = json.loads(match.group())
@@ -89,11 +126,11 @@ categoryは技術/ビジネス/ツール/論文/その他から選択。"""
 def generate_daily_digest(items):
     top5 = items[:5]
     top5_text = "\n".join([
-        f"- {item['title_ja']}: {item['summary_ja']}"
+        "- " + item["title_ja"] + ": " + item["summary_ja"]
         for item in top5
     ])
-    prompt = f"""今日のAIトレンドトップ5:
-{top5_text}
+    prompt = """今日のAIトレンドトップ5:
+""" + top5_text + """
 
 これらを踏まえて、以下を日本語で書いてください：
 1. 今日の最重要トレンド（3行以内）
@@ -101,7 +138,7 @@ def generate_daily_digest(items):
 3. 注目すべき技術動向（2行以内）
 
 簡潔にまとめてください。"""
-    return call_claude(prompt, max_tokens=500)
+    return call_claude(prompt, max_tokens=500, label="daily_digest")
 
 
 def _count_tags(items):
@@ -113,9 +150,9 @@ def _count_tags(items):
 
 
 def main():
-    print(f"Brain Summarizer starting... [{TODAY}]")
+    print("Brain Summarizer starting... [" + TODAY + "]")
     if not DATA_FILE.exists():
-        print(f"No data file found: {DATA_FILE}")
+        print("No data file found: " + str(DATA_FILE))
         return
     with open(DATA_FILE, encoding="utf-8") as f:
         data = json.load(f)
@@ -123,9 +160,9 @@ def main():
     if not items:
         print("No items to summarize")
         return
-    print(f"Summarizing {len(items)} items...")
+    print("Summarizing " + str(len(items)) + " items...")
     summarized = summarize_items(items)
-    print(f"Summarized {len(summarized)} items")
+    print("Summarized " + str(len(summarized)) + " items")
     print("Generating daily digest...")
     digest = generate_daily_digest(summarized) if summarized else "本日はデータなし"
     data["summarized_items"] = summarized
@@ -133,7 +170,7 @@ def main():
     data["top_tags"] = _count_tags(summarized)
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    print(f"Done! -> {DATA_FILE}")
+    print("Done! -> " + str(DATA_FILE))
 
 
 if __name__ == "__main__":
