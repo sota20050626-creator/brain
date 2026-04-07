@@ -8,7 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      issues: write        # ← GitHub Issue起票に必要
+      issues: write
+      pull-requests: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -32,10 +33,10 @@ jobs:
         run: python agents/knowledge_builder.py
       - name: Update Dashboard
         run: python agents/dashboard_builder.py
-      - name: Run Growth Agent       # ← 追加
+      - name: Run Growth Agent
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 自動付与されるので登録不要
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: python agents/growth.py
       - name: Commit and Push
