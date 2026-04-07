@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      issues: write        # ← GitHub Issue起票に必要
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,14 +28,20 @@ jobs:
         run: python agents/summarizer.py
       - name: Clean old data
         run: python agents/cleaner.py
-      - name: Build Knowledge Base          # ← 追加
-        run: python agents/knowledge_builder.py  # ← 追加
+      - name: Build Knowledge Base
+        run: python agents/knowledge_builder.py
       - name: Update Dashboard
         run: python agents/dashboard_builder.py
+      - name: Run Growth Agent       # ← 追加
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 自動付与されるので登録不要
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python agents/growth.py
       - name: Commit and Push
         run: |
           git config --global user.name 'Brain Bot'
           git config --global user.email 'brain@noreply.github.com'
           git add -A
-          git diff --staged --quiet || git commit -m "Daily update"
+          git diff --staged --quiet || git commit -m "Daily update: drafts + knowledge"
           git push
