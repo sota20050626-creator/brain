@@ -162,48 +162,61 @@ def fetch_arxiv(limit=10):
 
 def fetch_github_trending(limit=10):
     results = []
-    for lang in ["", "python"]:
-        url = "https://github.com/trending/" + lang + "?since=daily"
+    urls = [
+        "https://github.com/trending?since=daily&spoken_language_code=en",
+        "https://github.com/trending/python?since=daily",
+    ]
+    for url in urls:
         try:
             req = urllib.request.Request(
                 url,
-                headers={"User-Agent": "Mozilla/5.0 (compatible; Brain/1.0)"}
+                headers={
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36",
+                    "Accept": "text/html,application/xhtml+xml",
+                    "Accept-Language": "en-US,en;q=0.9",
+                }
             )
-            with urllib.request.urlopen(req) as r:
+            with urllib.request.urlopen(req, timeout=10) as r:
                 html = r.read().decode("utf-8", errors="ignore")
 
-            repos = re.findall(
-                r'<h2[^>]*>\s*<a\s+href="(/[^"]+)"[^>]*>(.*?)</a>',
-                html, re.DOTALL
+            repo_paths = re.findall(
+                r'href="(/[a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+)"', html
             )
             descs = re.findall(
-                r'<p\s+class="col-9[^"]*"[^>]*>\s*(.*?)\s*</p>',
+                r'<p[^>]*class="[^"]*color-fg-muted[^"]*"[^>]*>\s*(.*?)\s*</p>',
                 html, re.DOTALL
             )
-            stars = re.findall(
-                r'aria-label="[^"]*stars[^"]*"[^>]*>\s*([\d,]+)',
-                html
-            )
 
-            for i, (path, name) in enumerate(repos[:limit]):
-                repo_name = re.sub(r"\s+", "", name.strip())
-                desc = descs[i].strip() if i < len(descs) else ""
-                desc = re.sub(r"<[^>]+>", "", desc).strip()
-                star_count = stars[i].replace(",", "") if i < len(stars) else "0"
+            seen_paths = set()
+            desc_idx = 0
+            for path in repo_paths:
+                if path in seen_paths:
+                    continue
+                if path.count("/") != 1:
+                    continue
+                seen_paths.add(path)
+
+                desc = ""
+                if desc_idx < len(descs):
+                    desc = re.sub(r"<[^>]+>", "", descs[desc_idx]).strip()
+                    desc_idx += 1
 
                 results.append({
-                    "title": repo_name + " - " + desc if desc else repo_name,
-                    "url": "https://github.com" + path.strip(),
-                    "score": int(star_count) if star_count.isdigit() else 0,
+                    "title": path.lstrip("/") + (" - " + desc if desc else ""),
+                    "url": "https://github.com" + path,
+                    "score": 0,
                     "comments": 0,
                     "source": "github_trending",
                     "text": desc,
                 })
 
+                if len(results) >= limit:
+                    break
+
             time.sleep(1)
 
         except Exception as e:
-            print("GitHub Trending error (" + lang + "): " + str(e))
+            print("GitHub Trending error: " + str(e))
 
     seen = set()
     unique = []
@@ -257,7 +270,7 @@ def main():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
-    print("Collected " + str(len(unique_items)) + " unique items -> " + str(OUTPUT_FILE))
+    print("Collected " + str(len(unique_items)) + " items -> " + str(OUTPUT_FILE))
 
 
 if __name__ == "__main__":
