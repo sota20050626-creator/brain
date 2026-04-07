@@ -419,7 +419,7 @@ def auto_improve_and_pr(trend_analysis):
         ("agents/growth.py", "growth.py"),
     ]
 
-    branch_name = "brain-auto-improve-" + TODAY
+   branch_name = "brain-auto-improve-" + datetime.now().strftime("%Y-%m-%d-%H%M")
     if not create_branch(repo, branch_name, token):
         return
 
