@@ -69,7 +69,7 @@ def load_latest_items():
             data = json.load(f)
         items = data.get("summarized_items", [])
         results.extend(items)
-        print("  Loaded " + str(len(items)) + " items from " + date)
+        print("  " + date + " のデータ " + str(len(items)) + " 件を読み込みました")
     return results
 
 
@@ -117,7 +117,7 @@ def save_x_drafts(drafts_text):
         f.write("> 今日+昨日(" + YESTERDAY + ")の最新AIニュースをもとに生成\n")
         f.write("> 確認して気に入ったものをそのままXに投稿してください\n\n")
         f.write(drafts_text)
-    print("  X下書き保存: " + str(path))
+    print("  X下書き保存完了: " + str(path))
     return path
 
 
@@ -223,7 +223,7 @@ def save_note_draft(note_text):
         f.write("> 固有名詞・数字を確認して投稿してください\n\n")
         f.write("---\n\n")
         f.write(note_text)
-    print("  note下書き保存: " + str(path))
+    print("  note下書き保存完了: " + str(path))
     return path
 
 
@@ -266,7 +266,7 @@ def get_file_content(repo, filepath, token):
             sha = data["sha"]
             return content, sha
     except Exception as e:
-        print("  File fetch error: " + str(e))
+        print("  ファイル取得エラー: " + str(e))
         return None, None
 
 
@@ -308,7 +308,7 @@ def create_branch(repo, branch_name, token):
             data = json.loads(r.read())
             sha = data["object"]["sha"]
     except Exception as e:
-        print("  Branch SHA fetch error: " + str(e))
+        print("  ブランチSHA取得エラー: " + str(e))
         return False
 
     payload = json.dumps({
@@ -326,10 +326,10 @@ def create_branch(repo, branch_name, token):
     )
     try:
         with urllib.request.urlopen(req) as r:
-            print("  Branch created: " + branch_name)
+            print("  ブランチ作成完了: " + branch_name)
             return True
     except Exception as e:
-        print("  Branch creation error: " + str(e))
+        print("  ブランチ作成エラー: " + str(e))
         return False
 
 
@@ -353,10 +353,10 @@ def commit_file(repo, filepath, content, sha, branch_name, commit_message, token
     req.get_method = lambda: "PUT"
     try:
         with urllib.request.urlopen(req) as r:
-            print("  File committed: " + filepath)
+            print("  コミット完了: " + filepath)
             return True
     except Exception as e:
-        print("  Commit error: " + str(e))
+        print("  コミットエラー: " + str(e))
         return False
 
 
@@ -379,10 +379,10 @@ def create_pull_request(repo, branch_name, title, body, token):
     try:
         with urllib.request.urlopen(req) as r:
             result = json.loads(r.read())
-            print("  PR created: " + result["html_url"])
+            print("  PR作成完了: " + result["html_url"])
             return result["html_url"]
     except Exception as e:
-        print("  PR creation error: " + str(e))
+        print("  PR作成エラー: " + str(e))
         return None
 
 
@@ -390,7 +390,7 @@ def auto_improve_and_pr(trend_analysis):
     token = os.environ.get("GITHUB_TOKEN")
     repo = os.environ.get("GITHUB_REPOSITORY")
     if not token or not repo:
-        print("  GITHUB_TOKEN or GITHUB_REPOSITORY not set, skipping auto PR")
+        print("  GITHUB_TOKEN または GITHUB_REPOSITORY が未設定のためスキップ")
         return
 
     targets = [
@@ -405,7 +405,7 @@ def auto_improve_and_pr(trend_analysis):
 
     improved_files = []
     for filepath, filename in targets:
-        print("  Improving " + filename + "...")
+        print("  " + filename + " を改善中...")
         current_code, sha = get_file_content(repo, filepath, token)
         if not current_code:
             continue
@@ -414,16 +414,16 @@ def auto_improve_and_pr(trend_analysis):
 
         match = re.search(r"```python\n(.*?)```", improved_response, re.DOTALL)
         if not match:
-            print("  No code block found for " + filename + ", skipping")
+            print("  " + filename + " のコードブロックが見つかりませんでした、スキップ")
             continue
         improved_code = match.group(1)
 
-        commit_msg = "Brain auto-improve: " + filename + " [" + TODAY + "]"
+        commit_msg = "Brain 自動改善: " + filename + " [" + TODAY + "]"
         if commit_file(repo, filepath, improved_code, sha, branch_name, commit_msg, token):
             improved_files.append(filename)
 
     if not improved_files:
-        print("  No files improved, skipping PR")
+        print("  改善されたファイルがないためPRをスキップ")
         return
 
     pr_body = "## Brain 自動改善PR - " + TODAY + "\n\n"
@@ -433,15 +433,15 @@ def auto_improve_and_pr(trend_analysis):
     pr_body += "\n### 改善の根拠\n"
     pr_body += trend_analysis[:300] + "\n\n"
     pr_body += "### 確認方法\n"
-    pr_body += "1. 各ファイルの差分を確認\n"
-    pr_body += "2. 問題なければ Merge ボタンを押すだけ\n"
-    pr_body += "3. 問題があれば Close して却下\n\n"
+    pr_body += "1. Files changed タブで差分を確認\n"
+    pr_body += "2. 問題なければ Merge pull request を押すだけ\n"
+    pr_body += "3. 問題があれば Close pull request で却下\n\n"
     pr_body += "> このPRはBrain Growth Agentが自動生成しました\n"
 
     create_pull_request(
         repo,
         branch_name,
-        "Brain auto-improve: " + ", ".join(improved_files) + " [" + TODAY + "]",
+        "Brain 自動改善: " + ", ".join(improved_files) + " [" + TODAY + "]",
         pr_body,
         token
     )
@@ -451,7 +451,7 @@ def create_github_issue(title, body):
     token = os.environ.get("GITHUB_TOKEN")
     repo = os.environ.get("GITHUB_REPOSITORY")
     if not token or not repo:
-        print("  GITHUB_TOKEN or GITHUB_REPOSITORY not set, skipping issue creation")
+        print("  GITHUB_TOKEN または GITHUB_REPOSITORY が未設定のためスキップ")
         return
     payload = json.dumps({
         "title": title,
@@ -470,9 +470,9 @@ def create_github_issue(title, body):
     try:
         with urllib.request.urlopen(req) as r:
             result = json.loads(r.read())
-            print("  GitHub Issue作成: #" + str(result["number"]) + " " + result["html_url"])
+            print("  Issue作成完了: #" + str(result["number"]) + " " + result["html_url"])
     except Exception as e:
-        print("  Issue作成失敗: " + str(e))
+        print("  Issue作成エラー: " + str(e))
 
 
 def create_approval_request(trend_analysis, business_ideas, agent_improvements, note_path):
@@ -480,88 +480,3 @@ def create_approval_request(trend_analysis, business_ideas, agent_improvements, 
         "date": TODAY,
         "status": "pending_approval",
         "trend_analysis": trend_analysis,
-        "business_ideas": business_ideas,
-        "agent_improvements": agent_improvements,
-        "note_draft_path": str(note_path),
-        "approval_notes": "",
-    }
-    filepath = PROPOSALS_DIR / ("proposal_" + TODAY + ".json")
-    with open(filepath, "w", encoding="utf-8") as f:
-        json.dump(proposal, f, ensure_ascii=False, indent=2)
-
-    md_path = PROPOSALS_DIR / ("proposal_" + TODAY + ".md")
-    with open(md_path, "w", encoding="utf-8") as f:
-        f.write("# Brain Weekly Report - " + TODAY + "\n\n")
-        f.write("Status: Pending Approval\n\n---\n\n")
-        f.write("## Trend Analysis\n\n" + trend_analysis + "\n\n---\n\n")
-        f.write("## Business Ideas\n\n" + business_ideas + "\n\n---\n\n")
-        f.write("## Agent Improvements\n\n" + agent_improvements + "\n\n---\n\n")
-        f.write("## Note Draft\n\n" + str(note_path) + " を確認してください\n\n---\n\n")
-        f.write("## 承認方法\n\nPRをMergeするだけ\n")
-
-    issue_body = "## Brain Weekly Report - " + TODAY + "\n\n"
-    issue_body += "### Trend Analysis\n" + trend_analysis[:500] + "...\n\n"
-    issue_body += "### Business Ideas\n" + business_ideas[:500] + "...\n\n"
-    issue_body += "### Agent Improvements\n" + agent_improvements[:300] + "...\n\n"
-    issue_body += "---\n"
-    issue_body += "Detail: knowledge/proposals/proposal_" + TODAY + ".md\n"
-    issue_body += "Note draft: knowledge/drafts/note_" + TODAY + ".md\n"
-    issue_body += "X drafts: knowledge/drafts/x_" + TODAY + ".md\n\n"
-    issue_body += "### 承認方法\n"
-    issue_body += "- 承認: PRをMerge\n"
-    issue_body += "- 却下: PRをClose\n"
-
-    create_github_issue("Brain Weekly Report " + TODAY, issue_body)
-    return filepath, md_path
-
-
-def main():
-    print("Brain Growth Agent starting... [" + TODAY + "] (weekday=" + str(WEEKDAY) + ")")
-
-    items, digests, tags = load_recent_data(days=30)
-    print("  Loaded " + str(len(items)) + " items (30 days)")
-
-    latest_items = load_latest_items()
-    if len(latest_items) >= 3:
-        print("  Generating X drafts from latest 2 days data...")
-        x_drafts = generate_x_drafts(latest_items)
-        save_x_drafts(x_drafts)
-    elif len(items) >= 3:
-        print("  No latest data, using recent 30 days data...")
-        x_drafts = generate_x_drafts(items)
-        save_x_drafts(x_drafts)
-    else:
-        print("  Not enough data for X drafts")
-
-    if True:
-        if len(items) < 5:
-            print("  Not enough data for weekly analysis")
-            return
-
-        print("  Analyzing trends...")
-        trend_analysis = analyze_trends(items, tags)
-
-        print("  Generating business ideas...")
-        business_ideas = generate_business_ideas(trend_analysis)
-
-        print("  Generating note draft...")
-        note_draft_text = generate_note_draft(trend_analysis, items)
-        note_path = save_note_draft(note_draft_text)
-
-        print("  Generating agent improvements...")
-        agent_improvements = generate_agent_improvements()
-
-        print("  Creating approval request + GitHub Issue...")
-        create_approval_request(trend_analysis, business_ideas, agent_improvements, note_path)
-
-        print("  Creating auto-improve PR...")
-        auto_improve_and_pr(trend_analysis)
-
-        print("Weekly analysis complete!")
-    else:
-        print("Weekly analysis runs on Monday only (today weekday=" + str(WEEKDAY) + ")")
-        print("Daily X drafts complete!")
-
-
-if __name__ == "__main__":
-    main()
