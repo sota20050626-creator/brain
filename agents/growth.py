@@ -348,7 +348,7 @@ def main():
     else:
         print("  Not enough data for X drafts")
 
-    if WEEKDAY == 0:
+    if True:
         if len(items) < 5:
             print("  Not enough data for weekly analysis")
             return
