@@ -1,0 +1,420 @@
+{
+  "date": "2026-04-07",
+  "collected_at": "2026-04-07T03:43:54.692556+00:00",
+  "total": 30,
+  "raw_items": [
+    {
+      "title": "Launch HN: Freestyle – Sandboxes for Coding Agents",
+      "url": "https://www.freestyle.sh/",
+      "score": 219,
+      "comments": 118,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Issue: Claude Code is unusable for complex engineering tasks with Feb updates",
+      "url": "https://github.com/anthropics/claude-code/issues/42796",
+      "score": 816,
+      "comments": 484,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Anthropic expands partnership with Google and Broadcom for next-gen compute",
+      "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
+      "score": 175,
+      "comments": 79,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Show HN: Hippo, biologically inspired memory for AI agents",
+      "url": "https://github.com/kitfunso/hippo-memory",
+      "score": 59,
+      "comments": 15,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "AI singer now occupies eleven spots on iTunes singles chart",
+      "url": "https://www.showbiz411.com/2026/04/05/itunes-takeover-by-fake-ai-singer-eddie-dalton-now-occupies-eleven-spots-on-chart-despite-not-being-human-or-real-exclusive",
+      "score": 116,
+      "comments": 162,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Agent Reading Test",
+      "url": "https://agentreadingtest.com",
+      "score": 53,
+      "comments": 15,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Why the majority of vibe coded projects fail",
+      "url": "https://www.reddit.com/r/ClaudeAI/s/Vkkzi4lUW0",
+      "score": 8,
+      "comments": 1,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "The team behind a pro-Iran, Lego-themed viral-video campaign",
+      "url": "https://www.newyorker.com/culture/infinite-scroll/the-team-behind-a-pro-iran-lego-themed-viral-video-campaign",
+      "score": 106,
+      "comments": 146,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Show HN: I built a tiny LLM to demystify how language models work",
+      "url": "https://github.com/arman-bd/guppylm",
+      "score": 847,
+      "comments": 126,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Show HN: Real-time AI (audio/video in, voice out) on an M3 Pro with Gemma E2B",
+      "url": "https://github.com/fikrikarim/parlor",
+      "score": 266,
+      "comments": 31,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "The back story behind the first \"$1.8B\" dollar \"AI Company\"",
+      "url": "https://garymarcus.substack.com/p/the-back-story-behind-the-first-18",
+      "score": 43,
+      "comments": 8,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Drop, formerly Massdrop, ends most collaborations and rebrands under Corsair",
+      "url": "https://drop.com/",
+      "score": 122,
+      "comments": 66,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Show HN: Gemma Gem – AI model embedded in a browser – no API keys, no cloud",
+      "url": "https://github.com/kessler/gemma-gem",
+      "score": 146,
+      "comments": 20,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Eight years of wanting, three months of building with AI",
+      "url": "https://lalitm.com/post/building-syntaqlite-ai/",
+      "score": 918,
+      "comments": 287,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Bernie Sanders: \"AI Is a Threat to Everything the American People Hold Dear\"",
+      "url": "https://www.wsj.com/opinion/ai-is-a-threat-to-everything-the-american-people-hold-dear-a3286459",
+      "score": 30,
+      "comments": 29,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Nanocode: The best Claude Code that $200 can buy in pure JAX on TPUs",
+      "url": "https://github.com/salmanmohammadi/nanocode/discussions/1",
+      "score": 206,
+      "comments": 26,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Anthropic is burning more and more dev goodwill",
+      "url": "https://twitter.com/GergelyOrosz/status/2041133254586122605",
+      "score": 57,
+      "comments": 26,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Running Gemma 4 locally with LM Studio's new headless CLI and Claude Code",
+      "url": "https://ai.georgeliu.com/p/running-google-gemma-4-locally-with",
+      "score": 392,
+      "comments": 99,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Show HN: Meta-agent: self-improving agent harnesses from live traces",
+      "url": "https://github.com/canvas-org/meta-agent",
+      "score": 7,
+      "comments": 0,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Show HN: I just built a MCP Server that connects Claude to all your wearables",
+      "url": "https://pacetraining.co/",
+      "score": 16,
+      "comments": 12,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Beyond the Final Actor: Modeling the Dual Roles of Creator and Editor for Fine-Grained LLM-Generated Text Detection",
+      "url": "http://arxiv.org/abs/2604.04932v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "The misuse of large language models (LLMs) requires precise detection of synthetic text. Existing works mainly follow binary or ternary classification settings, which can only distinguish pure human/LLM text or collaborative text at best. This remains insufficient for the nuanced regulation, as the LLM-polished human text and humanized LLM text often trigger different policy consequences. In this paper, we explore fine-grained LLM-generated text detection under a rigorous four-class setting. To "
+    },
+    {
+      "title": "Early Stopping for Large Reasoning Models via Confidence Dynamics",
+      "url": "http://arxiv.org/abs/2604.04930v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Large reasoning models rely on long chain-of-thought generation to solve complex problems, but extended reasoning often incurs substantial computational cost and can even degrade performance due to overthinking. A key challenge is determining when the model should stop reasoning and produce the final answer. In this work, we study the confidence of intermediate answers during reasoning and observe two characteristic behaviors: correct reasoning trajectories often reach high-confidence answers ea"
+    },
+    {
+      "title": "Your Pre-trained Diffusion Model Secretly Knows Restoration",
+      "url": "http://arxiv.org/abs/2604.04924v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Pre-trained diffusion models have enabled significant advancements in All-in-One Restoration (AiOR), offering improved perceptual quality and generalization. However, diffusion-based restoration methods primarily rely on fine-tuning or Control-Net style modules to leverage the pre-trained diffusion model's priors for AiOR. In this work, we show that these pre-trained diffusion models inherently possess restoration behavior, which can be unlocked by directly learning prompt embeddings at the outp"
+    },
+    {
+      "title": "Stratifying Reinforcement Learning with Signal Temporal Logic",
+      "url": "http://arxiv.org/abs/2604.04923v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "In this paper, we develop a stratification-based semantics for Signal Temporal Logic (STL) in which each atomic predicate is interpreted as a membership test in a stratified space. This perspective reveals a novel correspondence principle between stratification theory and STL, showing that most STL formulas can be viewed as inducing a stratification of space-time. The significance of this interpretation is twofold. First, it offers a fresh theoretical framework for analyzing the structure of the"
+    },
+    {
+      "title": "TriAttention: Efficient Long Reasoning with Trigonometric KV Compression",
+      "url": "http://arxiv.org/abs/2604.04921v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Extended reasoning in large language models (LLMs) creates severe KV cache memory bottlenecks. Leading KV cache compression methods estimate KV importance using attention scores from recent post-RoPE queries. However, queries rotate with position during RoPE, making representative queries very few, leading to poor top-key selection and unstable reasoning. To avoid this issue, we turn to the pre-RoPE space, where we observe that Q and K vectors are highly concentrated around fixed non-zero center"
+    },
+    {
+      "title": "PINNs in PDE Constrained Optimal Control Problems: Direct vs Indirect Methods",
+      "url": "http://arxiv.org/abs/2604.04920v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "We study physics-informed neural networks (PINNs) as numerical tools for the optimal control of semilinear partial differential equations. We first recall the classical direct and indirect viewpoints for optimal control of PDEs, and then present two PINN formulations: a direct formulation based on minimizing the objective under the state constraint, and an indirect formulation based on the first-order optimality system. For a class of semilinear parabolic equations, we derive the state equation,"
+    },
+    {
+      "title": "Vero: An Open RL Recipe for General Visual Reasoning",
+      "url": "http://arxiv.org/abs/2604.04917v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "What does it take to build a visual reasoner that works across charts, science, spatial understanding, and open-ended tasks? The strongest vision-language models (VLMs) show such broad visual reasoning is within reach, but the recipe behind them remains unclear, locked behind proprietary reinforcement learning (RL) pipelines with non-public data. We introduce Vero, a family of fully open VLMs that matches or exceeds existing open-weight models across diverse visual reasoning tasks. We scale RL d"
+    },
+    {
+      "title": "Empowering Power Outage Prediction with Spatially Aware Hybrid Graph Neural Networks and Contrastive Learning",
+      "url": "http://arxiv.org/abs/2604.04916v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Extreme weather events, such as severe storms, hurricanes, snowstorms, and ice storms, which are exacerbated by climate change, frequently cause widespread power outages. These outages halt industrial operations, impact communities, damage critical infrastructure, profoundly disrupt economies, and have far-reaching effects across various sectors. To mitigate these effects, the University of Connecticut and Eversource Energy Center have developed an outage prediction modeling (OPM) system to prov"
+    },
+    {
+      "title": "Analyzing Symbolic Properties for DRL Agents in Systems and Networking",
+      "url": "http://arxiv.org/abs/2604.04914v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Deep reinforcement learning (DRL) has shown remarkable performance on complex control problems in systems and networking, including adaptive video streaming, wireless resource management, and congestion control. For safe deployment, however, it is critical to reason about how agents behave across the range of system states they encounter in practice. Existing verification-based methods in this domain primarily focus on point properties, defined around fixed input states, which offer limited cove"
+    },
+    {
+      "title": "HI-MoE: Hierarchical Instance-Conditioned Mixture-of-Experts for Object Detection",
+      "url": "http://arxiv.org/abs/2604.04908v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Mixture-of-Experts (MoE) architectures enable conditional computation by activating only a subset of model parameters for each input. Although sparse routing has been highly effective in language models and has also shown promise in vision, most vision MoE methods operate at the image or patch level. This granularity is poorly aligned with object detection, where the fundamental unit of reasoning is an object query corresponding to a candidate instance. We propose Hierarchical Instance-Condition"
+    }
+  ],
+  "summary": null,
+  "summarized_items": [
+    {
+      "title": "Anthropic expands partnership with Google and Broadcom for next-gen compute",
+      "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
+      "score": 175,
+      "comments": 79,
+      "source": "hackernews",
+      "text": "",
+      "title_ja": "Anthropic、GoogleおよびBroadcomとの次世代コンピューティングパートナーシップを拡大",
+      "summary_ja": "AnthropicがGoogleとBroadcomとの戦略的提携を拡大し、次世代AI向けコンピューティング基盤の開発を強化。大手AI企業間の協力関係が深まっている。",
+      "importance": 9,
+      "tags": [
+        "LLM",
+        "ビジネス"
+      ],
+      "category": "ビジネス"
+    },
+    {
+      "title": "Issue: Claude Code is unusable for complex engineering tasks with Feb updates",
+      "url": "https://github.com/anthropics/claude-code/issues/42796",
+      "score": 816,
+      "comments": 484,
+      "source": "hackernews",
+      "text": "",
+      "title_ja": "Claude Codeの2月アップデートで複雑なエンジニアリングタスクが使用不能に",
+      "summary_ja": "AnthropicのClaude Codeが最新アップデートにより、複雑な開発作業において実用性が大幅に低下した問題が報告されている。AIコーディングツールの品質管理における課題を浮き彫りにしている。",
+      "importance": 8,
+      "tags": [
+        "LLM",
+        "コード"
+      ],
+      "category": "技術"
+    },
+    {
+      "title": "Show HN: Real-time AI (audio/video in, voice out) on an M3 Pro with Gemma E2B",
+      "url": "https://github.com/fikrikarim/parlor",
+      "score": 266,
+      "comments": 31,
+      "source": "hackernews",
+      "text": "",
+      "title_ja": "M3 ProでGemma E2Bを使用したリアルタイムAI（音声・映像入力、音声出力）",
+      "summary_ja": "M3 ProチップとGemma E2Bモデルを組み合わせて、音声・映像入力に対してリアルタイムで音声応答するAIシステムを実現。マルチモーダルAIのローカル実行における技術進歩を示している。",
+      "importance": 8,
+      "tags": [
+        "LLM",
+        "音声",
+        "オープンソース"
+      ],
+      "category": "技術"
+    },
+    {
+      "title": "Show HN: Gemma Gem – AI model embedded in a browser – no API keys, no cloud",
+      "url": "https://github.com/kessler/gemma-gem",
+      "score": 146,
+      "comments": 20,
+      "source": "hackernews",
+      "text": "",
+      "title_ja": "Gemma Gem - ブラウザ内蔵AI（APIキー不要、クラウド接続なし）",
+      "summary_ja": "APIキーやクラウド接続を必要とせず、完全にブラウザ内で動作するAIモデル「Gemma Gem」が公開された。プライバシー重視のローカルAI実行ソリューションとして注目されている。",
+      "importance": 8,
+      "tags": [
+        "LLM",
+        "オープンソース"
+      ],
+      "category": "ツール"
+    },
+    {
+      "title": "Eight years of wanting, three months of building with AI",
+      "url": "https://lalitm.com/post/building-syntaqlite-ai/",
+      "score": 918,
+      "comments": 287,
+      "source": "hackernews",
+      "text": "",
+      "title_ja": "8年間の憧れ、AIとの3ヶ月での構築体験",
+      "summary_ja": "開発者が長年実現したかった機能を、AI技術の活用により短期間で構築した体験談。AI開発ツールの進歩により、従来では時間のかかっていた開発作業が大幅に効率化されている事例を示している。",
+      "importance": 7,
+      "tags": [
+        "LLM",
+        "コード"
+      ],
+      "category": "技術"
+    },
+    {
+      "title": "Running Gemma 4 locally with LM Studio's new headless CLI and Claude Code",
+      "url": "https://ai.georgeliu.com/p/running-google-gemma-4-locally-with",
+      "score": 392,
+      "comments": 99,
+      "source": "hackernews",
+      "text": "",
+      "title_ja": "LM Studioの新CLI機能でGemma 4とClaude Codeをローカル実行",
+      "summary_ja": "LM StudioがヘッドレスCLI機能を追加し、Gemma 4モデルのローカル実行が可能になった。Claude Codeとの連携により、開発環境の選択肢が拡大している。",
+      "importance": 7,
+      "tags": [
+        "LLM",
+        "オープンソース",
+        "コード"
+      ],
+      "category": "ツール"
+    },
+    {
+      "title": "Launch HN: Freestyle – Sandboxes for Coding Agents",
+      "url": "https://www.freestyle.sh/",
+      "score": 219,
+      "comments": 118,
+      "source": "hackernews",
+      "text": "",
+      "title_ja": "Freestyle - コーディングエージェント用サンドボックス環境",
+      "summary_ja": "AIコーディングエージェントが安全に動作するためのサンドボックス環境「Freestyle」がリリースされた。AI開発者がコード実行やテストを安全に行える専用環境を提供している。",
+      "importance": 7,
+      "tags": [
+        "Agent",
+        "コード"
+      ],
+      "category": "ツール"
+    },
+    {
+      "title": "Show HN: I built a tiny LLM to demystify how language models work",
+      "url": "https://github.com/arman-bd/guppylm",
+      "score": 847,
+      "comments": 126,
+      "source": "hackernews",
+      "text": "",
+      "title_ja": "言語モデルの仕組みを理解するための小型LLMを構築",
+      "summary_ja": "言語モデルの動作原理を分かりやすく説明するために、簡易版のLLMを独自に構築したプロジェクト。教育目的でAI技術の内部構造を可視化し、理解を促進する取り組み。",
+      "importance": 6,
+      "tags": [
+        "LLM",
+        "オープンソース"
+      ],
+      "category": "ツール"
+    },
+    {
+      "title": "Nanocode: The best Claude Code that $200 can buy in pure JAX on TPUs",
+      "url": "https://github.com/salmanmohammadi/nanocode/discussions/1",
+      "score": 206,
+      "comments": 26,
+      "source": "hackernews",
+      "text": "",
+      "title_ja": "Nanocode：200ドルで購入できる最高のClaude Code代替（純JAX、TPU対応）",
+      "summary_ja": "TPU上で動作する純JAX実装のコーディングAI「Nanocode」が200ドルで提供開始。Claude Codeの代替として、コストパフォーマンスに優れたソリューションを提案している。",
+      "importance": 6,
+      "tags": [
+        "LLM",
+        "コード"
+      ],
+      "category": "ビジネス"
+    },
+    {
+      "title": "Drop, formerly Massdrop, ends most collaborations and rebrands under Corsair",
+      "url": "https://drop.com/",
+      "score": 122,
+      "comments": 66,
+      "source": "hackernews",
+      "text": "",
+      "title_ja": "Drop（旧Massdrop）がコラボレーション事業を終了、Corsairブランドに統合",
+      "summary_ja": "コミュニティ型EC「Drop」がほとんどのコラボレーション事業を終了し、親会社Corsairブランドへの統合を発表。AI関連ではない一般的な企業再編ニュース。",
+      "importance": 2,
+      "tags": [
+        "ビジネス"
+      ],
+      "category": "その他"
+    }
+  ],
+  "digest": "## 1. 今日の最重要トレンド\nAIの実行環境が大きく二極化している。一方では大手企業による戦略的提携で高性能クラウドAIインフラが強化され、他方では完全にローカルで動作するプライベートAIソリューションが実用化レベルに到達。従来のクラウド依存型AIから、用途に応じて選択できる多様なAI実行環境の時代に突入している。\n\n## 2. ビジネスへの示唆\n企業はコスト・プライバシー・性能要件に応じてAI実行環境を戦略的に選択する必要がある。AI開発ツールの急速な進歩により、従来8年かかっていた開発が3ヶ月で実現可能となり、ビジネススピードの大幅な向上が期待できる。\n\n## 3. 注目すべき技術動向\nマルチモーダルAI（音声・映像・テキスト統合）のローカル実行技術が実用レベルに達し、リアルタイム処理が可能になった。一方で、AI品質管理の課題も顕在化しており、アップデート時の機能劣化リスクへの対策が重要になっている。",
+  "top_tags": {
+    "LLM": 8,
+    "コード": 5,
+    "オープンソース": 4,
+    "ビジネス": 2,
+    "音声": 1,
+    "Agent": 1
+  }
+}
