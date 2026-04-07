@@ -1,6 +1,6 @@
 """
 growth.py - 成長エージェント
-毎日: X投稿文の下書き生成
+毎日: X投稿文の下書き生成（当日+前日の最新データ使用）
 週1(月曜): トレンド分析 + ビジネスアイデア + note記事下書き + GitHub Issue起票
 """
 
@@ -11,6 +11,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 TODAY = datetime.now().strftime("%Y-%m-%d")
+YESTERDAY = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
 WEEKDAY = datetime.now().weekday()
 KNOWLEDGE_DIR = Path("knowledge")
 PROPOSALS_DIR = KNOWLEDGE_DIR / "proposals"
@@ -43,7 +44,7 @@ def load_recent_data(days=30):
     all_items, all_digests, all_tags = [], [], {}
     for i in range(days):
         date = (datetime.now() - timedelta(days=i)).strftime("%Y-%m-%d")
-        filepath = KNOWLEDGE_DIR / "daily" / f"{date}.json"
+        filepath = KNOWLEDGE_DIR / "daily" / (date + ".json")
         if not filepath.exists():
             continue
         with open(filepath, encoding="utf-8") as f:
@@ -56,6 +57,21 @@ def load_recent_data(days=30):
     return all_items, all_digests, all_tags
 
 
+def load_latest_items():
+    """今日+昨日の2日分のデータを読み込む"""
+    results = []
+    for date in [TODAY, YESTERDAY]:
+        filepath = KNOWLEDGE_DIR / "daily" / (date + ".json")
+        if not filepath.exists():
+            continue
+        with open(filepath, encoding="utf-8") as f:
+            data = json.load(f)
+        items = data.get("summarized_items", [])
+        results.extend(items)
+        print("  Loaded " + str(len(items)) + " items from " + date)
+    return results
+
+
 # ────────────────────────────────────────────
 # 毎日実行: X投稿文の下書き生成
 # ────────────────────────────────────────────
@@ -63,21 +79,27 @@ def load_recent_data(days=30):
 def generate_x_drafts(items):
     top_items = sorted(items, key=lambda x: x.get("importance", 0), reverse=True)[:10]
     items_text = "\n".join([
-        "- " + item.get("title_ja", item.get("title", "")) + ":" + item.get("summary_ja", "")[:80]
+        "- " + item.get("title_ja", item.get("title", "")) + ": " + item.get("summary_ja", "")[:80]
         for item in top_items
     ])
     prompt = """あなたはAI情報を発信するXアカウントの中の人です。
-今日のAIニュースを元に、X投稿文を3本作成してください。
+今日・昨日のAIニュースの中から最もホットなものを選んで、X投稿文を3本作成してください。
 
-【今日のAIニュース】
+【最新AIニュース（今日+昨日）】
 """ + items_text + """
 
-【ルール】
+【選び方のルール】
+- 最もインパクトが大きいBIGNEWSを優先する
+- 「え、マジで？」「知らなかった」と思わせるものを選ぶ
+- 業界の転換点になりそうなものを優先する
+- 3本は全て異なるトピックにする
+
+【投稿文のルール】
 - 各投稿は140文字以内
 - 専門用語を使いすぎず、一般人にも刺さる表現
 - 体言止め・断言系で書く
+- 「速報」「今」「たった今」などの鮮度を感じさせる言葉を入れる
 - 末尾に関連ハッシュタグを2〜3個
-- 3本はそれぞれ違うトピック・切り口にする
 
 【出力形式】
 投稿1:
@@ -95,6 +117,7 @@ def save_x_drafts(drafts_text):
     path = DRAFTS_DIR / ("x_" + TODAY + ".md")
     with open(path, "w", encoding="utf-8") as f:
         f.write("# X投稿下書き - " + TODAY + "\n\n")
+        f.write("> 今日+昨日(" + YESTERDAY + ")の最新AIニュースをもとに生成\n")
         f.write("> 確認して気に入ったものをそのままXに投稿してください\n\n")
         f.write(drafts_text)
     print("  X下書き保存: " + str(path))
@@ -112,9 +135,6 @@ def analyze_trends(items, tags):
         for item in top_items
     ])
     tags_text = ", ".join([
-        k + "(" + str(v) + "回)" for k, v in
-        sorted(all_tags.items(), key=lambda x: x[1], reverse=True)[:10]
-    ]) if False else ", ".join([
         k + "(" + str(v) + "回)" for k, v in
         sorted(tags.items(), key=lambda x: x[1], reverse=True)[:10]
     ])
@@ -155,17 +175,12 @@ def generate_business_ideas(trend_analysis):
     return call_claude(prompt, max_tokens=1500)
 
 
-# ────────────────────────────────────────────
-# note下書き生成（売れる記事構成）
-# ────────────────────────────────────────────
-
 def generate_note_draft(trend_analysis, items):
     top_items = sorted(items, key=lambda x: x.get("importance", 0), reverse=True)[:7]
     items_text = "\n".join([
-        "- " + item.get("title_ja", "") + ":" + item.get("summary_ja", "")[:120]
+        "- " + item.get("title_ja", "") + ": " + item.get("summary_ja", "")[:120]
         for item in top_items
     ])
-
     prompt = """あなたはフォロワー数万人のAI情報発信者です。
 今週のAIトレンドをもとに、noteで売れる有料記事の下書きを作成してください。
 
@@ -193,33 +208,28 @@ def generate_note_draft(trend_analysis, items):
 
 ## 今週起きた3大ニュース（無料・各150字）
 具体的なニュース名・企業名・数字を使う。
-「〜がリリース」「〜億円調達」など事実ベースで。
 
 ## ここから有料（¥980）
 
 ## なぜこれが重要なのか（有料・400字）
-ニュースの「裏側」「本質」を解説。
+ニュースの裏側・本質を解説。
 一般ニュースでは語られない視点を提供する。
 
 ## あなたのビジネス・仕事への影響（有料・400字）
-「で、自分はどうすればいいの？」に答える。
 具体的なアクション3つを提示する。
 
 ## 来週の注目ポイント（有料・300字）
-「先出し情報」として価値を出す。
-次号への期待感を高める。
+先出し情報として価値を出す。
 
 ## 編集後記（有料・200字）
 発信者の個人的な感想・体験談。
-人間味を出してファン化を促す。
 
 【文体ルール】
-- 「です・ます」調だが堅すぎない
+- です・ます調だが堅すぎない
 - 専門用語は必ず一言で説明を添える
 - 数字・固有名詞を積極的に使う
 - 読者への問いかけを各セクションに1つ入れる
 - 日本語で書く"""
-
     return call_claude(prompt, max_tokens=3000)
 
 
@@ -339,15 +349,22 @@ def main():
     print("Brain Growth Agent starting... [" + TODAY + "] (weekday=" + str(WEEKDAY) + ")")
 
     items, digests, tags = load_recent_data(days=30)
-    print("  Loaded " + str(len(items)) + " items")
+    print("  Loaded " + str(len(items)) + " items (30 days)")
 
-    if len(items) >= 3:
-        print("  Generating X drafts...")
+    # 毎日: 今日+昨日の最新データでX下書き生成
+    latest_items = load_latest_items()
+    if len(latest_items) >= 3:
+        print("  Generating X drafts from latest 2 days data...")
+        x_drafts = generate_x_drafts(latest_items)
+        save_x_drafts(x_drafts)
+    elif len(items) >= 3:
+        print("  No latest data, using recent 30 days data...")
         x_drafts = generate_x_drafts(items)
         save_x_drafts(x_drafts)
     else:
         print("  Not enough data for X drafts")
 
+    # 週1(月曜): フル分析
     if WEEKDAY == 0:
         if len(items) < 5:
             print("  Not enough data for weekly analysis")
