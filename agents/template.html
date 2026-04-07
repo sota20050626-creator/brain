@@ -71,16 +71,21 @@ header { display:flex; align-items:center; justify-content:space-between; paddin
 .kb-stat { font-family:'Space Mono',monospace; font-size:11px; color:var(--muted); }
 .kb-stat span { color:var(--accent); }
 
-/* X下書きスタイル */
-.draft-card { background:var(--surface2); border:1px solid var(--border); border-radius:8px; padding:16px; margin-bottom:12px; position:relative; }
+.cost-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px; }
+.cost-stat { text-align:center; padding:12px 8px; background:rgba(255,170,0,0.04); border:1px solid rgba(255,170,0,0.15); border-radius:6px; }
+.cost-value { font-family:'Space Mono',monospace; font-size:20px; font-weight:700; color:var(--warning); }
+.cost-label { font-size:10px; color:var(--muted); margin-top:4px; font-family:'Space Mono',monospace; }
+.cost-detail { font-family:'Space Mono',monospace; font-size:10px; color:var(--muted); line-height:1.8; }
+.cost-detail span { color:var(--accent); }
+
+.draft-card { background:var(--surface2); border:1px solid var(--border); border-radius:8px; padding:16px; margin-bottom:12px; }
 .draft-card:hover { border-color:var(--accent); }
 .draft-num { font-family:'Space Mono',monospace; font-size:9px; color:var(--accent); letter-spacing:2px; margin-bottom:8px; }
 .draft-text { font-size:13px; line-height:1.8; color:var(--text); margin-bottom:12px; }
-.copy-btn { background:var(--accent); color:#000; border:none; border-radius:4px; padding:6px 14px; font-family:'Space Mono',monospace; font-size:10px; font-weight:700; cursor:pointer; transition:opacity 0.2s; }
+.copy-btn { background:var(--accent); color:#000; border:none; border-radius:4px; padding:6px 14px; font-family:'Space Mono',monospace; font-size:10px; font-weight:700; cursor:pointer; transition:all 0.2s; }
 .copy-btn:hover { opacity:0.8; }
 .copy-btn.copied { background:var(--accent2); color:#fff; }
 
-/* note下書きスタイル */
 .note-date { font-family:'Space Mono',monospace; font-size:10px; color:var(--muted); margin-bottom:10px; }
 .note-preview { font-size:12px; line-height:1.8; color:var(--text); max-height:300px; overflow-y:auto; background:var(--surface2); border:1px solid var(--border); border-radius:6px; padding:14px; margin-bottom:12px; }
 .note-preview::-webkit-scrollbar { width:3px; }
@@ -88,16 +93,14 @@ header { display:flex; align-items:center; justify-content:space-between; paddin
 .note-link { display:inline-block; color:var(--accent2); font-size:12px; text-decoration:none; border:1px solid rgba(0,102,255,0.3); padding:6px 14px; border-radius:4px; }
 .note-link:hover { background:rgba(0,102,255,0.1); }
 
-/* PR・Issueスタイル */
 .github-link { display:flex; align-items:center; gap:8px; padding:10px 12px; background:var(--surface2); border:1px solid var(--border); border-radius:6px; margin-bottom:8px; text-decoration:none; color:var(--text); font-size:12px; transition:border-color 0.2s; }
 .github-link:hover { border-color:var(--accent2); }
-.github-badge { font-family:'Space Mono',monospace; font-size:9px; padding:2px 8px; border-radius:10px; }
+.github-badge { font-family:'Space Mono',monospace; font-size:9px; padding:2px 8px; border-radius:10px; flex-shrink:0; }
 .badge-pr { background:rgba(0,255,136,0.1); color:var(--accent); border:1px solid rgba(0,255,136,0.3); }
 .badge-issue { background:rgba(255,170,0,0.1); color:var(--warning); border:1px solid rgba(255,170,0,0.3); }
 .github-btn { display:block; text-align:center; margin-top:10px; padding:8px; background:rgba(0,102,255,0.1); border:1px solid rgba(0,102,255,0.3); border-radius:6px; color:var(--accent2); font-size:12px; text-decoration:none; }
 .github-btn:hover { background:rgba(0,102,255,0.2); }
 
-/* チャットスタイル */
 .chat-wrap { display:flex; flex-direction:column; height:calc(100vh - 220px); min-height:500px; }
 .chat-messages { flex:1; overflow-y:auto; padding:20px; display:flex; flex-direction:column; gap:16px; background:var(--surface); border:1px solid var(--border); border-radius:8px 8px 0 0; }
 .chat-messages::-webkit-scrollbar { width:4px; }
@@ -184,6 +187,23 @@ header { display:flex; align-items:center; justify-content:space-between; paddin
       <div class="history">{{HISTORY_HTML}}</div>
     </div>
     <div class="panel">
+      <div class="panel-title">// API Cost</div>
+      <div class="cost-grid">
+        <div class="cost-stat">
+          <div class="cost-value">${{MONTH_USD}}</div>
+          <div class="cost-label">今月 USD</div>
+        </div>
+        <div class="cost-stat">
+          <div class="cost-value">¥{{MONTH_JPY}}</div>
+          <div class="cost-label">今月 円換算</div>
+        </div>
+      </div>
+      <div class="cost-detail">
+        今月のAPI呼び出し: <span>{{MONTH_CALLS}}</span> 回<br>
+        累計コスト: <span>${{TOTAL_USD}}</span>
+      </div>
+    </div>
+    <div class="panel">
       <div class="panel-title">// Pending Approval</div>
       {{PROPOSALS_HTML}}
     </div>
@@ -195,32 +215,24 @@ header { display:flex; align-items:center; justify-content:space-between; paddin
 <div id="tab-manage" class="tab-content">
 <div class="main-grid">
   <div>
-    <!-- X下書き -->
     <div class="panel">
       <div class="panel-title">// X 投稿下書き（今日+昨日の最新ニュースから生成）</div>
       {{X_DRAFTS_HTML}}
     </div>
-    <!-- note下書き -->
     <div class="panel">
       <div class="panel-title">// Note 下書き（毎週月曜自動生成）</div>
       {{NOTE_HTML}}
     </div>
   </div>
   <div>
-    <!-- PR一覧 -->
     <div class="panel">
       <div class="panel-title">// Pull Requests</div>
-      <div id="pr-list">
-        <div class="muted-msg">読み込み中...</div>
-      </div>
+      <div id="pr-list"><div class="muted-msg">読み込み中...</div></div>
       <a class="github-btn" href="https://github.com/{{GITHUB_REPO}}/pulls" target="_blank">GitHubでPR一覧を見る →</a>
     </div>
-    <!-- Issue一覧 -->
     <div class="panel">
       <div class="panel-title">// Issues</div>
-      <div id="issue-list">
-        <div class="muted-msg">読み込み中...</div>
-      </div>
+      <div id="issue-list"><div class="muted-msg">読み込み中...</div></div>
       <a class="github-btn" href="https://github.com/{{GITHUB_REPO}}/issues" target="_blank">GitHubでIssue一覧を見る →</a>
     </div>
   </div>
@@ -273,13 +285,13 @@ function switchTab(name, el) {
   if (name === 'manage') loadGithubData();
 }
 
-function copyText(text) {
+function copyText(text, btn) {
   navigator.clipboard.writeText(text).then(() => {
-    event.target.textContent = 'コピー済!';
-    event.target.classList.add('copied');
+    btn.textContent = 'コピー済!';
+    btn.classList.add('copied');
     setTimeout(() => {
-      event.target.textContent = 'コピー';
-      event.target.classList.remove('copied');
+      btn.textContent = 'コピー';
+      btn.classList.remove('copied');
     }, 2000);
   });
 }
