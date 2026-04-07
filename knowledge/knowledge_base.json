@@ -1,28 +1,16 @@
 {
-  "built_at": "2026-04-07T07:22:54.243845",
+  "built_at": "2026-04-07T07:30:07.604107",
   "days_covered": 2,
   "total_articles": 20,
   "entries": [
     {
       "date": "2026-04-07",
-      "digest": "## 1. 今日の最重要トレンド\nAIシンガーがiTunesチャートで11位を独占し、AI生成音楽の商業的成功を実証しました。一方でローカル実行可能なAIモデル（Gemma Gem）の登場により、プライバシー重視のAI利用が現実化しています。しかし既存のAIサービス（Claude Code）では機能低下の問題も表面化しており、AI技術の発展が必ずしも一方向ではないことを示しています。\n\n## 2. ビジネスへの示唆\nAI生成コンテンツが実際に収益を生み出す段階に入り、新たな収益源としての可能性が具現化されました。同時にローカルAI技術により、データプライバシーを重視する企業向けのソリューション展開が加速する見込みです。\n\n## 3. 注目すべき技術動向\nM3 Proチップでのリアルタイムマルチモーダル処理実現により、エッジデバイスでの高性能AI処理が現実化しています。AnthropicとGoogle、Broadcomの連携拡大は、次世代AI計算基盤の競争激化を示唆しています。",
+      "digest": "## 1. 今日の最重要トレンド\nローカル・オフライン実行可能なAIシステムの実用化が加速している。M3 ProでのリアルタイムマルチモーダルAIやブラウザ埋め込み型AIモデルなど、クラウド依存から脱却した分散型AI環境への移行が顕著になっている。同時に、AIが音楽チャートで商業的成功を収めるなど、創作分野での実用段階に到達している。\n\n## 2. ビジネスへの示唆\nプライバシー重視と運用コスト削減を両立できるオンプレミス型AIソリューションの需要が急増する見込み。エンターテイメント業界ではAI生成コンテンツが収益源として確立されつつあり、新たなビジネスモデルの構築が急務となっている。\n\n## 3. 注目すべき技術動向\nエッジデバイスでの高性能AI実行技術とマルチモーダル処理の最適化が技術革新の中心となっている。教育・研究目的での小型LLM開発により、AI技術の民主化と理解促進が進んでいる。",
       "articles": [
         {
-          "title": "AIシンガーがiTunesシングルチャートで11位を独占",
-          "summary": "AI技術で生成された楽曲を歌うAIシンガーが、iTunesのシングルチャートで11の順位を占める快挙を達成しました。AI生成音楽の商業的成功を示す象徴的な出来事として注目されています。",
+          "title": "Show HN: M3 ProでGemma E2BによるリアルタイムAI（音声・映像入力、音声出力）",
+          "summary": "M3 Proチップ上でGemma E2Bを使用し、音声と映像の入力からリアルタイムで音声出力を生成するシステム。マルチモーダルAIのローカル実装として技術的意義が高い。",
           "importance": 9,
-          "tags": [
-            "音声",
-            "ビジネス"
-          ],
-          "category": "ビジネス",
-          "source": "hackernews",
-          "url": "https://www.showbiz411.com/2026/04/05/itunes-takeover-by-fake-ai-singer-eddie-dalton-now-occupies-eleven-spots-on-chart-despite-not-being-human-or-real-exclusive"
-        },
-        {
-          "title": "Show HN: M3 ProでGemma E2Bを使ったリアルタイムAI（音声・映像入力、音声出力）",
-          "summary": "Apple M3 Proチップ上でリアルタイム音声・映像処理を実現するAIシステムが開発されました。Gemma E2Bモデルを活用し、マルチモーダルな入力に対してリアルタイムで音声応答を生成します。",
-          "importance": 8,
           "tags": [
             "LLM",
             "音声",
@@ -33,9 +21,9 @@
           "url": "https://github.com/fikrikarim/parlor"
         },
         {
-          "title": "Anthropic、次世代コンピュート向けにGoogleとBroadcomとのパートナーシップを拡大",
-          "summary": "AnthropicがGoogleおよびBroadcomとの戦略的パートナーシップを拡大し、次世代コンピューティングインフラの開発を加速させています。AI計算基盤の強化により、より高性能なAIサービスの提供を目指します。",
-          "importance": 8,
+          "title": "Anthropic、次世代コンピュートでGoogleとBroadcomとのパートナーシップを拡大",
+          "summary": "AnthropicがGoogleとBroadcomと戦略的パートナーシップを拡大し、次世代の計算インフラを共同開発。AI計算能力の向上と効率化を目指した重要な業界連携として注目される。",
+          "importance": 9,
           "tags": [
             "LLM",
             "ビジネス"
@@ -45,8 +33,20 @@
           "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute"
         },
         {
-          "title": "Show HN: Gemma Gem – ブラウザ内蔵AIモデル（APIキー不要、クラウド不要）",
-          "summary": "ブラウザ内で完全に動作するAIモデル「Gemma Gem」が公開されました。APIキーやクラウド接続を必要とせず、プライバシーを保護しながらローカルでAI機能を利用できます。",
+          "title": "Show HN: 言語モデルの仕組みを解明する小型LLMを構築",
+          "summary": "言語モデルの動作原理を理解しやすくするために、シンプルで小型のLLMを開発したプロジェクト。教育目的でLLMの内部構造を可視化し、学習プロセスを解明することを目指している。",
+          "importance": 8,
+          "tags": [
+            "LLM",
+            "オープンソース"
+          ],
+          "category": "技術",
+          "source": "hackernews",
+          "url": "https://github.com/arman-bd/guppylm"
+        },
+        {
+          "title": "Show HN: Gemma Gem – ブラウザ埋め込み型AIモデル（APIキー・クラウド不要）",
+          "summary": "ブラウザに直接組み込まれたGemmaモデルで、APIキーやクラウド接続を必要としない完全オフラインのAI環境。プライバシーとアクセシビリティを重視したAI実装として革新的である。",
           "importance": 8,
           "tags": [
             "LLM",
@@ -57,8 +57,20 @@
           "url": "https://github.com/kessler/gemma-gem"
         },
         {
-          "title": "問題: Claude Codeの2月アップデートで複雑なエンジニアリングタスクが使用不可に",
-          "summary": "Claude Codeの最新アップデートにより、複雑なエンジニアリングタスクでの実用性が大幅に低下したという問題が報告されています。開発者コミュニティからは使いにくさに対する懸念の声が上がっています。",
+          "title": "AIシンガーがiTunesシングルチャートで11位を占有",
+          "summary": "AI技術で生成された楽曲を歌うAIシンガーが、iTunesのシングルチャートで11の楽曲をランクインさせる快挙。音楽業界におけるAI技術の影響力と商業的可能性を示す重要な事例となっている。",
+          "importance": 8,
+          "tags": [
+            "音声",
+            "ビジネス"
+          ],
+          "category": "ビジネス",
+          "source": "hackernews",
+          "url": "https://www.showbiz411.com/2026/04/05/itunes-takeover-by-fake-ai-singer-eddie-dalton-now-occupies-eleven-spots-on-chart-despite-not-being-human-or-real-exclusive"
+        },
+        {
+          "title": "問題：2月のアップデート後、Claude Codeが複雑なエンジニアリングタスクで使用不可に",
+          "summary": "Claude Codeの2月のアップデート後、複雑なエンジニアリングタスクにおいて実用性が著しく低下している問題が報告されている。開発者コミュニティで使い勝手の悪化が議論されている。",
           "importance": 7,
           "tags": [
             "LLM",
@@ -69,32 +81,21 @@
           "url": "https://github.com/anthropics/claude-code/issues/42796"
         },
         {
-          "title": "Show HN: 言語モデルの仕組みを解明するための小型LLMを構築",
-          "summary": "言語モデルの動作原理を理解するために設計された小型のLLMが公開されました。教育目的に特化し、LLMの内部動作を可視化・理解しやすくすることを目的としています。",
-          "importance": 7,
-          "tags": [
-            "LLM",
-            "オープンソース"
-          ],
-          "category": "技術",
-          "source": "hackernews",
-          "url": "https://github.com/arman-bd/guppylm"
-        },
-        {
           "title": "Launch HN: Freestyle – コーディングエージェント向けサンドボックス",
-          "summary": "AIコーディングエージェントが安全に動作するためのサンドボックス環境「Freestyle」がローンチされました。エージェントによるコード実行を隔離された環境で安全に行うことができるプラットフォームです。",
+          "summary": "AIコーディングエージェントが安全に動作できる実行環境を提供するFreestyleというサービスが正式ローンチ。開発者がAIエージェントを活用したコーディング作業を効率的に行える環境を提供する。",
           "importance": 7,
           "tags": [
             "Agent",
-            "コード"
+            "コード",
+            "ビジネス"
           ],
           "category": "ビジネス",
           "source": "hackernews",
           "url": "https://www.freestyle.sh/"
         },
         {
-          "title": "Nanocode: TPU上の純粋JAXで200ドルで購入できる最高のClaude Code",
-          "summary": "TPU上でJAXフレームワークを使用した低コストなClaude Code代替ソリューション「Nanocode」が発表されました。200ドルという手頃な価格で高性能なコード生成機能を提供します。",
+          "title": "Nanocode：TPU上のJAXで200ドルで購入できる最高のClaude Code",
+          "summary": "JAXフレームワークとTPUを使用して、わずか200ドルでClaude Code相当の性能を実現するNanocodeプロジェクト。コスト効率の高いAIコーディング支援ツールとして開発者の関心を集めている。",
           "importance": 7,
           "tags": [
             "LLM",
@@ -106,20 +107,20 @@
           "url": "https://github.com/salmanmohammadi/nanocode/discussions/1"
         },
         {
-          "title": "8年間の願望、AIによる3ヶ月の構築",
-          "summary": "長年構想していたプロジェクトをAIの支援により短期間で実現できたという開発体験談です。AIツールの活用により開発効率が大幅に向上した事例として注目されています。",
+          "title": "8年間の願望、AIを使った3ヶ月の構築",
+          "summary": "長年構想していたプロジェクトを、AI技術を活用することでわずか3ヶ月で実現した開発体験談。AIがソフトウェア開発の効率を劇的に向上させる事例として注目される。",
           "importance": 6,
           "tags": [
             "LLM",
-            "コード"
+            "ビジネス"
           ],
-          "category": "ツール",
+          "category": "ビジネス",
           "source": "hackernews",
           "url": "https://lalitm.com/post/building-syntaqlite-ai/"
         },
         {
-          "title": "LM Studioの新しいヘッドレスCLIとClaude CodeでGemma 4をローカル実行",
-          "summary": "LM Studioの最新CLI機能を使用してGemma 4モデルをローカル環境で実行する方法が紹介されています。Claude Codeと組み合わせることで、クラウドに依存しない開発環境の構築が可能になります。",
+          "title": "LM StudioのヘッドレスCLIとClaude CodeでGemma 4をローカル実行",
+          "summary": "LM Studioの新しいコマンドライン機能とClaude Codeを組み合わせて、Gemma 4モデルをローカル環境で動作させる方法。クラウドに依存せずにAIモデルを活用できる手法として注目される。",
           "importance": 6,
           "tags": [
             "LLM",
