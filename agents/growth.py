@@ -185,28 +185,27 @@ def generate_note_draft(trend_analysis, items):
 
 【記事の要件】
 - 読者層：AI初心者〜中級者、副業・ビジネスに興味がある20〜40代
-- 価格設定：¥980
-- 文字数：全体で3,000〜4,000字
+- 価格設定：980円
+- 文字数：全体で3000〜4000字
 - 無料部分と有料部分を明確に分ける
 
 【構成】
 
-# タイトル
-（クリックしたくなる、数字・感情・具体性を含むタイトル）
+タイトル（クリックしたくなる、数字・感情・具体性を含むタイトル）
 
-## はじめに（無料・200字）
+はじめに（無料・200字）
 
-## 今週起きた3大ニュース（無料・各150字）
+今週起きた3大ニュース（無料・各150字）
 
-## ここから有料（¥980）
+ここから有料（980円）
 
-## なぜこれが重要なのか（有料・400字）
+なぜこれが重要なのか（有料・400字）
 
-## あなたのビジネス・仕事への影響（有料・400字）
+あなたのビジネス・仕事への影響（有料・400字）
 
-## 来週の注目ポイント（有料・300字）
+来週の注目ポイント（有料・300字）
 
-## 編集後記（有料・200字）
+編集後記（有料・200字）
 
 【文体ルール】
 - です・ます調だが堅すぎない
@@ -220,7 +219,7 @@ def save_note_draft(note_text):
     path = DRAFTS_DIR / ("note_" + TODAY + ".md")
     with open(path, "w", encoding="utf-8") as f:
         f.write("# note記事下書き - " + TODAY + "\n\n")
-        f.write("> 【使い方】無料部分はそのまま公開、有料部分は980円で設定推奨\n")
+        f.write("> 無料部分はそのまま公開、有料部分は980円で設定推奨\n")
         f.write("> 固有名詞・数字を確認して投稿してください\n\n")
         f.write("---\n\n")
         f.write(note_text)
@@ -252,10 +251,6 @@ def generate_agent_improvements():
     return call_claude(prompt, max_tokens=1000)
 
 
-# ────────────────────────────────────────────
-# 自動PR作成
-# ────────────────────────────────────────────
-
 def get_file_content(repo, filepath, token):
     req = urllib.request.Request(
         "https://api.github.com/repos/" + repo + "/contents/" + filepath,
@@ -277,31 +272,17 @@ def get_file_content(repo, filepath, token):
 
 def generate_improved_code(current_code, filename, trend_analysis):
     if filename == "collector.py":
-        direction = """
-- 新しいAI情報ソースの追加（信頼性が高く無料のAPIを優先）
-- 収集精度の向上
-- エラーハンドリングの強化
-- タイムアウト処理の追加"""
+        direction = "新しいAI情報ソースの追加、収集精度の向上、エラーハンドリングの強化"
     elif filename == "summarizer.py":
-        direction = """
-- 要約の精度向上
-- 重要度スコアリングの改善
-- カテゴリ分類の精度向上
-- エラーハンドリングの強化"""
+        direction = "要約の精度向上、重要度スコアリングの改善、エラーハンドリングの強化"
     else:
-        direction = """
-- 投稿文の品質向上
-- 提案精度の改善
-- エラーハンドリングの強化"""
+        direction = "投稿文の品質向上、提案精度の改善、エラーハンドリングの強化"
 
     prompt = """あなたは優秀なPythonエンジニアです。
 以下の """ + filename + """ を改善してください。
 
 【現在のコード】
-""" + current_code + """
-
-【最新AIトレンド（参考）】
-""" + trend_analysis[:500] + """
+""" + current_code[:3000] + """
 
 【改善の方針】
 """ + direction + """
@@ -309,8 +290,7 @@ def generate_improved_code(current_code, filename, trend_analysis):
 【ルール】
 - 既存の機能は必ず維持する
 - 変更は最小限にとどめる
-- 完全なPythonコードのみを返す
-- 必ず ```python と ``` で囲む
+- 必ず ```python から始まり ``` で終わる形式で返す
 - 必ず動作するコードを返す"""
     return call_claude(prompt, max_tokens=4000)
 
@@ -419,7 +399,7 @@ def auto_improve_and_pr(trend_analysis):
         ("agents/growth.py", "growth.py"),
     ]
 
-   branch_name = "brain-auto-improve-" + datetime.now().strftime("%Y-%m-%d-%H%M")
+    branch_name = "brain-auto-improve-" + datetime.now().strftime("%Y-%m-%d-%H%M")
     if not create_branch(repo, branch_name, token):
         return
 
@@ -466,10 +446,6 @@ def auto_improve_and_pr(trend_analysis):
         token
     )
 
-
-# ────────────────────────────────────────────
-# 承認ゲート: GitHub Issue起票
-# ────────────────────────────────────────────
 
 def create_github_issue(title, body):
     token = os.environ.get("GITHUB_TOKEN")
@@ -538,10 +514,6 @@ def create_approval_request(trend_analysis, business_ideas, agent_improvements, 
     create_github_issue("Brain Weekly Report " + TODAY, issue_body)
     return filepath, md_path
 
-
-# ────────────────────────────────────────────
-# メイン
-# ────────────────────────────────────────────
 
 def main():
     print("Brain Growth Agent starting... [" + TODAY + "] (weekday=" + str(WEEKDAY) + ")")
