@@ -368,6 +368,8 @@ def main():
 
         print("  Creating approval request + GitHub Issue...")
         create_approval_request(trend_analysis, business_ideas, agent_improvements, note_path)
+        print("  Creating auto-improve PR...")
+        auto_improve_and_pr(trend_analysis)
 
         print("Weekly analysis complete!")
     else:
