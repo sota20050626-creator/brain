@@ -1,6 +1,6 @@
 """
 collector.py - AI情報収集エージェント
-ソース: Reddit, HackerNews, ArXiv, GitHub Trending
+ソース: Reddit, HackerNews, ArXiv, GitHub Search API
 """
 
 import json
@@ -9,7 +9,7 @@ import re
 import time
 import urllib.request
 import urllib.parse
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 TODAY = datetime.now().strftime("%Y-%m-%d")
@@ -162,61 +162,46 @@ def fetch_arxiv(limit=10):
 
 def fetch_github_trending(limit=10):
     results = []
-    urls = [
-        "https://github.com/trending?since=daily&spoken_language_code=en",
-        "https://github.com/trending/python?since=daily",
+    yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+
+    queries = [
+        "topic:llm pushed:>" + yesterday,
+        "topic:ai pushed:>" + yesterday,
+        "machine-learning stars:>100 pushed:>" + yesterday,
     ]
-    for url in urls:
+
+    for query in queries:
         try:
+            encoded = urllib.parse.quote(query)
+            url = (
+                "https://api.github.com/search/repositories?q=" + encoded
+                + "&sort=stars&order=desc&per_page=5"
+            )
             req = urllib.request.Request(
                 url,
                 headers={
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36",
-                    "Accept": "text/html,application/xhtml+xml",
-                    "Accept-Language": "en-US,en;q=0.9",
+                    "User-Agent": "Brain/1.0",
+                    "Accept": "application/vnd.github.v3+json",
                 }
             )
             with urllib.request.urlopen(req, timeout=10) as r:
-                html = r.read().decode("utf-8", errors="ignore")
+                data = json.loads(r.read())
 
-            repo_paths = re.findall(
-                r'href="(/[a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+)"', html
-            )
-            descs = re.findall(
-                r'<p[^>]*class="[^"]*color-fg-muted[^"]*"[^>]*>\s*(.*?)\s*</p>',
-                html, re.DOTALL
-            )
-
-            seen_paths = set()
-            desc_idx = 0
-            for path in repo_paths:
-                if path in seen_paths:
-                    continue
-                if path.count("/") != 1:
-                    continue
-                seen_paths.add(path)
-
-                desc = ""
-                if desc_idx < len(descs):
-                    desc = re.sub(r"<[^>]+>", "", descs[desc_idx]).strip()
-                    desc_idx += 1
-
+            for item in data.get("items", []):
+                desc = item.get("description") or ""
                 results.append({
-                    "title": path.lstrip("/") + (" - " + desc if desc else ""),
-                    "url": "https://github.com" + path,
-                    "score": 0,
+                    "title": item["full_name"] + " - " + desc,
+                    "url": item["html_url"],
+                    "score": item.get("stargazers_count", 0),
                     "comments": 0,
                     "source": "github_trending",
                     "text": desc,
                 })
 
-                if len(results) >= limit:
-                    break
-
-            time.sleep(1)
+            time.sleep(2)
 
         except Exception as e:
-            print("GitHub Trending error: " + str(e))
+            print("GitHub API error: " + str(e))
 
     seen = set()
     unique = []
