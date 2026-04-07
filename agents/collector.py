@@ -184,84 +184,8 @@ def fetch_github_trending(limit=10):
                 desc = re.sub(r'<[^>]+>', '', desc).strip()
                 star_count = stars[i].replace(",", "") if i < len(stars) else "0"
 
-                combined = (repo_name + " " + desc).lower()
-                if not any(kw in combined for kw in AI_KEYWORDS):
-                    continue
-
+                # フィルタなし・全件取得（summarizerでAI関連を判断）
                 results.append({
                     "title": f"{repo_name} — {desc}" if desc else repo_name,
                     "url": f"https://github.com{path.strip()}",
-                    "score": int(star_count) if star_count.isdigit() else 0,
-                    "comments": 0,
-                    "source": "github_trending",
-                    "text": desc,
-                })
-
-            time.sleep(1)
-
-        except Exception as e:
-            print(f"GitHub Trending error ({lang}): {e}")
-
-    seen = set()
-    unique = []
-    for r in results:
-        if r["url"] not in seen:
-            seen.add(r["url"])
-            unique.append(r)
-
-    return unique[:limit]
-
-# ─────────────────────────────────────────
-# メイン
-# ─────────────────────────────────────────
-def main():
-    print(f"🧠 Brain Collector starting... [{TODAY}]")
-
-    all_items = []
-
-    # Reddit
-    token = get_reddit_token()
-    for sub in REDDIT_SUBREDDITS:
-        items = fetch_reddit(token, sub)
-        all_items.extend(items)
-        print(f"  ✓ Reddit r/{sub}: {len(items)} posts")
-        time.sleep(0.5)
-
-    # HackerNews
-    hn_items = fetch_hackernews()
-    all_items.extend(hn_items)
-    print(f"  ✓ HackerNews: {len(hn_items)} posts")
-
-    # ArXiv
-    arxiv_items = fetch_arxiv()
-    all_items.extend(arxiv_items)
-    print(f"  ✓ ArXiv: {len(arxiv_items)} papers")
-
-    # GitHub Trending
-    github_items = fetch_github_trending()
-    all_items.extend(github_items)
-    print(f"  ✓ GitHub Trending: {len(github_items)} repos")
-
-    # 重複URL除去
-    seen_urls = set()
-    unique_items = []
-    for item in all_items:
-        if item["url"] not in seen_urls:
-            seen_urls.add(item["url"])
-            unique_items.append(item)
-
-    result = {
-        "date": TODAY,
-        "collected_at": datetime.now(timezone.utc).isoformat(),
-        "total": len(unique_items),
-        "raw_items": unique_items,
-        "summary": None,
-    }
-
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False, indent=2)
-
-    print(f"\n✅ Collected {len(unique_items)} unique items → {OUTPUT_FILE}")
-
-if __name__ == "__main__":
-    main()
+                    "s
