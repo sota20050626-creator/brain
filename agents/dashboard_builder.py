@@ -7,6 +7,7 @@ DAILY_DIR = Path("knowledge/daily")
 PROPOSALS_DIR = Path("knowledge/proposals")
 DRAFTS_DIR = Path("knowledge/drafts")
 KNOWLEDGE_FILE = Path("knowledge/knowledge_base.json")
+COST_FILE = Path("knowledge/cost_log.json")
 OUTPUT = Path("dashboard/index.html")
 OUTPUT.parent.mkdir(exist_ok=True)
 
@@ -17,7 +18,7 @@ def load_recent(days=7):
     result = []
     for i in range(days):
         date = (datetime.now() - timedelta(days=i)).strftime("%Y-%m-%d")
-        fp = DAILY_DIR / f"{date}.json"
+        fp = DAILY_DIR / (date + ".json")
         if fp.exists():
             with open(fp, encoding="utf-8") as f:
                 result.append(json.load(f))
@@ -40,13 +41,11 @@ def load_pending_proposals():
 
 
 def load_x_drafts():
-    """今日のX下書きを読み込む"""
     today = datetime.now().strftime("%Y-%m-%d")
-    fp = DRAFTS_DIR / f"x_{today}.md"
+    fp = DRAFTS_DIR / ("x_" + today + ".md")
     if not fp.exists():
-        # 昨日のを探す
         yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
-        fp = DRAFTS_DIR / f"x_{yesterday}.md"
+        fp = DRAFTS_DIR / ("x_" + yesterday + ".md")
     if not fp.exists():
         return [], ""
     with open(fp, encoding="utf-8") as f:
@@ -58,7 +57,6 @@ def load_x_drafts():
 
 
 def load_note_draft():
-    """最新のnote下書きを読み込む"""
     if not DRAFTS_DIR.exists():
         return "", ""
     files = sorted(DRAFTS_DIR.glob("note_*.md"), reverse=True)
@@ -69,6 +67,20 @@ def load_note_draft():
     with open(fp, encoding="utf-8") as f:
         content = f.read()
     return content[:2000], date_str
+
+
+def load_cost_data():
+    if not COST_FILE.exists():
+        return 0, 0, 0, 0
+    with open(COST_FILE, encoding="utf-8") as f:
+        log = json.load(f)
+    month = datetime.now().strftime("%Y-%m")
+    month_data = log.get("monthly", {}).get(month, {})
+    month_usd = round(month_data.get("usd", 0), 3)
+    month_jpy = round(month_usd * 150)
+    total_usd = round(log.get("total_usd", 0), 3)
+    month_calls = len(month_data.get("calls", []))
+    return month_usd, month_jpy, total_usd, month_calls
 
 
 def build_html(days_data, proposals, knowledge):
@@ -127,7 +139,7 @@ def build_html(days_data, proposals, knowledge):
                 '<div class="draft-card">'
                 + '<div class="draft-num">投稿 ' + str(i) + '</div>'
                 + '<div class="draft-text">' + post.replace("\n", "<br>") + '</div>'
-                + '<button class="copy-btn" onclick="copyText(`' + escaped + '`)">コピー</button>'
+                + '<button class="copy-btn" onclick="copyText(`' + escaped + '`, this)">コピー</button>'
                 + '</div>'
             )
     else:
@@ -143,6 +155,9 @@ def build_html(days_data, proposals, knowledge):
         )
     else:
         note_html = '<div class="muted-msg">note下書きはまだ生成されていません（毎週月曜に自動生成）</div>'
+
+    # コストデータ
+    month_usd, month_jpy, total_usd, month_calls = load_cost_data()
 
     kb_days = knowledge.get("days_covered", 0)
     kb_articles = knowledge.get("total_articles", 0)
@@ -168,6 +183,10 @@ def build_html(days_data, proposals, knowledge):
         .replace("{{X_DRAFTS_HTML}}", x_drafts_html)
         .replace("{{NOTE_HTML}}", note_html)
         .replace("{{GITHUB_REPO}}", GITHUB_REPO)
+        .replace("{{MONTH_USD}}", str(month_usd))
+        .replace("{{MONTH_JPY}}", str(month_jpy))
+        .replace("{{TOTAL_USD}}", str(total_usd))
+        .replace("{{MONTH_CALLS}}", str(month_calls))
     )
 
     return html
