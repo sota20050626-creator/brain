@@ -1,0 +1,529 @@
+{
+  "date": "2026-04-08",
+  "collected_at": "2026-04-08T11:39:46.213781+00:00",
+  "total": 43,
+  "raw_items": [
+    {
+      "title": "Project Glasswing: Securing critical software for the AI era",
+      "url": "https://www.anthropic.com/glasswing",
+      "score": 1324,
+      "comments": 664,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "System Card: Claude Mythos Preview [pdf]",
+      "url": "https://www-cdn.anthropic.com/53566bf5440a10affd749724787c8913a2ae0841.pdf",
+      "score": 725,
+      "comments": 521,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Struggle Against the Gods",
+      "url": "https://firstthings.com/struggle-against-the-gods/",
+      "score": 9,
+      "comments": 0,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "A truck driver spent 20 years making a scale model of every building in NYC",
+      "url": "https://www.smithsonianmag.com/smart-news/a-truck-drive-spent-20-years-making-this-astonishing-scale-model-of-every-single-building-in-new-york-city-180988443/",
+      "score": 341,
+      "comments": 57,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Show HN: Gemma 4 Multimodal Fine-Tuner for Apple Silicon",
+      "url": "https://github.com/mattmireles/gemma-tuner-multimodal",
+      "score": 191,
+      "comments": 24,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Google open-sources experimental agent orchestration testbed Scion",
+      "url": "https://www.infoq.com/news/2026/04/google-agent-testbed-scion/",
+      "score": 211,
+      "comments": 55,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "AI helps add 10k more photos to OldNYC",
+      "url": "https://www.danvk.org/2026/03/08/oldnyc-updates.html",
+      "score": 134,
+      "comments": 45,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Assessing Claude Mythos Preview's cybersecurity capabilities",
+      "url": "https://red.anthropic.com/2026/mythos-preview/",
+      "score": 288,
+      "comments": 42,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Taste in the age of AI and LLMs",
+      "url": "https://rajnandan.com/posts/taste-in-the-age-of-ai-and-llms/",
+      "score": 249,
+      "comments": 197,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Launch HN: Freestyle – Sandboxes for Coding Agents",
+      "url": "https://www.freestyle.sh/",
+      "score": 316,
+      "comments": 155,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Tailslayer: Library for reducing tail latency in RAM reads",
+      "url": "https://github.com/LaurieWired/tailslayer",
+      "score": 62,
+      "comments": 19,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Blackholing My Email",
+      "url": "https://www.johnsto.co.uk/blog/blackholing-my-email/",
+      "score": 174,
+      "comments": 34,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "We moved Railway's frontend off Next.js. Builds went from 10+ mins to under two",
+      "url": "https://blog.railway.com/p/moving-railways-frontend-off-nextjs",
+      "score": 80,
+      "comments": 67,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Emotion Concepts and Their Function in a Large Language Model",
+      "url": "https://transformer-circuits.pub/2026/emotions/index.html",
+      "score": 59,
+      "comments": 8,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Cells for NetBSD: kernel-enforced, jail-like isolation",
+      "url": "https://netbsd-cells.petermann-digital.de/",
+      "score": 47,
+      "comments": 12,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "AI Assistance Reduces Persistence and Hurts Independent Performance",
+      "url": "https://arxiv.org/abs/2604.04721",
+      "score": 16,
+      "comments": 3,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Open Models have crossed a threshold",
+      "url": "https://blog.langchain.com/open-models-have-crossed-a-threshold/",
+      "score": 7,
+      "comments": 0,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "OpenAI says its new model GPT-2 is too dangerous to release (2019)",
+      "url": "https://slate.com/technology/2019/02/openai-gpt2-text-generating-algorithm-ai-dangerous.html",
+      "score": 334,
+      "comments": 95,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "The BSDs in the AI Age",
+      "url": "https://lists.nycbug.org/pipermail/talk/2026-April/018894.html",
+      "score": 6,
+      "comments": 0,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "AI may be making us think and write more alike",
+      "url": "https://dornsife.usc.edu/news/stories/ai-may-be-making-us-think-and-write-more-alike/",
+      "score": 222,
+      "comments": 232,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Issue: Claude Code is unusable for complex engineering tasks with Feb updates",
+      "url": "https://github.com/anthropics/claude-code/issues/42796",
+      "score": 1311,
+      "comments": 724,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "The team behind a pro-Iran, Lego-themed viral-video campaign",
+      "url": "https://www.newyorker.com/culture/infinite-scroll/the-team-behind-a-pro-iran-lego-themed-viral-video-campaign",
+      "score": 162,
+      "comments": 258,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Claude Is Dead",
+      "url": "https://www.javiertordable.com/claude-is-dead/",
+      "score": 13,
+      "comments": 5,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Paper Circle: An Open-source Multi-agent Research Discovery and Analysis Framework",
+      "url": "http://arxiv.org/abs/2604.06170v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "The rapid growth of scientific literature has made it increasingly difficult for researchers to efficiently discover, evaluate, and synthesize relevant work. Recent advances in multi-agent large language models (LLMs) have demonstrated strong potential for understanding user intent and are being trained to utilize various tools. In this paper, we introduce Paper Circle, a multi-agent research discovery and analysis system designed to reduce the effort required to find, assess, organize, and unde"
+    },
+    {
+      "title": "In-Place Test-Time Training",
+      "url": "http://arxiv.org/abs/2604.06169v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "The static ``train then deploy\" paradigm fundamentally limits Large Language Models (LLMs) from dynamically adapting their weights in response to continuous streams of new information inherent in real-world tasks. Test-Time Training (TTT) offers a compelling alternative by updating a subset of model parameters (fast weights) at inference time, yet its potential in the current LLM ecosystem is hindered by critical barriers including architectural incompatibility, computational inefficiency and mi"
+    },
+    {
+      "title": "Topological Characterization of Churn Flow and Unsupervised Correction to the Wu Flow-Regime Map in Small-Diameter Vertical Pipes",
+      "url": "http://arxiv.org/abs/2604.06167v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Churn flow-the chaotic, oscillatory regime in vertical two-phase flow-has lacked a quantitative mathematical definition for over $40$ years. We introduce the first topology-based characterization using Euler Characteristic Surfaces (ECS). We formulate unsupervised regime discovery as Multiple Kernel Learning (MKL), blending two complementary ECS-derived kernels-temporal alignment ($L^1$ distance on the $χ(s,t)$ surface) and amplitude statistics (scale-wise mean, standard deviation, max, min)-wit"
+    },
+    {
+      "title": "HaloProbe: Bayesian Detection and Mitigation of Object Hallucinations in Vision-Language Models",
+      "url": "http://arxiv.org/abs/2604.06165v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Large vision-language models can produce object hallucinations in image descriptions, highlighting the need for effective detection and mitigation strategies. Prior work commonly relies on the model's attention weights on visual tokens as a detection signal. We reveal that coarse-grained attention-based analysis is unreliable due to hidden confounders, specifically token position and object repetition in a description. This leads to Simpson's paradox: the attention trends reverse or disappear wh"
+    },
+    {
+      "title": "DiffHDR: Re-Exposing LDR Videos with Video Diffusion Models",
+      "url": "http://arxiv.org/abs/2604.06161v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Most digital videos are stored in 8-bit low dynamic range (LDR) formats, where much of the original high dynamic range (HDR) scene radiance is lost due to saturation and quantization. This loss of highlight and shadow detail precludes mapping accurate luminance to HDR displays and limits meaningful re-exposure in post-production workflows. Although techniques have been proposed to convert LDR images to HDR through dynamic range expansion, they struggle to restore realistic detail in the over- an"
+    },
+    {
+      "title": "The Character Error Vector: Decomposable errors for page-level OCR evaluation",
+      "url": "http://arxiv.org/abs/2604.06160v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "The Character Error Rate (CER) is a key metric for evaluating the quality of Optical Character Recognition (OCR). However, this metric assumes that text has been perfectly parsed, which is often not the case. Under page-parsing errors, CER becomes undefined, limiting its use as a metric and making evaluating page-level OCR challenging, particularly when using data that do not share a labelling schema. We introduce the Character Error Vector (CEV), a bag-of-characters evaluator for OCR. The CEV c"
+    },
+    {
+      "title": "Target Policy Optimization",
+      "url": "http://arxiv.org/abs/2604.06159v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "In RL, given a prompt, we sample a group of completions from a model and score them. Two questions follow: which completions should gain probability mass, and how should the parameters move to realize that change? Standard policy-gradient methods answer both at once, so the update can overshoot or undershoot depending on the learning rate, clipping, and other optimizer choices. We introduce \\emph{Target Policy Optimization} (TPO), which separates the two questions. Given scored completions, TPO "
+    },
+    {
+      "title": "MMEmb-R1: Reasoning-Enhanced Multimodal Embedding with Pair-Aware Selection and Adaptive Control",
+      "url": "http://arxiv.org/abs/2604.06156v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "MLLMs have been successfully applied to multimodal embedding tasks, yet their generative reasoning capabilities remain underutilized. Directly incorporating chain-of-thought reasoning into embedding learning introduces two fundamental challenges. First, structural misalignment between instance-level reasoning and pairwise contrastive supervision may lead to shortcut behavior, where the model merely learns the superficial format of reasoning. Second, reasoning is not universally beneficial for em"
+    },
+    {
+      "title": "Toward Consistent World Models with Multi-Token Prediction and Latent Semantic Enhancement",
+      "url": "http://arxiv.org/abs/2604.06155v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Whether Large Language Models (LLMs) develop coherent internal world models remains a core debate. While conventional Next-Token Prediction (NTP) focuses on one-step-ahead supervision, Multi-Token Prediction (MTP) has shown promise in learning more structured representations. In this work, we provide a theoretical perspective analyzing the gradient inductive bias of MTP, supported by empirical evidence, showing that MTP promotes the convergence toward internal belief states by inducing represent"
+    },
+    {
+      "title": "Exclusive Unlearning",
+      "url": "http://arxiv.org/abs/2604.06154v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "When introducing Large Language Models (LLMs) into industrial applications, such as healthcare and education, the risk of generating harmful content becomes a significant challenge. While existing machine unlearning methods can erase specific harmful knowledge and expressions, diverse harmful content makes comprehensive removal difficult. In this study, instead of individually listing targets for forgetting, we propose Exclusive Unlearning (EU), which aims for broad harm removal by extensively f"
+    },
+    {
+      "title": "Significant-Gravitas/AutoGPT - AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "score": 183240,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
+    },
+    {
+      "title": "ollama/ollama - Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "url": "https://github.com/ollama/ollama",
+      "score": 168132,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
+    },
+    {
+      "title": "huggingface/transformers - 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+      "url": "https://github.com/huggingface/transformers",
+      "score": 159031,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. "
+    },
+    {
+      "title": "f/prompts.chat - f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "url": "https://github.com/f/prompts.chat",
+      "score": 157936,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
+    },
+    {
+      "title": "affaan-m/everything-claude-code - The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "url": "https://github.com/affaan-m/everything-claude-code",
+      "score": 145902,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+    },
+    {
+      "title": "openclaw/openclaw - Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+      "url": "https://github.com/openclaw/openclaw",
+      "score": 351808,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 "
+    },
+    {
+      "title": "n8n-io/n8n - Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "url": "https://github.com/n8n-io/n8n",
+      "score": 182967,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
+    },
+    {
+      "title": "langgenius/dify - Production-ready platform for agentic workflow development.",
+      "url": "https://github.com/langgenius/dify",
+      "score": 136721,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Production-ready platform for agentic workflow development."
+    },
+    {
+      "title": "tensorflow/tensorflow - An Open Source Machine Learning Framework for Everyone",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "score": 194587,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "An Open Source Machine Learning Framework for Everyone"
+    },
+    {
+      "title": "pytorch/pytorch - Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "url": "https://github.com/pytorch/pytorch",
+      "score": 98927,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
+    }
+  ],
+  "summary": null,
+  "summarized_items": [
+    {
+      "title": "tensorflow/tensorflow - An Open Source Machine Learning Framework for Everyone",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "score": 194587,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "An Open Source Machine Learning Framework for Everyone",
+      "title_ja": "TensorFlow - 機械学習フレームワーク",
+      "summary_ja": "Googleが開発したオープンソースの機械学習フレームワーク。誰でも利用できる包括的なML開発環境を提供する。",
+      "importance": 9,
+      "tags": [
+        "オープンソース"
+      ],
+      "category": "技術"
+    },
+    {
+      "title": "huggingface/transformers - 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+      "url": "https://github.com/huggingface/transformers",
+      "score": 159031,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+      "title_ja": "Transformers - マルチモーダルMLモデルフレームワーク",
+      "summary_ja": "Hugging Faceが開発する最先端の機械学習モデルフレームワーク。テキスト、画像、音声、マルチモーダルモデルの推論と訓練に対応している。",
+      "importance": 9,
+      "tags": [
+        "LLM",
+        "画像生成",
+        "音声",
+        "オープンソース"
+      ],
+      "category": "技術"
+    },
+    {
+      "title": "pytorch/pytorch - Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "url": "https://github.com/pytorch/pytorch",
+      "score": 98927,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "title_ja": "PyTorch - 動的ニューラルネットワークフレームワーク",
+      "summary_ja": "Pythonベースの動的ニューラルネットワークライブラリ。強力なGPUアクセラレーション機能を備えたテンソル演算を提供する。",
+      "importance": 9,
+      "tags": [
+        "オープンソース"
+      ],
+      "category": "技術"
+    },
+    {
+      "title": "Significant-Gravitas/AutoGPT - AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "score": 183240,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "title_ja": "AutoGPT - アクセシブルAI構築プラットフォーム",
+      "summary_ja": "誰でもアクセス可能なAIの実現を目指すプロジェクト。重要なタスクに集中できるよう、AI構築のためのツールを提供する。",
+      "importance": 8,
+      "tags": [
+        "Agent",
+        "オープンソース",
+        "ビジネス"
+      ],
+      "category": "技術"
+    },
+    {
+      "title": "ollama/ollama - Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "url": "https://github.com/ollama/ollama",
+      "score": 168132,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "title_ja": "Ollama - マルチモデル実行環境",
+      "summary_ja": "Kimi-K2.5、GLM-5、DeepSeekなど複数のAIモデルを簡単に実行できるプラットフォーム。多様なモデルに対応している。",
+      "importance": 8,
+      "tags": [
+        "LLM",
+        "中国AI",
+        "オープンソース"
+      ],
+      "category": "ツール"
+    },
+    {
+      "title": "langgenius/dify - Production-ready platform for agentic workflow development.",
+      "url": "https://github.com/langgenius/dify",
+      "score": 136721,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Production-ready platform for agentic workflow development.",
+      "title_ja": "Dify - エージェントワークフロー開発プラットフォーム",
+      "summary_ja": "プロダクション対応のエージェントワークフロー開発プラットフォーム。企業レベルでのAIエージェント構築を支援する。",
+      "importance": 8,
+      "tags": [
+        "Agent",
+        "ビジネス",
+        "オープンソース"
+      ],
+      "category": "ツール"
+    },
+    {
+      "title": "n8n-io/n8n - Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "url": "https://github.com/n8n-io/n8n",
+      "score": 182967,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "title_ja": "n8n - AIワークフロー自動化プラットフォーム",
+      "summary_ja": "ネイティブAI機能を備えたワークフロー自動化プラットフォーム。ビジュアル構築とカスタムコードの組み合わせで400以上の統合機能を提供する。",
+      "importance": 7,
+      "tags": [
+        "Agent",
+        "ビジネス",
+        "オープンソース"
+      ],
+      "category": "ツール"
+    },
+    {
+      "title": "affaan-m/everything-claude-code - The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "url": "https://github.com/affaan-m/everything-claude-code",
+      "score": 145902,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "title_ja": "everything-claude-code - エージェント最適化システム",
+      "summary_ja": "Claude Code、Codex、Cursorなどのコード生成AIに対応したエージェント性能最適化システム。スキル、記憶、セキュリティ機能を統合している。",
+      "importance": 7,
+      "tags": [
+        "Agent",
+        "コード"
+      ],
+      "category": "技術"
+    },
+    {
+      "title": "openclaw/openclaw - Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+      "url": "https://github.com/openclaw/openclaw",
+      "score": 351808,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+      "title_ja": "openclaw - パーソナルAIアシスタント",
+      "summary_ja": "クロスプラットフォーム対応のパーソナルAIアシスタント。任意のOSで動作し、個人向けのAI支援機能を提供する。",
+      "importance": 6,
+      "tags": [
+        "Agent",
+        "オープンソース"
+      ],
+      "category": "ツール"
+    },
+    {
+      "title": "f/prompts.chat - f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "url": "https://github.com/f/prompts.chat",
+      "score": 157936,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "title_ja": "Prompts.chat - ChatGPTプロンプト共有プラットフォーム",
+      "summary_ja": "コミュニティでプロンプトを共有・発見・収集できるプラットフォーム。オープンソースでプライベート環境での自己ホスティングも可能。",
+      "importance": 6,
+      "tags": [
+        "LLM",
+        "オープンソース"
+      ],
+      "category": "ツール"
+    }
+  ],
+  "digest": "## 今日の最重要トレンド\nAIフレームワークの成熟化と多様化が加速している。TensorFlow、PyTorch、Transformersなどの主要フレームワークに加え、AutoGPTやOllamaのような実用的なプラットフォームが普及し、AI開発の敷居が大幅に下がっている。誰でもAI技術を活用できる環境が整いつつある。\n\n## ビジネスへの示唆\n企業は専門知識がなくてもAI導入が可能になり、競争優位の源泉がAI技術の有無から活用方法の差別化にシフトしている。早期のAI活用戦略立案と実装が競争力維持の鍵となる。\n\n## 注目すべき技術動向\nマルチモーダル対応（テキスト、画像、音声の統合処理）が標準化し、より人間に近い理解力を持つAIシステムが実現している。複数モデルを統合運用できるプラットフォームの台頭により、用途に応じた最適なAI選択が可能になっている。",
+  "top_tags": {
+    "オープンソース": 9,
+    "Agent": 5,
+    "LLM": 3,
+    "ビジネス": 3,
+    "画像生成": 1,
+    "音声": 1,
+    "中国AI": 1,
+    "コード": 1
+  }
+}
