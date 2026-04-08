@@ -1,6 +1,6 @@
 """
 collector.py - AI情報収集エージェント
-ソース: Reddit, HackerNews, ArXiv, GitHub Search API
+ソース: Reddit, HackerNews, ArXiv, GitHub Search API, X（日曜のみ）
 """
 
 import json
@@ -13,6 +13,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 TODAY = datetime.now().strftime("%Y-%m-%d")
+WEEKDAY = datetime.now().weekday()
 OUTPUT_DIR = Path("knowledge/daily")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 OUTPUT_FILE = OUTPUT_DIR / f"{TODAY}.json"
@@ -30,6 +31,20 @@ REDDIT_SUBREDDITS = [
     "artificial",
     "ChatGPT",
     "singularity",
+]
+
+X_SEARCH_QUERIES = [
+    "AI LLM lang:ja -is:retweet",
+    "ChatGPT Claude Gemini lang:en -is:retweet",
+    "artificial intelligence breakthrough lang:en -is:retweet",
+]
+
+X_NOTABLE_ACCOUNTS = [
+    "sama",
+    "ylecun",
+    "karpathy",
+    "demishassabis",
+    "goodfellow_ian",
 ]
 
 
@@ -213,11 +228,137 @@ def fetch_github_trending(limit=10):
     return unique[:limit]
 
 
+def fetch_x_weekly(limit=20):
+    """X情報収集（毎週日曜のみ実行）"""
+    api_key = os.environ.get("TWITTER_API_KEY", "")
+    api_secret = os.environ.get("TWITTER_API_SECRET", "")
+    access_token = os.environ.get("TWITTER_ACCESS_TOKEN", "")
+    access_secret = os.environ.get("TWITTER_ACCESS_SECRET", "")
+
+    if not all([api_key, api_secret, access_token, access_secret]):
+        print("  X API credentials not set, skipping X collection")
+        return []
+
+    # Bearer Tokenを取得
+    import base64
+    credentials = base64.b64encode(
+        (urllib.parse.quote(api_key) + ":" + urllib.parse.quote(api_secret)).encode()
+    ).decode()
+
+    try:
+        token_req = urllib.request.Request(
+            "https://api.twitter.com/oauth2/token",
+            data=b"grant_type=client_credentials",
+            headers={
+                "Authorization": "Basic " + credentials,
+                "Content-Type": "application/x-www-form-urlencoded",
+            }
+        )
+        with urllib.request.urlopen(token_req) as r:
+            bearer_token = json.loads(r.read())["access_token"]
+    except Exception as e:
+        print("  X Bearer Token取得エラー: " + str(e))
+        return []
+
+    results = []
+    seen_ids = set()
+
+    # キーワード検索
+    for query in X_SEARCH_QUERIES[:2]:
+        try:
+            encoded_query = urllib.parse.quote(query)
+            url = (
+                "https://api.twitter.com/2/tweets/search/recent"
+                "?query=" + encoded_query
+                + "&max_results=10"
+                + "&tweet.fields=public_metrics,created_at"
+                + "&expansions=author_id"
+                + "&user.fields=username,name"
+            )
+            req = urllib.request.Request(
+                url,
+                headers={"Authorization": "Bearer " + bearer_token}
+            )
+            with urllib.request.urlopen(req, timeout=10) as r:
+                data = json.loads(r.read())
+
+            users = {u["id"]: u for u in data.get("includes", {}).get("users", [])}
+
+            for tweet in data.get("data", []):
+                tweet_id = tweet["id"]
+                if tweet_id in seen_ids:
+                    continue
+                seen_ids.add(tweet_id)
+
+                author = users.get(tweet.get("author_id", ""), {})
+                username = author.get("username", "unknown")
+                metrics = tweet.get("public_metrics", {})
+                score = metrics.get("like_count", 0) + metrics.get("retweet_count", 0) * 2
+
+                results.append({
+                    "title": tweet["text"][:100],
+                    "url": "https://x.com/" + username + "/status/" + tweet_id,
+                    "score": score,
+                    "comments": metrics.get("reply_count", 0),
+                    "source": "x_weekly",
+                    "text": tweet["text"][:500],
+                })
+
+            time.sleep(2)
+
+        except Exception as e:
+            print("  X検索エラー: " + str(e))
+
+    # 著名アカウントの投稿収集
+    for username in X_NOTABLE_ACCOUNTS[:3]:
+        try:
+            url = (
+                "https://api.twitter.com/2/tweets/search/recent"
+                "?query=from:" + username + " -is:retweet"
+                + "&max_results=5"
+                + "&tweet.fields=public_metrics,created_at"
+            )
+            req = urllib.request.Request(
+                url,
+                headers={"Authorization": "Bearer " + bearer_token}
+            )
+            with urllib.request.urlopen(req, timeout=10) as r:
+                data = json.loads(r.read())
+
+            for tweet in data.get("data", []):
+                tweet_id = tweet["id"]
+                if tweet_id in seen_ids:
+                    continue
+                seen_ids.add(tweet_id)
+
+                metrics = tweet.get("public_metrics", {})
+                score = metrics.get("like_count", 0) + metrics.get("retweet_count", 0) * 2
+
+                results.append({
+                    "title": "@" + username + ": " + tweet["text"][:80],
+                    "url": "https://x.com/" + username + "/status/" + tweet_id,
+                    "score": score,
+                    "comments": metrics.get("reply_count", 0),
+                    "source": "x_weekly",
+                    "text": tweet["text"][:500],
+                })
+
+            time.sleep(2)
+
+        except Exception as e:
+            print("  X著名アカウント取得エラー (" + username + "): " + str(e))
+
+    results.sort(key=lambda x: x["score"], reverse=True)
+    print("  X Weekly: " + str(len(results)) + " tweets")
+    return results[:limit]
+
+
 def main():
-    print("Brain Collector starting... [" + TODAY + "]")
+    print("Brain Collector starting... [" + TODAY + "] (weekday=" + str(WEEKDAY) + ")")
 
     all_items = []
 
+    # Reddit
     token = get_reddit_token()
     for sub in REDDIT_SUBREDDITS:
         items = fetch_reddit(token, sub)
@@ -225,18 +366,30 @@ def main():
         print("  Reddit r/" + sub + ": " + str(len(items)) + " posts")
         time.sleep(0.5)
 
+    # HackerNews
     hn_items = fetch_hackernews()
     all_items.extend(hn_items)
     print("  HackerNews: " + str(len(hn_items)) + " posts")
 
+    # ArXiv
     arxiv_items = fetch_arxiv()
     all_items.extend(arxiv_items)
     print("  ArXiv: " + str(len(arxiv_items)) + " papers")
 
+    # GitHub Trending
     github_items = fetch_github_trending()
     all_items.extend(github_items)
     print("  GitHub Trending: " + str(len(github_items)) + " repos")
 
+    # X（日曜のみ: weekday=6）
+    if WEEKDAY == 6:
+        print("  日曜日のためX収集を実行...")
+        x_items = fetch_x_weekly()
+        all_items.extend(x_items)
+    else:
+        print("  X収集は日曜のみ実行 (今日はweekday=" + str(WEEKDAY) + ")")
+
+    # 重複除去
     seen_urls = set()
     unique_items = []
     for item in all_items:
