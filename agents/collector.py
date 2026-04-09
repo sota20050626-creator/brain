@@ -1,6 +1,6 @@
 """
 collector.py - AI情報収集エージェント
-ソース: Reddit, HackerNews, ArXiv, GitHub Search API, X（日曜のみ）
+ソース: Reddit, HackerNews, ArXiv, GitHub Search API, RSS feeds, X（日曜のみ）
 """
 
 import json
@@ -22,7 +22,8 @@ AI_KEYWORDS = [
     "ai", "llm", "gpt", "claude", "gemini", "openai", "anthropic",
     "machine learning", "neural", "transformer", "agent", "rag",
     "deepseek", "qwen", "mistral", "diffusion", "multimodal",
-    "ml", "model", "train", "inference", "vector"
+    "ml", "model", "train", "inference", "vector",
+    "生成ai", "人工知能", "機械学習", "深層学習", "エージェント",
 ]
 
 REDDIT_SUBREDDITS = [
@@ -31,6 +32,22 @@ REDDIT_SUBREDDITS = [
     "artificial",
     "ChatGPT",
     "singularity",
+]
+
+# RSSフィード一覧
+RSS_FEEDS = [
+    # 日本語AI情報
+    {"url": "https://zenn.dev/topics/ai/feed", "source": "zenn", "lang": "ja"},
+    {"url": "https://zenn.dev/topics/llm/feed", "source": "zenn", "lang": "ja"},
+    {"url": "https://zenn.dev/topics/chatgpt/feed", "source": "zenn", "lang": "ja"},
+    {"url": "https://note.com/hashtag/AI?kind=note&rss=1", "source": "note", "lang": "ja"},
+    # 英語AI情報
+    {"url": "https://techcrunch.com/category/artificial-intelligence/feed/", "source": "techcrunch", "lang": "en"},
+    {"url": "https://venturebeat.com/category/ai/feed/", "source": "venturebeat", "lang": "en"},
+    {"url": "https://www.wired.com/feed/tag/artificial-intelligence/latest/rss", "source": "wired", "lang": "en"},
+    # Anthropic・OpenAI公式
+    {"url": "https://www.anthropic.com/rss.xml", "source": "anthropic", "lang": "en"},
+    {"url": "https://openai.com/blog/rss.xml", "source": "openai", "lang": "en"},
 ]
 
 X_SEARCH_QUERIES = [
@@ -228,6 +245,73 @@ def fetch_github_trending(limit=10):
     return unique[:limit]
 
 
+def fetch_rss(limit=5):
+    """RSSフィードからAI情報を収集"""
+    all_items = []
+
+    for feed in RSS_FEEDS:
+        try:
+            req = urllib.request.Request(
+                feed["url"],
+                headers={"User-Agent": "Brain/1.0"}
+            )
+            with urllib.request.urlopen(req, timeout=10) as r:
+                content = r.read().decode("utf-8", errors="ignore")
+
+            # タイトル・リンク・説明を抽出
+            items = re.findall(r"<item>(.*?)</item>", content, re.DOTALL)
+            count = 0
+            for item in items:
+                if count >= limit:
+                    break
+
+                title_match = re.search(r"<title><!\[CDATA\[(.*?)\]\]></title>|<title>(.*?)</title>", item, re.DOTALL)
+                link_match = re.search(r"<link>(.*?)</link>|<link href=\"(.*?)\"", item, re.DOTALL)
+                desc_match = re.search(r"<description><!\[CDATA\[(.*?)\]\]></description>|<description>(.*?)</description>", item, re.DOTALL)
+
+                title = ""
+                if title_match:
+                    title = (title_match.group(1) or title_match.group(2) or "").strip()
+                    title = re.sub(r"<[^>]+>", "", title).strip()
+
+                link = ""
+                if link_match:
+                    link = (link_match.group(1) or link_match.group(2) or "").strip()
+
+                desc = ""
+                if desc_match:
+                    desc = (desc_match.group(1) or desc_match.group(2) or "").strip()
+                    desc = re.sub(r"<[^>]+>", "", desc).strip()[:300]
+
+                if not title or not link:
+                    continue
+
+                # AIキーワードフィルター（英語フィード）
+                if feed["lang"] == "en":
+                    title_lower = title.lower()
+                    desc_lower = desc.lower()
+                    if not any(kw in title_lower or kw in desc_lower for kw in AI_KEYWORDS):
+                        continue
+
+                all_items.append({
+                    "title": title,
+                    "url": link,
+                    "score": 0,
+                    "comments": 0,
+                    "source": "rss_" + feed["source"],
+                    "text": desc,
+                })
+                count += 1
+
+            print("  RSS " + feed["source"] + ": " + str(count) + " items")
+            time.sleep(1)
+
+        except Exception as e:
+            print("  RSS error (" + feed["source"] + "): " + str(e))
+
+    return all_items
+
+
 def fetch_x_weekly(limit=20):
     """X情報収集（毎週日曜のみ実行）"""
     api_key = os.environ.get("TWITTER_API_KEY", "")
@@ -239,7 +323,6 @@ def fetch_x_weekly(limit=20):
         print("  X API credentials not set, skipping X collection")
         return []
 
-    # Bearer Tokenを取得
     import base64
     credentials = base64.b64encode(
         (urllib.parse.quote(api_key) + ":" + urllib.parse.quote(api_secret)).encode()
@@ -263,7 +346,6 @@ def fetch_x_weekly(limit=20):
     results = []
     seen_ids = set()
 
-    # キーワード検索
     for query in X_SEARCH_QUERIES[:2]:
         try:
             encoded_query = urllib.parse.quote(query)
@@ -309,7 +391,6 @@ def fetch_x_weekly(limit=20):
         except Exception as e:
             print("  X検索エラー: " + str(e))
 
-    # 著名アカウントの投稿収集
     for username in X_NOTABLE_ACCOUNTS[:3]:
         try:
             url = (
@@ -380,6 +461,12 @@ def main():
     github_items = fetch_github_trending()
     all_items.extend(github_items)
     print("  GitHub Trending: " + str(len(github_items)) + " repos")
+
+    # RSS feeds
+    print("  RSSフィードを収集中...")
+    rss_items = fetch_rss(limit=5)
+    all_items.extend(rss_items)
+    print("  RSS合計: " + str(len(rss_items)) + " items")
 
     # X（日曜のみ: weekday=6）
     if WEEKDAY == 6:
