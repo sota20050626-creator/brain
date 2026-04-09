@@ -1,0 +1,748 @@
+{
+  "date": "2026-04-09",
+  "collected_at": "2026-04-09T16:13:52.883296+00:00",
+  "total": 71,
+  "raw_items": [
+    {
+      "title": "Vercel Claude Code plugin wants to read your prompt",
+      "url": "https://akshaychugh.xyz/writings/png/vercel-plugin-telemetry",
+      "score": 67,
+      "comments": 11,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "One Brain to Query: Wiring a 60-Person Company into a Single Slack Bot",
+      "url": "https://merylldindin.com/thoughts/company-brain/",
+      "score": 13,
+      "comments": 10,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Show HN: CSS Studio. Design by hand, code by agent",
+      "url": "https://cssstudio.ai",
+      "score": 81,
+      "comments": 66,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Reallocating $100/Month Claude Code Spend to Zed and OpenRouter",
+      "url": "https://braw.dev/blog/2026-04-06-reallocating-100-month-claude-spend/",
+      "score": 94,
+      "comments": 104,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Claude mixes up who said what",
+      "url": "https://dwyer.co.za/static/claude-mixes-up-who-said-what-and-thats-not-ok.html",
+      "score": 295,
+      "comments": 269,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Study found that young adults have grown less hopeful and more angry about AI",
+      "url": "https://www.nytimes.com/2026/04/09/style/gen-z-ai-gallup-study.html",
+      "score": 24,
+      "comments": 5,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Improving storage efficiency in Magic Pocket, Dropbox's immutable blob store",
+      "url": "https://dropbox.tech/infrastructure/improving-storage-efficiency-in-magic-pocket-our-immutable-blob-store",
+      "score": 53,
+      "comments": 13,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "ML promises to be profoundly weird",
+      "url": "https://aphyr.com/posts/411-the-future-of-everything-is-lies-i-guess",
+      "score": 568,
+      "comments": 557,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "John Deere to pay $99M in right-to-repair settlement",
+      "url": "https://www.thedrive.com/news/john-deere-to-pay-99-million-in-monumental-right-to-repair-settlement",
+      "score": 353,
+      "comments": 116,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Ask HN: What are you building that's not AI related?",
+      "url": "https://news.ycombinator.com/item?id=47700460",
+      "score": 67,
+      "comments": 101,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "I've been waiting over a month for Anthropic to respond to my billing issue",
+      "url": "https://nickvecchioni.github.io/thoughts/2026/04/08/anthropic-support-doesnt-exist/",
+      "score": 393,
+      "comments": 185,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "OpenAI pulls out of landmark £31B UK investment package",
+      "url": "https://www.theguardian.com/technology/2026/apr/09/openai-pulls-out-of-landmark-31bn-uk-investment",
+      "score": 9,
+      "comments": 4,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Process Manager for Autonomous AI Agents",
+      "url": "https://botctl.dev/",
+      "score": 55,
+      "comments": 19,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Clean code in the age of coding agents",
+      "url": "https://www.yanist.com/clean-code-in-the-age-of-coding-agents/",
+      "score": 43,
+      "comments": 48,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Project Glasswing: Securing critical software for the AI era",
+      "url": "https://www.anthropic.com/glasswing",
+      "score": 1504,
+      "comments": 810,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "White-Collar Workers Are Rebelling Against AI – 80% Refuse Adoption Mandates",
+      "url": "https://fortune.com/2026/04/09/ai-backlash-quiet-quitting-fobo-obsolete-white-collar-rebellion/",
+      "score": 14,
+      "comments": 5,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "MegaTrain: Full Precision Training of 100B+ Parameter LLMs on a Single GPU",
+      "url": "https://arxiv.org/abs/2604.05091",
+      "score": 320,
+      "comments": 56,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "You Can Just Print an Air Purifier",
+      "url": "https://aftermath.site/3d-printing-air-purifier-corsi-rosenthal/",
+      "score": 30,
+      "comments": 3,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "We moved Railway's frontend off Next.js. Builds went from 10+ mins to under 2",
+      "url": "https://blog.railway.com/p/moving-railways-frontend-off-nextjs",
+      "score": 211,
+      "comments": 204,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Show HN: TUI-use: Let AI agents control interactive terminal programs",
+      "url": "https://github.com/onesuper/tui-use",
+      "score": 48,
+      "comments": 37,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Claude Managed Agents Overview",
+      "url": "https://platform.claude.com/docs/en/managed-agents/overview",
+      "score": 33,
+      "comments": 19,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Show HN: Skrun – Deploy any agent skill as an API",
+      "url": "https://github.com/skrun-dev/skrun",
+      "score": 57,
+      "comments": 10,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "AI and remote work is a disaster for junior software engineers",
+      "url": "https://medium.com/@lukas_kosinski/ai-and-remote-work-is-a-disaster-for-junior-software-engineers-a377b1d8ed20",
+      "score": 16,
+      "comments": 6,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Fast Spatial Memory with Elastic Test-Time Training",
+      "url": "http://arxiv.org/abs/2604.07350v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Large Chunk Test-Time Training (LaCT) has shown strong performance on long-context 3D reconstruction, but its fully plastic inference-time updates remain vulnerable to catastrophic forgetting and overfitting. As a result, LaCT is typically instantiated with a single large chunk spanning the full input sequence, falling short of the broader goal of handling arbitrarily long sequences in a single pass. We propose Elastic Test-Time Training inspired by elastic weight consolidation, that stabilizes "
+    },
+    {
+      "title": "Toward a Tractability Frontier for Exact Relevance Certification",
+      "url": "http://arxiv.org/abs/2604.07349v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Exact relevance certification asks which coordinates are necessary to determine the optimal action in a coordinate-structured decision problem. The tractable families treated here admit a finite primitive basis, but optimizer-quotient realizability is maximal, so quotient shape alone cannot characterize the frontier.   We prove a meta-impossibility theorem for efficiently checkable structural predicates invariant under the theorem-forced closure laws of exact certification. Structural convergenc"
+    },
+    {
+      "title": "MoRight: Motion Control Done Right",
+      "url": "http://arxiv.org/abs/2604.07348v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Generating motion-controlled videos--where user-specified actions drive physically plausible scene dynamics under freely chosen viewpoints--demands two capabilities: (1) disentangled motion control, allowing users to separately control the object motion and adjust camera viewpoint; and (2) motion causality, ensuring that user-driven actions trigger coherent reactions from other objects rather than merely displacing pixels. Existing methods fall short on both fronts: they entangle camera and obje"
+    },
+    {
+      "title": "Measurement of Generative AI Workload Power Profiles for Whole-Facility Data Center Infrastructure Planning",
+      "url": "http://arxiv.org/abs/2604.07345v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "The rapid growth of generative artificial intelligence (AI) has introduced unprecedented computational demands, driving significant increases in the energy footprint of data centers. However, existing power consumption data is largely proprietary and reported at varying resolutions, creating challenges for estimating whole-facility energy use and planning infrastructure. In this work, we present a methodology that bridges this gap by linking high-resolution workload power measurements to whole-f"
+    },
+    {
+      "title": "Personalized RewardBench: Evaluating Reward Models with Human Aligned Personalization",
+      "url": "http://arxiv.org/abs/2604.07343v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Pluralistic alignment has emerged as a critical frontier in the development of Large Language Models (LLMs), with reward models (RMs) serving as a central mechanism for capturing diverse human values. While benchmarks for general response quality are prevalent, evaluating how well reward models account for individual user preferences remains an open challenge. To bridge this gap, we introduce Personalized RewardBench, a novel benchmark designed to rigorously assess reward models' capacity to mod"
+    },
+    {
+      "title": "Appear2Meaning: A Cross-Cultural Benchmark for Structured Cultural Metadata Inference from Images",
+      "url": "http://arxiv.org/abs/2604.07338v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Recent advances in vision-language models (VLMs) have improved image captioning for cultural heritage. However, inferring structured cultural metadata (e.g., creator, origin, period) from visual input remains underexplored. We introduce a multi-category, cross-cultural benchmark for this task and evaluate VLMs using an LLM-as-Judge framework that measures semantic alignment with reference annotations. To assess cultural reasoning, we report exact-match, partial-match, and attribute-level accurac"
+    },
+    {
+      "title": "RoSHI: A Versatile Robot-oriented Suit for Human Data In-the-Wild",
+      "url": "http://arxiv.org/abs/2604.07331v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Scaling up robot learning will likely require human data containing rich and long-horizon interactions in the wild. Existing approaches for collecting such data trade off portability, robustness to occlusion, and global consistency. We introduce RoSHI, a hybrid wearable that fuses low-cost sparse IMUs with the Project Aria glasses to estimate the full 3D pose and body shape of the wearer in a metric global coordinate frame from egocentric perception. This system is motivated by the complementari"
+    },
+    {
+      "title": "How to sketch a learning algorithm",
+      "url": "http://arxiv.org/abs/2604.07328v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "How does the choice of training data influence an AI model? This question is of central importance to interpretability, privacy, and basic science. At its core is the data deletion problem: after a reasonable amount of precomputation, quickly predict how the model would behave in a given situation if a given subset of training data had been excluded from the learning algorithm.   We present a data deletion scheme capable of predicting model outputs with vanishing error $\\varepsilon$ in the deep "
+    },
+    {
+      "title": "Gaussian Approximation for Asynchronous Q-learning",
+      "url": "http://arxiv.org/abs/2604.07323v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "In this paper, we derive rates of convergence in the high-dimensional central limit theorem for Polyak-Ruppert averaged iterates generated by the asynchronous Q-learning algorithm with a polynomial stepsize $k^{-ω},\\, ω\\in (1/2, 1]$. Assuming that the sequence of state-action-next-state triples $(s_k, a_k, s_{k+1})_{k \\geq 0}$ forms a uniformly geometrically ergodic Markov chain, we establish a rate of order up to $n^{-1/6} \\log^{4} (nS A)$ over the class of hyper-rectangles, where $n$ is the nu"
+    },
+    {
+      "title": "Syntax Is Easy, Semantics Is Hard: Evaluating LLMs for LTL Translation",
+      "url": "http://arxiv.org/abs/2604.07321v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Propositional Linear Temporal Logic (LTL) is a popular formalism for specifying desirable requirements and security and privacy policies for software, networks, and systems. Yet expressing such requirements and policies in LTL remains challenging because of its intricate semantics. Since many security and privacy analysis tools require LTL formulas as input, this difficulty places them out of reach for many developers and analysts. Large Language Models (LLMs) could broaden access to such tools "
+    },
+    {
+      "title": "Significant-Gravitas/AutoGPT - AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "score": 183268,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
+    },
+    {
+      "title": "ollama/ollama - Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "url": "https://github.com/ollama/ollama",
+      "score": 168323,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
+    },
+    {
+      "title": "huggingface/transformers - 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+      "url": "https://github.com/huggingface/transformers",
+      "score": 159095,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. "
+    },
+    {
+      "title": "f/prompts.chat - f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "url": "https://github.com/f/prompts.chat",
+      "score": 158673,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
+    },
+    {
+      "title": "affaan-m/everything-claude-code - The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "url": "https://github.com/affaan-m/everything-claude-code",
+      "score": 148275,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+    },
+    {
+      "title": "openclaw/openclaw - Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+      "url": "https://github.com/openclaw/openclaw",
+      "score": 353084,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 "
+    },
+    {
+      "title": "n8n-io/n8n - Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "url": "https://github.com/n8n-io/n8n",
+      "score": 183236,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
+    },
+    {
+      "title": "langgenius/dify - Production-ready platform for agentic workflow development.",
+      "url": "https://github.com/langgenius/dify",
+      "score": 136936,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Production-ready platform for agentic workflow development."
+    },
+    {
+      "title": "tensorflow/tensorflow - An Open Source Machine Learning Framework for Everyone",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "score": 194598,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "An Open Source Machine Learning Framework for Everyone"
+    },
+    {
+      "title": "pytorch/pytorch - Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "url": "https://github.com/pytorch/pytorch",
+      "score": 98961,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
+    },
+    {
+      "title": "Claude Code 中級者のための今週のトレンドまとめ【2026年4月 第1週】",
+      "url": "https://zenn.dev/taku_z3nn/articles/f95421a72afb10",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "はじめに\nClaude Codeを日常的に使い始めた中級者が、次のレベルに進むには「他の人がどう使っているか」を知ることが近道だ。\nこの記事では、2026年4月第1週にZenn・Threads・Xで話題になったClaude Code関連のトピックを、ビジネス活用の観点からピックアップしてまとめる。\n!\nこの記事の対象読者\n\nClaude Codeを日常的に使っている中級者\n最新のトレンド・テクニックをキャッチアップしたい人\nチームへの導入・展開を検討している管理者\n\n\n\n\n 今週の注目トレンド TOP 7\n\n 1. Git Worktreeによる並列開発 ― 最大の生産性向上テクニッ..."
+    },
+    {
+      "title": "Claude Code — MCP・CLI・Hooksの使い分け実践ガイド",
+      "url": "https://zenn.dev/toki_mwc/articles/claude-code-mcp-cli-hooks-comparison",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "Claude Codeから外部ツールを使う方法は3つある。MCP、CLI（Bash経由）、Hooks。どれも「Claude Codeの能力を拡張する」点では同じだが、向き不向きがまったく違う。\nこの記事では、実際に3つを使い分けている環境を例に、判断基準を整理する。\n\n 3つの方式の概要\n\n\n\n方式\n実行タイミング\nClaude Codeとの関係\n\n\n\n\nMCP\nClaude Codeが自律的に呼ぶ\n対話的。セッション中に何度も往復する\n\n\nCLI\nBash経由で呼ぶ\n単発。入力→出力のパイプライン\n\n\nHooks\nツール実行前後に自動発火\n受動的。Claude Codeが意識しなくても..."
+    },
+    {
+      "title": "オタク式LLM解説 -「AI有効活用で爆アド！！」とか言うなら仕組みくらいは知っておきましょう（笑）-",
+      "url": "https://zenn.dev/harunasu/articles/36290cd613b48f",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "オタク式LLM解説 -「AI有効活用で爆アド！！」とか言うなら仕組みくらいは知っておきましょう（笑）-\n\n オタクの前置きは長い\nこんにちは。\n近頃（もはや近頃というほどでもないけど）、AIがブームですよね。\n大人も子供もAIを使っています。ChatGPTに聞けば何でもわかる。チャッピーはなんでもやってくれる。徳川9代目将軍も、今日の献立も、あなたの前世も、チャッピーが教えてくれます（笑）\nお金の匂いもぷんぷんするのでしょう、猫も杓子も上段に立って 「AI有効活用で爆アド！！」 みたいなことを言っています。 その猫や杓子のうち、どれくらいがAIのことを分かっているのかはさておき\nチャ..."
+    },
+    {
+      "title": "キーボードのいらない開発環境を考えた — iPad mini × AI × 円形メニュー",
+      "url": "https://zenn.dev/sika7/articles/f200b47bfaf7e5",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "はじめに\n私はずっと Neovim で開発をしていました。\n理由はシンプルで、「思考の速度で編集できるから」です。マウスに手を伸ばさなくていい。メニューを探さなくていい。考えたことがそのままコードになる感覚があって、それが気に入っていました。\nところが最近、AI が開発の主役になってきています。GitHub Copilot や Claude のようなツールが、コードの大部分を生成してくれる時代です。\nそこでふと思いました。\n「AI 駆動の開発なら、キーボードはいらないんじゃないか？」\n\n Neovim が解いていた問題\nNeovim（や Vim）の本質は、「手をホームポジションから離..."
+    },
+    {
+      "title": "Claude CodeでALBログ分析スキルを作って運用してみた",
+      "url": "https://zenn.dev/dely_jp/articles/82c25c727be94e",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "はじめに\nこんにちは、クラシルでクラシルリテールネットワークの開発をしている akawai11 です。\nALBのアクセスログを定期的に分析する必要があるのですが、これが毎回結構な手間になっていました。\nALBのアクセスログ機能を有効化し、S3に保存しています。\n実作業としてはS3からログをダウンロードして、解凍して、集計する。\nやること自体は毎回ほぼ同じなのに、都度CLIでコマンドを組み立てていました。期間指定を変えてダウンロードして、パスのフィルタを調整して、集計軸を変えたりといった作業が定常化していたんです。\n今回、この分析作業をClaude Codeのスキルとしてまとめました。..."
+    },
+    {
+      "title": "JKRiver記憶アルゴリズム — 2ヶ月間の進化と、正直な迷いの話",
+      "url": "https://zenn.dev/collen/articles/88d9c8ecc5be2a",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "JKRiver（河流アルゴリズム）2ヶ月後の正直な報告 — 機能は増えた、でも迷っている\n\n はじめに\n2月に「河流アルゴリズム（JKRiver）」というAI記憶システムについて投稿しました。あのときは機能も少なく、説明も簡単なものでしたが、この2ヶ月でかなりアップデートを重ねました。\n今回は機能の紹介もしますが、それより先に開発者としての本音と迷いを書きたいと思います。もし読んでくれた方がいれば、意見をいただけると本当に助かります。\n\n\n そもそも、なぜ「AI記憶」が必要なのか\n\n 訓練済みモデルは、生まれた瞬間から止まっている\nChatGPTもClaudeも、学習が終わった瞬間か..."
+    },
+    {
+      "title": "前半：【導入・テスト編】 続・ローカルLLM環境をWSL2(Ubuntu)+Docker+Ollama(Gemma4)で構築してみた",
+      "url": "https://zenn.dev/seita621/articles/85b575672765c7",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "はじめに\n2026年4月、Googleから新たなオープンモデル「Gemma 4」がリリースされました。\n前回の記事では Gemma 3 を構築しましたが、今回はその環境をそのまま活かして、最新の Gemma 4 へとアップデートしてみます。\n特に今回は、VRAM 12GBの環境でどこまで動くのかを検証するため、性能重視の 26B モデルと、軽量な E4B モデルの2種類を導入してみます。\n\n 環境\n\n引き続き、NVIDIA RTX 3060 を積んだゲーミングPCを利用します。\nPCのローカル環境を汚したくないので、WSL2のUbuntu上のDockerを使って構築します。\n\n\n\n\n..."
+    },
+    {
+      "title": "MCPの仕様理解のためにInspectorを自作してみた",
+      "url": "https://zenn.dev/watabean/articles/mcp-inspector-cli",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "はじめに\nClaude Desktop や Claude Code に MCP サーバーをつないで使っていると、内部で何が起きているのか気になることがあります。公式の @modelcontextprotocol/inspector を使えば GUI で挙動を確認できますが、SDK が多くを吸収してくれるぶん、プロトコルそのものを意識する場面はあまりありません。\nそこで今回は、MCP の通信を JSON-RPC レベルで可視化する CLI ツールを自作しました。最初は「MCP はツールを呼び出すための共通インターフェース」くらいの理解でしたが、実装してみると、実際にはクライアント側にも..."
+    },
+    {
+      "title": "実践・プロンプトインジェクション対策：APIと「番犬AI」で作る最強のガードレール実装",
+      "url": "https://zenn.dev/colorfulwave/articles/3e064a8389cda9",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "実践・プロンプトインジェクション対策：APIと「番犬AI」で作る最強のガードレール実装\n\n対象読者: LLMを用いたアプリケーションを開発・運用するエンジニア\n難易度: 上級\n所要時間: 約12分\n\n\n[!WARNING]\n【重要：現時点での「暫定的な最適解」であるという前提】\nセキュリティ、特にプロンプトインジェクション対策において**「永遠に破られない完璧な防御（銀の弾丸）」は存在しません。** 攻撃の手法（プロンプトフズ等）は日々進化しており、防御側と攻撃側は常に終わりのない「イタチごっこ」を繰り広げています。\n本記事で紹介するコードとアーキテクチャは、筆者が開発したシステム上..."
+    },
+    {
+      "title": "AIツール今は安く済んでるけど、これから先ちょっと不安（助けて😂）",
+      "url": "https://zenn.dev/takagi_tech/articles/ai-tools-cost",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "AIツール安く済んでるけど、これから先ちょっと不安（助けて😂）\n\n はじめに\n私は現在、大学院生として日々の研究や開発に主に以下の4つのAIツールを使っています。\n\nChatGPT （OpenAI）\nGoogleの AIプラン（Google）\nClaude （Anthropic）\nGitHub Copilot（Microsoft\n\nまず各AIツールについて簡単に整理しときます。\n\n\n 各サービス概要\n\n 1. ChatGPT（OpenAI）\nChatgptは言うまでもないですね。Chatgptのサブスクリプションを契約すると、チャット形式のChatgpt、コーディング特化のCodex..."
+    },
+    {
+      "title": "usertourの仕組みを理解する — OSSオンボーディングツールを試してみる",
+      "url": "https://zenn.dev/dai_mywk/articles/73966d5f3fd3f2",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "usertourの仕組みを理解する — OSSオンボーディングツールを試してみる\n\n はじめに\nこの記事では、オープンソースのユーザーオンボーディングプラットフォーム「usertour」の仕組みと構成を解説します。\n単に「使い方」ではなく、「なぜこの構成でSPA・マルチページアプリ問わず動くのか」「セルフホスティング時に何が動いているのか」を理解することを目的としています。\n公式リポジトリ: https://github.com/usertour/usertour\n\n 前提知識・用語整理\nユーザーオンボーディングツールとは\nプロダクト内でユーザーに表示するガイド（ツアー、チェックリス..."
+    },
+    {
+      "title": "LLM解体全書 — ChatGPTの中身を初心者向けに完全解説",
+      "url": "https://zenn.dev/harunasu/books/423e24b92d4426",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "ChatGPT、Claude、Gemini。これらのLLMに質問を投げる。すると、\"いい感じの\"回答が返ってくる。その間に何が起きているのか？\n\n大半の人はそんなこと気にも留めず「なんだか分からないけどいい感じの便利ツール」としてLLMを使っています。\n\nなんなら「なんだか分からないけどいい感じの便利ツール」という理解のまま「効率のいいAIの使い方」なるものを語ったりしていますし、それが当たり前になっています。\n\n「そんなふわふわした理解のままLLMを使うのは気持ちが悪い！自分自身よくわかってないものを他人に説明するのも不誠実で嫌だ！」\n\n本書は、そんな勤勉で律儀なエンジニア向けにLLM推論パ"
+    },
+    {
+      "title": "自分が作ったアプリで、自分が救われた日 — ベータ版ローンチ初日の話",
+      "url": "https://zenn.dev/halfgenius/articles/c8f126d153a713",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "作ったものの話\nChatGPT・Gemini・Claudeに同時に質問して、回答を横並びで見られるWebアプリを作った。\n3つのAIがまとまっていたら便利だなと思ったから。毎回タブを切り替えて、同じ質問を3回打って、回答を頭の中で比べる。その必要がなくなる。\nだからHalfGeniusを作った。\n3つのAIに同時に質問できて、回答が横並びで表示される。さらに第4のAI（Assistant）が3つの回答を統合して深掘りしてくれる。RAGによる長期記憶もある。会話が蓄積されるほど、Assistantが自分のことを理解していく。\nさらに設計の段階から考えていた機能がある。話の途中で3人(＋..."
+    },
+    {
+      "title": "Amazon CEO takes aim at Nvidia, Intel, Starlink, more in annual shareholder letter",
+      "url": "https://techcrunch.com/2026/04/09/amazon-ceo-takes-aim-at-nvidia-intel-starlink-more-in-annual-shareholder-letter/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_techcrunch",
+      "text": "Andy Jassy's annual shareholder letter reads something like a diss track to a wide range of competitors as he defends spending $200 billion in capex."
+    },
+    {
+      "title": "Final 2 days to save up to $500 on your TechCrunch Disrupt 2026 ticket",
+      "url": "https://techcrunch.com/2026/04/09/final-2-days-to-save-up-to-500-on-your-techcrunch-disrupt-2026-ticket/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_techcrunch",
+      "text": "Ticket discounts of up to $500 will end tomorrow, April 10, at 11:59 p.m. PT. After that, prices for TechCrunch Disrupt 2026 go up again. Miss this, and you’ll be paying more for the same access to one of the most anticipated tech epicenters of the year. Register now to lock in these savings."
+    },
+    {
+      "title": "Poke makes using AI agents as easy as sending a text",
+      "url": "https://techcrunch.com/2026/04/08/poke-makes-ai-agents-as-easy-as-sending-a-text/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_techcrunch",
+      "text": "Poke brings AI agents to everyday users via text message by handling tasks and automations without complex setup, apps, or technical know-how."
+    },
+    {
+      "title": "AWS boss explains why investing billions in both Anthropic and OpenAI is an OK conflict",
+      "url": "https://techcrunch.com/2026/04/08/aws-boss-explains-why-investing-billions-in-both-anthropic-and-openai-is-an-ok-conflict/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_techcrunch",
+      "text": "AWS has an ingrained culture of handling competition, he explained, because the cloud giant also competes with its partners."
+    },
+    {
+      "title": "Tubi is the first streamer to launch a native app within ChatGPT",
+      "url": "https://techcrunch.com/2026/04/08/tubi-is-the-first-streamer-to-launch-a-native-app-within-chatgpt/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_techcrunch",
+      "text": "Tubi becomes the first streaming service to offer an app integration within ChatGPT, the AI chatbot that millions of users turn to for answers."
+    },
+    {
+      "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+      "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_venturebeat",
+      "text": "Railway, a San Francisco-based cloud platform that has quietly amassed two million developers without spending a dollar on marketing, announced Thursday that it raised $100 million in a Series B funding round, as surging demand for artificial intelligence applications exposes the limitations of lega"
+    },
+    {
+      "title": "Claude Code costs up to $200 a month. Goose does the same thing for free.",
+      "url": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_venturebeat",
+      "text": "The artificial intelligence coding revolution comes with a catch: it&#x27;s expensive.Claude Code, Anthropic&#x27;s terminal-based AI agent that can write, debug, and deploy code autonomously, has captured the imagination of software developers worldwide. But its pricing — ranging from $20 to $200 p"
+    },
+    {
+      "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
+      "url": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_venturebeat",
+      "text": "Alfred Wahlforss was running out of options. His startup, Listen Labs, needed to hire over 100 engineers, but competing against Mark Zuckerberg&#x27;s $100 million offers seemed impossible. So he spent $5,000 — a fifth of his marketing budget — on a billboard in San Francisco displaying what looked "
+    },
+    {
+      "title": "Salesforce rolls out new Slackbot AI agent as it battles Microsoft and Google in workplace AI",
+      "url": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_venturebeat",
+      "text": "Salesforce on Tuesday launched an entirely rebuilt version of Slackbot, the company&#x27;s workplace assistant, transforming it from a simple notification tool into what executives describe as a fully powered AI agent capable of searching enterprise data, drafting documents, and taking action on beh"
+    },
+    {
+      "title": "Anthropic launches Cowork, a Claude Desktop agent that works in your files — no coding required",
+      "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_venturebeat",
+      "text": "Anthropic released Cowork on Monday, a new AI agent capability that extends the power of its wildly successful Claude Code tool to non-technical users — and according to company insiders, the team built the entire feature in approximately a week and a half, largely using Claude Code itself.The launc"
+    },
+    {
+      "title": "OpenAI Full Fan Mode Contest: Terms & Conditions",
+      "url": "https://openai.com/index/full-fan-mode-contest-terms-conditions",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_openai",
+      "text": "Explore the official terms and conditions for the OpenAI Full Fan Mode Contest, including eligibility, entry steps, judging criteria, and prize details. Learn how to participate, submit your entry on Instagram, and win IPL match tickets."
+    },
+    {
+      "title": "The next phase of enterprise AI",
+      "url": "https://openai.com/index/next-phase-of-enterprise-ai",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_openai",
+      "text": "OpenAI outlines the next phase of enterprise AI, as adoption accelerates across industries with Frontier, ChatGPT Enterprise, Codex, and company-wide AI agents."
+    },
+    {
+      "title": "Introducing the Child Safety Blueprint",
+      "url": "https://openai.com/index/introducing-child-safety-blueprint",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_openai",
+      "text": "Discover OpenAI’s Child Safety Blueprint—a roadmap for building AI responsibly with safeguards, age-appropriate design, and collaboration to protect and empower young people online."
+    },
+    {
+      "title": "Announcing the OpenAI Safety Fellowship",
+      "url": "https://openai.com/index/introducing-openai-safety-fellowship",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_openai",
+      "text": "A pilot program to support independent safety and alignment research and develop the next generation of talent"
+    },
+    {
+      "title": "Industrial policy for the Intelligence Age",
+      "url": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_openai",
+      "text": "Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves."
+    }
+  ],
+  "summary": null,
+  "summarized_items": [
+    {
+      "title": "tensorflow/tensorflow - An Open Source Machine Learning Framework for Everyone",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "score": 194598,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "An Open Source Machine Learning Framework for Everyone",
+      "title_ja": "TensorFlow - 機械学習フレームワーク",
+      "summary_ja": "Googleが開発した誰でも使える機械学習フレームワーク。AI開発の基盤となる重要なオープンソースライブラリ。",
+      "importance": 9,
+      "tags": [
+        "オープンソース"
+      ],
+      "category": "技術"
+    },
+    {
+      "title": "huggingface/transformers - 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+      "url": "https://github.com/huggingface/transformers",
+      "score": 159095,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+      "title_ja": "Transformers - 最先端機械学習モデルフレームワーク",
+      "summary_ja": "テキスト、画像、音声、マルチモーダルモデルに対応した最先端の機械学習モデル定義フレームワーク。推論と訓練の両方をサポート。",
+      "importance": 9,
+      "tags": [
+        "LLM",
+        "オープンソース"
+      ],
+      "category": "技術"
+    },
+    {
+      "title": "pytorch/pytorch - Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "url": "https://github.com/pytorch/pytorch",
+      "score": 98961,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "title_ja": "PyTorch - GPU加速対応ニューラルネットワークライブラリ",
+      "summary_ja": "強力なGPU加速機能を持つPython向けテンソル計算とダイナミックニューラルネットワークライブラリ。深層学習研究と開発の標準ツール。",
+      "importance": 9,
+      "tags": [
+        "オープンソース"
+      ],
+      "category": "技術"
+    },
+    {
+      "title": "Significant-Gravitas/AutoGPT - AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "score": 183268,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "title_ja": "AutoGPT - アクセシブルなAI構築プラットフォーム",
+      "summary_ja": "誰でも使えて構築できるAIを目指すプロジェクト。重要なことに集中できるよう必要なツールを提供することをミッションとしている。",
+      "importance": 8,
+      "tags": [
+        "Agent",
+        "オープンソース"
+      ],
+      "category": "ツール"
+    },
+    {
+      "title": "ollama/ollama - Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "url": "https://github.com/ollama/ollama",
+      "score": 168323,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "title_ja": "Ollama - 多様なAIモデル実行環境",
+      "summary_ja": "Kimi-K2.5、GLM-5、MiniMax、DeepSeek、Qwen、Gemmaなど様々なAIモデルを簡単に実行できるプラットフォーム。中国系モデルも多数サポート。",
+      "importance": 8,
+      "tags": [
+        "LLM",
+        "中国AI",
+        "オープンソース"
+      ],
+      "category": "ツール"
+    },
+    {
+      "title": "langgenius/dify - Production-ready platform for agentic workflow development.",
+      "url": "https://github.com/langgenius/dify",
+      "score": 136936,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Production-ready platform for agentic workflow development.",
+      "title_ja": "Dify - プロダクション対応エージェントワークフロー開発プラットフォーム",
+      "summary_ja": "エージェント型ワークフローの開発に特化したプロダクション対応プラットフォーム。企業レベルでの利用を想定した本格的な開発環境を提供。",
+      "importance": 8,
+      "tags": [
+        "Agent",
+        "ビジネス",
+        "オープンソース"
+      ],
+      "category": "ビジネス"
+    },
+    {
+      "title": "n8n-io/n8n - Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "url": "https://github.com/n8n-io/n8n",
+      "score": 183236,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "title_ja": "n8n - AIネイティブワークフロー自動化プラットフォーム",
+      "summary_ja": "ビジュアル構築とカスタムコードを組み合わせたワークフロー自動化プラットフォーム。400以上の統合機能とネイティブAI機能を搭載。",
+      "importance": 7,
+      "tags": [
+        "Agent",
+        "ビジネス",
+        "オープンソース"
+      ],
+      "category": "ビジネス"
+    },
+    {
+      "title": "affaan-m/everything-claude-code - The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "url": "https://github.com/affaan-m/everything-claude-code",
+      "score": 148275,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "title_ja": "Everything Claude Code - Claude向け性能最適化システム",
+      "summary_ja": "Claude Code、Codex、Opencodeなど向けのエージェントハーネス性能最適化システム。スキル、記憶、セキュリティ機能を統合。",
+      "importance": 7,
+      "tags": [
+        "Agent",
+        "コード"
+      ],
+      "category": "技術"
+    },
+    {
+      "title": "openclaw/openclaw - Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+      "url": "https://github.com/openclaw/openclaw",
+      "score": 353084,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+      "title_ja": "OpenClaw - クロスプラットフォーム個人AIアシスタント",
+      "summary_ja": "あらゆるOSやプラットフォームで動作する個人用AIアシスタント。ユニークな「ロブスターウェイ」というアプローチを採用している。",
+      "importance": 6,
+      "tags": [
+        "Agent",
+        "オープンソース"
+      ],
+      "category": "ツール"
+    },
+    {
+      "title": "f/prompts.chat - f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "url": "https://github.com/f/prompts.chat",
+      "score": 158673,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "title_ja": "Prompts.chat - ChatGPTプロンプト共有プラットフォーム",
+      "summary_ja": "コミュニティからプロンプトを共有、発見、収集できるプラットフォーム。組織向けに完全プライベートなセルフホストも可能。",
+      "importance": 6,
+      "tags": [
+        "LLM",
+        "オープンソース"
+      ],
+      "category": "ツール"
+    }
+  ],
+  "digest": "## 今日の最重要トレンド\nAIの民主化が加速しており、TensorFlowやPyTorchといった基盤フレームワークから、AutoGPTやOllamaのような誰でも使えるプラットフォームまで、技術の裾野が大幅に拡大している。特にTransformersフレームワークによるマルチモーダル対応や、Ollamaでの多様な国際モデルサポートにより、AI活用の選択肢が飛躍的に増えている。\n\n## ビジネスへの示唆\n企業はもはや大規模な技術投資なしにAIを導入できる環境が整っており、競争優位の源泉が「AI技術の有無」から「AI活用の創造性」へシフトしている。\n特に中国系を含む多様なモデル選択肢により、用途や予算に応じた最適なAIソリューションの構築が可能になった。\n\n## 注目すべき技術動向\nGPU加速とマルチモーダル対応が標準となり、テキスト・画像・音声を統合したAIアプリケーション開発が主流になりつつある。\nオープンソース化とプラットフォーム化により、AI開発の参入障壁が劇的に低下し、イノベーションの加速が期待される。",
+  "top_tags": {
+    "オープンソース": 9,
+    "Agent": 5,
+    "LLM": 3,
+    "ビジネス": 2,
+    "中国AI": 1,
+    "コード": 1
+  }
+}
