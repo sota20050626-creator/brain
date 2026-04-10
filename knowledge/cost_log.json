@@ -1,7 +1,7 @@
 {
   "monthly": {
     "2026-04": {
-      "usd": 0.250818,
+      "usd": 0.294786,
       "calls": [
         {
           "date": "2026-04-07",
@@ -128,11 +128,32 @@
           "input_tokens": 1205,
           "output_tokens": 411,
           "usd": 0.00978
+        },
+        {
+          "date": "2026-04-10",
+          "label": "summarize_items",
+          "input_tokens": 1087,
+          "output_tokens": 1577,
+          "usd": 0.026916
+        },
+        {
+          "date": "2026-04-10",
+          "label": "daily_digest",
+          "input_tokens": 588,
+          "output_tokens": 347,
+          "usd": 0.006969
+        },
+        {
+          "date": "2026-04-10",
+          "label": "x_drafts",
+          "input_tokens": 1231,
+          "output_tokens": 426,
+          "usd": 0.010083
         }
       ],
-      "input_tokens": 16926,
-      "output_tokens": 13336
+      "input_tokens": 19832,
+      "output_tokens": 15686
     }
   },
-  "total_usd": 0.250818
+  "total_usd": 0.294786
 }

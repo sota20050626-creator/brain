@@ -1,8 +1,137 @@
 {
-  "built_at": "2026-04-09T21:40:41.912434",
-  "days_covered": 4,
-  "total_articles": 40,
+  "built_at": "2026-04-10T21:30:41.192746",
+  "days_covered": 5,
+  "total_articles": 50,
   "entries": [
+    {
+      "date": "2026-04-10",
+      "digest": "## 今日の最重要トレンド\nオープンソース機械学習フレームワークの成熟化とアクセシビリティの向上が顕著です。TensorFlow、PyTorch、Hugging Face Transformersといった主要プラットフォームが安定し、一方でAutoGPTやOllamaのような誰でも使えるAIツールが普及しています。技術者でなくてもAIを活用できる環境が整いつつあります。\n\n## ビジネスへの示唆\nAI導入の技術的障壁が大幅に低下し、中小企業でも本格的なAI活用が現実的になりました。特にローカル環境でのLLM実行により、データプライバシーを保持しながらコスト効率的なAI運用が可能です。\n\n## 注目すべき技術動向\nマルチモーダル対応（テキスト・画像・音声の統合処理）が標準化し、より複雑な業務への適用が進んでいます。また、ローカル実行可能な軽量モデルの充実により、クラウド依存を減らした自律的なAIシステム構築が加速しています。",
+      "articles": [
+        {
+          "title": "TensorFlow - 全ての人のためのオープンソース機械学習フレームワーク",
+          "summary": "Googleが開発した最も有名な機械学習フレームワークの一つ。幅広い機械学習アプリケーションの開発を支援するオープンソースプラットフォーム。",
+          "importance": 9,
+          "tags": [
+            "オープンソース"
+          ],
+          "category": "技術",
+          "source": "github_trending",
+          "url": "https://github.com/tensorflow/tensorflow"
+        },
+        {
+          "title": "Hugging Face Transformers - 最先端機械学習モデルのフレームワーク",
+          "summary": "テキスト、視覚、音声、マルチモーダルモデルに対応した機械学習フレームワーク。推論と訓練の両方をサポートし、最先端のモデル開発を可能にする。",
+          "importance": 9,
+          "tags": [
+            "LLM",
+            "画像生成",
+            "音声",
+            "オープンソース"
+          ],
+          "category": "技術",
+          "source": "github_trending",
+          "url": "https://github.com/huggingface/transformers"
+        },
+        {
+          "title": "PyTorch - 強力なGPU加速を持つPython向けテンソル・動的ニューラルネットワーク",
+          "summary": "Facebookが開発した人気の深層学習フレームワーク。動的なニューラルネットワークとテンソル操作をPythonで提供し、強力なGPU加速をサポート。",
+          "importance": 9,
+          "tags": [
+            "オープンソース"
+          ],
+          "category": "技術",
+          "source": "github_trending",
+          "url": "https://github.com/pytorch/pytorch"
+        },
+        {
+          "title": "AutoGPT - 誰でもアクセス可能なAIの実現を目指すプロジェクト",
+          "summary": "全ての人がAIを利用・構築できるようにすることを目標とした自動AI システム。重要なことに集中できるよう、必要なツールを提供している。",
+          "importance": 8,
+          "tags": [
+            "Agent",
+            "オープンソース"
+          ],
+          "category": "技術",
+          "source": "github_trending",
+          "url": "https://github.com/Significant-Gravitas/AutoGPT"
+        },
+        {
+          "title": "Ollama - 複数の大規模言語モデルを簡単に実行できるツール",
+          "summary": "Kimi-K2.5、GLM-5、MiniMax、DeepSeek、Qwen、Gemmaなど様々なLLMを簡単にセットアップして実行できる。ローカル環境でのモデル実行を支援。",
+          "importance": 8,
+          "tags": [
+            "LLM",
+            "オープンソース",
+            "中国AI"
+          ],
+          "category": "ツール",
+          "source": "github_trending",
+          "url": "https://github.com/ollama/ollama"
+        },
+        {
+          "title": "Dify - エージェンティックワークフロー開発のための本格プラットフォーム",
+          "summary": "本格的なエージェント型ワークフロー開発をサポートするプラットフォーム。プロダクション環境での使用に対応している。",
+          "importance": 8,
+          "tags": [
+            "Agent",
+            "ビジネス",
+            "オープンソース"
+          ],
+          "category": "ビジネス",
+          "source": "github_trending",
+          "url": "https://github.com/langgenius/dify"
+        },
+        {
+          "title": "n8n - ネイティブAI機能搭載のワークフロー自動化プラットフォーム",
+          "summary": "400以上の統合機能を持つワークフロー自動化プラットフォーム。ビジュアル構築とカスタムコードを組み合わせ、セルフホストまたはクラウドで利用可能。",
+          "importance": 7,
+          "tags": [
+            "ビジネス",
+            "オープンソース"
+          ],
+          "category": "ビジネス",
+          "source": "github_trending",
+          "url": "https://github.com/n8n-io/n8n"
+        },
+        {
+          "title": "Everything Claude Code - AIコーディングエージェントの性能最適化システム",
+          "summary": "Claude Code、Codex、Cursor等のAIコーディングツール向けの包括的最適化システム。スキル、記憶、セキュリティ、研究重視の開発をサポート。",
+          "importance": 7,
+          "tags": [
+            "Agent",
+            "コード",
+            "オープンソース"
+          ],
+          "category": "技術",
+          "source": "github_trending",
+          "url": "https://github.com/affaan-m/everything-claude-code"
+        },
+        {
+          "title": "OpenClaw - クロスプラットフォーム対応のパーソナルAIアシスタント",
+          "summary": "どのOSやプラットフォームでも動作する個人向けAIアシスタント。ユニークなロブスターテーマで親しみやすいインターフェースを提供している。",
+          "importance": 6,
+          "tags": [
+            "Agent",
+            "オープンソース"
+          ],
+          "category": "ツール",
+          "source": "github_trending",
+          "url": "https://github.com/openclaw/openclaw"
+        },
+        {
+          "title": "Prompts.chat - ChatGPTプロンプト共有コミュニティプラットフォーム",
+          "summary": "コミュニティからプロンプトを共有、発見、収集できるプラットフォーム。完全なプライバシーを保護したセルフホスト型の無料オープンソースソリューション。",
+          "importance": 6,
+          "tags": [
+            "LLM",
+            "オープンソース"
+          ],
+          "category": "ツール",
+          "source": "github_trending",
+          "url": "https://github.com/f/prompts.chat"
+        }
+      ]
+    },
     {
       "date": "2026-04-09",
       "digest": "## 今日の最重要トレンド\nAIの民主化が加速している。TensorFlowやPyTorchといった開発フレームワークから、AutoGPTのような誰でも使えるツール、OllamaのようなローカルAI実行環境まで、あらゆるレベルでAI活用の敷居が劇的に下がっている。\n専門知識がなくても高度なAI機能を業務に組み込める時代が到来した。\n\n## ビジネスへの示唆\nAI導入コストと技術的ハードルの大幅な低下により、中小企業でも本格的なAI活用が現実的になった。\n差別化要因はAI技術そのものから、いかに業務課題に適用するかの戦略・運用力にシフトしている。\n\n## 注目すべき技術動向\nHugging Face Transformersに代表されるマルチモーダルAI（テキスト・画像・音声統合）が実用段階に入っている。\nローカル環境での大規模言語モデル実行が標準化し、データセキュリティを重視する企業での導入が本格化している。",
