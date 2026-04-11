@@ -112,8 +112,10 @@ def load_latest_items():
 
 def generate_x_drafts(items):
     top_items = sorted(items, key=lambda x: x.get("importance", 0), reverse=True)[:10]
+    # ★ URLを含めてClaudeに渡す
     items_text = "\n".join([
         "- " + item.get("title_ja", item.get("title", "")) + ": " + item.get("summary_ja", "")[:80]
+        + " [URL: " + item.get("url", "") + "]"
         for item in top_items
     ])
     prompt = """あなたはAI情報を発信するXアカウントの中の人です。
@@ -138,13 +140,16 @@ def generate_x_drafts(items):
 【出力形式】
 投稿1:
 （本文）
+引用元: （元記事のURL）
 
 投稿2:
 （本文）
+引用元: （元記事のURL）
 
 投稿3:
-（本文）"""
-    return call_claude(prompt, max_tokens=800, label="x_drafts")
+（本文）
+引用元: （元記事のURL）"""
+    return call_claude(prompt, max_tokens=900, label="x_drafts")
 
 
 def save_x_drafts(drafts_text):
@@ -152,7 +157,8 @@ def save_x_drafts(drafts_text):
     with open(path, "w", encoding="utf-8") as f:
         f.write("# X投稿下書き - " + TODAY + "\n\n")
         f.write("> 今日+昨日(" + YESTERDAY + ")の最新AIニュースをもとに生成\n")
-        f.write("> 確認して気に入ったものをそのままXに投稿してください\n\n")
+        f.write("> 確認して気に入ったものをそのままXに投稿してください\n")
+        f.write("> 引用元URLはリプライまたは投稿末尾に添付推奨\n\n")
         f.write(drafts_text)
     print("  X下書き保存完了: " + str(path))
     return path
