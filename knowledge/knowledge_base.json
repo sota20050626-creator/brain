@@ -1,8 +1,138 @@
 {
-  "built_at": "2026-04-10T21:30:41.192746",
-  "days_covered": 5,
-  "total_articles": 50,
+  "built_at": "2026-04-11T13:21:53.672683",
+  "days_covered": 6,
+  "total_articles": 60,
   "entries": [
+    {
+      "date": "2026-04-11",
+      "digest": "## 1. 今日の最重要トレンド\nAI開発の民主化が加速しており、TensorFlow・PyTorchなどの基盤技術から、Hugging Face・AutoGPTのような高レベルプラットフォームまで、あらゆる技術レベルのユーザーがAIを活用できる環境が整備されている。特にOllamaのような実行プラットフォームの充実により、最新モデルへのアクセスが大幅に簡素化されている。\n\n## 2. ビジネスへの示唆\n企業は専門的なAI知識なしでも最先端技術を導入できるようになり、AI活用の参入障壁が大幅に低下している。これにより、AI導入の競争優位性は技術力よりもビジネス課題への適用力とスピードに移行している。\n\n## 3. 注目すべき技術動向\nマルチモーダル対応（テキスト・画像・音声統合）が標準化し、より実用的なAIアプリケーション開発が可能になっている。ローカル実行可能なモデルの普及により、プライバシー重視の企業でもAI活用が促進されている。",
+      "articles": [
+        {
+          "title": "TensorFlow - 機械学習フレームワーク",
+          "summary": "Googleが開発した最も広く使用されている機械学習フレームワーク。研究から本番環境まで幅広く対応するオープンソースプラットフォーム。",
+          "importance": 9,
+          "tags": [
+            "オープンソース"
+          ],
+          "category": "技術",
+          "source": "github_trending",
+          "url": "https://github.com/tensorflow/tensorflow"
+        },
+        {
+          "title": "Hugging Face Transformers - 最先端MLモデルフレームワーク",
+          "summary": "テキスト、画像、音声、マルチモーダルモデルに対応した最先端機械学習モデルフレームワーク。推論と学習の両方をサポート。",
+          "importance": 9,
+          "tags": [
+            "LLM",
+            "画像生成",
+            "音声",
+            "オープンソース"
+          ],
+          "category": "技術",
+          "source": "github_trending",
+          "url": "https://github.com/huggingface/transformers"
+        },
+        {
+          "title": "PyTorch - 動的ニューラルネットワークフレームワーク",
+          "summary": "強力なGPUアクセラレーションを備えたPython用の動的ニューラルネットワークフレームワーク。研究開発で広く採用されている。",
+          "importance": 9,
+          "tags": [
+            "オープンソース"
+          ],
+          "category": "技術",
+          "source": "github_trending",
+          "url": "https://github.com/pytorch/pytorch"
+        },
+        {
+          "title": "AutoGPT - アクセシブルなAI構築プラットフォーム",
+          "summary": "誰もが利用・構築できるAIの実現を目指すプロジェクト。ユーザーが重要な作業に集中できるよう、必要なツールを提供することがミッション。",
+          "importance": 8,
+          "tags": [
+            "Agent",
+            "オープンソース"
+          ],
+          "category": "ツール",
+          "source": "github_trending",
+          "url": "https://github.com/Significant-Gravitas/AutoGPT"
+        },
+        {
+          "title": "Ollama - 多様なAIモデル実行プラットフォーム",
+          "summary": "Kimi-K2.5、GLM-5、DeepSeekなど様々な最新AIモデルを簡単に実行できるプラットフォーム。多くの人気モデルに対応。",
+          "importance": 8,
+          "tags": [
+            "LLM",
+            "中国AI",
+            "オープンソース"
+          ],
+          "category": "ツール",
+          "source": "github_trending",
+          "url": "https://github.com/ollama/ollama"
+        },
+        {
+          "title": "n8n - ネイティブAI機能付きワークフロー自動化プラットフォーム",
+          "summary": "AI機能を統合したワークフロー自動化プラットフォーム。ビジュアル構築とカスタムコードを組み合わせ、400以上の統合機能を提供。",
+          "importance": 7,
+          "tags": [
+            "Agent",
+            "ビジネス",
+            "オープンソース"
+          ],
+          "category": "ツール",
+          "source": "github_trending",
+          "url": "https://github.com/n8n-io/n8n"
+        },
+        {
+          "title": "Dify - エージェントワークフロー開発プラットフォーム",
+          "summary": "本番環境対応のエージェントワークフロー開発プラットフォーム。企業レベルでのAIエージェント開発と運用を支援。",
+          "importance": 7,
+          "tags": [
+            "Agent",
+            "ビジネス",
+            "オープンソース"
+          ],
+          "category": "ツール",
+          "source": "github_trending",
+          "url": "https://github.com/langgenius/dify"
+        },
+        {
+          "title": "LLMs-from-scratch - ChatGPT風LLM実装チュートリアル",
+          "summary": "PyTorchを使ってChatGPTのようなLLMをゼロから段階的に実装する学習リソース。LLMの仕組みを深く理解できる教材。",
+          "importance": 7,
+          "tags": [
+            "LLM",
+            "コード",
+            "オープンソース"
+          ],
+          "category": "技術",
+          "source": "github_trending",
+          "url": "https://github.com/rasbt/LLMs-from-scratch"
+        },
+        {
+          "title": "OpenClaw - クロスプラットフォーム対応パーソナルAIアシスタント",
+          "summary": "任意のOSやプラットフォームで動作する個人用AIアシスタントプロジェクト。ユニークなロブスターテーマを採用したオープンソースソリューション。",
+          "importance": 6,
+          "tags": [
+            "Agent",
+            "オープンソース"
+          ],
+          "category": "ツール",
+          "source": "github_trending",
+          "url": "https://github.com/openclaw/openclaw"
+        },
+        {
+          "title": "Prompts.chat - ChatGPTプロンプト共有プラットフォーム",
+          "summary": "コミュニティからプロンプトを共有・発見・収集できるプラットフォーム。プライバシーを完全に保護する自己ホスト型のオープンソースソリューション。",
+          "importance": 6,
+          "tags": [
+            "LLM",
+            "オープンソース"
+          ],
+          "category": "ツール",
+          "source": "github_trending",
+          "url": "https://github.com/f/prompts.chat"
+        }
+      ]
+    },
     {
       "date": "2026-04-10",
       "digest": "## 今日の最重要トレンド\nオープンソース機械学習フレームワークの成熟化とアクセシビリティの向上が顕著です。TensorFlow、PyTorch、Hugging Face Transformersといった主要プラットフォームが安定し、一方でAutoGPTやOllamaのような誰でも使えるAIツールが普及しています。技術者でなくてもAIを活用できる環境が整いつつあります。\n\n## ビジネスへの示唆\nAI導入の技術的障壁が大幅に低下し、中小企業でも本格的なAI活用が現実的になりました。特にローカル環境でのLLM実行により、データプライバシーを保持しながらコスト効率的なAI運用が可能です。\n\n## 注目すべき技術動向\nマルチモーダル対応（テキスト・画像・音声の統合処理）が標準化し、より複雑な業務への適用が進んでいます。また、ローカル実行可能な軽量モデルの充実により、クラウド依存を減らした自律的なAIシステム構築が加速しています。",
