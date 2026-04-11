@@ -1,37 +1,37 @@
 {
   "date": "2026-04-11",
-  "collected_at": "2026-04-11T15:20:46.907976+00:00",
-  "total": 70,
+  "collected_at": "2026-04-11T15:39:59.838354+00:00",
+  "total": 71,
   "raw_items": [
     {
       "title": "Cirrus Labs to join OpenAI",
       "url": "https://cirruslabs.org/",
-      "score": 89,
-      "comments": 36,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "Cooperative Vectors Introduction",
-      "url": "https://www.evolvebenchmark.com/blog-posts/cooperative-vectors-introduction",
-      "score": 16,
-      "comments": 0,
+      "score": 101,
+      "comments": 40,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "Starfling: A one-tap endless orbital slingshot game in a single HTML file",
       "url": "https://playstarfling.com",
-      "score": 359,
-      "comments": 95,
+      "score": 374,
+      "comments": 96,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Cooperative Vectors Introduction",
+      "url": "https://www.evolvebenchmark.com/blog-posts/cooperative-vectors-introduction",
+      "score": 19,
+      "comments": 0,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "AI assistance when contributing to the Linux kernel",
       "url": "https://github.com/torvalds/linux/blob/master/Documentation/process/coding-assistants.rst",
-      "score": 411,
-      "comments": 297,
+      "score": 413,
+      "comments": 301,
       "source": "hackernews",
       "text": ""
     },
@@ -44,18 +44,26 @@
       "text": ""
     },
     {
-      "title": "Meta is set to pay its top AI executives almost a billion each in bonuses",
-      "url": "https://www.msn.com/en-my/news/other/meta-is-set-to-pay-its-top-ai-executives-almost-a-billion-each-in-bonuses-if-they-hit-their-targets/ar-AA1ZszqA",
-      "score": 21,
-      "comments": 9,
+      "title": "Launch HN: Twill.ai (YC S25) – Delegate to cloud agents, get back PRs",
+      "url": "https://twill.ai",
+      "score": 74,
+      "comments": 80,
       "source": "hackernews",
       "text": ""
     },
     {
-      "title": "Launch HN: Twill.ai (YC S25) – Delegate to cloud agents, get back PRs",
-      "url": "https://twill.ai",
-      "score": 74,
-      "comments": 79,
+      "title": "Meta is set to pay its top AI executives almost a billion each in bonuses",
+      "url": "https://www.msn.com/en-my/news/other/meta-is-set-to-pay-its-top-ai-executives-almost-a-billion-each-in-bonuses-if-they-hit-their-targets/ar-AA1ZszqA",
+      "score": 22,
+      "comments": 10,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Show HN: Hormuz Havoc, a satirical game that got overrun by AI bots in 24 hours",
+      "url": "https://www.hormuz-havoc.com/",
+      "score": 37,
+      "comments": 11,
       "source": "hackernews",
       "text": ""
     },
@@ -68,10 +76,18 @@
       "text": ""
     },
     {
-      "title": "Show HN: Hormuz Havoc, a satirical game that got overrun by AI bots in 24 hours",
-      "url": "https://www.hormuz-havoc.com/",
-      "score": 35,
+      "title": "A New Way to Spray Paint Color",
+      "url": "https://spectrum.ieee.org/spray-paint-color-creator",
+      "score": 17,
       "comments": 8,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Researchers used AI to analyze 400k Reddit posts, revealing GLP-1 side effects",
+      "url": "https://www.seas.upenn.edu/stories/penn-researchers-use-ai-to-surface-unreported-glp-1-side-effects-in-reddit-posts/",
+      "score": 11,
+      "comments": 1,
       "source": "hackernews",
       "text": ""
     },
@@ -84,26 +100,18 @@
       "text": ""
     },
     {
-      "title": "Researchers used AI to analyze 400k Reddit posts, revealing GLP-1 side effects",
-      "url": "https://www.seas.upenn.edu/stories/penn-researchers-use-ai-to-surface-unreported-glp-1-side-effects-in-reddit-posts/",
-      "score": 10,
-      "comments": 1,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "A New Way to Spray Paint Color",
-      "url": "https://spectrum.ieee.org/spray-paint-color-creator",
-      "score": 16,
-      "comments": 8,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
       "title": "Sam Altman's response to Molotov cocktail incident",
       "url": "https://blog.samaltman.com/2279512",
-      "score": 324,
-      "comments": 735,
+      "score": 326,
+      "comments": 742,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Raising Carthaginian Armies, Part I: Finding Carthaginians",
+      "url": "https://acoup.blog/2026/04/10/collections-raising-carthaginian-armies-part-i-finding-carthaginians/",
+      "score": 16,
+      "comments": 0,
       "source": "hackernews",
       "text": ""
     },
@@ -111,15 +119,7 @@
       "title": "Molotov cocktail is hurled at home of Sam Altman",
       "url": "https://www.nytimes.com/2026/04/10/us/open-ai-sam-altman-molotov-cocktail.html",
       "score": 237,
-      "comments": 572,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "Raising Carthaginian Armies, Part I: Finding Carthaginians",
-      "url": "https://acoup.blog/2026/04/10/collections-raising-carthaginian-armies-part-i-finding-carthaginians/",
-      "score": 14,
-      "comments": 0,
+      "comments": 573,
       "source": "hackernews",
       "text": ""
     },
@@ -151,7 +151,7 @@
       "title": "Why do we tell ourselves scary stories about AI?",
       "url": "https://www.quantamagazine.org/why-do-we-tell-ourselves-scary-stories-about-ai-20260410/",
       "score": 46,
-      "comments": 110,
+      "comments": 111,
       "source": "hackernews",
       "text": ""
     },
@@ -254,7 +254,7 @@
     {
       "title": "Significant-Gravitas/AutoGPT - AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
       "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "score": 183316,
+      "score": 183317,
       "comments": 0,
       "source": "github_trending",
       "text": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
@@ -262,7 +262,7 @@
     {
       "title": "ollama/ollama - Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
       "url": "https://github.com/ollama/ollama",
-      "score": 168575,
+      "score": 168577,
       "comments": 0,
       "source": "github_trending",
       "text": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
@@ -270,7 +270,7 @@
     {
       "title": "f/prompts.chat - f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
       "url": "https://github.com/f/prompts.chat",
-      "score": 159279,
+      "score": 159281,
       "comments": 0,
       "source": "github_trending",
       "text": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
@@ -278,7 +278,7 @@
     {
       "title": "huggingface/transformers - 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
       "url": "https://github.com/huggingface/transformers",
-      "score": 159196,
+      "score": 159197,
       "comments": 0,
       "source": "github_trending",
       "text": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. "
@@ -286,7 +286,7 @@
     {
       "title": "langgenius/dify - Production-ready platform for agentic workflow development.",
       "url": "https://github.com/langgenius/dify",
-      "score": 137251,
+      "score": 137253,
       "comments": 0,
       "source": "github_trending",
       "text": "Production-ready platform for agentic workflow development."
@@ -294,7 +294,7 @@
     {
       "title": "openclaw/openclaw - Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
       "url": "https://github.com/openclaw/openclaw",
-      "score": 354702,
+      "score": 354714,
       "comments": 0,
       "source": "github_trending",
       "text": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 "
@@ -302,7 +302,7 @@
     {
       "title": "n8n-io/n8n - Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "url": "https://github.com/n8n-io/n8n",
-      "score": 183560,
+      "score": 183562,
       "comments": 0,
       "source": "github_trending",
       "text": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
@@ -310,7 +310,7 @@
     {
       "title": "tensorflow/tensorflow - An Open Source Machine Learning Framework for Everyone",
       "url": "https://github.com/tensorflow/tensorflow",
-      "score": 194659,
+      "score": 194660,
       "comments": 0,
       "source": "github_trending",
       "text": "An Open Source Machine Learning Framework for Everyone"
@@ -318,7 +318,7 @@
     {
       "title": "pytorch/pytorch - Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "url": "https://github.com/pytorch/pytorch",
-      "score": 99026,
+      "score": 99028,
       "comments": 0,
       "source": "github_trending",
       "text": "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
@@ -326,54 +326,62 @@
     {
       "title": "rasbt/LLMs-from-scratch - Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
       "url": "https://github.com/rasbt/LLMs-from-scratch",
-      "score": 90510,
+      "score": 90511,
       "comments": 0,
       "source": "github_trending",
       "text": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step"
     },
     {
-      "title": "CLAUDE.mdの書き方完全ガイド：プロジェクト設定のベストプラクティス",
-      "url": "https://zenn.dev/masa1990/articles/d4ae86c700e024",
+      "title": "WindowsでClaude Codeは安全に使えるのか？ sandbox未対応環境の現実的対策",
+      "url": "https://zenn.dev/livingston/articles/ea5365eaf8a5ac",
       "score": 0,
       "comments": 0,
       "source": "rss_zenn",
-      "text": "CLAUDE.md とは\nCLAUDE.mdは、Claude Codeがプロジェクトを理解するためのコンテキストファイルです。プロジェクトのルートに配置すると、Claude Codeがセッション開始時に自動的に読み込みます。適切に書かれたCLAUDE.mdは、Claude Codeの応答品質を劇的に向上させます。\n\n CLAUDE.md の配置場所と優先順位\nCLAUDE.mdは複数の場所に配置でき、すべて読み込まれます。\n~/.claude/CLAUDE.md          # グローバル設定（全プロジェクト共通）\n./CLAUDE.md                   #..."
+      "text": "この記事の結論\n\nWindowsではsandboxは使えないが、Permissions + Hookで実用的な防御は可能\n\n特に重要なのは「Bash deny + Hookでの補完」（Read denyだけではBash経由のアクセスを防げない）\nより強固にするなら WSL2 Sandbox または Dev Container で環境分離\n\nこの3点を押さえれば、Windows環境でもClaude Codeを安全に運用できます。以下、その具体的な設定方法を解説します。\n!\n⚠️ 本記事で紹介するHookベースの制御は「アプリレベル」の防御であり、OSレベルの強制力（sandbox）と比..."
     },
     {
-      "title": "マウスカーソル「メガネ」で大喜びするSonnet(Claude)くんと、すぐにポイするGPTくん日記",
-      "url": "https://zenn.dev/arumenoy/articles/ee446a737d683c",
+      "title": "個人開発で辿り着いたAIの使い分け。Gemini・Claude・Codexを役割で分けたら開発が進んだ話",
+      "url": "https://zenn.dev/greenmameta/articles/cad43692599ed2",
       "score": 0,
       "comments": 0,
       "source": "rss_zenn",
-      "text": "AIにマウスカーソルよく見える「メガネ」を渡したら性格が出た\n学習データにない道具を渡されて即座に活用できるとは、本当にすごい話で。道具使用は知能の定義の核心だと思えます。カラスとチンパンジーくらいしかできないやつ！？　それをシリコンの塊がやれるとは…もうシリコン生命体以外の呼び方しかない！\n最近、AIにPCを触らせる実験をしている。\n未来っぽい響きだが、実際に起きるのはもっと泥くさい。\nクリックがズレる。ボタンを外す。画面のどこを見ているのかわからない。\nつまり、未来というより、やや賢いのに落ち着きのない新人にリモート操作を任せる会である。\n今回の問題はシンプルだった。スクショを..."
+      "text": "どうも、まめ太と申します。\nvicara という、ソロ開発者が複数の AI を「チーム」として扱いながら、スクラムっぽい流れで開発を進めるためのローカルファーストなデスクトップアプリを開発しています。\n🔗 GitHubリポジトリはこちら\nhttps://github.com/ytakahashi0302-ghb/ai_scrum_tool\n（もしよければStarをいただけると開発の励みになります！）\n以下記事もぜひ読んでみてください。\nhttps://zenn.dev/greenmameta/articles/bac525678ce7ff\nhttps://zenn.dev/greenma..."
+    },
+    {
+      "title": "SRE+DevOps×AIで運用改善②",
+      "url": "https://zenn.dev/structnote/articles/bde80ebc85b6db",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "Assist → Operate → Guarded Autonomyで考える、現実的なAI運用改善\nAIを運用に入れるとき、最初から「自律化」をゴールに置くとだいたい途中で方向性を見失います。\nうまくいきやすいのは段階を分けるやり方です。\n自分がしっくりきているのは、次の3段階です。\n\nAssist\nOperate\nGuarded Autonomy\n\nこれは単なる成熟度ラベルではなく、AIにどこまで任せるかを切り分けるための設計軸です。\n\n なぜ段階導入が必要なのか\nAI運用改善が難しいのは、モデルがすごくなっても決まらないからです。\n実際には、社内の情報整備状況や次のような要素が..."
+    },
+    {
+      "title": "SRE+DevOps×AIで運用改善①",
+      "url": "https://zenn.dev/structnote/articles/3694beed7ab6a9",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "SRE+DevOps×AIで運用改善するとき\n生成AIを運用改善に導入と組み込む話題になると、「AIが自動で調べて自動で直してくれてなんでも対応してもらえる世界」「人が思うことを具現化してすべてを自律的に実現する運用システム」で想像しがちです。本当に重要なのは、そこではないと考えています。\n※実現可否は除いて理想像や将来像は必要です。\n先に考えるべきなのは、かなり地味です。\n\nアラートをどう受けるのか（重複・遅延・順序逆転、欠損/ロスト/ドロップする・・）\nどの情報を根拠として扱うのか（ドキュメントが乱立、構成と設定が一致しない）\n誰が承認するのか（監査や社内ガバナンス対応、工事/接..."
+    },
+    {
+      "title": "Claude Code Channelsの実態はMCPだった — Discordにハムスターを住まわせて分かったこと",
+      "url": "https://zenn.dev/seeda_yuto/articles/claude-code-channels-discord-hamster",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "「コレジャナイ感」\nClaude Code Channelsが発表されたとき、自分はこうツイートした。\n\nTLでは「スマホからコーディング指示が出せる！」「ターミナル開きっぱなし不要！」と盛り上がっていた。自分も期待して速攻で試した。が、触ってみて最初に思ったのは「……あれ？」だった。\nClaudeの出力がそのままチャットに流れてくるわけじゃない。 承認を求められるたびにターミナルを見に行く必要がある。これでは「スマホから操作」のメリットが薄い。\nただ、そこで終わりにしなかった。設定と運用を工夫したら、最初の「コレジャナイ」が「これは手放せない」に変わった。\nこの記事では、Chann..."
+    },
+    {
+      "title": "あなたのローカル AI スタックは、すでにスキャンされている",
+      "url": "https://zenn.dev/runlocal/articles/f67da103030a8e",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "日本の Ollama ユーザーへ\n国内でも Ollama を自宅サーバーや VPS（さくらの VPS、ConoHa、AWS Tokyo リージョンなど）で動かしている開発者は増えています。ポート 11434 をそのまま開放していませんか？\n海外で行われた 30 日間のハニーポット実験の結果は、他人事ではありません。\n\n\n 実験の概要\nr/ollama のユーザーが、1GB RAM の Raspberry Pi を使って 30 日間、Ollama のハニーポットを運用しました。「Heretic」という名前のアンセンサードモデルを搭載した高性能マシンに見せかけ、34 ポートを開放して静的..."
     },
     {
       "title": "Claude Mythos Preview System Card - 2. RSP評価（1）",
       "url": "https://zenn.dev/sol_sun/articles/claude-mythos-02-rsp_01",
-      "score": 0,
-      "comments": 0,
-      "source": "rss_zenn",
-      "text": "!\n本記事は，Anthropicが公開した Claude Mythos Preview System Card の日本語訳です．\n\n\n 2 RSP評価\n\n 2.1 RSPリスク評価プロセス[1]\n\nOur Responsible Scaling Policy (RSP) is our voluntary framework for managing catastrophic risks from advanced AI systems. ^{3} It establishes how we identify and evaluate risks, how we make decisio..."
-    },
-    {
-      "title": "GitHub CopilotをPRでメンションして、スマホからそのままコードを修正して、外出中でも快適開発ライフを送る",
-      "url": "https://zenn.dev/j____takumi/articles/copilot-mention-on-pull-request",
-      "score": 0,
-      "comments": 0,
-      "source": "rss_zenn",
-      "text": "スマホでのPRレビュー、もう他のプルリクを開かなくていい\n以前プルリクエストをCopilotにレビューしてもらったら、いくつか指摘をもらいました。\n提案をそのまま適用するボタンが出現しなかったため、Copilotにメンションをかけて問題箇所を修正してもらうようにしました。\nところが、作業が完了して見てみると依頼したプルリクエストではなく、新しいプルリクエストが作成されていてそれをマージしないと適用できないようでした。\n本当にちょっとした動作ですが、確認用のプルリクエストを開いて内容を見て、さらにマージする一手間が毎回挟まるのは地味に重く感じていました。\nつい最近、そうした流れをかなり..."
-    },
-    {
-      "title": "NotebookLM Gemini 統合とは？壁打ちが資産になる活用法【2026年】",
-      "url": "https://zenn.dev/totsu_ai_lab/articles/notebooklm-gemini-integration",
-      "score": 0,
-      "comments": 0,
-      "source": "rss_zenn",
-      "text": "NotebookLM Gemini 統合で何が変わったのか\n2026年4月8日、GoogleはGeminiアプリに「Notebooks」機能を統合すると発表しました。これにより、これまで別々に存在していたGemini（チャットAI）とNotebookLM（資料理解AI）がシームレスにつながります。\n\n\n統合前: Geminiでのチャットはセッションごとにリセットされる「使い捨て」の会話\n\n統合後: GeminiでのチャットをNotebookのソースとして保存でき、次回以降の思考の土台として再利用できる\n\nこれにより「壁打ちがそのまま知識資産になる」という大きな転換が起きます。\n参考:..."
-    },
-    {
-      "title": "Claude Mythos Preview System Card - 2. RSP評価（1）",
-      "url": "https://zenn.dev/sol_sun/articles/claude-mythos-02-rsp-evaluations",
       "score": 0,
       "comments": 0,
       "source": "rss_zenn",
@@ -402,6 +410,14 @@
       "comments": 0,
       "source": "rss_zenn",
       "text": "!\n3行まとめ 🤖\n\nAIへの「怖い」には主に4つのパターンがある——その正体を知ると少し楽になる\nAIは鏡。使う人の気持ちが、未来の形を決める\n毎日AIとコードを書く筆者が語る、のんびり楽しい未来のビジョン\n\n\n\n こんな人に読んでほしい 🐰\n\n「AIって怖い」「人間いらなくなる？」と感じている方\nAIを使い始めたけど、なんとなくモヤモヤしている方\n未来に漠然と不安を感じている方\n\n\n 前提条件\n\nAIやプログラミングの専門知識は不要です\nChatGPT / Claude / Gemini などのAIツールを日常的に使っている方は、より共感しやすいかもしれません\n\n\n この記事でわか..."
+    },
+    {
+      "title": "「wait」と言える力～カスタムGPTの作り方②～",
+      "url": "https://zenn.dev/hydrangea01/articles/4f18c96b41953d",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "■ つい口に出るひと言\nChatGPTと会話をしていて、一番多く口にしている言葉はこれかもしれません。\n「wait, wait, wait」\n「人の話を聞け」\n「そっちじゃない、戻ってこい」\n\n ■ 前提を誤解したままの展開\nユーザーが言葉を投げると、\n主題の設定から分析、結論、次の一手まで、一息で返してくる。\n生成AIはすごいと思う。\nただ、その最初の「主題」って、大体が「ズレている」。\nそうなると、その後の展開はすべて外れていく。\n最近の生成AI、特にChatGPTは、\nかなりの精度で「それっぽい流れ」を作ってくる。\nただ、その分、一度走り出すと止まらない。\n\n ■ 前提を誤解し..."
     },
     {
       "title": "あなたがAIに疲れる理由は、あなたが「翻訳」を押しつけられているからだ",
@@ -434,14 +450,6 @@
       "comments": 0,
       "source": "rss_zenn",
       "text": "オタク式LLM解説 -「AI有効活用で爆アド！！」とか言うなら仕組みくらいは知っておきましょう（笑）-\n\n オタクの前置きは長い\nこんにちは。\n近頃（もはや近頃というほどでもないけど）、AIがブームですよね。\n大人も子供もAIを使っています。ChatGPTに聞けば何でもわかる。チャッピーはなんでもやってくれる。徳川9代目将軍も、今日の献立も、あなたの前世も、チャッピーが教えてくれます（笑）\nお金の匂いもぷんぷんするのでしょう、猫も杓子も上段に立って 「AI有効活用で爆アド！！」 みたいなことを言っています。 その猫や杓子のうち、どれくらいがAIのことを分かっているのかはさておき\nチャ..."
-    },
-    {
-      "title": "usertourの仕組みを理解する — OSSオンボーディングツールを試してみる",
-      "url": "https://zenn.dev/dai_mywk/articles/73966d5f3fd3f2",
-      "score": 0,
-      "comments": 0,
-      "source": "rss_zenn",
-      "text": "usertourの仕組みを理解する — OSSオンボーディングツールを試してみる\n\n はじめに\nこの記事では、オープンソースのユーザーオンボーディングプラットフォーム「usertour」の仕組みと構成を解説します。\n単に「使い方」ではなく、「なぜこの構成でSPA・マルチページアプリ問わず動くのか」「セルフホスティング時に何が動いているのか」を理解することを目的としています。\n公式リポジトリ: https://github.com/usertour/usertour\n\n 前提知識・用語整理\nユーザーオンボーディングツールとは\nプロダクト内でユーザーに表示するガイド（ツアー、チェックリス..."
     },
     {
       "title": "Anthropic temporarily banned OpenClaw&#8217;s creator from accessing Claude",
@@ -569,13 +577,13 @@
     {
       "title": "tensorflow/tensorflow - An Open Source Machine Learning Framework for Everyone",
       "url": "https://github.com/tensorflow/tensorflow",
-      "score": 194659,
+      "score": 194660,
       "comments": 0,
       "source": "github_trending",
       "text": "An Open Source Machine Learning Framework for Everyone",
-      "title_ja": "TensorFlow - オープンソース機械学習フレームワーク",
-      "summary_ja": "Googleが開発した世界最大級の機械学習フレームワーク。あらゆる人が利用できるオープンソースプラットフォームとして提供。",
-      "importance": 9,
+      "title_ja": "TensorFlow - 誰でも使えるオープンソース機械学習フレームワーク",
+      "summary_ja": "Googleが開発した世界で最も広く使われている機械学習フレームワーク。研究から本番環境まで幅広く対応する包括的なMLプラットフォーム。",
+      "importance": 10,
       "tags": [
         "オープンソース"
       ],
@@ -584,13 +592,13 @@
     {
       "title": "huggingface/transformers - 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
       "url": "https://github.com/huggingface/transformers",
-      "score": 159196,
+      "score": 159197,
       "comments": 0,
       "source": "github_trending",
       "text": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
-      "title_ja": "Hugging Face Transformers - 最先端MLモデルフレームワーク",
-      "summary_ja": "テキスト、画像、音声、マルチモーダルモデルに対応した最先端機械学習モデルの定義フレームワーク。推論と訓練の両方をサポート。",
-      "importance": 9,
+      "title_ja": "Hugging Face Transformers - 最先端MLモデル統合フレームワーク",
+      "summary_ja": "テキスト、画像、音声、マルチモーダルの最先端機械学習モデルを統合したフレームワーク。推論と訓練の両方に対応し、AIモデル開発の標準プラットフォーム。",
+      "importance": 10,
       "tags": [
         "LLM",
         "画像生成",
@@ -602,31 +610,14 @@
     {
       "title": "pytorch/pytorch - Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "url": "https://github.com/pytorch/pytorch",
-      "score": 99026,
+      "score": 99028,
       "comments": 0,
       "source": "github_trending",
       "text": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
-      "title_ja": "PyTorch - 動的ニューラルネットワークフレームワーク",
-      "summary_ja": "強力なGPUアクセラレーションを備えたPython向けテンソル・動的ニューラルネットワークライブラリ。研究から本番まで幅広く活用される主要フレームワーク。",
-      "importance": 9,
+      "title_ja": "PyTorch - GPU加速対応動的ニューラルネットワークフレームワーク",
+      "summary_ja": "強力なGPU加速機能を持つPython向けテンソル計算・動的ニューラルネットワークライブラリ。研究と開発の両分野で広く採用されている主要なディープラーニングフレームワーク。",
+      "importance": 10,
       "tags": [
-        "オープンソース"
-      ],
-      "category": "技術"
-    },
-    {
-      "title": "Significant-Gravitas/AutoGPT - AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
-      "url": "https://github.com/Significant-Gravitas/AutoGPT",
-      "score": 183316,
-      "comments": 0,
-      "source": "github_trending",
-      "text": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
-      "title_ja": "AutoGPT - アクセシブルAI構築プラットフォーム",
-      "summary_ja": "誰もがアクセス可能なAIの実現を目指すプラットフォーム。ユーザーが重要なことに集中できるよう、必要なツールを提供することがミッション。",
-      "importance": 8,
-      "tags": [
-        "Agent",
-        "LLM",
         "オープンソース"
       ],
       "category": "技術"
@@ -634,80 +625,97 @@
     {
       "title": "ollama/ollama - Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
       "url": "https://github.com/ollama/ollama",
-      "score": 168575,
+      "score": 168577,
       "comments": 0,
       "source": "github_trending",
       "text": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
-      "title_ja": "Ollama - 多種LLMモデル実行プラットフォーム",
-      "summary_ja": "Kimi-K2.5、GLM-5、MiniMax、DeepSeek、Qwen、Gemmaなど多様なLLMモデルを簡単に実行できるプラットフォーム。特に中国系モデルを多数サポート。",
-      "importance": 8,
+      "title_ja": "Ollama - 複数のLLMモデル統合実行プラットフォーム",
+      "summary_ja": "Kimi-K2.5、GLM-5、MiniMax、DeepSeek、Qwen、Gemmaなど多数のLLMモデルを簡単に導入・実行できるプラットフォーム。モデルの統合管理を効率化。",
+      "importance": 9,
       "tags": [
         "LLM",
         "中国AI",
         "オープンソース"
       ],
-      "category": "ツール"
+      "category": "技術"
     },
     {
-      "title": "n8n-io/n8n - Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-      "url": "https://github.com/n8n-io/n8n",
-      "score": 183560,
+      "title": "Significant-Gravitas/AutoGPT - AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "score": 183317,
       "comments": 0,
       "source": "github_trending",
-      "text": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-      "title_ja": "n8n - AI機能搭載ワークフロー自動化プラットフォーム",
-      "summary_ja": "ネイティブAI機能を備えたワークフロー自動化プラットフォーム。視覚的な構築とカスタムコードを組み合わせ、400以上の統合機能を提供。",
-      "importance": 7,
+      "text": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "title_ja": "AutoGPT - 誰もがアクセス可能なAI構築プラットフォーム",
+      "summary_ja": "AI技術を誰でも利用・構築できるようにするプラットフォーム。重要な業務に集中できるよう、必要なツールを提供することをミッションとしている。",
+      "importance": 8,
       "tags": [
         "Agent",
-        "ビジネス",
+        "LLM",
         "オープンソース"
       ],
-      "category": "ツール"
+      "category": "技術"
     },
     {
       "title": "langgenius/dify - Production-ready platform for agentic workflow development.",
       "url": "https://github.com/langgenius/dify",
-      "score": 137251,
+      "score": 137253,
       "comments": 0,
       "source": "github_trending",
       "text": "Production-ready platform for agentic workflow development.",
-      "title_ja": "Dify - エージェントワークフロー開発プラットフォーム",
-      "summary_ja": "エージェントワークフロー開発に特化したプロダクション対応プラットフォーム。実用的なAIエージェントシステムの構築を支援。",
+      "title_ja": "Dify - 本番環境対応エージェントワークフロー開発プラットフォーム",
+      "summary_ja": "エンタープライズレベルでのエージェントワークフロー開発に特化したプラットフォーム。本番環境での安定運用を重視した設計が特徴。",
+      "importance": 8,
+      "tags": [
+        "Agent",
+        "ビジネス",
+        "オープンソース"
+      ],
+      "category": "ビジネス"
+    },
+    {
+      "title": "n8n-io/n8n - Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "url": "https://github.com/n8n-io/n8n",
+      "score": 183562,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "title_ja": "n8n - ネイティブAI機能搭載ワークフロー自動化プラットフォーム",
+      "summary_ja": "ビジュアルな構築とカスタムコードを組み合わせたワークフロー自動化ツール。400以上のサービス統合とセルフホスト対応でビジネスプロセスを効率化。",
       "importance": 7,
       "tags": [
         "Agent",
         "ビジネス",
         "オープンソース"
       ],
-      "category": "ツール"
+      "category": "ビジネス"
     },
     {
       "title": "rasbt/LLMs-from-scratch - Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
       "url": "https://github.com/rasbt/LLMs-from-scratch",
-      "score": 90510,
+      "score": 90511,
       "comments": 0,
       "source": "github_trending",
       "text": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
-      "title_ja": "LLMs-from-scratch - ChatGPT風LLM実装チュートリアル",
-      "summary_ja": "PyTorchを使用してChatGPTのようなLLMを一からステップバイステップで実装する教育リソース。LLMの内部構造を深く理解できる実践的な学習教材。",
+      "title_ja": "LLMs from Scratch - PyTorchによるChatGPT風LLM実装ガイド",
+      "summary_ja": "PyTorchを使ってChatGPTのようなLLMを一から実装する教育的なプロジェクト。ステップバイステップで大規模言語モデルの仕組みを学習できる。",
       "importance": 7,
       "tags": [
         "LLM",
         "コード",
         "オープンソース"
       ],
-      "category": "ツール"
+      "category": "技術"
     },
     {
       "title": "openclaw/openclaw - Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
       "url": "https://github.com/openclaw/openclaw",
-      "score": 354702,
+      "score": 354714,
       "comments": 0,
       "source": "github_trending",
       "text": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
-      "title_ja": "OpenClaw - クロスプラットフォーム個人AIアシスタント",
-      "summary_ja": "任意のOSやプラットフォームで動作する個人用AIアシスタントツール。ユニークな「ロブスター方式」を採用したアプローチが特徴的。",
+      "title_ja": "OpenClaw - クロスプラットフォーム対応パーソナルAIアシスタント",
+      "summary_ja": "任意のOSやプラットフォームで動作するパーソナルAIアシスタントツール。ユニークなロブスターテーマを採用した個人向けAIソリューション。",
       "importance": 6,
       "tags": [
         "Agent",
@@ -718,12 +726,12 @@
     {
       "title": "f/prompts.chat - f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
       "url": "https://github.com/f/prompts.chat",
-      "score": 159279,
+      "score": 159281,
       "comments": 0,
       "source": "github_trending",
       "text": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
-      "title_ja": "Prompts.chat - ChatGPTプロンプト共有プラットフォーム",
-      "summary_ja": "コミュニティからプロンプトを共有・発見・収集できるプラットフォーム。プライバシー完全保護でセルフホスト可能な無料オープンソース。",
+      "title_ja": "Prompts.chat - ChatGPTプロンプト共有コミュニティプラットフォーム",
+      "summary_ja": "コミュニティでプロンプトを共有・発見・収集できるプラットフォーム。完全にプライベートなセルフホスト機能で組織内での利用も可能。",
       "importance": 6,
       "tags": [
         "LLM",
@@ -732,7 +740,7 @@
       "category": "ツール"
     }
   ],
-  "digest": "## 今日の最重要トレンド\n多様なAIモデルを簡単に利用できるプラットフォームの拡充が進んでいます。特にHugging Face TransformersとOllamaが、テキスト・画像・音声のマルチモーダル対応や多種LLMモデルの実行環境を提供し、AI活用の敷居を大幅に下げています。AutoGPTと併せて「誰もがAIを使える」環境整備が加速している状況です。\n\n## ビジネスへの示唆\n企業は自社に最適なAIモデルを選択・組み合わせて活用する時代に突入しました。特に中国系LLMモデルの台頭により、コスト効率と性能のバランスを考慮した戦略的なモデル選択が競争力の鍵となります。\n\n## 注目すべき技術動向\nオープンソースフレームワーク（TensorFlow、PyTorch）の成熟と、多様なLLMモデルを統合運用できるプラットフォームの普及が同時進行しています。これによりAI開発から実装・運用まで一貫したエコシステムが形成されつつあります。",
+  "digest": "## 今日の最重要トレンド\nAI開発の民主化が加速しており、TensorFlow、PyTorch、Hugging Face TransformersといったオープンソースフレームワークがMLの標準インフラとして定着している。特にOllamaによる複数LLMの統合管理やAutoGPTによる誰でもアクセス可能なAI構築環境の整備が進んでいる。技術的な専門知識がなくても高度なAI機能を活用できる時代が本格的に到来している。\n\n## ビジネスへの示唆\n企業は自社の業務に最適化されたAIソリューションを低コストで構築できるようになり、AI活用の競争優位性がツールの選択から実装スピードと業務統合力にシフトしている。\n従来のAI開発に必要だった高度な技術スタッフへの依存度が下がり、ビジネス部門主導でのAI導入が現実的になっている。\n\n## 注目すべき技術動向\nマルチモーダル対応とGPU最適化が標準仕様となり、テキスト・画像・音声を統合したAIアプリケーションの開発ハードルが大幅に低下している。\nオープンソース主導のエコシステム拡大により、商用AI製品との技術格差が縮小し、カスタマイズ性と費用対効果の両立が可能になっている。",
   "top_tags": {
     "オープンソース": 10,
     "LLM": 5,
