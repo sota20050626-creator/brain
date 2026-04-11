@@ -51,8 +51,22 @@ def load_x_drafts():
     with open(fp, encoding="utf-8") as f:
         content = f.read()
     date_str = fp.stem.replace("x_", "")
-    posts = re.findall(r"投稿\d+:\n(.*?)(?=\n投稿\d+:|\Z)", content, re.DOTALL)
-    posts = [p.strip() for p in posts if p.strip()]
+
+    # ★ 引用元URLも一緒にパース
+    # "投稿N:\n本文\n引用元: URL" の形式を想定
+    blocks = re.findall(
+        r"投稿\d+:\n(.*?)(?=\n投稿\d+:|\Z)",
+        content, re.DOTALL
+    )
+    posts = []
+    for block in blocks:
+        block = block.strip()
+        url_match = re.search(r"引用元[:：]\s*(https?://\S+)", block)
+        source_url = url_match.group(1) if url_match else ""
+        # 引用元行を本文から除去
+        body = re.sub(r"\n?引用元[:：]\s*https?://\S+", "", block).strip()
+        posts.append({"body": body, "source_url": source_url})
+
     return posts, date_str
 
 
@@ -129,16 +143,24 @@ def build_html(days_data, proposals, knowledge):
     if not proposals_html:
         proposals_html = '<div class="proposal-item muted">承認待ちの提案はありません</div>'
 
-    # X下書き
+    # ★ X下書き（引用元URL付き）
     x_posts, x_date = load_x_drafts()
     x_drafts_html = ""
     if x_posts:
         for i, post in enumerate(x_posts, 1):
-            escaped = post.replace("`", "&#96;").replace("\\", "\\\\").replace("\n", "\\n")
+            body = post["body"]
+            source_url = post["source_url"]
+            escaped = body.replace("`", "&#96;").replace("\\", "\\\\").replace("\n", "\\n")
+            source_html = ""
+            if source_url:
+                source_html = (
+                    '<a class="draft-source-link" href="' + source_url + '" target="_blank" onclick="event.stopPropagation()">🔗 引用元を見る</a>'
+                )
             x_drafts_html += (
                 '<div class="draft-card">'
                 + '<div class="draft-num">投稿 ' + str(i) + '</div>'
-                + '<div class="draft-text">' + post.replace("\n", "<br>") + '</div>'
+                + '<div class="draft-text">' + body.replace("\n", "<br>") + '</div>'
+                + source_html
                 + '<button class="copy-btn" onclick="copyText(`' + escaped + '`, this)">コピー</button>'
                 + '</div>'
             )
