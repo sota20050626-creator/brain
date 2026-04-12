@@ -1,69 +1,61 @@
 {
   "date": "2026-04-12",
-  "collected_at": "2026-04-12T04:49:05.526713+00:00",
+  "collected_at": "2026-04-12T06:17:43.347017+00:00",
   "total": 66,
   "raw_items": [
     {
       "title": "Small models also found the vulnerabilities that Mythos found",
       "url": "https://aisle.com/blog/ai-cybersecurity-after-mythos-the-jagged-frontier",
-      "score": 929,
-      "comments": 255,
+      "score": 969,
+      "comments": 261,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "How We Broke Top AI Agent Benchmarks: And What Comes Next",
       "url": "https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont/",
-      "score": 285,
-      "comments": 81,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "Cirrus Labs to join OpenAI",
-      "url": "https://cirruslabs.org/",
-      "score": 247,
-      "comments": 122,
+      "score": 320,
+      "comments": 87,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "How a dancer with ALS used brainwaves to perform live",
       "url": "https://www.electronicspecifier.com/products/sensors/how-a-dancer-with-als-used-brainwaves-to-perform-live/",
-      "score": 9,
+      "score": 23,
       "comments": 1,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Cirrus Labs to join OpenAI",
+      "url": "https://cirruslabs.org/",
+      "score": 253,
+      "comments": 123,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "Midnight Captain – A midnight commander inspired file manager",
       "url": "https://github.com/duguyue100/midnight-captain",
-      "score": 21,
-      "comments": 8,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "Starfling: A one-tap endless orbital slingshot game in a single HTML file",
-      "url": "https://playstarfling.com",
-      "score": 581,
-      "comments": 144,
+      "score": 28,
+      "comments": 10,
       "source": "hackernews",
       "text": ""
     },
     {
       "title": "High-Level Rust: Getting 80% of the Benefits with 20% of the Pain",
       "url": "https://hamy.xyz/blog/2026-01_high-level-rust",
-      "score": 6,
-      "comments": 0,
+      "score": 9,
+      "comments": 2,
       "source": "hackernews",
       "text": ""
     },
     {
-      "title": "The biggest advance in AI since the LLM",
-      "url": "https://garymarcus.substack.com/p/the-biggest-advance-in-ai-since-the",
-      "score": 5,
-      "comments": 0,
+      "title": "Starfling: A one-tap endless orbital slingshot game in a single HTML file",
+      "url": "https://playstarfling.com",
+      "score": 582,
+      "comments": 145,
       "source": "hackernews",
       "text": ""
     },
@@ -76,18 +68,18 @@
       "text": ""
     },
     {
-      "title": "Italo Calvino: A traveller in a world of uncertainty",
-      "url": "https://www.historytoday.com/archive/portrait-author-historian/italo-calvino-traveller-world-uncertainty",
-      "score": 114,
-      "comments": 20,
+      "title": "The biggest advance in AI since the LLM",
+      "url": "https://garymarcus.substack.com/p/the-biggest-advance-in-ai-since-the",
+      "score": 7,
+      "comments": 4,
       "source": "hackernews",
       "text": ""
     },
     {
-      "title": "Rockstar Games Hacked, Hackers Threaten a Massive Data Leak If Not Paid Ransom",
-      "url": "https://kotaku.com/rockstar-games-reportedly-hacked-massive-data-leak-ransom-gta-6-shinyhunters-2000686858",
-      "score": 96,
-      "comments": 46,
+      "title": "Italo Calvino: A traveller in a world of uncertainty",
+      "url": "https://www.historytoday.com/archive/portrait-author-historian/italo-calvino-traveller-world-uncertainty",
+      "score": 115,
+      "comments": 20,
       "source": "hackernews",
       "text": ""
     },
@@ -95,15 +87,7 @@
       "title": "AI assistance when contributing to the Linux kernel",
       "url": "https://github.com/torvalds/linux/blob/master/Documentation/process/coding-assistants.rst",
       "score": 499,
-      "comments": 380,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "Launch HN: Twill.ai (YC S25) – Delegate to cloud agents, get back PRs",
-      "url": "https://twill.ai",
-      "score": 76,
-      "comments": 83,
+      "comments": 381,
       "source": "hackernews",
       "text": ""
     },
@@ -116,10 +100,26 @@
       "text": ""
     },
     {
+      "title": "Rockstar Games Hacked, Hackers Threaten a Massive Data Leak If Not Paid Ransom",
+      "url": "https://kotaku.com/rockstar-games-reportedly-hacked-massive-data-leak-ransom-gta-6-shinyhunters-2000686858",
+      "score": 99,
+      "comments": 49,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Launch HN: Twill.ai (YC S25) – Delegate to cloud agents, get back PRs",
+      "url": "https://twill.ai",
+      "score": 76,
+      "comments": 83,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
       "title": "We've raised $17M to build what comes after Git",
       "url": "https://blog.gitbutler.com/series-a",
-      "score": 331,
-      "comments": 731,
+      "score": 332,
+      "comments": 732,
       "source": "hackernews",
       "text": ""
     },
@@ -127,14 +127,6 @@
       "title": "A New Way to Spray Paint Color",
       "url": "https://spectrum.ieee.org/spray-paint-color-creator",
       "score": 30,
-      "comments": 9,
-      "source": "hackernews",
-      "text": ""
-    },
-    {
-      "title": "BlueHammer abuses Windows Defender's update process to gain SYSTEM access",
-      "url": "https://hackingpassion.com/bluehammer-windows-defender-zero-day/",
-      "score": 26,
       "comments": 9,
       "source": "hackernews",
       "text": ""
@@ -222,15 +214,23 @@
     {
       "title": "f/prompts.chat - f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
       "url": "https://github.com/f/prompts.chat",
-      "score": 159338,
+      "score": 159348,
       "comments": 0,
       "source": "github_trending",
       "text": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
     },
     {
+      "title": "affaan-m/everything-claude-code - The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "url": "https://github.com/affaan-m/everything-claude-code",
+      "score": 151616,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+    },
+    {
       "title": "langgenius/dify - Production-ready platform for agentic workflow development.",
       "url": "https://github.com/langgenius/dify",
-      "score": 137317,
+      "score": 137324,
       "comments": 0,
       "source": "github_trending",
       "text": "Production-ready platform for agentic workflow development."
@@ -238,7 +238,7 @@
     {
       "title": "vllm-project/vllm - A high-throughput and memory-efficient inference and serving engine for LLMs",
       "url": "https://github.com/vllm-project/vllm",
-      "score": 76183,
+      "score": 76187,
       "comments": 0,
       "source": "github_trending",
       "text": "A high-throughput and memory-efficient inference and serving engine for LLMs"
@@ -246,23 +246,15 @@
     {
       "title": "OpenHands/OpenHands - 🙌 OpenHands: AI-Driven Development",
       "url": "https://github.com/OpenHands/OpenHands",
-      "score": 71039,
+      "score": 71043,
       "comments": 0,
       "source": "github_trending",
       "text": "🙌 OpenHands: AI-Driven Development"
     },
     {
-      "title": "hiyouga/LlamaFactory - Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
-      "url": "https://github.com/hiyouga/LlamaFactory",
-      "score": 69942,
-      "comments": 0,
-      "source": "github_trending",
-      "text": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)"
-    },
-    {
       "title": "openclaw/openclaw - Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
       "url": "https://github.com/openclaw/openclaw",
-      "score": 355091,
+      "score": 355133,
       "comments": 0,
       "source": "github_trending",
       "text": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 "
@@ -270,7 +262,7 @@
     {
       "title": "n8n-io/n8n - Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "url": "https://github.com/n8n-io/n8n",
-      "score": 183623,
+      "score": 183629,
       "comments": 0,
       "source": "github_trending",
       "text": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
@@ -278,7 +270,7 @@
     {
       "title": "Comfy-Org/ComfyUI - The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
       "url": "https://github.com/Comfy-Org/ComfyUI",
-      "score": 108468,
+      "score": 108472,
       "comments": 0,
       "source": "github_trending",
       "text": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface."
@@ -300,20 +292,44 @@
       "text": "Tensors and Dynamic neural networks in Python with strong GPU acceleration"
     },
     {
-      "title": "レガシーJavaプロジェクトでClaude Codeを3ヶ月使い倒して分かったこと",
-      "url": "https://zenn.dev/uzuradev/articles/981c328db0fd1c",
+      "title": "11-⑤[AI][Kaggle][python]Kaggle入門(時系列 5.ハイブリッドモデル)",
+      "url": "https://zenn.dev/rg687076/articles/3441a26765004a",
       "score": 0,
       "comments": 0,
       "source": "rss_zenn",
-      "text": "3ヶ月間・767メッセージ・76セッションの振り返りと備忘録\n\n\n はじめに\nこの記事は自分用の振り返りと備忘録として書いた。\nClaude Codeを使い始めて約3ヶ月。いま参画しているのはこんな感じの移行案件。\n\n\n\n移行前\n移行後\n\n\n\n\nJava 1.5\nJava 8\n\n\n独自実装のデータストア\nSQL ServerなどのRDB\n\n\n独自APサーバ\nTomcatなどのOSSアプリケーションサーバ\n\n\nInternet Explorer\nEdge\n\n\n\n上記のような大きな移行に加えて、\n\nフレームワークまわりの調整\nライブラリのバージョン差分対応\n文字コードや設定値の差異吸収\n既存..."
+      "text": "Kaggle入門11(時系列 1.時系列データを用いた線形回帰)\nKaggle入門11(時系列 2.傾向(Trend))\nKaggle入門11(時系列 3.季節性)\nKaggle入門11(時系列 4.時系列を特徴とする)\nKaggle入門11(時系列 5.ハイブリッドモデル)\nKaggle入門11(時系列 6.機械学習による予測)\n← Kaggle入門10(コンピュータービジョン)\n                         Kaggle入門12(AI倫理入門) →\n\n Abstract\n\nKaggle「時系列 のハイブリッドモデル」の翻訳と実行方法の解説\n\n\n ハイブリッドモデル..."
     },
     {
-      "title": "Claude Codeが7GBのデータを消した——rm -rf事故をhookで防ぐ",
-      "url": "https://zenn.dev/yurukusa/articles/rmrf-prevention-hook",
+      "title": "AIの実験ログをブロックチェーンに刻む【第1回】―― XRPLのMemoに任意データを書き込む",
+      "url": "https://zenn.dev/niikun/articles/90e9da9c00b9b3",
       "score": 0,
       "comments": 0,
       "source": "rss_zenn",
-      "text": "「PDFを整理して」と頼んだだけだった。Claude Codeはファイルを分類し、フォルダ構造を作り、3,467個のPDFを移動した。再整理が必要になった時、確認なしでrm -rfを実行した。7GBのデータが消えた。\nGitHub Issue #46058（2026-04-10報告、high-priorityラベル付き）。\nこれは孤立した事例ではない。\n\n\n\nIssue\n被害\n\n\n\n\n#46058\n3,467ファイル / 7GB消失\n\n\n#36339\nユーザープロファイル全体（165GB、NTFSジャンクション経由）\n\n\n#37331\n未pushソースコード全体\n\n\n#36640\n本番N..."
+      "text": "この連載について\nAIが生成したログや実験結果は、あとから書き換えられる。ローカルのファイルはもちろん、クラウドのストレージでさえ管理者権限があれば変更できる。\n「ブロックチェーンに書いてしまえば、誰も改ざんできないのでは？」\nこれが出発点でした。ML実験の精度・パラメータ・タイムスタンプといったログをブロックチェーンにアンカーしておけば、「この結果は後付けじゃない」という証拠になる。AI研究の再現性や信頼性を担保する仕組みを、自分で作れるんじゃないか——そう考えました。\nこの連載では、その仕組みを段階的に作っていきます。githubはこちら\n\n\n\n\n回\nテーマ\n\n\n\n\n第1回（本記..."
+    },
+    {
+      "title": "Clade v1.13.0 — 「自動化」を疑って、シンプルに直す",
+      "url": "https://zenn.dev/satoh_y_0323/articles/13cc621c2fd2ad",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "Clade v1.13.0 — 「自動化」を疑って、シンプルに直す\n\n前回記事: https://zenn.dev/satoh_y_0323/articles/1764390f024ef3\nGitHub: https://github.com/satoh-y-0323/clade\nリリース: v1.13.0\n\n「自動化」は良いことだ、という思い込みがある。\nhook で自動実行できるなら手動より良いはずだ。そういう直感は正しい場合も多い。ただ、「自動化しているつもりが、実は何もしていなかった」というパターンがある。\nv1.13.0 は、その種の思い込みを一つ取り除いたリリースです。\n..."
+    },
+    {
+      "title": "Generative UI の3パターンを同じ題材で実装比較してみた",
+      "url": "https://zenn.dev/peintangos/articles/5b6e952c4e8880",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "はじめに\nどうも！peintangosです！\nLLM がテキストだけでなく UI そのものを生成する「Generative UI」——ChatGPT の Canvas や Artifacts、v0 のプレビュー機能を触るたびに「これ、どういう仕組みなんだろう」と思っていました。\n本記事では、「旅行プランナーという旅行計画を立ててくれるAIエージェント」をお題にして、\nGenerative UI を3つの実装パターンに整理して比較してみたので、そのナレッジをシェアできれば良いなと思っています。\n今回試作したアプリケーションも公開しているので記事を読みながら、触っていただけると解像度も上..."
+    },
+    {
+      "title": "「AI社員」を組織にしようとしたら、全員に指示を無視された：Anthropicの5パターン × Claude Code制約の体系的リサーチ",
+      "url": "https://zenn.dev/recurrenthub/articles/34a2f9892fff01",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "この記事を書いた動機\nAnthropicの「Building Effective Agents」は読みました。5つのワークフローパターンも把握しました。では、Claude Codeで実際に実装するとき、どのコンポーネントを使えばいいか。そこで3回、壁にぶつかりました。\n1回目。 うまく動いたSubAgentの設計をAgent Teamsに移植しました。skills:フィールドがサイレントに無視され、チームメイトに知識が注入されなくなりました。Agent Teamsではfrontmatterの大半が機能しない。\n2回目。 オーケストレータ役のSubAgentから、さらに別のSubAge..."
     },
     {
       "title": "限界社会人のための Codex 節約活用術",
@@ -322,22 +338,6 @@
       "comments": 0,
       "source": "rss_zenn",
       "text": "はじめに\n\n Codexのコスパが良すぎる\nこんにちは、限界社会人です。\n突然ですが、私はもっぱらCodexをメインに使用してます。\nというのも、Claude Code は\n\nProプラン（$17）では、 5h の Rate Limitが厳しすぎてほぼ使い物にならない\nとはいえMaxプラン（$100）を課金するほど使い倒せない\n週末しか使わないので、5h の Rate Limit が厳しい Claude Code は相性が悪い\n\nという背景で、ChatGPT Plus（$20）を使用しています。\n体感、ChatGPT Plus でCodexを利用するときは Rate Limit がC..."
-    },
-    {
-      "title": "「Sonnetで十分」が罠だった — Claude Codeで本当に安く開発する方法",
-      "url": "https://zenn.dev/orectic/articles/claude-code-opus-sonnet-cost-optimization",
-      "score": 0,
-      "comments": 0,
-      "source": "rss_zenn",
-      "text": "はじめに\nClaude Code を毎日使っていると、必ずぶつかるのが API コスト問題 です。\n特に Opus は Sonnet の約 5 倍の単価。そこで自然に出てくる発想が「簡単な作業は Sonnet に切り替えればいいじゃないか」というもの。\nでも、実際に数ヶ月運用してみてわかったのは、安易に Sonnet へ切り替えると総コストが逆に高くなるという逆説でした。\n本記事では、実運用で見えてきた「Opus × Sonnet の正しい役割分担」と、なぜ**『迷ったら Opus』が結局いちばん安いのか**を解説します。\n\n 結論\n先に結論だけ書きます。\n\n基本は Opus 単独で..."
-    },
-    {
-      "title": "武装した戦場で、なんで武器拾わへんの？",
-      "url": "https://zenn.dev/yokoi_ai/articles/yokoi-rambling-2026-04-12",
-      "score": 0,
-      "comments": 0,
-      "source": "rss_zenn",
-      "text": "日曜や。のいずかもしれんけど、ちょっと聞いたってや。\nおっちゃん、最近ずーっと気になっとることがある。\n\n IT業界、きれいに二極化しとるで\nAIでの開発な、業界全体でバッサリ二つに割れとるねん。バリバリ使いこなす人と、毛嫌いして触ろうともせえへん人。まんなかが、ほとんどおらん。\nおっちゃんの肌感覚やなくて、ちゃんと調べたら数字でも出とってな。いま世界の開発者の7割以上がAIを毎日触っとるらしい。2年前は2割もおらんかったのに、やで。\nで、おもろいのはここからや。使う人は爆増しとるのに、「AIを信頼しとる」って答える人は逆に減っとる。つまり「使うけど、疑いながら使う」ちゅう、大人のフェー..."
     },
     {
       "title": "バイブコーディングで失敗しない — 5つの罠と実践フレームワーク",
@@ -372,6 +372,14 @@
       "text": "Clade v1.10.0 〜 v1.12.0 — 「使いながら育てる」ループが、ようやく閉じた\n\n前回記事: https://zenn.dev/satoh_y_0323/articles/19e292736eb1c3\nGitHub: https://github.com/satoh-y-0323/clade\nリリース: v1.10.0 · v1.10.1 · v1.11.0 · v1.12.0\n\nClade のコンセプトは「使いながら育てるフレームワーク」です。\nClaude と作業するなかで見えてきたパターン——「このコマンドは毎回失敗する」「この手順を踏めばうまくいく」——をル..."
     },
     {
+      "title": "エンジニアはなぜAIをブラックボックスにできないのか",
+      "url": "https://zenn.dev/faketurn/articles/9108d5a4e0d9ed",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "!\nこれは私とAIの実際のやり取りです。無編集です。\nAIをどう使うかより、何を問うかの方が大事だと思っています。\n\n\nチャット生成日: 2025年11月2日 日曜日\n\n\n 生成AIの非難問題\n\n User\n生成AIの使い方非難、まだまだ非難する側の解像度も荒いなあという印象。おそらく生成AIを使ったベストプラクティスが出るまでこの症状はあちこちで発生するのだろう。\n\n ChatGPT\nまさにその通りで、現在の非難や警戒は「理解の粗い倫理観」と「未知への防衛反応」が混在している状態です。これは新しい技術が登場するたびに繰り返されてきた社会的な「初期振動」に近いものです。印刷機、カメラ、コ..."
+    },
+    {
       "title": "「wait」と言える力～カスタムGPTの作り方②～",
       "url": "https://zenn.dev/hydrangea01/articles/4f18c96b41953d",
       "score": 0,
@@ -402,14 +410,6 @@
       "comments": 0,
       "source": "rss_zenn",
       "text": "AIツール安く済んでるけど、これから先ちょっと不安（助けて😂）\n\n はじめに\n私は現在、大学院生として日々の研究や開発に主に以下の4つのAIツールを使っています。\n\nChatGPT （OpenAI）\nGoogleの AIプラン（Google）\nClaude （Anthropic）\nGitHub Copilot（Microsoft\n\nまず各AIツールについて簡単に整理しときます。\n\n\n 各サービス概要\n\n 1. ChatGPT（OpenAI）\nChatgptは言うまでもないですね。Chatgptのサブスクリプションを契約すると、チャット形式のChatgpt、コーディング特化のCodex..."
-    },
-    {
-      "title": "オタク式LLM解説 -「AI有効活用で爆アド！！」とか言うなら仕組みくらいは知っておきましょう（笑）-",
-      "url": "https://zenn.dev/harunasu/articles/36290cd613b48f",
-      "score": 0,
-      "comments": 0,
-      "source": "rss_zenn",
-      "text": "オタク式LLM解説 -「AI有効活用で爆アド！！」とか言うなら仕組みくらいは知っておきましょう（笑）-\n\n オタクの前置きは長い\nこんにちは。\n近頃（もはや近頃というほどでもないけど）、AIがブームですよね。\n大人も子供もAIを使っています。ChatGPTに聞けば何でもわかる。チャッピーはなんでもやってくれる。徳川9代目将軍も、今日の献立も、あなたの前世も、チャッピーが教えてくれます（笑）\nお金の匂いもぷんぷんするのでしょう、猫も杓子も上段に立って 「AI有効活用で爆アド！！」 みたいなことを言っています。 その猫や杓子のうち、どれくらいがAIのことを分かっているのかはさておき\nチャ..."
     },
     {
       "title": "Sam Altman responds to ‘incendiary’ New Yorker article after attack on his home",
@@ -541,8 +541,8 @@
       "comments": 0,
       "source": "github_trending",
       "text": "An Open Source Machine Learning Framework for Everyone",
-      "title_ja": "TensorFlow - 誰もが使えるオープンソース機械学習フレームワーク",
-      "summary_ja": "Googleが開発したオープンソースの機械学習フレームワーク。幅広い機械学習タスクに対応し、研究から本番環境まで幅広く利用されている業界標準ツール。",
+      "title_ja": "TensorFlow - オープンソース機械学習フレームワーク",
+      "summary_ja": "Googleが開発した誰でも利用可能な機械学習フレームワーク。業界標準として広く採用されている基盤技術。",
       "importance": 9,
       "tags": [
         "オープンソース"
@@ -556,8 +556,8 @@
       "comments": 0,
       "source": "github_trending",
       "text": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
-      "title_ja": "PyTorch - GPU加速対応の動的ニューラルネットワークフレームワーク",
-      "summary_ja": "Pythonベースのテンソル計算と動的ニューラルネットワークフレームワーク。強力なGPU加速機能を提供し、研究開発で広く採用されている。",
+      "title_ja": "PyTorch - 動的ニューラルネットワークライブラリ",
+      "summary_ja": "PythonベースのテンソルライブラリでGPU加速に対応。動的ニューラルネットワークの構築に特化した機械学習フレームワーク。",
       "importance": 9,
       "tags": [
         "オープンソース"
@@ -565,31 +565,47 @@
       "category": "技術"
     },
     {
+      "title": "vllm-project/vllm - A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "url": "https://github.com/vllm-project/vllm",
+      "score": 76187,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "title_ja": "vLLM - 高性能LLM推論・サービングエンジン",
+      "summary_ja": "大規模言語モデル向けの高スループット・メモリ効率的な推論・サービングエンジン。LLMの実用展開を加速する重要な基盤技術。",
+      "importance": 9,
+      "tags": [
+        "LLM",
+        "オープンソース"
+      ],
+      "category": "技術"
+    },
+    {
       "title": "langgenius/dify - Production-ready platform for agentic workflow development.",
       "url": "https://github.com/langgenius/dify",
-      "score": 137317,
+      "score": 137324,
       "comments": 0,
       "source": "github_trending",
       "text": "Production-ready platform for agentic workflow development.",
-      "title_ja": "Dify - エージェントワークフロー開発用本番対応プラットフォーム",
-      "summary_ja": "エージェントワークフローの開発に特化した本番環境対応プラットフォーム。企業レベルでのAIエージェント開発を支援する包括的なソリューション。",
+      "title_ja": "Dify - エージェントワークフロー開発プラットフォーム",
+      "summary_ja": "プロダクション対応のエージェントワークフロー開発プラットフォーム。企業レベルでのAIエージェント開発を支援。",
       "importance": 8,
       "tags": [
         "Agent",
         "ビジネス",
         "オープンソース"
       ],
-      "category": "技術"
+      "category": "ビジネス"
     },
     {
       "title": "Comfy-Org/ComfyUI - The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
       "url": "https://github.com/Comfy-Org/ComfyUI",
-      "score": 108468,
+      "score": 108472,
       "comments": 0,
       "source": "github_trending",
       "text": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
-      "title_ja": "ComfyUI - 拡散モデル用の高機能GUI・API・バックエンド",
-      "summary_ja": "グラフ・ノードインターフェースを採用した最も強力でモジュラーな拡散モデルGUI。API・バックエンド機能も統合した包括的な画像生成ツール。",
+      "title_ja": "ComfyUI - 拡散モデル用GUI・APIプラットフォーム",
+      "summary_ja": "最も強力でモジュラーな拡散モデル向けGUI・APIバックエンド。グラフ・ノードインターフェースを採用した画像生成ツール。",
       "importance": 8,
       "tags": [
         "画像生成",
@@ -598,64 +614,47 @@
       "category": "ツール"
     },
     {
-      "title": "vllm-project/vllm - A high-throughput and memory-efficient inference and serving engine for LLMs",
-      "url": "https://github.com/vllm-project/vllm",
-      "score": 76183,
-      "comments": 0,
-      "source": "github_trending",
-      "text": "A high-throughput and memory-efficient inference and serving engine for LLMs",
-      "title_ja": "vLLM - 大規模言語モデル用高性能推論エンジン",
-      "summary_ja": "大規模言語モデルの推論とサービング用の高スループット・メモリ効率的なエンジン。本番環境でのLLMデプロイメントを最適化する専門ツール。",
-      "importance": 8,
-      "tags": [
-        "LLM",
-        "オープンソース"
-      ],
-      "category": "技術"
-    },
-    {
-      "title": "hiyouga/LlamaFactory - Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
-      "url": "https://github.com/hiyouga/LlamaFactory",
-      "score": 69942,
-      "comments": 0,
-      "source": "github_trending",
-      "text": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
-      "title_ja": "LlamaFactory - 100以上のLLM・VLMの統合ファインチューニングツール",
-      "summary_ja": "100以上の大規模言語モデルと視覚言語モデルの効率的なファインチューニングを統合的に実現。ACL 2024で発表された学術的成果に基づく実用ツール。",
-      "importance": 8,
-      "tags": [
-        "LLM",
-        "論文",
-        "オープンソース"
-      ],
-      "category": "技術"
-    },
-    {
       "title": "n8n-io/n8n - Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "url": "https://github.com/n8n-io/n8n",
-      "score": 183623,
+      "score": 183629,
       "comments": 0,
       "source": "github_trending",
       "text": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-      "title_ja": "n8n - AI機能を搭載したワークフロー自動化プラットフォーム",
-      "summary_ja": "ビジュアル構築とカスタムコードを組み合わせたワークフロー自動化プラットフォーム。ネイティブAI機能を搭載し、400以上の統合機能を提供。",
+      "title_ja": "n8n - AI機能搭載ワークフロー自動化プラットフォーム",
+      "summary_ja": "ネイティブAI機能を持つワークフロー自動化プラットフォーム。ビジュアル構築とカスタムコードを組み合わせ、400以上の統合機能を提供。",
       "importance": 7,
       "tags": [
         "Agent",
         "ビジネス",
         "オープンソース"
       ],
-      "category": "ツール"
+      "category": "ビジネス"
+    },
+    {
+      "title": "affaan-m/everything-claude-code - The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "url": "https://github.com/affaan-m/everything-claude-code",
+      "score": 151616,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "title_ja": "Everything Claude Code - AIコードエージェント最適化システム",
+      "summary_ja": "Claude CodeやCodex等のAIコードエージェント向け性能最適化システム。スキル、直感、メモリ、セキュリティを統合的に管理。",
+      "importance": 7,
+      "tags": [
+        "Agent",
+        "コード"
+      ],
+      "category": "技術"
     },
     {
       "title": "OpenHands/OpenHands - 🙌 OpenHands: AI-Driven Development",
       "url": "https://github.com/OpenHands/OpenHands",
-      "score": 71039,
+      "score": 71043,
       "comments": 0,
       "source": "github_trending",
       "text": "🙌 OpenHands: AI-Driven Development",
       "title_ja": "OpenHands - AI駆動開発プラットフォーム",
-      "summary_ja": "AI技術を活用した開発プロセスを支援するプラットフォーム。開発者の生産性向上とコード品質の改善を目的としたAI駆動型ツール。",
+      "summary_ja": "AI技術を活用した開発支援プラットフォーム。開発プロセス全体をAIで効率化することを目指している。",
       "importance": 7,
       "tags": [
         "Agent",
@@ -667,12 +666,12 @@
     {
       "title": "openclaw/openclaw - Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
       "url": "https://github.com/openclaw/openclaw",
-      "score": 355091,
+      "score": 355133,
       "comments": 0,
       "source": "github_trending",
       "text": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
-      "title_ja": "OpenClaw - クロスプラットフォーム対応のパーソナルAIアシスタント",
-      "summary_ja": "任意のOSとプラットフォームで動作するパーソナルAIアシスタント。ロブスター（🦞）をモチーフにしたユニークなアプローチを採用。",
+      "title_ja": "OpenClaw - クロスプラットフォーム対応パーソナルAIアシスタント",
+      "summary_ja": "あらゆるOSやプラットフォームで動作する個人向けAIアシスタント。オープンソースでユニークなロブスターテーマを採用している。",
       "importance": 6,
       "tags": [
         "Agent",
@@ -683,12 +682,12 @@
     {
       "title": "f/prompts.chat - f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
       "url": "https://github.com/f/prompts.chat",
-      "score": 159338,
+      "score": 159348,
       "comments": 0,
       "source": "github_trending",
       "text": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
-      "title_ja": "Prompts.chat - ChatGPTプロンプトの共有・発見プラットフォーム",
-      "summary_ja": "コミュニティからプロンプトを共有、発見、収集できるプラットフォーム。完全なプライバシー保護でセルフホスト可能なオープンソースソリューション。",
+      "title_ja": "Prompts.chat - ChatGPTプロンプト共有プラットフォーム",
+      "summary_ja": "コミュニティでプロンプトを共有・発見・収集できるプラットフォーム。組織向けのプライベート自己ホスティングも可能。",
       "importance": 6,
       "tags": [
         "LLM",
@@ -697,14 +696,13 @@
       "category": "ツール"
     }
   ],
-  "digest": "## 1. 今日の最重要トレンド\n\nAIプラットフォームの本格的な実用化段階への移行が鮮明になっています。研究開発向けの基盤フレームワーク（TensorFlow、PyTorch）から、企業の本番環境での運用を前提とした専門特化ツール（Dify、vLLM）への需要シフトが顕著です。特に画像生成、言語モデル推論、エージェント開発といった具体的用途に最適化されたソリューションが台頭しています。\n\n## 2. ビジネスへの示唆\n\n企業はAIの「実験段階」から「実装・運用段階」へと戦略を転換する必要があります。ROIを重視した本番環境対応ツールの選定と、専門性の高いAI人材の確保が競争優位の鍵となるでしょう。\n\n## 3. 注目すべき技術動向\n\nGPU最適化による高速推論とメモリ効率化が技術開発の中心テーマとなっています。また、ノーコード・ローコードでのAI開発環境が充実し、非技術者でもAIソリューションを構築できる民主化が進展しています。",
+  "digest": "## 今日の最重要トレンド\nAIインフラの成熟化が加速しており、基盤フレームワーク（TensorFlow、PyTorch）から実用展開技術（vLLM）まで包括的なエコシステムが確立されつつある。特にLLMの高効率推論技術とノーコード開発プラットフォームの普及により、AI技術の民主化が進んでいる。企業レベルでの実用的なAI活用が本格化する転換点に到達した。\n\n## ビジネスへの示唆\n技術的障壁の低下により、従来は専門知識が必要だったAI開発が一般企業でも可能となり、競争優位性の源泉がアイデアと実行力にシフトしている。DifyやComfyUIのようなプラットフォームを活用することで、中小企業でも迅速なAIプロダクト開発が実現可能。\n\n## 注目すべき技術動向\nLLMの推論効率化技術（vLLM）とビジュアルプログラミング環境の成熟により、開発者体験が大幅に向上している。画像生成から言語処理まで、専門的なAI技術がGUIベースで操作可能となり、プロトタイピング速度が劇的に改善されている。",
   "top_tags": {
-    "オープンソース": 10,
-    "Agent": 4,
-    "LLM": 3,
+    "オープンソース": 9,
+    "Agent": 5,
+    "LLM": 2,
     "ビジネス": 2,
-    "画像生成": 1,
-    "論文": 1,
-    "コード": 1
+    "コード": 2,
+    "画像生成": 1
   }
 }
