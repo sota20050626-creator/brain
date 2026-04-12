@@ -1,6 +1,6 @@
 """
 collector.py - AI情報収集エージェント
-ソース: Reddit, HackerNews, ArXiv, GitHub Search API, RSS feeds, X（日曜のみ）
+ソース: Reddit, HackerNews, ArXiv, GitHub, RSS feeds（大幅拡充）, X（日曜のみ）
 """
 
 import json
@@ -22,8 +22,9 @@ AI_KEYWORDS = [
     "ai", "llm", "gpt", "claude", "gemini", "openai", "anthropic",
     "machine learning", "neural", "transformer", "agent", "rag",
     "deepseek", "qwen", "mistral", "diffusion", "multimodal",
-    "ml", "model", "train", "inference", "vector",
+    "ml", "model", "train", "inference", "vector", "copilot",
     "生成ai", "人工知能", "機械学習", "深層学習", "エージェント",
+    "large language", "foundation model", "fine-tun", "embedding",
 ]
 
 REDDIT_SUBREDDITS = [
@@ -32,36 +33,59 @@ REDDIT_SUBREDDITS = [
     "artificial",
     "ChatGPT",
     "singularity",
+    "AIPromptProgramming",
+    "OpenAI",
 ]
 
-# RSSフィード一覧
+# ★ RSSフィード大幅拡充
 RSS_FEEDS = [
     # 日本語AI情報
     {"url": "https://zenn.dev/topics/ai/feed", "source": "zenn", "lang": "ja"},
     {"url": "https://zenn.dev/topics/llm/feed", "source": "zenn", "lang": "ja"},
     {"url": "https://zenn.dev/topics/chatgpt/feed", "source": "zenn", "lang": "ja"},
+    {"url": "https://zenn.dev/topics/machinelearning/feed", "source": "zenn", "lang": "ja"},
+    {"url": "https://qiita.com/tags/ai/feed", "source": "qiita", "lang": "ja"},
+    {"url": "https://qiita.com/tags/llm/feed", "source": "qiita", "lang": "ja"},
+    {"url": "https://qiita.com/tags/chatgpt/feed", "source": "qiita", "lang": "ja"},
     {"url": "https://note.com/hashtag/AI?kind=note&rss=1", "source": "note", "lang": "ja"},
-    # 英語AI情報
+    {"url": "https://itmedia.co.jp/news/subtop/aiplus/index.rdf", "source": "itmedia", "lang": "ja"},
+    # 英語AI情報（メディア）
     {"url": "https://techcrunch.com/category/artificial-intelligence/feed/", "source": "techcrunch", "lang": "en"},
     {"url": "https://venturebeat.com/category/ai/feed/", "source": "venturebeat", "lang": "en"},
     {"url": "https://www.wired.com/feed/tag/artificial-intelligence/latest/rss", "source": "wired", "lang": "en"},
-    # Anthropic・OpenAI公式
+    {"url": "https://www.technologyreview.com/feed/", "source": "mit_review", "lang": "en"},
+    {"url": "https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss", "source": "ieee", "lang": "en"},
+    # AI企業公式ブログ
     {"url": "https://www.anthropic.com/rss.xml", "source": "anthropic", "lang": "en"},
     {"url": "https://openai.com/blog/rss.xml", "source": "openai", "lang": "en"},
+    {"url": "https://blog.google/technology/ai/rss/", "source": "google_ai", "lang": "en"},
+    {"url": "https://ai.meta.com/blog/rss/", "source": "meta_ai", "lang": "en"},
+    {"url": "https://deepmind.google/blog/rss.xml", "source": "deepmind", "lang": "en"},
+    {"url": "https://mistral.ai/news/rss.xml", "source": "mistral", "lang": "en"},
+    # 研究機関
+    {"url": "https://bair.berkeley.edu/blog/feed.xml", "source": "berkeley_ai", "lang": "en"},
+    {"url": "https://ai.stanford.edu/blog/feed.xml", "source": "stanford_ai", "lang": "en"},
 ]
 
 X_SEARCH_QUERIES = [
     "AI LLM lang:ja -is:retweet",
     "ChatGPT Claude Gemini lang:en -is:retweet",
     "artificial intelligence breakthrough lang:en -is:retweet",
+    "LLM agent framework lang:en -is:retweet",
 ]
 
+# ★ 著名AIエンジニア・研究者リストを拡充
 X_NOTABLE_ACCOUNTS = [
-    "sama",
-    "ylecun",
-    "karpathy",
-    "demishassabis",
-    "goodfellow_ian",
+    "sama",           # Sam Altman (OpenAI)
+    "ylecun",         # Yann LeCun (Meta AI)
+    "karpathy",       # Andrej Karpathy
+    "demishassabis",  # Demis Hassabis (DeepMind)
+    "goodfellow_ian", # Ian Goodfellow
+    "drfeifei",       # Fei-Fei Li (Stanford)
+    "AndrewYNg",      # Andrew Ng
+    "GaryMarcus",     # Gary Marcus
+    "emollick",       # Ethan Mollick
+    "danielgross",    # Daniel Gross
 ]
 
 
@@ -162,8 +186,9 @@ def fetch_hackernews(limit=30):
         return []
 
 
-def fetch_arxiv(limit=10):
-    query = urllib.parse.quote("cat:cs.AI OR cat:cs.LG OR cat:cs.CL")
+def fetch_arxiv(limit=15):
+    # ★ カテゴリ拡充・件数増加
+    query = urllib.parse.quote("cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.CV OR cat:cs.RO")
     url = (
         "https://export.arxiv.org/api/query?search_query=" + query
         + "&sortBy=submittedDate&sortOrder=descending&max_results=" + str(limit)
@@ -199,6 +224,7 @@ def fetch_github_trending(limit=10):
     queries = [
         "topic:llm pushed:>" + yesterday,
         "topic:ai pushed:>" + yesterday,
+        "topic:claude pushed:>" + yesterday,
         "machine-learning stars:>100 pushed:>" + yesterday,
     ]
 
@@ -246,7 +272,6 @@ def fetch_github_trending(limit=10):
 
 
 def fetch_rss(limit=5):
-    """RSSフィードからAI情報を収集"""
     all_items = []
 
     for feed in RSS_FEEDS:
@@ -258,7 +283,6 @@ def fetch_rss(limit=5):
             with urllib.request.urlopen(req, timeout=10) as r:
                 content = r.read().decode("utf-8", errors="ignore")
 
-            # タイトル・リンク・説明を抽出
             items = re.findall(r"<item>(.*?)</item>", content, re.DOTALL)
             count = 0
             for item in items:
@@ -286,7 +310,6 @@ def fetch_rss(limit=5):
                 if not title or not link:
                     continue
 
-                # AIキーワードフィルター（英語フィード）
                 if feed["lang"] == "en":
                     title_lower = title.lower()
                     desc_lower = desc.lower()
@@ -312,8 +335,56 @@ def fetch_rss(limit=5):
     return all_items
 
 
+def is_similar_title(title1, title2, threshold=0.6):
+    """★ タイトルの類似度チェック（重複除去用）"""
+    def normalize(t):
+        t = t.lower()
+        t = re.sub(r'[^\w\s]', '', t)
+        return set(t.split())
+
+    words1 = normalize(title1)
+    words2 = normalize(title2)
+
+    if not words1 or not words2:
+        return False
+
+    intersection = words1 & words2
+    union = words1 | words2
+    similarity = len(intersection) / len(union)
+    return similarity >= threshold
+
+
+def deduplicate_items(items):
+    """★ URL重複 + タイトル類似度による重複除去"""
+    # まずURL重複除去
+    seen_urls = set()
+    url_unique = []
+    for item in items:
+        url = item.get("url", "")
+        if url and url not in seen_urls:
+            seen_urls.add(url)
+            url_unique.append(item)
+
+    # 次にタイトル類似度で重複除去
+    title_unique = []
+    for item in url_unique:
+        title = item.get("title", "")
+        is_dup = False
+        for existing in title_unique:
+            if is_similar_title(title, existing.get("title", "")):
+                # 重要度が高い方（スコアが高い方）を残す
+                if item.get("score", 0) > existing.get("score", 0):
+                    title_unique.remove(existing)
+                    title_unique.append(item)
+                is_dup = True
+                break
+        if not is_dup:
+            title_unique.append(item)
+
+    return title_unique
+
+
 def fetch_x_weekly(limit=20):
-    """X情報収集（毎週日曜のみ実行）"""
     api_key = os.environ.get("TWITTER_API_KEY", "")
     api_secret = os.environ.get("TWITTER_API_SECRET", "")
     access_token = os.environ.get("TWITTER_ACCESS_TOKEN", "")
@@ -391,7 +462,7 @@ def fetch_x_weekly(limit=20):
         except Exception as e:
             print("  X検索エラー: " + str(e))
 
-    for username in X_NOTABLE_ACCOUNTS[:3]:
+    for username in X_NOTABLE_ACCOUNTS[:5]:
         try:
             url = (
                 "https://api.twitter.com/2/tweets/search/recent"
@@ -476,13 +547,10 @@ def main():
     else:
         print("  X収集は日曜のみ実行 (今日はweekday=" + str(WEEKDAY) + ")")
 
-    # 重複除去
-    seen_urls = set()
-    unique_items = []
-    for item in all_items:
-        if item["url"] not in seen_urls:
-            seen_urls.add(item["url"])
-            unique_items.append(item)
+    # ★ 重複除去（URL + タイトル類似度）
+    print("  重複除去中... (" + str(len(all_items)) + "件 → ", end="")
+    unique_items = deduplicate_items(all_items)
+    print(str(len(unique_items)) + "件)")
 
     result = {
         "date": TODAY,
