@@ -47,6 +47,10 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python agents/sales.py
+      - name: Run TikTok Builder
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python agents/tiktok_builder.py
       - name: Update Dashboard
         run: python agents/dashboard_builder.py
       - name: Commit and Push
