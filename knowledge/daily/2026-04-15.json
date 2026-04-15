@@ -1,0 +1,1100 @@
+{
+  "date": "2026-04-15",
+  "collected_at": "2026-04-15T21:43:57.280288+00:00",
+  "total": 114,
+  "raw_items": [
+    {
+      "title": "Does Gas Town 'steal' usage from users' LLM credits to improve itself?",
+      "url": "https://github.com/gastownhall/gastown/issues/3649",
+      "score": 81,
+      "comments": 29,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Fix monitor that goes black, off or blinks due to static electricity in chair",
+      "url": "https://aalonso.dev/blog/2023/how-to-fix-monitor-that-goes-black-off-due-to-static-electricity-in-chair/",
+      "score": 92,
+      "comments": 44,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Adaptional (YC S25) is hiring AI engineers",
+      "url": "https://www.ycombinator.com/companies/adaptional/jobs/k7W6ge9-founding-engineer",
+      "score": 1,
+      "comments": 0,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Show HN: Libretto – Making AI browser automations deterministic",
+      "url": "https://github.com/saffron-health/libretto",
+      "score": 64,
+      "comments": 21,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "The Gemini app is now on Mac",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-mac-os/",
+      "score": 27,
+      "comments": 6,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Pretty Fish: A better mermaid diagram editor",
+      "url": "https://pretty.fish/",
+      "score": 148,
+      "comments": 23,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Gemini Robotics-ER 1.6",
+      "url": "https://deepmind.google/blog/gemini-robotics-er-1-6/",
+      "score": 197,
+      "comments": 62,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Google Gemma 4 Runs Natively on iPhone with Full Offline AI Inference",
+      "url": "https://www.gizmoweek.com/gemma-4-runs-iphone/",
+      "score": 257,
+      "comments": 165,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Study: Back-to-basics approach can match or outperform AI in language analysis",
+      "url": "https://www.manchester.ac.uk/about/news/back-to-basics-approach-can-match-or-outperform-ai/",
+      "score": 50,
+      "comments": 19,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Tesla 'Full Self-Driving' crashed through railroad gate seconds before train",
+      "url": "https://electrek.co/2026/04/15/tesla-fsd-railroad-gate-oncoming-train-texas-owner/",
+      "score": 32,
+      "comments": 2,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "AI-assisted cognition endangers human development?",
+      "url": "https://heidenstedt.org/posts/2026/ai-assisted-cognition-endangers-human-development/",
+      "score": 212,
+      "comments": 145,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Gemini App on Mac",
+      "url": "https://gemini.google/mac/",
+      "score": 11,
+      "comments": 1,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Project Maven Put A.I. Into the Kill Chain",
+      "url": "https://www.newyorker.com/books/under-review/how-project-maven-put-ai-into-the-kill-chain",
+      "score": 5,
+      "comments": 1,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Gemini 3.1 Flash TTS – with directed prompts",
+      "url": "https://simonwillison.net/2026/Apr/15/gemini-31-flash-tts/",
+      "score": 8,
+      "comments": 2,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "AI ruling prompts warnings from US lawyers: Your chats could be used against you",
+      "url": "https://www.reuters.com/legal/government/ai-ruling-prompts-warnings-us-lawyers-your-chats-could-be-used-against-you-2026-04-15/",
+      "score": 138,
+      "comments": 92,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Gemini 3.1 Flash TTS: the next generation of expressive AI speech",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-flash-tts/",
+      "score": 10,
+      "comments": 0,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Claude Code Routines",
+      "url": "https://code.claude.com/docs/en/routines",
+      "score": 694,
+      "comments": 394,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Turn your best AI prompts into one-click tools in Chrome",
+      "url": "https://blog.google/products-and-platforms/products/chrome/skills-in-chrome/",
+      "score": 190,
+      "comments": 105,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "CPUs Aren't Dead. Gemma2B Out Scored GPT-3.5 Turbo on Test That Made It Famous",
+      "url": "https://seqpu.com/CPUsArentDead/",
+      "score": 93,
+      "comments": 45,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Apple is sending Siri Engineers to an AI Coding Bootcamp",
+      "url": "https://www.macrumors.com/2026/04/15/siri-engineers-ai-coding-bootcamp/",
+      "score": 5,
+      "comments": 0,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Elevated errors on Claude.ai, API, Claude Code",
+      "url": "https://claudestatus.com/",
+      "score": 236,
+      "comments": 211,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Understanding Clojure's Persistent Vectors, pt. 1 (2013)",
+      "url": "https://hypirion.com/musings/understanding-persistent-vector-pt-1",
+      "score": 110,
+      "comments": 27,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Allbirds announces pivot from shoes to AI, stock explodes 175%",
+      "url": "https://www.cnbc.com/2026/04/15/allbirds-bird-stock-shoes-ai.html",
+      "score": 84,
+      "comments": 29,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "My AI-Assisted Workflow",
+      "url": "https://www.maiobarbero.dev/articles/ai-assisted-workflow/",
+      "score": 81,
+      "comments": 111,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "US v. Heppner (S.D.N.Y. 2026) no attorney-client privilege for AI chats [pdf]",
+      "url": "https://fingfx.thomsonreuters.com/gfx/legaldocs/xmvjyjekkpr/Rakoff%20-%20order%20-%20AI.pdf",
+      "score": 90,
+      "comments": 81,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Troubleshooting Email Delivery to Microsoft Users",
+      "url": "https://rozumem.xyz/posts/14",
+      "score": 83,
+      "comments": 24,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "The M×N problem of tool calling and open-source models",
+      "url": "https://www.thetypicalset.com/blog/grammar-parser-maintenance-contract",
+      "score": 156,
+      "comments": 49,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "What Claude Code's Source Revealed About AI Engineering Culture",
+      "url": "https://techtrenches.dev/p/the-snake-that-ate-itself-what-claude",
+      "score": 68,
+      "comments": 44,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Claude may require identity verification in some cases",
+      "url": "https://support.claude.com/en/articles/14328960-identity-verification-on-claude",
+      "score": 108,
+      "comments": 85,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "The next evolution of the Agents SDK",
+      "url": "https://openai.com/index/the-next-evolution-of-the-agents-sdk/",
+      "score": 16,
+      "comments": 2,
+      "source": "hackernews",
+      "text": ""
+    },
+    {
+      "title": "Lyra 2.0: Explorable Generative 3D Worlds",
+      "url": "http://arxiv.org/abs/2604.13036v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Recent advances in video generation enable a new paradigm for 3D scene creation: generating camera-controlled videos that simulate scene walkthroughs, then lifting them to 3D via feed-forward reconstruction techniques. This generative reconstruction approach combines the visual fidelity and creative capacity of video models with 3D outputs ready for real-time rendering and simulation. Scaling to large, complex environments requires 3D-consistent video generation over long camera trajectories wit"
+    },
+    {
+      "title": "SceneCritic: A Symbolic Evaluator for 3D Indoor Scene Synthesis",
+      "url": "http://arxiv.org/abs/2604.13035v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Large Language Models (LLMs) and Vision-Language Models (VLMs) increasingly generate indoor scenes through intermediate structures such as layouts and scene graphs, yet evaluation still relies on LLM or VLM judges that score rendered views, making judgments sensitive to viewpoint, prompt phrasing, and hallucination. When the evaluator is unstable, it becomes difficult to determine whether a model has produced a spatially plausible scene or whether the output score reflects the choice of viewpoin"
+    },
+    {
+      "title": "Generative Refinement Networks for Visual Synthesis",
+      "url": "http://arxiv.org/abs/2604.13030v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "While diffusion models dominate the field of visual generation, they are computationally inefficient, applying a uniform computational effort regardless of different complexity. In contrast, autoregressive (AR) models are inherently complexity-aware, as evidenced by their variable likelihoods, but are often hindered by lossy discrete tokenization and error accumulation. In this work, we introduce Generative Refinement Networks (GRN), a next-generation visual synthesis paradigm to address these i"
+    },
+    {
+      "title": "Visual Preference Optimization with Rubric Rewards",
+      "url": "http://arxiv.org/abs/2604.13029v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "The effectiveness of Direct Preference Optimization (DPO) depends on preference data that reflect the quality differences that matter in multimodal tasks. Existing pipelines often rely on off-policy perturbations or coarse outcome-based signals, which are not well suited to fine-grained visual reasoning. We propose rDPO, a preference optimization framework based on instance-specific rubrics. For each image-instruction pair, we create a checklist-style rubric of essential and additional criteria "
+    },
+    {
+      "title": "Conflated Inverse Modeling to Generate Diverse and Temperature-Change Inducing Urban Vegetation Patterns",
+      "url": "http://arxiv.org/abs/2604.13028v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Urban areas are increasingly vulnerable to thermal extremes driven by rapid urbanization and climate change. Traditionally, thermal extremes have been monitored using Earth-observing satellites and numerical modeling frameworks. For example, land surface temperature derived from Landsat or Sentinel imagery is commonly used to characterize surface heating patterns. These approaches operate as forward models, translating radiative observations or modeled boundary conditions into estimates of surfa"
+    },
+    {
+      "title": "CLAD: Efficient Log Anomaly Detection Directly on Compressed Representations",
+      "url": "http://arxiv.org/abs/2604.13024v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "The explosive growth of system logs makes streaming compression essential, yet existing log anomaly detection (LAD) methods incur severe pre-processing overhead by requiring full decompression and parsing. We introduce CLAD, the first deep learning framework to perform LAD directly on compressed byte streams. CLAD bypasses these bottlenecks by exploiting a key insight: normal logs compress into regular byte patterns, while anomalies systematically disrupt them. To extract these multi-scale devia"
+    },
+    {
+      "title": "Classical and Quantum Speedups for Non-Convex Optimization via Energy Conserving Descent",
+      "url": "http://arxiv.org/abs/2604.13022v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "The Energy Conserving Descent (ECD) algorithm was recently proposed (De Luca &amp; Silverstein, 2022) as a global non-convex optimization method. Unlike gradient descent, appropriately configured ECD dynamics escape strict local minima and converge to a global minimum, making it appealing for machine learning optimization.   We present the first analytical study of ECD, focusing on the one-dimensional setting for this first installment. We formalize a stochastic ECD dynamics (sECD) with energy-p"
+    },
+    {
+      "title": "Representation geometry shapes task performance in vision-language modeling for CT enterography",
+      "url": "http://arxiv.org/abs/2604.13021v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Computed tomography (CT) enterography is a primary imaging modality for assessing inflammatory bowel disease (IBD), yet the representational choices that best support automated analysis of this modality are unknown. We present the first study of vision-language transfer learning on abdominal CT enterography and identify two main findings. First, mean pooling of slice embeddings gives better categorical disease assessment (59.2\\% three-class accuracy), whereas attention pooling gives better cross"
+    },
+    {
+      "title": "See, Point, Refine: Multi-Turn Approach to GUI Grounding with Visual Feedback",
+      "url": "http://arxiv.org/abs/2604.13019v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Computer Use Agents (CUAs) fundamentally rely on graphical user interface (GUI) grounding to translate language instructions into executable screen actions, but editing-level grounding in dense coding interfaces, where sub-pixel accuracy is required to interact with dense IDE elements, remains underexplored. Existing approaches typically rely on single-shot coordinate prediction, which lacks a mechanism for error correction and often fails in high-density interfaces. In this technical report, we"
+    },
+    {
+      "title": "Toward Autonomous Long-Horizon Engineering for ML Research",
+      "url": "http://arxiv.org/abs/2604.13018v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Autonomous AI research has advanced rapidly, but long-horizon ML research engineering remains difficult: agents must sustain coherent progress across task comprehension, environment setup, implementation, experimentation, and debugging over hours or days. We introduce AiScientist, a system for autonomous long-horizon engineering for ML research built on a simple principle: strong long-horizon performance requires both structured orchestration and durable state continuity. To this end, AiScientis"
+    },
+    {
+      "title": "PAL: Personal Adaptive Learner",
+      "url": "http://arxiv.org/abs/2604.13017v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "AI-driven education platforms have made some progress in personalisation, yet most remain constrained to static adaptation--predefined quizzes, uniform pacing, or generic feedback--limiting their ability to respond to learners' evolving understanding. This shortfall highlights the need for systems that are both context-aware and adaptive in real time. We introduce PAL (Personal Adaptive Learner), an AI-powered platform that transforms lecture videos into interactive learning experiences. PAL con"
+    },
+    {
+      "title": "Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe",
+      "url": "http://arxiv.org/abs/2604.13016v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "On-policy distillation (OPD) has become a core technique in the post-training of large language models, yet its training dynamics remain poorly understood. This paper provides a systematic investigation of OPD dynamics and mechanisms. We first identify that two conditions govern whether OPD succeeds or fails: (i) the student and teacher should share compatible thinking patterns; and (ii) even with consistent thinking patterns and higher scores, the teacher must offer genuinely new capabilities b"
+    },
+    {
+      "title": "Learning Versatile Humanoid Manipulation with Touch Dreaming",
+      "url": "http://arxiv.org/abs/2604.13015v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "Humanoid robots promise general-purpose assistance, yet real-world humanoid loco-manipulation remains challenging because it requires whole-body stability, dexterous hands, and contact-aware perception under frequent contact changes. In this work, we study dexterous, contact-rich humanoid loco-manipulation. We first develop an RL-based whole-body controller that provides stable lower-body and torso execution during complex manipulation. Built on this controller, we develop a whole-body humanoid "
+    },
+    {
+      "title": "Bilevel Late Acceptance Hill Climbing for the Electric Capacitated Vehicle Routing Problem",
+      "url": "http://arxiv.org/abs/2604.13013v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "This paper tackles the Electric Capacitated Vehicle Routing Problem (E-CVRP) through a bilevel optimization framework that handles routing and charging decisions separately or jointly depending on the search stage. By analyzing their interaction, we introduce a surrogate objective at the upper level to guide the search and accelerate convergence. A bilevel Late Acceptance Hill Climbing algorithm (b-LAHC) is introduced that operates through three phases: greedy descent, neighborhood exploration, "
+    },
+    {
+      "title": "Lightning OPD: Efficient Post-Training for Large Reasoning Models with Offline On-Policy Distillation",
+      "url": "http://arxiv.org/abs/2604.13010v1",
+      "score": 0,
+      "comments": 0,
+      "source": "arxiv",
+      "text": "On-policy distillation (OPD) has emerged as an efficient post-training paradigm for large language models. However, standard OPD requires a live teacher inference server throughout training, resulting in substantial infrastructure overhead. In this work, we investigate whether on-policy distillation can be performed offline. A natural approach is to precompute teacher log-probabilities once over SFT rollouts and reuse them during training. In practice, however, this offline variant fails to reli"
+    },
+    {
+      "title": "Significant-Gravitas/AutoGPT - AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "score": 183458,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
+    },
+    {
+      "title": "ollama/ollama - Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "url": "https://github.com/ollama/ollama",
+      "score": 169106,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models."
+    },
+    {
+      "title": "f/prompts.chat - f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "url": "https://github.com/f/prompts.chat",
+      "score": 159812,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
+    },
+    {
+      "title": "huggingface/transformers - 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+      "url": "https://github.com/huggingface/transformers",
+      "score": 159440,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. "
+    },
+    {
+      "title": "affaan-m/everything-claude-code - The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "url": "https://github.com/affaan-m/everything-claude-code",
+      "score": 157315,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+    },
+    {
+      "title": "openclaw/openclaw - Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+      "url": "https://github.com/openclaw/openclaw",
+      "score": 358090,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 "
+    },
+    {
+      "title": "n8n-io/n8n - Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "url": "https://github.com/n8n-io/n8n",
+      "score": 184215,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
+    },
+    {
+      "title": "langgenius/dify - Production-ready platform for agentic workflow development.",
+      "url": "https://github.com/langgenius/dify",
+      "score": 137896,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Production-ready platform for agentic workflow development."
+    },
+    {
+      "title": "NousResearch/hermes-agent - The agent that grows with you",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "score": 89231,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "The agent that grows with you"
+    },
+    {
+      "title": "lobehub/lobehub - The ultimate space for work and life — to find, build, and collaborate with agent teammates that grow with you. We are taking agent harness to the next level — enabling multi-agent collaboration, effortless agent team design, and introducing agents as the unit of work interaction.",
+      "url": "https://github.com/lobehub/lobehub",
+      "score": 75223,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "The ultimate space for work and life — to find, build, and collaborate with agent teammates that grow with you. We are taking agent harness to the next level — enabling multi-agent collaboration, effortless agent team design, and introducing agents as the unit of work interaction."
+    },
+    {
+      "title": "【競合調査】AIを活用してレズビアン向けマッチングアプリの市場分析をしてみた",
+      "url": "https://zenn.dev/oasys/articles/f43f283ef4f064",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "【競合調査】AIを活用してレズビアン向けマッチングアプリの市場分析をしてみた\n\n\n 💡 競合調査の目的\n\nレズビアン向けマッチングアプリを開発するにあたり、既存の競合アプリの市場調査 を行いました。\n特に日本国内ではレズビアン向けアプリの市場規模が不透明であり、どのような差別化戦略 を取るべきかを明確にするため、AIを活用して分析しました。\nまずChatGPTに日本国内で利用できるもの、また日本国内におけるレズビアンの人たちが利用しているマッチングアプリ(tinderなどを含む)を市場規模の大きい順で挙げてもらいました！\nそこからx軸、y軸を決めグラフを作成するように投げ以下の競合調..."
+    },
+    {
+      "title": "【開発記録】レズビアン向けマッチングアプリの要件定義（AWS + ChatGPT UI設計）",
+      "url": "https://zenn.dev/oasys/articles/ac47f69bd06c07",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "【開発記録】レズビアン向けマッチングアプリの要件定義（AWS + ChatGPT UI設計）\nChatGPTにターゲット層、対象OS、課金モデル(全会員有料・広告なし)の条件を提示し、条件に合うレズビアン向けのマッチングアプリの要件定義を作成してもらいました！\n作成された要件定義から追加修正してもらって要件定義事態は30分ほどで完了しました😊\n以下ChatGPTによる要件定義です\n\n\n 1. アプリの目的\n\n\n\nターゲット層：20～40代の女性（レズビアン / バイセクシュアル）\n\n課金モデル：全会員 有料制（広告なし）\n\nコンセプト：\n\n女性同士の真剣な出会いを提供\n安全性・プライ..."
+    },
+    {
+      "title": "アプリ開発の流れを7ステップで解説【初心者向け】",
+      "url": "https://zenn.dev/oasys/articles/175fb805ceb6cc",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "アプリ開発の流れを7ステップで解説【初心者向け】\nアプリを作りたいけど、何から始めればいいかわからない…\nそんな方のために、アプリ開発の流れを 7つのステップ で解説します！\nこれから実際にChatGPTを利用し、同性愛者(レズビアン)向けマッチングアプリを作成してみようと思います❤️\n✅ 実際に作ってみた記録も公開中！\n詳しくは、各ステップのブログをチェック！👇\n\n\n 1. 企画・アイデア出し\nアプリの 目的・ターゲット・競合調査 を行います。\n✅ 目的: どんな課題を解決するか？\n✅ ターゲット: 誰が使うのか？\n✅ 競合調査: 似たアプリがあるか？\n\n\n\n 2. 要件定義\nアプ..."
+    },
+    {
+      "title": "結局AI開発は技術者が一番である - AI開発日記",
+      "url": "https://zenn.dev/sway/articles/ai_note_devisace",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "AIについて考えたり使った感想なんかを書き綴る記事群です。\n\n 概要\n\nAIにより「要件を詰めるより動くものを見て直す方が早い」という真のアジャイル時代がきた\nしかし今のAIは自己で内部品質を保つ機能が弱すぎるために劣化も早い\n内部品質にこだわるエンジニアが覇権をとれる時代が到来した！\n\n\n 1. はじめに\nAI開発の実装速度は凄まじい。Claude CodeやCursorなどのAIコーディングツールを使うと、人間にくらべて10倍くらいのスピードでコードが出てくる。\nこの速度がもたらした変化は大きい。以前は「要件をしっかり詰めてから作る」が正義だったが、今は「とりあえず動くものを作って、..."
+    },
+    {
+      "title": "同僚の「細かすぎた」が機能になった──Cladeが育つ仕組み【v1.15.0】",
+      "url": "https://zenn.dev/satoh_y_0323/articles/8223732590a5bd",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "前回記事: https://zenn.dev/satoh_y_0323/articles/378c80cba956c2\nGitHub: https://github.com/satoh-y-0323/clade\n現バージョン: v1.15.0\n\n\n はじめに\n先日、同じ部署で長く働いている同僚から Clade の感想を聞きました。\n\n「.NET C# バッチ処理の全体図を Mermaid で出してもらったら、細かすぎて手で修正した」\n\nこれが今回のリリースのきっかけです。\n\n\n 何が起きていたか\n同僚は Claude Code に「このバッチ処理の全体図を Mermaid で出して」と..."
+    },
+    {
+      "title": "【2026年】Claude APIを最安で使う方法：サブスク不要で40%以上節約",
+      "url": "https://zenn.dev/xujfcn/articles/claude-api-cheap-guide-2026",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "Claude APIの料金、高いと感じていませんか？\nClaude Opus 4は入力$15/出力$75（per 1Mトークン）、Sonnet 4.6でも$3/$15。月に数万リクエストを投げると、請求額はあっという間に膨らみます。\nこの記事では、サブスクリプション契約なしでClaude APIを最安で使う5つの方法を解説します。\n\n\n Claude API 2026年の公式料金\n\n\n\nモデル\n入力 (per 1M)\n出力 (per 1M)\nキャッシュ入力\n用途\n\n\n\n\nClaude Opus 4\n$15.00\n$75.00\n$1.50\n高度な推論\n\n\nClaude Sonnet 4.6..."
+    },
+    {
+      "title": "RLHFの仕組みを整理してみた",
+      "url": "https://zenn.dev/wqy/articles/c53c5e6edfc110",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "LLMの学習プロセスを理解するために、RLHFの流れを整理してみました。\n\n RLHFの全体的な流れ\n大規模モデルの学習は、一般的に次のような流れで行われます。\n1 Pretrain（事前学習）\n↓\n2 SFT（Supervised Fine-tuning）\n↓\n3 Reward Model の学習\n↓\n4 PPO / RLHF による最適化\n↓\n5 評価 → 問題発見 → 再学習\nそれぞれのステップを簡単に整理してみます。\n\n\n 1. Pretrain（事前学習）\n目的は、モデルに　“言語能力と一般的な知識”　を学習させることです\n使用されるデータには、以下のようなものがあります。\n\n..."
+    },
+    {
+      "title": "AI for Science の歩き方 #8 ― 分野別の事例と失敗から学ぶ教訓",
+      "url": "https://zenn.dev/aws_japan/articles/ai4s-08-field-2026",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "!\n本記事は「AI for Science の歩き方」シリーズの第 8 回です。初めての方は 第 1 回 からどうぞ。\n\nこの記事のゴール: 自分の分野での AI 活用事例を知り、よくある失敗を避けられるようになる。\nこの記事では、どの分野でも共通して使える AI の活用パターン、各研究分野での具体的な事例、そしてよくある失敗とその回避法を紹介します。\n\n どんな分野でも使える 6 つの共通パターン\n「自分の分野は特殊だから AI は使えないのでは？」と思われるかもしれませんが、HKUST の調査では、科学的方法の 6 段階に対応する形で、分野を問わず共通して使える AI の活用パターン..."
+    },
+    {
+      "title": "【LLM 基礎】トークンって一体何者なの？",
+      "url": "https://zenn.dev/yusamore/articles/ffd12210f5d4ce",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "LLMの文脈で質問、検索をしていると 「トークンが足りません」「トークン消費が多い」 といったキーワードにぶつかって困惑することが多いです。\nここでは、「トークン」というLLMの生成プロセス中の最重要キーワードについて説明していきます。\n\n トークンとトークナイザー：AIが言葉を咀嚼する仕組み\n指示（プロンプト）を最小の単位に分割したものが「トークン」です。\nLLMは、このトークンの単位で検索や処理を行います。\n分割の基準となるのは、LLMの言語処理プロセスにおける「Tokenizer（トークナイザー）」というツールです。これは本体のLLMモデルとは独立した、前処理用のツールとしての役..."
+    },
+    {
+      "title": "LLMとの対話を”往復書簡”として残す――マルチLLM時代の意思決定ログ管理術",
+      "url": "https://zenn.dev/masa_san/articles/2026-04-15-logs-with-llm",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "LLMとの対話を”往復書簡”として残す――マルチLLM時代の意思決定ログ管理術\nChatGPT、Claude、Gemini、GitHub Copilot……LLMを活用する開発者が増える中、こんな経験はないだろうか。「あのアイデア、どのモデルと話したんだっけ？」「あの議論、どのアカウントのどのスレッドだったか」。複数のLLMを使い分けるほど、対話の記録は散逸していく。\nlogs-with-llmはそんな課題に対して、シンプルかつ深い動機から生まれたリポジトリだ。\n\n\n 「あの話、どのモデルとやったっけ」問題\nこのリポジトリを作ったmasa-san-jpさんは、日常的にClaude、G..."
+    },
+    {
+      "title": "コードが書けないWebデザイナーがClaude Codeと2ヶ月でSaaSをリリースした話【第一話】",
+      "url": "https://zenn.dev/takababa/articles/bc4ab564f76cc2",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "コードが書けないWebデザイナーがClaude Codeと2ヶ月でSaaSをリリースした話【第一話】\nHTMLとCSSは書けます。でもLaravelは「それ何？」というレベルでした。\nそんな自分がClaude Codeと出会い、日本初のWebサービスを作った話を書きます。\n\n\n 第一話：FAXから始まった、終わらない戦い\nWebの仕事を始めて、もうずいぶん経つ。\nその間ずっと、同じ問題と戦い続けている。クライアントからの修正指示が、うまく伝わらない。\n\n\n FAX、という時代があった\n大昔の話をしよう。\nWebサイトの修正確認は、プリントアウトから始まっていた。制作したページを紙に印..."
+    },
+    {
+      "title": "AIと一緒にAWS学習アプリを作る話【構想編】",
+      "url": "https://zenn.dev/yusaka_devlog/articles/39389db87a3db0",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "はじめに\nAWSの学習を進める中で、AIを使った開発プロセスにも興味を持ちました。せっかくなら両方を同時に学べる形で進めようと、このプロジェクトを始めました。\nまた、開発プロセス自体を記録してポートフォリオにすることにしました。この記事はその第一歩、構想と方針決めの記録です。\n同じようにAIを活用して開発を進めたい方の参考になれば嬉しいです。\n\n\n 作るもの\nAWS SAA（Solutions Architect Associate）AI解説付き問題集アプリ\nAWSの資格勉強をしながら、同時にアプリ開発の経験も積める一石二鳥の企画です。\n\n MVPのスコープ\nまずは最小構成（MVP）..."
+    },
+    {
+      "title": "AIに1週間だけ仕事をさせたら[最強の部下かつ最悪の上司]",
+      "url": "https://zenn.dev/nup/articles/fromaiunique-zenn-ai-replaced-me",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "やってみた\n「AIに仕事を奪われる」って言うなら、本当に奪わせてみよう。\n1週間、自分の業務をすべてAIに任せる実験をした。メール返信、資料作成、データ分析、スケジュール調整、議事録——全部。\n結論から言うと、3日目で崩壊した。\n\n\n Day 1: 「これ、もう俺いらなくね？」\n朝、受信ボックスに溜まった15通のメールをAIに投げた。\n「このメールに適切に返信して」\n5分で15通分の返信案が出てきた。しかも9割はそのまま送れるクオリティ。\n午後は報告資料を作らせた。データを渡して「先月のレポートを作って」。10分で完成。グラフ付き。\n正直、震えた。「自分の仕事の半分、意味なかったんだ..."
+    },
+    {
+      "title": "世界初の日本語音声認識ベンチマークを作ったよん",
+      "url": "https://zenn.dev/holotherapper/articles/adlib-asr-bench",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "はじめに\n日本語の音声認識モデルをファインチューニングしている際に、ベンチマークの問題が分かってきたので、それに関して書きます。\nバイブコーディングの流行もあって、キーボードより速いし思考をそのまま吐き出してAIに整理を任せられるしで、音声入力の需要は高まっていると思います。個人的にもChatGPTの音声入力を使ったり、最近出たClaude Codeの/voiceも使っています。ただ、ChatGPTは精度が高くて気に入ってるんですがChatGPTアプリでしか使えないし、Claude Codeの/voiceとかはまだまだな印象。ローカルのモデルも一通り試した結果、満足のいく精度のものが..."
+    },
+    {
+      "title": "【HTML1枚】ChatGPTと作成した、クリック1つで出退勤時間を記録する「自分用ログアプリ」",
+      "url": "https://zenn.dev/mytech_logs/articles/41c6c029603fc2",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "1. 背景\n\n\n開発の動機: 異動先で始業・終業連絡が不要だったため、フレックス利用時に「何時に始めたか」を忘れがちになった。\n\n既存システムとの使い分け: 会社の勤怠管理サイトは「確定した時間」を登録する場所なので、始業直後の「とりあえずのメモ」には向いていない。\n\nズボラ（効率化）精神: 開始時間をメモるのすら面倒。パッと開いて、パッと記録したい。クリック1つで、開始時間や定時までの残り時間を把握したい。\n\n\n 2. 作ったもの\nChatGPTにプロンプトを投げ、HTMLファイル1枚で完結する「自分専用ログツール」を構築。\n\n 主な機能\n\n\nワンクリック打刻: 「開始」「終了」ボ..."
+    },
+    {
+      "title": "【Transformerとは？ - 第七回(番外編)】Multi-Head はなぜ効くのか？ ~論文から理解の変遷を整理する~",
+      "url": "https://zenn.dev/hitama/articles/62565e5a749789",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "1. はじめに\n本記事は、\n「機械学習素人が Transformer を理解するまでの記録」\nという連載の第七回の番外編です。\nChatGPT は日常的に使っているものの、\n\nTransformer の中身は実はよく分かっていない\n\nという立場から、基礎に立ち返って理解していく過程を整理しています。\n本来は Q（Query）・K（Key）・V（Value）の次に Multi-Head Attention に進む予定でしたが、\nその前に一度立ち止まり、\n\nなぜ Multi-Head Attention が必要とされたのか\n\nという点を整理することにしました。\nというのも、原論文を読んだ..."
+    },
+    {
+      "title": "時系列基盤モデル vs LLM：日本株5日間予測ベンチマーク（N=100）",
+      "url": "https://zenn.dev/gazer0824kobe/articles/kronos-vs-llm-nikkei-benchmark",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "時系列基盤モデル vs LLM：日本株5日間予測ベンチマーク（N=100）\n\n はじめに\n「時系列専用の基盤モデル（Kronos）と、大規模言語モデル（Claude Sonnet/Opus）を日本株の短期予測に使ったらどちらが強いのか？」\nこの素朴な疑問を、100日間・10銘柄のバックテストで検証しました。単純な方向性予測精度だけでなく、実際の取引コストを考慮したロング・ショート戦略のシャープレシオまで計測した結果、LLM（特にClaude Opus）が時系列専用モデルに対して明確な優位性を示すという、やや意外な結論が得られました。\n\n\n 検証概要\n\n モデル\n\n\n\nモデル\n種別\n特..."
+    },
+    {
+      "title": "ブラック-ショールズ方程式の数理とPython実装 -- オプション価格とグリークスを理論から導出する",
+      "url": "https://zenn.dev/shimada_ml/articles/614097b87b0475",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "はじめに\nこの記事では、金融工学の中核をなすブラック-ショールズ方程式（Black-Scholes Equation）を数式レベルで導出し、Pythonで実装します。\n今回は、デリバティブ（金融派生商品）の代表格であるオプションの価格付け理論を扱います。前回の記事で導出した幾何ブラウン運動（GBM）と伊藤の補題が、ここで本格的に活用されます。\n具体的には、以下の内容を扱います。\n\nデリバティブとオプションの基礎概念\nコール・プットオプションのペイオフとプット・コールパリティ\nブラックショールズ偏微分方程式の導出（複製ポートフォリオ + 伊藤の補題）\nBS公式（解析解）によるオプション..."
+    },
+    {
+      "title": "SageMaker Training Jobを使う理由を整理しつつ、Terraformで試してみた",
+      "url": "https://zenn.dev/fusic/articles/f48b25bf83a58f",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "はじめに\nFusicのレオナです。本ブログでは、KaggleのDigit RecognizerコンペのMNISTデータセットを使用して、Terraformでインフラを構築してSageMaker Training Jobを動かすまでをハンズオン形式で書いていきます。\n!\n※ 本ブログの目的はSageMaker Training Jobの実行基盤の構築と動作確認です。モデルの精度向上、MLモデルの選定、学習結果の考察については扱いません。学習スクリプトのCNNはあくまでTraining Jobを動かすためのサンプルです。\n\n\n SageMaker Training Job とは\nSage..."
+    },
+    {
+      "title": "AIトレーダー開発ログ #6: 動的アンサンブルでモデル性能を改善",
+      "url": "https://zenn.dev/sigma_lab/articles/qros-research-devlog-06-dynamic-en-20260411",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_zenn",
+      "text": "はじめに\n金融市場の予測は、機械学習エンジニアや量的投資家にとって最も挑戦的なタスクの一つです。その理由は、市場の非定常性、大量のノイズ、そして相関構造の頻繁な変動によるものです。この記事では、QROS Helix で開発した動的アンサンブルモデルによる株価予測について解説します。\n\n 結論\n今回の実験では、LightGBMとLSTMを組み合わせた動的重みのアンサンブルモデルが安定した性能を示しました。市場状況に応じて重みを調整することで、相場環境への追従性が向上し、パフォーマンスが改善されました。\n\n\n\n項目\n値\n\n\n\n\nMarket Regime\nBULL Market\n\n\nEn..."
+    },
+    {
+      "title": "OpenAI updates its Agents SDK to help enterprises build safer, more capable agents",
+      "url": "https://techcrunch.com/2026/04/15/openai-updates-its-agents-sdk-to-help-enterprises-build-safer-more-capable-agents/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_techcrunch",
+      "text": "OpenAI has expanded the capabilities of its agent-building toolkit, as agentic AI continues to grow in popularity."
+    },
+    {
+      "title": "Hightouch reaches $100M ARR fueled by marketing tools powered by AI",
+      "url": "https://techcrunch.com/2026/04/15/hightouch-reaches-100m-arr-fueled-by-marketing-tools-powered-by-ai/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_techcrunch",
+      "text": "The startup says it grew its ARR by $70 million in just 20 months after launching an AI agent platform for marketers."
+    },
+    {
+      "title": "LinkedIn data shows AI isn&#8217;t to blame for hiring decline&#8230; yet",
+      "url": "https://techcrunch.com/2026/04/15/linkedin-data-shows-ai-isnt-to-blame-for-hiring-decline-yet/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_techcrunch",
+      "text": "LinkedIn says hiring is down 20% since 2022, but blames higher interest rates — not AI — for the slowdown."
+    },
+    {
+      "title": "AI learning app Gizmo levels up with 13M users and a $22M investment",
+      "url": "https://techcrunch.com/2026/04/15/ai-learning-app-gizmo-levels-up-with-13m-users-and-a-22m-investment/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_techcrunch",
+      "text": "Gizmo, an AI-powered learning platform, has attracted more than 13 million users and just secured $22 million in Series A funding."
+    },
+    {
+      "title": "Can AI judge journalism? A Thiel-backed startup says yes, even if it risks chilling whistleblowers",
+      "url": "https://techcrunch.com/2026/04/15/can-ai-judge-journalism-a-thiel-backed-startup-says-yes-even-if-it-risks-chilling-whistleblowers/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_techcrunch",
+      "text": "Objection, a Thiel-backed startup, aims to use AI to judge journalism, letting users pay to challenge stories. Critics warn it could chill whistleblowers and reshape how media accountability works."
+    },
+    {
+      "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
+      "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_venturebeat",
+      "text": "Railway, a San Francisco-based cloud platform that has quietly amassed two million developers without spending a dollar on marketing, announced Thursday that it raised $100 million in a Series B funding round, as surging demand for artificial intelligence applications exposes the limitations of lega"
+    },
+    {
+      "title": "Claude Code costs up to $200 a month. Goose does the same thing for free.",
+      "url": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_venturebeat",
+      "text": "The artificial intelligence coding revolution comes with a catch: it&#x27;s expensive.Claude Code, Anthropic&#x27;s terminal-based AI agent that can write, debug, and deploy code autonomously, has captured the imagination of software developers worldwide. But its pricing — ranging from $20 to $200 p"
+    },
+    {
+      "title": "Listen Labs raises $69M after viral billboard hiring stunt to scale AI customer interviews",
+      "url": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_venturebeat",
+      "text": "Alfred Wahlforss was running out of options. His startup, Listen Labs, needed to hire over 100 engineers, but competing against Mark Zuckerberg&#x27;s $100 million offers seemed impossible. So he spent $5,000 — a fifth of his marketing budget — on a billboard in San Francisco displaying what looked "
+    },
+    {
+      "title": "Salesforce rolls out new Slackbot AI agent as it battles Microsoft and Google in workplace AI",
+      "url": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_venturebeat",
+      "text": "Salesforce on Tuesday launched an entirely rebuilt version of Slackbot, the company&#x27;s workplace assistant, transforming it from a simple notification tool into what executives describe as a fully powered AI agent capable of searching enterprise data, drafting documents, and taking action on beh"
+    },
+    {
+      "title": "Anthropic launches Cowork, a Claude Desktop agent that works in your files — no coding required",
+      "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_venturebeat",
+      "text": "Anthropic released Cowork on Monday, a new AI agent capability that extends the power of its wildly successful Claude Code tool to non-technical users — and according to company insiders, the team built the entire feature in approximately a week and a half, largely using Claude Code itself.The launc"
+    },
+    {
+      "title": "The Download: NASA&#8217;s nuclear spacecraft and unveiling our AI 10",
+      "url": "https://www.technologyreview.com/2026/04/15/1135904/the-download-nasa-nuclear-powered-spacecraft-10-things-that-matter-in-ai-right-now/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_mit_review",
+      "text": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. NASA is building the first nuclear reactor-powered interplanetary spacecraft. How will it work?&#160; Just before Artemis II began its historic slings"
+    },
+    {
+      "title": "No one&#8217;s sure if synthetic mirror life will kill us all",
+      "url": "https://www.technologyreview.com/2026/04/15/1135197/synthetic-mirror-life-microbes-kill-us-all/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_mit_review",
+      "text": "For four days in February 2019, some 30 synthetic biologists and ethicists hunkered down at a conference center in Northern Virginia to brainstorm high-risk, cutting-­edge, irresistibly exciting ideas that the National Science Foundation should fund. By the end of the meeting, they’d landed on a com"
+    },
+    {
+      "title": "Building trust in the AI era with privacy-led UX",
+      "url": "https://www.technologyreview.com/2026/04/15/1135530/building-trust-in-the-ai-era-with-privacy-led-ux/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_mit_review",
+      "text": "The practice of privacy-led user experience (UX) is a design philosophy that treats transparency around data collection and usage as an integral part of the customer relationship. An undertapped opportunity in digital marketing, privacy-led UX treats user consent not as a tick-box compliance exercis"
+    },
+    {
+      "title": "The Download: the state of AI, and protecting bears with drones",
+      "url": "https://www.technologyreview.com/2026/04/14/1135847/the-download-state-of-ai-drones-protecting-bears/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_mit_review",
+      "text": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Want to understand the current state of AI? Check out these charts.&#160; If&#160;you’re&#160;following AI news,&#160;you’re&#160;probably getting&#16"
+    },
+    {
+      "title": "NASA is building the first nuclear reactor-powered interplanetary spacecraft. How will it work?",
+      "url": "https://www.technologyreview.com/2026/04/14/1135848/nasa-nuclear-powered-spacecraft/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_mit_review",
+      "text": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. Just before Artemis II began its historic slingshot around the moon, Jared Isaacman, the recently confirmed NASA administ"
+    },
+    {
+      "title": "​Boston Dynamics and Google DeepMind Teach Spot to Reason​",
+      "url": "https://spectrum.ieee.org/boston-dynamics-spot-google-deepmind",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_ieee",
+      "text": "The amazing and frustrating thing about robots is that they can do almost anything you want them to do, as long as you know how to ask properly. In the not-so-distant past, asking properly meant writing code, and while we’ve thankfully moved beyond that brittle constraint, there’s still an irritatin"
+    },
+    {
+      "title": "Sarang Gupta Builds AI Systems With Real-World Impact",
+      "url": "https://spectrum.ieee.org/openai-engineer-sarang-gupta",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_ieee",
+      "text": "Like many engineers, Sarang Gupta spent his childhood tinkering with everyday items around the house. From a young age he gravitated to projects that could make a difference in someone’s everyday life.When the family’s microwave plug broke, Gupta and his father figured out how to fix it. When a draw"
+    },
+    {
+      "title": "12 Graphs That Explain the State of AI in 2026",
+      "url": "https://spectrum.ieee.org/state-of-ai-index-2026",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_ieee",
+      "text": "The capabilities of leading AI models continue to accelerate, and the largest AI companies, including OpenAI and Anthropic, are hurtling toward IPOs later this year. Yet resentment toward AI continues to simmer, and in some cases has boiled over, especially in the United States, where local governme"
+    },
+    {
+      "title": "AI Models Map the Colorado River’s Hard Choices",
+      "url": "https://spectrum.ieee.org/colorado-river-water-shortage",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_ieee",
+      "text": "The Colorado River begins as snow. Every spring, the mountain snowpack of the Rockies melts into streams that feed into reservoirs that supply 40 million people across seven U.S. states. The system has worked, more or less, for a century. That century is over.By some measures, 2026 is shaping up to "
+    },
+    {
+      "title": "Decentralized Training Can Help Solve AI’s Energy Woes",
+      "url": "https://spectrum.ieee.org/decentralized-ai-training-2676670858",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_ieee",
+      "text": "Artificial intelligence harbors an enormous energy appetite. Such constant cravings are evident in the hefty carbon footprint of the data centers behind the AI boom and the steady increase over time of carbon emissions from training frontier AI models.No wonder big tech companies are warming up to n"
+    },
+    {
+      "title": "Trusted access for the next era of cyber defense",
+      "url": "https://openai.com/index/scaling-trusted-access-for-cyber-defense",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_openai",
+      "text": "OpenAI expands its Trusted Access for Cyber program, introducing GPT-5.4-Cyber to vetted defenders and strengthening safeguards as AI cybersecurity capabilities advance."
+    },
+    {
+      "title": "Enterprises power agentic workflows in Cloudflare Agent Cloud with OpenAI",
+      "url": "https://openai.com/index/cloudflare-openai-agent-cloud",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_openai",
+      "text": "Cloudflare brings OpenAI’s GPT-5.4 and Codex to Agent Cloud, enabling enterprises to build, deploy, and scale AI agents for real-world tasks with speed and security."
+    },
+    {
+      "title": "Prompting fundamentals",
+      "url": "https://openai.com/academy/prompting",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_openai",
+      "text": "Learn prompting fundamentals and how to write clear, effective prompts to get better, more useful responses from ChatGPT."
+    },
+    {
+      "title": "Using projects in ChatGPT",
+      "url": "https://openai.com/academy/projects",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_openai",
+      "text": "Learn how to use orojects in ChatGPT to organize chats, files, and instructions, manage ongoing work, and collaborate more effectively."
+    },
+    {
+      "title": "Bringing people together at AI for the Economy Forum",
+      "url": "https://blog.google/company-news/outreach-and-initiatives/creating-opportunity/ai-economy-forum/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_google_ai",
+      "text": "&lt;img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_for_the_Economy_Forum_2026.max-600x600.format-webp.webp\"&gt;Google is bringing people together in Washington D.C. at our AI for the Economy Forum."
+    },
+    {
+      "title": "New ways to balance cost and reliability in the Gemini API",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-flex-and-priority-inference/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_google_ai",
+      "text": "&lt;img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/cost_reliability_Gemini_API-soc.max-600x600.format-webp.webp\"&gt;Google is introducing two new inference tiers to the Gemini API, Flex and Priority,\r\nto balance cost and latency."
+    },
+    {
+      "title": "Create, edit and share videos at no cost in Google Vids",
+      "url": "https://blog.google/products-and-platforms/products/workspace/google-vids-updates-lyria-veo/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_google_ai",
+      "text": "&lt;img src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Createeditandshare_Google_Vids_.max-600x600.format-webp.webp\"&gt;New AI capabilities are coming to Google Vids, powered by Lyria 3 and Veo 3.1, like high-quality video generation at no cost and more."
+    },
+    {
+      "title": "Gemma 4: Byte for byte, the most capable open models",
+      "url": "https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_deepmind",
+      "text": "Gemma 4: Our most intelligent open models to date, purpose-built for advanced reasoning and agentic workflows."
+    },
+    {
+      "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
+      "url": "https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_deepmind",
+      "text": "Our latest voice model has improved precision and lower latency to make voice interactions more fluid, natural and precise."
+    },
+    {
+      "title": "Protecting people from harmful manipulation",
+      "url": "https://deepmind.google/blog/protecting-people-from-harmful-manipulation/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_deepmind",
+      "text": "Google DeepMind researches AI's harmful manipulation risks across areas like finance and health, leading to new safety measures."
+    },
+    {
+      "title": "Identifying Interactions at Scale for LLMs",
+      "url": "http://bair.berkeley.edu/blog/2026/03/13/spex/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_berkeley_ai",
+      "text": "&lt;!-- twitter --&gt;\n&lt;meta name=&quot;twitter:title&quot; content=&quot;Identifying Interactions at Scale for LLMs&quot; /&gt;\n\n&lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot; /&gt;\n\n&lt;meta name=&quot;twitter:image&quot; content=&quot;https://bair.berkeley.edu/s"
+    },
+    {
+      "title": "Information-Driven Design of Imaging Systems",
+      "url": "http://bair.berkeley.edu/blog/2026/01/10/information-driven-imaging/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_berkeley_ai",
+      "text": "&lt;!--\nThese are comments in HTML. The above header text is needed to format the\ntitle, authors, etc. The &quot;information-driven-imaging&quot; is the representative image\nthat we use for each post for tweeting (see below as well) and for the\nemails to subscribers.\n\nThe `static/blog` directory is "
+    },
+    {
+      "title": "RL without TD learning",
+      "url": "http://bair.berkeley.edu/blog/2025/11/01/rl-without-td-learning/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_berkeley_ai",
+      "text": "&lt;!-- twitter --&gt;\n&lt;meta name=&quot;twitter:title&quot; content=&quot;RL without TD learning&quot; /&gt;\n\n&lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot; /&gt;\n\n&lt;meta name=&quot;twitter:image&quot; content=&quot;https://bair.berkeley.edu/static/blog/rl-withou"
+    },
+    {
+      "title": "What exactly does word2vec learn?",
+      "url": "http://bair.berkeley.edu/blog/2025/09/01/qwem-word2vec-theory/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_berkeley_ai",
+      "text": "&lt;!-- twitter --&gt;\n&lt;meta name=&quot;twitter:title&quot; content=&quot;What exactly does word2vec learn? A complete theory&quot; /&gt;\n\n&lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot; /&gt;\n\n&lt;meta name=&quot;twitter:image&quot; content=&quot;https://bair.berke"
+    },
+    {
+      "title": "Defending against Prompt Injection with Structured Queries (StruQ) and Preference Optimization (SecAlign)",
+      "url": "http://bair.berkeley.edu/blog/2025/04/11/prompt-injection-defense/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_berkeley_ai",
+      "text": "&lt;!-- twitter --&gt;\n&lt;meta name=&quot;twitter:title&quot; content=&quot;Defending against Prompt Injection with Structured Queries (StruQ) and Preference Optimization (SecAlign)&quot; /&gt;\n\n&lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot; /&gt;\n\n&lt;meta name=&quo"
+    },
+    {
+      "title": "LinkBERT: Improving Language Model Training with Document Link",
+      "url": "/blog/linkbert/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_stanford_ai",
+      "text": "&lt;h3 id=&quot;language-model-pretraining&quot;&gt;&lt;strong&gt;Language Model Pretraining&lt;/strong&gt;&lt;/h3&gt;\n&lt;p&gt;Language models (LMs), like BERT &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/s"
+    },
+    {
+      "title": "Stanford AI Lab Papers and Talks at ACL 2022",
+      "url": "/blog/acl-2022/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_stanford_ai",
+      "text": "&lt;p&gt;&lt;img class=&quot;postimage_75&quot; src=&quot;/blog/assets/img/posts/2022-05-25-acl-2022/logo.png&quot; /&gt;&lt;/p&gt;\n\n&lt;p&gt;The &lt;a href=&quot;https://www.2022.aclweb.org/&quot;&gt;60th Annual Meeting of the Association for Computational Linguistics&lt;/a&gt; (ACL) 2022 is taking"
+    },
+    {
+      "title": "Discovering the systematic errors made by machine learning models",
+      "url": "/blog/domino/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_stanford_ai",
+      "text": "&lt;h1 id=&quot;discovering-systematic-errors-with-cross-modal-embeddings&quot;&gt;Discovering systematic errors with cross-modal embeddings&lt;/h1&gt;\n\n&lt;blockquote&gt;\n  &lt;p&gt;In this blog post, we introduce Domino, a new approach for discovering systematic errors made by machine learning mod"
+    },
+    {
+      "title": "Grading Complex Interactive Coding Programs with Reinforcement Learning",
+      "url": "/blog/play-to-grade/",
+      "score": 0,
+      "comments": 0,
+      "source": "rss_stanford_ai",
+      "text": "&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML&quot;&gt;&lt;/script&gt;\n\n&lt;p&gt;&lt;strong&gt;[Summary] tl;dr:&lt;/strong&gt;\nA tremendous amount of effort has been poured into training AI algorithms to com"
+    }
+  ],
+  "summary": null,
+  "summarized_items": [
+    {
+      "title": "huggingface/transformers - 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+      "url": "https://github.com/huggingface/transformers",
+      "score": 159440,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+      "title_ja": "Hugging Face Transformers - 最先端ML モデルフレームワーク",
+      "summary_ja": "テキスト、画像、音声、マルチモーダルモデルの推論と訓練のための最先端機械学習モデル定義フレームワーク。業界標準のライブラリとして広く採用。",
+      "importance": 10,
+      "tags": [
+        "LLM",
+        "画像生成",
+        "音声",
+        "オープンソース"
+      ],
+      "category": "技術"
+    },
+    {
+      "title": "Significant-Gravitas/AutoGPT - AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "score": 183458,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "title_ja": "AutoGPT - 誰でもアクセス可能なAIプラットフォーム",
+      "summary_ja": "すべての人が利用・構築できるアクセシブルなAIの実現を目指すプロジェクト。重要なことに集中できるよう、必要なツールを提供することがミッション。",
+      "importance": 9,
+      "tags": [
+        "Agent",
+        "LLM",
+        "オープンソース"
+      ],
+      "category": "技術"
+    },
+    {
+      "title": "lobehub/lobehub - The ultimate space for work and life — to find, build, and collaborate with agent teammates that grow with you. We are taking agent harness to the next level — enabling multi-agent collaboration, effortless agent team design, and introducing agents as the unit of work interaction.",
+      "url": "https://github.com/lobehub/lobehub",
+      "score": 75223,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "The ultimate space for work and life — to find, build, and collaborate with agent teammates that grow with you. We are taking agent harness to the next level — enabling multi-agent collaboration, effortless agent team design, and introducing agents as the unit of work interaction.",
+      "title_ja": "LobeHub - マルチエージェント協働プラットフォーム",
+      "summary_ja": "仕事と生活のための究極空間として、エージェントチームメイトとの発見・構築・協働を可能にする。マルチエージェント協働とエージェントチーム設計を次のレベルに押し上げる。",
+      "importance": 9,
+      "tags": [
+        "Agent",
+        "ビジネス",
+        "オープンソース"
+      ],
+      "category": "ビジネス"
+    },
+    {
+      "title": "n8n-io/n8n - Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "url": "https://github.com/n8n-io/n8n",
+      "score": 184215,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "title_ja": "n8n - AI機能搭載ワークフロー自動化プラットフォーム",
+      "summary_ja": "ネイティブAI機能を持つフェアコードライセンスのワークフロー自動化プラットフォーム。ビジュアル構築とカスタムコードを組み合わせ、400以上の統合機能を提供。",
+      "importance": 8,
+      "tags": [
+        "Agent",
+        "ビジネス",
+        "オープンソース"
+      ],
+      "category": "ビジネス"
+    },
+    {
+      "title": "ollama/ollama - Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "url": "https://github.com/ollama/ollama",
+      "score": 169106,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "title_ja": "Ollama - 多様なAIモデル実行環境",
+      "summary_ja": "Kimi-K2.5、GLM-5、MiniMax、DeepSeek、Qwen、Gemmaなど様々なAIモデルを簡単に実行できる環境を提供。中国系モデルも多数サポート。",
+      "importance": 8,
+      "tags": [
+        "LLM",
+        "中国AI",
+        "オープンソース"
+      ],
+      "category": "技術"
+    },
+    {
+      "title": "langgenius/dify - Production-ready platform for agentic workflow development.",
+      "url": "https://github.com/langgenius/dify",
+      "score": 137896,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Production-ready platform for agentic workflow development.",
+      "title_ja": "Dify - プロダクション対応エージェントワークフロー開発プラットフォーム",
+      "summary_ja": "エージェントワークフロー開発のためのプロダクション対応プラットフォーム。企業レベルでの実用的なAIエージェント開発を支援。",
+      "importance": 8,
+      "tags": [
+        "Agent",
+        "ビジネス",
+        "オープンソース"
+      ],
+      "category": "ビジネス"
+    },
+    {
+      "title": "affaan-m/everything-claude-code - The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "url": "https://github.com/affaan-m/everything-claude-code",
+      "score": 157315,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "title_ja": "everything-claude-code - Claude向けエージェントハーネス最適化システム",
+      "summary_ja": "Claude Code、Codex、Cursor等のためのエージェントハーネス性能最適化システム。スキル、直感、メモリ、セキュリティ、研究主導の開発機能を提供。",
+      "importance": 7,
+      "tags": [
+        "Agent",
+        "コード"
+      ],
+      "category": "技術"
+    },
+    {
+      "title": "NousResearch/hermes-agent - The agent that grows with you",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "score": 89231,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "The agent that grows with you",
+      "title_ja": "Hermes Agent - 成長するAIエージェント",
+      "summary_ja": "ユーザーと共に成長するAIエージェント。学習機能を備え、継続的に進化するエージェントシステムを提供。",
+      "importance": 7,
+      "tags": [
+        "Agent",
+        "オープンソース"
+      ],
+      "category": "技術"
+    },
+    {
+      "title": "openclaw/openclaw - Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+      "url": "https://github.com/openclaw/openclaw",
+      "score": 358090,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+      "title_ja": "openclaw - クロスプラットフォーム個人AIアシスタント",
+      "summary_ja": "任意のOS・プラットフォームで動作する個人向けAIアシスタント。ユニークな「ロブスター方式」を採用したオープンソースプロジェクト。",
+      "importance": 6,
+      "tags": [
+        "Agent",
+        "オープンソース"
+      ],
+      "category": "ツール"
+    },
+    {
+      "title": "f/prompts.chat - f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "url": "https://github.com/f/prompts.chat",
+      "score": 159812,
+      "comments": 0,
+      "source": "github_trending",
+      "text": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "title_ja": "prompts.chat - ChatGPTプロンプト共有プラットフォーム",
+      "summary_ja": "コミュニティからプロンプトを共有・発見・収集できるプラットフォーム。完全なプライバシー保護を備えた自己ホスト型のオープンソースソリューション。",
+      "importance": 6,
+      "tags": [
+        "LLM",
+        "オープンソース"
+      ],
+      "category": "ツール"
+    }
+  ],
+  "digest": "## 今日のAIトレンド分析\n\n### 1. 今日の最重要トレンド\nAIの民主化が加速している。Hugging Face TransformersやOllamaが多様なモデルへの容易なアクセスを提供し、AutoGPTが誰でも利用可能なAIプラットフォームを目指している。特に中国系モデル（Kimi、GLM-5、DeepSeek等）の台頭が顕著で、グローバルなAI競争が激化している。\n\n### 2. ビジネスへの示唆\nマルチエージェント協働（LobeHub）とワークフロー自動化（n8n）の組み合わせにより、従来の単一AI活用から組織的なAI導入へのシフトが必要。\nコードレス・ローコードでのAI活用が標準となり、非技術者でもAIを業務に統合できる環境が整いつつある。\n\n### 3. 注目すべき技術動向\nフェアコードライセンスやオープンソース化により、AIツールの透明性と拡張性が重視されている。\nテキスト・画像・音声を統合したマルチモーダルAIが実用段階に入り、より包括的なAIソリューション構築が可能になっている。",
+  "top_tags": {
+    "オープンソース": 9,
+    "Agent": 7,
+    "LLM": 4,
+    "ビジネス": 3,
+    "画像生成": 1,
+    "音声": 1,
+    "中国AI": 1,
+    "コード": 1
+  }
+}
