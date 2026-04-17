@@ -1,8 +1,141 @@
 {
-  "built_at": "2026-04-16T21:36:36.857298",
-  "days_covered": 11,
-  "total_articles": 110,
+  "built_at": "2026-04-17T07:27:33.975561",
+  "days_covered": 12,
+  "total_articles": 120,
   "entries": [
+    {
+      "date": "2026-04-17",
+      "digest": "## 今日の最重要トレンド\nAIの民主化と実用化が急速に進んでおり、専門知識がなくても高度なAI機能を活用できる環境が整いつつある。Hugging Face TransformersやOllamaのような統一プラットフォームにより、多様なAIモデルへのアクセスが簡素化され、n8nやDifyなどのノーコード・ローコードツールによってビジネス現場での実装障壁が大幅に低下している。これらの動向は、AIが一部の技術者の専有物から、あらゆる業界・職種で活用される汎用ツールへと変化していることを示している。\n\n## ビジネスへの示唆\n企業はAI導入の技術的ハードルが下がった今、戦略立案と業務プロセス設計により多くのリソースを割けるようになった。プロダクション環境でのAIエージェント運用が現実的になり、競合優位性確立のための迅速な実装と差別化が求められる。\n\n## 注目すべき技術動向\nマルチモーダルAIモデルの標準化と、ビジュアル開発環境でのAIワークフロー構築が主流になりつつある。オンプレミスとクラウドのハイブリッド運用により、セキュリティとコスト効率の両立が可能になっている。",
+      "articles": [
+        {
+          "title": "Hugging Face Transformers - 最先端機械学習モデルフレームワーク",
+          "summary": "テキスト、画像、音声、マルチモーダルモデルに対応した最先端機械学習モデルの定義フレームワーク。推論と訓練の両方をサポートする業界標準ツール。",
+          "importance": 10,
+          "tags": [
+            "LLM",
+            "画像生成",
+            "音声",
+            "オープンソース"
+          ],
+          "category": "技術",
+          "source": "github_trending",
+          "url": "https://github.com/huggingface/transformers"
+        },
+        {
+          "title": "AutoGPT - 誰もが使えるアクセシブルなAI",
+          "summary": "すべての人がAIを使用し、構築できることを目指すプロジェクト。ユーザーが重要なことに集中できるよう、必要なツールを提供することをミッションとしている。",
+          "importance": 9,
+          "tags": [
+            "Agent",
+            "LLM",
+            "オープンソース"
+          ],
+          "category": "技術",
+          "source": "github_trending",
+          "url": "https://github.com/Significant-Gravitas/AutoGPT"
+        },
+        {
+          "title": "n8n - AI機能搭載ワークフロー自動化プラットフォーム",
+          "summary": "ネイティブAI機能を持つワークフロー自動化プラットフォーム。ビジュアル構築とカスタムコードの組み合わせが可能で、400以上の統合機能を提供。セルフホストまたはクラウド環境で利用可能。",
+          "importance": 8,
+          "tags": [
+            "Agent",
+            "ビジネス",
+            "オープンソース"
+          ],
+          "category": "ビジネス",
+          "source": "github_trending",
+          "url": "https://github.com/n8n-io/n8n"
+        },
+        {
+          "title": "Ollama - 多様なAIモデル実行プラットフォーム",
+          "summary": "Kimi-K2.5、GLM-5、MiniMax、DeepSeek、Qwen、Gemmaなど複数のAIモデルを簡単に実行できるプラットフォーム。モデルの統一的な管理と実行環境を提供。",
+          "importance": 8,
+          "tags": [
+            "LLM",
+            "中国AI",
+            "オープンソース"
+          ],
+          "category": "技術",
+          "source": "github_trending",
+          "url": "https://github.com/ollama/ollama"
+        },
+        {
+          "title": "Dify - プロダクション対応エージェントワークフロー開発プラットフォーム",
+          "summary": "エージェントワークフローの開発に特化したプロダクション対応プラットフォーム。企業レベルでのAIエージェント開発・運用を支援。",
+          "importance": 8,
+          "tags": [
+            "Agent",
+            "ビジネス",
+            "オープンソース"
+          ],
+          "category": "ビジネス",
+          "source": "github_trending",
+          "url": "https://github.com/langgenius/dify"
+        },
+        {
+          "title": "LobeHub - マルチエージェント協調プラットフォーム",
+          "summary": "仕事と生活のためのエージェントチームメイトを見つけ、構築、協力できる究極の空間。マルチエージェント協調と簡単なエージェントチーム設計を可能にし、エージェントを作業インタラクションの単位として導入。",
+          "importance": 8,
+          "tags": [
+            "Agent",
+            "ビジネス",
+            "オープンソース"
+          ],
+          "category": "ビジネス",
+          "source": "github_trending",
+          "url": "https://github.com/lobehub/lobehub"
+        },
+        {
+          "title": "Hermes Agent - 成長するAIエージェント",
+          "summary": "ユーザーとともに成長するAIエージェント。継続的な学習と適応能力を持つエージェント技術を提供。",
+          "importance": 7,
+          "tags": [
+            "Agent",
+            "オープンソース"
+          ],
+          "category": "技術",
+          "source": "github_trending",
+          "url": "https://github.com/NousResearch/hermes-agent"
+        },
+        {
+          "title": "Claude Memory - コーディングセッション自動記録プラグイン",
+          "summary": "Claudeのコーディングセッション中の全ての活動を自動キャプチャし、AIで圧縮して将来のセッションに関連コンテキストを注入するプラグイン。継続的な開発体験を提供。",
+          "importance": 7,
+          "tags": [
+            "LLM",
+            "コード"
+          ],
+          "category": "ツール",
+          "source": "github_trending",
+          "url": "https://github.com/thedotmack/claude-mem"
+        },
+        {
+          "title": "openclaw - マルチプラットフォーム対応パーソナルAIアシスタント",
+          "summary": "任意のOS・プラットフォームで動作するパーソナルAIアシスタント。ユニークな「ロブスター」コンセプトを採用した個人向けAIソリューション。",
+          "importance": 6,
+          "tags": [
+            "Agent",
+            "オープンソース"
+          ],
+          "category": "ツール",
+          "source": "github_trending",
+          "url": "https://github.com/openclaw/openclaw"
+        },
+        {
+          "title": "prompts.chat - プロンプト共有コミュニティプラットフォーム",
+          "summary": "ChatGPTプロンプトをコミュニティで共有・発見・収集できるプラットフォーム。組織での完全プライバシー保護のためのセルフホスト機能も提供。",
+          "importance": 6,
+          "tags": [
+            "LLM",
+            "オープンソース"
+          ],
+          "category": "ツール",
+          "source": "github_trending",
+          "url": "https://github.com/f/prompts.chat"
+        }
+      ]
+    },
     {
       "date": "2026-04-16",
       "digest": "## 1. 今日の最重要トレンド\nマルチモーダル対応の機械学習フレームワークが成熟し、誰もがアクセス可能なAIプラットフォームが普及している。特にマルチエージェント協調による次世代の相互作用と、AIネイティブなワークフロー自動化が実用段階に入っている。複数のAIモデルを統合的に利用できる環境整備も進み、AI活用の民主化が加速している。\n\n## 2. ビジネスへの示唆\n従来の単一タスク型AIから、複数エージェントが協調する組織的なAI活用へのシフトが急務である。400以上の統合機能を持つワークフロー自動化により、業務プロセス全体のAI化が現実的な選択肢となっている。\n\n## 3. 注目すべき技術動向\nテキスト・画像・音声を横断するマルチモーダルモデルと、視覚的インターフェースによるローコード開発が融合している。セルフホスト可能なAIインフラにより、企業は自社環境でのカスタマイズされたAI運用が可能になっている。",
