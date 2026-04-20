@@ -48,7 +48,7 @@ def call_claude(prompt, max_tokens=2000, label="api_call"):
     if not api_key:
         raise ValueError("ANTHROPIC_API_KEY not set")
     payload = json.dumps({
-        "model": "claude-sonnet-4-20250514",
+        "model": "claude-sonnet-4-5",
         "max_tokens": max_tokens,
         "messages": [{"role": "user", "content": prompt}]
     }).encode()
