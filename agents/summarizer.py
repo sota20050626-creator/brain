@@ -69,7 +69,7 @@ def call_claude(prompt, max_tokens=2000, label="api_call"):
 
 
 def summarize_items(items):
-    top_items = sorted(items, key=lambda x: x.get("score", 0), reverse=True)[:10]
+    top_items = sorted(items, key=lambda x: x.get("score", 0), reverse=True)[:5]
     items_text = "\n\n".join([
         "[" + str(i+1) + "] SOURCE: " + item["source"] + "\nTITLE: " + item["title"] + "\nTEXT: " + item.get("text","")[:200]
         for i, item in enumerate(top_items)
