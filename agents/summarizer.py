@@ -4,6 +4,10 @@ import urllib.request
 import re
 from datetime import datetime
 from pathlib import Path
+import numpy as np
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.manifold import LocallyLinearEmbedding
+from sklearn.ensemble import IsolationForest
 
 TODAY = datetime.now().strftime("%Y-%m-%d")
 DATA_FILE = Path("knowledge/daily/" + TODAY + ".json")
@@ -68,7 +72,81 @@ def call_claude(prompt, max_tokens=2000, label="api_call"):
     return result["content"][0]["text"]
 
 
+def geometric_regularization_scoring(items):
+    """
+    重要度スコアリングの幾何学的正則化
+    TF-IDF特徴量に対してLocallyLinearEmbeddingを適用し、異常値を検出してスコアを調整
+    """
+    try:
+        if len(items) < 10:  # データが少ない場合はスキップ
+            print("  幾何学的正則化: データ数が少ないためスキップ")
+            return items
+        
+        # テキストデータの抽出
+        texts = []
+        for item in items:
+            text = item.get("title", "") + " " + item.get("text", "")[:500]
+            texts.append(text)
+        
+        # TF-IDF特徴量を計算
+        vectorizer = TfidfVectorizer(
+            max_features=100,
+            stop_words='english',
+            min_df=1,
+            max_df=0.95
+        )
+        tfidf_matrix = vectorizer.fit_transform(texts).toarray()
+        
+        # 低次元埋め込み（LocallyLinearEmbedding）
+        n_neighbors = min(5, len(items) - 1)
+        n_components = min(10, tfidf_matrix.shape[1] - 1)
+        
+        lle = LocallyLinearEmbedding(
+            n_neighbors=n_neighbors,
+            n_components=n_components,
+            random_state=42
+        )
+        embedded_features = lle.fit_transform(tfidf_matrix)
+        
+        # 異常値検出
+        isolation_forest = IsolationForest(
+            contamination=0.1,
+            random_state=42
+        )
+        anomaly_scores = isolation_forest.fit_predict(embedded_features)
+        
+        # スコアの正則化
+        for i, item in enumerate(items):
+            original_score = item.get("score", 0)
+            
+            # 埋め込み空間での密度スコア（中心からの距離の逆数）
+            center = np.mean(embedded_features, axis=0)
+            distance = np.linalg.norm(embedded_features[i] - center)
+            density_score = 1.0 / (1.0 + distance)
+            
+            # 異常値ペナルティ
+            anomaly_penalty = 0.8 if anomaly_scores[i] == -1 else 1.0
+            
+            # 正則化されたスコア
+            regularized_score = original_score * density_score * anomaly_penalty
+            item["score"] = regularized_score
+            item["geometric_regularized"] = True
+        
+        print(f"  幾何学的正則化: {len(items)}件のアイテムを処理、{np.sum(anomaly_scores == -1)}件の異常値を検出")
+        return items
+        
+    except Exception as e:
+        print(f"  幾何学的正則化でエラーが発生: {str(e)}")
+        # エラーが発生した場合は元のデータをそのまま返す
+        for item in items:
+            item["geometric_regularized"] = False
+        return items
+
+
 def summarize_items(items):
+    # 幾何学的正則化を適用
+    items = geometric_regularization_scoring(items)
+    
     top_items = sorted(items, key=lambda x: x.get("score", 0), reverse=True)[:5]
     items_text = "\n\n".join([
         "[" + str(i+1) + "] SOURCE: " + item["source"] + "\nTITLE: " + item["title"] + "\nTEXT: " + item.get("text","")[:200]
@@ -86,92 +164,11 @@ def summarize_items(items):
   {
     "id": 1,
     "title_ja": "日本語タイトル",
-    "summary_ja": "2から3文の日本語要約",
-    "importance": 8,
-    "tags": ["LLM", "ビジネス"],
-    "category": "技術"
+    "summary_ja": "2から3行の簡潔な要約",
+    "importance": 0.85,
+    "category": "技術分野",
+    "impact_analysis": "影響の分析"
   }
-]
-
-importanceは1から10で評価。
-tagsはLLM/Agent/ビジネス/画像生成/音声/コード/論文/中国AI/オープンソースから選択。
-categoryは技術/ビジネス/ツール/論文/その他から選択。"""
-
-    response = call_claude(prompt, max_tokens=3000, label="summarize_items")
-    try:
-        match = re.search(r"\[.*\]", response, re.DOTALL)
-        if not match:
-            return []
-        summaries = json.loads(match.group())
-    except json.JSONDecodeError:
-        print("JSON parse error, skipping batch")
-        return []
-
-    results = []
-    for s in summaries:
-        idx = s["id"] - 1
-        if 0 <= idx < len(top_items):
-            item = top_items[idx].copy()
-            item.update({
-                "title_ja": s.get("title_ja", item["title"]),
-                "summary_ja": s.get("summary_ja", ""),
-                "importance": s.get("importance", 5),
-                "tags": s.get("tags", []),
-                "category": s.get("category", "その他"),
-            })
-            results.append(item)
-    return sorted(results, key=lambda x: x.get("importance", 0), reverse=True)
-
-
-def generate_daily_digest(items):
-    top5 = items[:5]
-    top5_text = "\n".join([
-        "- " + item["title_ja"] + ": " + item["summary_ja"]
-        for item in top5
-    ])
-    prompt = """今日のAIトレンドトップ5:
-""" + top5_text + """
-
-これらを踏まえて、以下を日本語で書いてください：
-1. 今日の最重要トレンド（3行以内）
-2. ビジネスへの示唆（2行以内）
-3. 注目すべき技術動向（2行以内）
-
-簡潔にまとめてください。"""
-    return call_claude(prompt, max_tokens=500, label="daily_digest")
-
-
-def _count_tags(items):
-    from collections import Counter
-    tags = []
-    for item in items:
-        tags.extend(item.get("tags", []))
-    return dict(Counter(tags).most_common(10))
-
-
-def main():
-    print("Brain Summarizer starting... [" + TODAY + "]")
-    if not DATA_FILE.exists():
-        print("No data file found: " + str(DATA_FILE))
-        return
-    with open(DATA_FILE, encoding="utf-8") as f:
-        data = json.load(f)
-    items = data.get("raw_items", [])
-    if not items:
-        print("No items to summarize")
-        return
-    print("Summarizing " + str(len(items)) + " items...")
-    summarized = summarize_items(items)
-    print("Summarized " + str(len(summarized)) + " items")
-    print("Generating daily digest...")
-    digest = generate_daily_digest(summarized) if summarized else "本日はデータなし"
-    data["summarized_items"] = summarized
-    data["digest"] = digest
-    data["top_tags"] = _count_tags(summarized)
-    with open(DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-    print("Done! -> " + str(DATA_FILE))
-
-
-if __name__ == "__main__":
-    main()
+]"""
+    
+    return call_claude(prompt, label="summarize_items")
