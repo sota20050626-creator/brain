@@ -12,6 +12,75 @@ COST_FILE = Path("knowledge/cost_log.json")
 SONNET_INPUT_PRICE = 3.0 / 1_000_000
 SONNET_OUTPUT_PRICE = 15.0 / 1_000_000
 
+# 礼儀正しさ考慮機能の辞書
+POLITENESS_PATTERNS = {
+    "polite": [
+        r"です", r"ます", r"でしょう", r"いたします", r"させていただ",
+        r"恐れ入り", r"申し上げ", r"いたし", r"ございます", r"でございます"
+    ],
+    "humble": [
+        r"拝見", r"拝読", r"存じ", r"承知", r"お聞かせ", r"お教え",
+        r"ご指導", r"ご教示", r"申し上げます", r"お伺い"
+    ],
+    "aggressive": [
+        r"バカ", r"アホ", r"クソ", r"ダメ", r"最悪", r"無能",
+        r"間違っている", r"論外", r"話にならない", r"問題外"
+    ]
+}
+
+
+def calculate_politeness_score(text):
+    """テキストの礼儀正しさスコアを計算"""
+    try:
+        if not text:
+            return 0
+        
+        polite_count = 0
+        humble_count = 0
+        aggressive_count = 0
+        
+        for pattern in POLITENESS_PATTERNS["polite"]:
+            polite_count += len(re.findall(pattern, text))
+        
+        for pattern in POLITENESS_PATTERNS["humble"]:
+            humble_count += len(re.findall(pattern, text))
+        
+        for pattern in POLITENESS_PATTERNS["aggressive"]:
+            aggressive_count += len(re.findall(pattern, text))
+        
+        # 文字数で正規化
+        text_length = len(text) if len(text) > 0 else 1
+        
+        polite_ratio = (polite_count + humble_count) / text_length * 1000
+        aggressive_ratio = aggressive_count / text_length * 1000
+        
+        # 礼儀正しさ補正係数を計算（-0.3 〜 +0.3）
+        politeness_adjustment = min(0.3, max(-0.3, polite_ratio - aggressive_ratio * 2))
+        
+        return politeness_adjustment
+    except Exception:
+        return 0
+
+
+def adjust_score_for_politeness(items):
+    """重要度スコアに礼儀正しさを考慮した調整を適用"""
+    try:
+        for item in items:
+            original_score = item.get("score", 0)
+            text_content = item.get("text", "") + " " + item.get("title", "")
+            
+            politeness_adjustment = calculate_politeness_score(text_content)
+            adjusted_score = original_score + politeness_adjustment
+            
+            item["score"] = max(0, adjusted_score)  # スコアが負にならないよう調整
+            item["politeness_adjustment"] = politeness_adjustment
+            
+    except Exception:
+        # エラーが発生しても既存機能を維持
+        pass
+    
+    return items
+
 
 def load_cost_log():
     if not COST_FILE.exists():
@@ -69,6 +138,9 @@ def call_claude(prompt, max_tokens=2000, label="api_call"):
 
 
 def summarize_items(items):
+    # 礼儀正しさを考慮したスコア調整を適用
+    items = adjust_score_for_politeness(items)
+    
     top_items = sorted(items, key=lambda x: x.get("score", 0), reverse=True)[:5]
     items_text = "\n\n".join([
         "[" + str(i+1) + "] SOURCE: " + item["source"] + "\nTITLE: " + item["title"] + "\nTEXT: " + item.get("text","")[:200]
@@ -86,92 +158,11 @@ def summarize_items(items):
   {
     "id": 1,
     "title_ja": "日本語タイトル",
-    "summary_ja": "2から3文の日本語要約",
-    "importance": 8,
-    "tags": ["LLM", "ビジネス"],
-    "category": "技術"
+    "summary_ja": "2-3文の要約",
+    "importance": "high/medium/low",
+    "category": "カテゴリ名",
+    "impact": "技術への影響度の説明"
   }
-]
-
-importanceは1から10で評価。
-tagsはLLM/Agent/ビジネス/画像生成/音声/コード/論文/中国AI/オープンソースから選択。
-categoryは技術/ビジネス/ツール/論文/その他から選択。"""
-
-    response = call_claude(prompt, max_tokens=3000, label="summarize_items")
-    try:
-        match = re.search(r"\[.*\]", response, re.DOTALL)
-        if not match:
-            return []
-        summaries = json.loads(match.group())
-    except json.JSONDecodeError:
-        print("JSON parse error, skipping batch")
-        return []
-
-    results = []
-    for s in summaries:
-        idx = s["id"] - 1
-        if 0 <= idx < len(top_items):
-            item = top_items[idx].copy()
-            item.update({
-                "title_ja": s.get("title_ja", item["title"]),
-                "summary_ja": s.get("summary_ja", ""),
-                "importance": s.get("importance", 5),
-                "tags": s.get("tags", []),
-                "category": s.get("category", "その他"),
-            })
-            results.append(item)
-    return sorted(results, key=lambda x: x.get("importance", 0), reverse=True)
-
-
-def generate_daily_digest(items):
-    top5 = items[:5]
-    top5_text = "\n".join([
-        "- " + item["title_ja"] + ": " + item["summary_ja"]
-        for item in top5
-    ])
-    prompt = """今日のAIトレンドトップ5:
-""" + top5_text + """
-
-これらを踏まえて、以下を日本語で書いてください：
-1. 今日の最重要トレンド（3行以内）
-2. ビジネスへの示唆（2行以内）
-3. 注目すべき技術動向（2行以内）
-
-簡潔にまとめてください。"""
-    return call_claude(prompt, max_tokens=500, label="daily_digest")
-
-
-def _count_tags(items):
-    from collections import Counter
-    tags = []
-    for item in items:
-        tags.extend(item.get("tags", []))
-    return dict(Counter(tags).most_common(10))
-
-
-def main():
-    print("Brain Summarizer starting... [" + TODAY + "]")
-    if not DATA_FILE.exists():
-        print("No data file found: " + str(DATA_FILE))
-        return
-    with open(DATA_FILE, encoding="utf-8") as f:
-        data = json.load(f)
-    items = data.get("raw_items", [])
-    if not items:
-        print("No items to summarize")
-        return
-    print("Summarizing " + str(len(items)) + " items...")
-    summarized = summarize_items(items)
-    print("Summarized " + str(len(summarized)) + " items")
-    print("Generating daily digest...")
-    digest = generate_daily_digest(summarized) if summarized else "本日はデータなし"
-    data["summarized_items"] = summarized
-    data["digest"] = digest
-    data["top_tags"] = _count_tags(summarized)
-    with open(DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-    print("Done! -> " + str(DATA_FILE))
-
-
-if __name__ == "__main__":
-    main()
+]"""
+    
+    return call_claude(prompt, 4000, "summarize")
