@@ -1,7 +1,5 @@
 name: Brain Daily Update
 on:
-  schedule:
-    - cron: '0 21 * * *'
   workflow_dispatch:
 jobs:
   collect-and-summarize:
